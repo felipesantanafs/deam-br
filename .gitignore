@@ -88,3 +88,5 @@ dados/sinan/sinan_violencia_sp.csv
 # Credenciais
 # ===========================
 codes/extracao_filtragem/bd_config.py
+bd_config.py
+BILLING_ID
