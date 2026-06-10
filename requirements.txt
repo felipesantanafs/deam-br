@@ -1,0 +1,25 @@
+# Core - ETL e manipulação de dados
+pandas>=2.0
+openpyxl>=3.1
+numpy>=1.26
+
+# Análise espacial
+geopandas>=0.14
+shapely>=2.0
+
+# Extração de dados (Base dos Dados)
+basedosdados>=1.6
+
+# Econometria e avaliação de impacto (Causal)
+statsmodels>=0.14
+diff-diff>=3.5
+scikit-learn>=1.4
+
+# Visualização e dashboard
+plotly>=5.18
+streamlit>=1.30
+matplotlib>=3.8
+seaborn>=0.13
+
+# Utilitários
+python-docx>=1.0

@@ -1,0 +1,88 @@
+distrito,populacao,renda_per_capita,ipvs,idh,zona
+Bela Vista,69460,3200,2,0.94,Centro
+Bom Retiro,33960,1800,3,0.841,Centro
+Cambuci,36940,2400,2,0.903,Centro
+Consolação,57360,4800,1,0.95,Centro
+Liberdade,69820,2200,3,0.887,Centro
+República,56980,2500,2,0.9,Centro
+Santa Cecília,83710,3300,2,0.93,Centro
+Sé,23650,1400,4,0.81,Centro
+Água Rasa,84150,2300,2,0.886,Leste
+Aricanduva,89020,1400,3,0.812,Leste
+Artur Alvim,105210,1200,3,0.798,Leste
+Belém,45310,2100,2,0.872,Leste
+Cangaíba,136250,1150,3,0.785,Leste
+Carrão,83290,2600,2,0.9,Leste
+Cidade Líder,126580,980,4,0.75,Leste
+Cidade Tiradentes,211530,580,5,0.64,Leste
+Ermelino Matarazzo,113620,1080,4,0.771,Leste
+Guaianases,164210,620,5,0.662,Leste
+Iguatemi,127650,640,5,0.67,Leste
+Itaim Paulista,223690,610,5,0.653,Leste
+Itaquera,204870,950,4,0.76,Leste
+Jardim Helena,132540,630,5,0.661,Leste
+José Bonifácio,124150,890,4,0.743,Leste
+Lajeado,164310,600,5,0.65,Leste
+Mooca,75740,3400,1,0.909,Leste
+Parque do Carmo,68250,1250,3,0.803,Leste
+Penha,127820,1750,3,0.84,Leste
+Ponte Rasa,93250,1180,3,0.781,Leste
+São Lucas,132450,1580,3,0.825,Leste
+São Mateus,143980,920,4,0.758,Leste
+São Miguel,88160,1050,4,0.772,Leste
+Sapopemba,284350,870,4,0.74,Leste
+Tatuapé,91650,3800,1,0.936,Leste
+Vila Curuçá,149250,780,4,0.72,Leste
+Vila Formosa,94820,2250,2,0.88,Leste
+Vila Jacuí,141250,820,4,0.73,Leste
+Vila Matilde,104250,1850,3,0.85,Leste
+Vila Prudente,96300,2100,2,0.875,Leste
+Alto de Pinheiros,43250,6200,1,0.955,Oeste
+Barra Funda,14380,2900,2,0.915,Oeste
+Butantã,54120,3100,2,0.92,Oeste
+Jaguara,24890,1600,3,0.83,Oeste
+Jaguaré,49820,1950,3,0.849,Oeste
+Lapa,65730,3800,1,0.941,Oeste
+Pinheiros,65120,5800,1,0.96,Oeste
+Raposo Tavares,102450,940,4,0.76,Oeste
+Rio Pequeno,118450,1150,3,0.79,Oeste
+Vila Leopoldina,39850,4500,1,0.945,Oeste
+Vila Sônia,108420,2400,2,0.89,Oeste
+Anhanguera,65890,640,5,0.67,Norte
+Cachoeirinha,143250,940,4,0.752,Norte
+Casa Verde,85740,1950,3,0.848,Norte
+Freguesia do Ó,142300,1750,3,0.85,Norte
+Jaçanã,94810,1120,3,0.782,Norte
+Limão,80210,1620,3,0.836,Norte
+Mandaqui,109820,2400,2,0.896,Norte
+Pirituba,167920,1380,3,0.816,Norte
+Santana,118450,3200,2,0.925,Norte
+São Domingos,78920,1650,3,0.83,Norte
+Tremembé,136250,1080,4,0.77,Norte
+Tucuruvi,96250,2100,2,0.882,Norte
+Vila Guilherme,54120,2200,2,0.868,Norte
+Vila Maria,113450,1680,3,0.824,Norte
+Vila Medeiros,129850,1220,3,0.795,Norte
+Campo Belo,65820,5200,1,0.952,Sul
+Campo Grande,98450,2800,2,0.91,Sul
+Campo Limpo,215430,940,4,0.76,Sul
+Capão Redondo,275120,780,4,0.725,Sul
+Cidade Ademar,266450,910,4,0.751,Sul
+Cidade Dutra,198420,1050,4,0.775,Sul
+Cursino,104250,2300,2,0.885,Sul
+Grajaú,384590,620,5,0.668,Sul
+Ipiranga,106250,2800,2,0.912,Sul
+Jabaquara,223420,1780,3,0.84,Sul
+Jardim Ângela,295430,630,5,0.665,Sul
+Jardim São Luís,267820,810,4,0.728,Sul
+Marsilac,11500,450,6,0.601,Sul
+Moema,83410,6500,1,0.961,Sul
+Morumbi,46820,5800,2,0.938,Sul
+Parelheiros,139820,530,5,0.642,Sul
+Pedreira,148230,840,4,0.73,Sul
+Sacomã,248250,1320,3,0.805,Sul
+Santo Amaro,68900,4100,1,0.943,Sul
+Saúde,130250,3300,2,0.932,Sul
+Socorro,37820,2100,2,0.87,Sul
+Vila Andrade,125430,2900,3,0.853,Sul
+Vila Mariana,130540,4600,1,0.95,Sul

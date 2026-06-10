@@ -1,0 +1,159 @@
+{
+    "metadata": {
+        "periodo": "2015-2019",
+        "hipotese": "Impacto causal do plantão 24h nas DDMs",
+        "metodo_principal": "Callaway & Sant'Anna (2021) via diff-diff",
+        "contrafactual": "DDMs de horário comercial (nunca tratadas para 24h)",
+        "coortes": {
+            "2016": [
+                "cambuci"
+            ],
+            "2018": [
+                "itaquera",
+                "sao mateus"
+            ]
+        },
+        "controles": [
+            "saude",
+            "jaguare",
+            "freguesia do o",
+            "tatuape",
+            "campo grande",
+            "pirituba"
+        ],
+        "robustez": "Sun & Abraham (2021), Borusyak et al. (2024)",
+        "sensibilidade": "HonestDiD (Rambachan & Roth, 2023)"
+    },
+    "balanco_socioeconomico": {
+        "descricao": "DDM 24h vs DDM Horário Comercial",
+        "covariates": {
+            "populacao": {
+                "treated_mean": 128596.67,
+                "control_mean": 105396.67,
+                "norm_diff": 0.316
+            },
+            "renda_per_capita": {
+                "treated_mean": 1423.33,
+                "control_mean": 2043.33,
+                "norm_diff": -0.792
+            },
+            "ipvs": {
+                "treated_mean": 3.33,
+                "control_mean": 2.67,
+                "norm_diff": 0.73
+            },
+            "idh": {
+                "treated_mean": 0.81,
+                "control_mean": 0.86,
+                "norm_diff": -0.757
+            }
+        }
+    },
+    "cs_did_24h": {
+        "notificacoes": {
+            "cs_att": 342.6722,
+            "cs_se": 123.4643,
+            "sa_att": 2.75,
+            "sa_se": 185.3528,
+            "bjs_att": -1.375,
+            "bjs_se": 159.261,
+            "honest_did": {
+                "method": "relative_magnitude",
+                "M": 1.0,
+                "robust_ci_lower": null,
+                "robust_ci_upper": null
+            },
+            "event_study": {
+                "-2": {
+                    "effect": -444.989,
+                    "se": 109.9645
+                },
+                "-1": {
+                    "effect": -243.3774,
+                    "se": 42.0664
+                },
+                "0": {
+                    "effect": 165.4351,
+                    "se": 74.6095
+                },
+                "1": {
+                    "effect": 520.5057,
+                    "se": 273.62
+                },
+                "2": {
+                    "effect": 303.9246,
+                    "se": 0.0
+                },
+                "3": {
+                    "effect": 379.6302,
+                    "se": 0.0
+                }
+            },
+            "group_effects": {}
+        },
+        "feminicidios": {
+            "cs_att": -1.0136,
+            "cs_se": 1.3778,
+            "sa_att": -0.25,
+            "sa_se": 0.7147,
+            "bjs_att": -0.2441,
+            "bjs_se": 0.5851,
+            "honest_did": {
+                "method": "relative_magnitude",
+                "M": 1.0,
+                "robust_ci_lower": null,
+                "robust_ci_upper": null
+            },
+            "event_study": {
+                "-2": {
+                    "effect": -1.5,
+                    "se": 0.3464
+                },
+                "-1": {
+                    "effect": 0.0,
+                    "se": null
+                },
+                "0": {
+                    "effect": -0.3861,
+                    "se": 0.1719
+                },
+                "1": {
+                    "effect": -3.9304,
+                    "se": 1.6476
+                },
+                "2": {
+                    "effect": 0.8067,
+                    "se": 0.0
+                },
+                "3": {
+                    "effect": 4.0337,
+                    "se": 0.0
+                }
+            },
+            "group_effects": {}
+        }
+    },
+    "psm_matching": {
+        "descricao": "Pareamento 1:1 Nearest Neighbor via Logistic Regression",
+        "pares": {
+            "cambuci": {
+                "treated_ps": 0.2374,
+                "matched_control": "campo grande",
+                "control_ps": 0.1485,
+                "ps_distance": 0.0889
+            },
+            "itaquera": {
+                "treated_ps": 0.6005,
+                "matched_control": "jaguare",
+                "control_ps": 0.4356,
+                "ps_distance": 0.1649
+            },
+            "sao mateus": {
+                "treated_ps": 0.683,
+                "matched_control": "pirituba",
+                "control_ps": 0.4072,
+                "ps_distance": 0.2758
+            }
+        }
+    }
+}

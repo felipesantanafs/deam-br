@@ -1,0 +1,90 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ===========================
+# Virtual Environments
+# ===========================
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# ===========================
+# Distribution / Packaging
+# ===========================
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# ===========================
+# IDEs e Editores
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===========================
+# Jupyter Notebook
+# ===========================
+.ipynb_checkpoints/
+
+# ===========================
+# OS
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Excel — arquivos temporários
+# ===========================
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+
+# ===========================
+# Dados pesados / Não utilizados
+# ===========================
+# Arquivos de dados pesados NÃO utilizados ou temporários
+dados/**/*_unused.*
+dados/**/temp_*
+
+# SSP — Arquivos brutos pesados ignorados (mantém dados_feminicidio.xlsx)
+dados/ssp/SIPCV_*.xlsx
+dados/ssp/Feminicidio_2015_2022.xlsx
+
+# CNES bruto — Já integrado ao sinan_cnes_merged.csv
+dados/cnes/
+
+# SINAN bruto — Já integrado ao sinan_cnes_merged.csv
+dados/sinan/sinan_violencia_sp.csv
+
+# ===========================
+# Scripts de extração (não ignorados)
+# ===========================
+# codes/extracao_filtragem/data_filter_sicpv.py
+# codes/extracao_filtragem/pipeline_feminicidio.py
+
+# ===========================
+# Logs e cache
+# ===========================
+*.log
+.cache/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# ===========================
+# Credenciais
+# ===========================
+codes/extracao_filtragem/bd_config.py
