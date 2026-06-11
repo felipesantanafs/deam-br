@@ -124,13 +124,17 @@ deams-pp-aps/
 ├── 📂 codes/                       # Scripts organizados por fases de desenvolvimento
 │   ├── 📂 extracao_filtragem/      # Extração (APIs/BigQuery) e higienização inicial
 │   │   ├── bd_config.py            # ⚠️ LOCAL APENAS — credenciais GCP (Não versionado)
+│   │   ├── extracao_706_deams.py   # Processamento e consistência factual de DEAMs
 │   │   ├── extract_cnes_bd.py      # Query de estabelecimentos geolocalizados do CNES (Com patch manual)
-│   │   ├── extract_sim_bd.py       # Query de feminicídios notificados no SIM/DataSUS
-│   │   ├── extract_sinan_bd.py     # Query de notificações de agressões no SINAN/DataSUS
-│   │   └── merge_sinan_cnes.py     # Cruzamento SINAN + CNES usando a chave do hospital
+│   │   ├── extract_sim_bd.py       # Query de feminicídios agregados no SIM/DataSUS
+│   │   ├── extract_sim_bd_detalhada.py # Query detalhada de feminicídios no SIM/DataSUS
+│   │   ├── extract_sinan_bd.py     # Query de notificações de agressões agregadas no SINAN/DataSUS
+│   │   ├── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS
+│   │   └── query_munic_bd.py       # Consulta exploratória de colunas do MUNIC
 │   │
 │   ├── 📂 analise_dados/           # Análise exploratória e visualizações
-│   │   └── eda_funil_violencia.py  # Análise do Funil da Violência e geração de gráficos
+│   │   ├── download_ibge.py        # Download de dados do IBGE
+│   │   └── inspect_data.py         # Inspeção rápida de consistência dos dados
 │   │
 │   ├── 📂 streamlit/               # Dashboard Interativo Premium (FEA-USP)
 │   │   ├── Home.py                 # Arquivo de entrada do painel principal
@@ -141,27 +145,35 @@ deams-pp-aps/
 │   │       ├── 2_📈_Series_Temporais.py
 │   │       ├── 3_🏢_Delegacias_Bairros.py
 │   │       ├── 4_🗺️_Mapa_Bairros.py
-│   │       ├── 5_👤_Perfil_Vitimas.py
-│   │       ├── 6_⏰_Sazonalidade.py
-│   │       └── 7_🚨_Analise_DDMs.py
+│   │       ├── 5_🔥_Mapa_Calor_DDMs.py
+│   │       ├── 6_👤_Perfil_Vitimas.py
+│   │       ├── 7_⏰_Sazonalidade.py
+│   │       ├── 8_🚨_Analise_DDMs.py
+│   │       └── 9_🔬_Modelo_Causal.py
 │   │
-│   └── 📂 inferencia_causal/       # Estimação do modelo econométrico DiD (Próxima Etapa)
-│       └── .gitkeep
+│   └── 📂 inferencia_causal/       # Estimação do modelo econométrico DiD
+│       ├── causal_model.py         # Estimação do modelo DiD e pareamento por PSM
+│       ├── generate_notebook.py    # Geração de notebook explicativo
+│       └── modelo_causal.ipynb     # Notebook com a execução do modelo
 │
 ├── 📂 dados/                       # Armazenamento estruturado de fontes e consolidações
+│   ├── 📂 ibge/                    # Dados e arquivos auxiliares do IBGE
+│   │   ├── municipios_br.csv       # Municípios brasileiros e códigos de identificação
+│   │   └── 📂 scraping/            # Arquivos da raspagem e processamento das DEAMs
+│   │       ├── deam_delegacias_mulher_brasil.csv
+│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv
+│   │
 │   ├── 📂 sim/                     # Dados provenientes do SIM (Sistema de Mortalidade)
-│   │   └── sim_feminicidios_sp.csv # Óbitos por agressão contra mulheres (DataSUS)
+│   │   ├── sim_feminicidios_br.csv # Óbitos agregados por agressão contra mulheres (DataSUS)
+│   │   └── sim_feminicidios_br_detalhada.csv # Microdados detalhados de óbitos (Ignorado/Local)
 │   │
-│   ├── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
-│   │   └── sinan_cnes_merged.csv   # Base integrada espacialmente ao CNES (107k reg.)
-│   │
-│   └── 📂 consolidado/             # Bases prontas agregadas para visualização/modelagem
-│       └── funil_violencia_ano.csv # Tabela agregada anual do Funil da Violência (2015-2019)
+│   └── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
+│       ├── sinan_violencia_br.csv  # Notificações agregadas de violência contra mulheres
+│       └── sinan_violencia_br_detalhada.csv # Microdados detalhados de violência (Ignorado/Local)
 │
 └── 📂 relatorios/                  # Relatórios gerenciais e imagens geradas
     ├── PROJETO DE PESQUISA-VIOLENCIA SP.docx
-    ├── PROJETO DE PESQUISA-VIOLENCIA SP.txt
-    └── funil_violencia.png         # Gráfico temporal de evolução do funil
+    └── PROJETO DE PESQUISA-VIOLENCIA SP.txt
 ```
 
 > **Nota:** Dados da SSP (Secretaria de Segurança Pública), CNES bruto e SINAN bruto foram movidos para o `.gitignore` por incompatibilidade com a análise padronizada SINAN+SIM (2015–2019). Os scripts de extração SSP (`data_filter_sicpv.py`, `pipeline_feminicidio.py`) também foram ignorados.

@@ -90,3 +90,10 @@ dados/sinan/sinan_violencia_sp.csv
 codes/extracao_filtragem/bd_config.py
 bd_config.py
 BILLING_ID
+
+# Dados detalhados
+dados/sim/*_detalhada.csv
+dados/sinan/*_detalhada.csv
+
+# Arquivos compactados (Zip)
+*.zip
