@@ -67,7 +67,7 @@ dados/ssp/Feminicidio_2015_2022.xlsx
 dados/cnes/
 
 # SINAN bruto — Já integrado ao sinan_cnes_merged.csv
-dados/sinan/sinan_violencia_sp.csv
+dados/sinan/sinan_violencia_br.csv
 
 # ===========================
 # Scripts de extração (não ignorados)

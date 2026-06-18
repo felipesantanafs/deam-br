@@ -1,3 +1,4 @@
+# Dependências do Projeto — Avaliação de Impacto das DEAMs (Brasil)
 # Core - ETL e manipulação de dados
 pandas>=2.0
 openpyxl>=3.1

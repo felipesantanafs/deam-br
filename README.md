@@ -2,8 +2,8 @@
 
 # 🔬 Delegacias de Defesa da Mulher — Avaliação de Impacto
 
-**Violência contra Mulheres no Município de São Paulo:**
-*Diagnóstico Espaço-Temporal e Avaliação de Impacto das DDMs*
+**Violência contra Mulheres no Brasil:**
+*Diagnóstico Espaço-Temporal e Avaliação de Impacto das DEAMs em Escala Nacional*
 
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge)]()
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
@@ -11,7 +11,7 @@
 
 ---
 
-*Projeto de pesquisa focado na avaliação de políticas sociais no município de São Paulo.*
+*Projeto de pesquisa focado na avaliação de políticas públicas de enfrentamento à violência contra mulheres em todo o território brasileiro.*
 
 </div>
 
@@ -20,7 +20,7 @@
 ## 📋 Sumário
 
 - [Sobre o Projeto](#-sobre-o-projeto)
-- [Delegacias na Capital (DDMs 24h vs. Comercial)](#-delegacias-de-defesa-da-mulher-ddms-na-capital)
+- [DEAMs no Brasil](#-delegacias-especializadas-de-atendimento-à-mulher-deams-no-brasil)
 - [Problema de Pesquisa](#-problema-de-pesquisa)
 - [Cadeia Causal](#-cadeia-causal)
 - [Metodologia](#-metodologia)
@@ -33,40 +33,31 @@
 
 ## 🎯 Sobre o Projeto
 
-Este repositório contém o código-fonte, dados e relatórios do projeto de pesquisa que investiga a **eficácia das Delegacias de Defesa da Mulher (DDMs) com funcionamento 24 horas no município de São Paulo**.
+Este repositório contém o código-fonte, dados e relatórios do projeto de pesquisa que investiga a **eficácia das Delegacias Especializadas de Atendimento à Mulher (DEAMs) com funcionamento 24 horas em todo o território brasileiro**.
 
-O estudo combina **ciência de dados descritiva** (mapas de calor territoriais e funil da violência) com **avaliação de impacto causal** (Diferenças-em-Diferenças intra-municipal), produzindo evidências acionáveis para subsidiar a avaliação de políticas sociais e otimizar a rede de proteção à mulher na capital paulista.
+O estudo combina **ciência de dados descritiva** (mapas de calor territoriais e funil da violência) com **avaliação de impacto causal** (Diferenças-em-Diferenças com tratamento escalonado), produzindo evidências acionáveis para subsidiar a avaliação de políticas públicas e otimizar a rede de proteção à mulher em escala nacional.
 
-**Período de análise padronizado: 2015–2019** (a partir da Lei do Feminicídio até o limite do SINAN disponível).
+**Período de análise padronizado: 2009–2019** (abrangendo a Lei Maria da Penha consolidada até o limite do SINAN disponível).
 
 ---
 
-## 🏢 Delegacias de Defesa da Mulher (DDMs) na Capital
+## 🏢 Delegacias Especializadas de Atendimento à Mulher (DEAMs) no Brasil
 
-O município de São Paulo conta com **9 Delegacias de Defesa da Mulher (DDMs)** de atuação territorial. Destas, **3 unidades operam em regime de plantão 24 horas** e **6 operam exclusivamente em horário comercial (09h às 18h)**.
+O Brasil conta com **339 Delegacias Especializadas de Atendimento à Mulher (DEAMs)** distribuídas pelos 26 estados e o Distrito Federal. Destas, um subconjunto opera em **regime de plantão 24 horas**, enquanto a maioria funciona exclusivamente em **horário comercial**.
 
-Abaixo está o detalhamento de funcionamento, telefones e localização de cada unidade:
+A base de dados de DEAMs utilizada neste projeto foi construída a partir da raspagem e enriquecimento de dados públicos, resultando em um cadastro com informações de município, UF, regime de funcionamento (comercial ou 24h) e ano de implementação do regime 24h (quando aplicável).
 
-| DDM | Região | Endereço | Telefone | Funcionamento |
-| :--- | :--- | :--- | :--- | :--- |
-| **1ª DDM Centro** | Centro | Rua Vieira Ravasco, 26, Cambuci (dentro da Casa da Mulher Brasileira) | (11) 3275-8000 | 🟢 **24 Horas** |
-| **2ª DDM Sul** | Zona Sul | Avenida Onze de Julho, 89 - Saúde | (11) 5084-2579 | 🕒 **Horário Comercial (09h-18h)** |
-| **3ª DDM Oeste** | Zona Oeste | Avenida Corifeu de Azevedo Marques, 4300 - 2º andar - Jaguaré | (11) 3768-4664 | 🕒 **Horário Comercial (09h-18h)** |
-| **4ª DDM Norte** | Zona Norte | Avenida Itaberaba, 731 - 1º andar - Freguesia do Ó | (11) 3976-2908 | 🕒 **Horário Comercial (09h-18h)** |
-| **5ª DDM Leste** | Zona Leste | Rua Dr. Corinto Baldoíno Costa, 400 - 2º andar - Tatuapé | (11) 2293-3816 | 🕒 **Horário Comercial (09h-18h)** |
-| **6ª DDM Campo Grande** | Zona Sul | Rua Sargento Manoel Barbosa da Silva, nº 115 - 2º andar - Campo Grande | (11) 5521-6068 / 5686-8567 | 🕒 **Horário Comercial (09h-18h)** |
-| **7ª DDM Leste (Itaquera)** | Zona Leste | Rua Sabbado D'Angelo, 46 - Itaquera | (11) 2071-3488 / 2071-4707 | 🟢 **24 Horas** |
-| **8ª DDM Leste** | Zona Leste | Avenida Osvaldo do Valle Cordeiro, 190 - 2º andar - Jd. Marília | (11) 2742-1701 | 🟢 **24 Horas** |
-| **9ª DDM Oeste (Pirituba)** | Zona Oeste | Avenida Menotti Laudisio, 286 - 2º andar - Pirituba | (11) 3974-8890 | 🕒 **Horário Comercial (09h-18h)** |
+> [!NOTE]
+> A classificação das DEAMs em "24 horas" e "Comercial" é fundamental para a estratégia de identificação causal do projeto. DEAMs que foram convertidas para o regime 24h entre 2009 e 2019 constituem o **grupo de tratamento**, enquanto as DEAMs em horário comercial servem como **grupo de controle**.
 
 ---
 
 ## 🔍 Problema de Pesquisa
 
-A violência contra mulheres exige respostas capilarizadas e com disponibilidade ininterrupta, visto que grande parte das agressões em contexto doméstico ocorre durante madrugadas e finais de semana — períodos nos quais DDMs de horário comercial encontram-se fechadas.
+A violência contra mulheres exige respostas capilarizadas e com disponibilidade ininterrupta, visto que grande parte das agressões em contexto doméstico ocorre durante madrugadas e finais de semana — períodos nos quais DEAMs de horário comercial encontram-se fechadas.
 
 O projeto busca responder à seguinte questão principal:
-> **As DDMs que funcionam 24 hrs na cidade de São Paulo possuem maior impacto na ampliação de registros (redução da subnotificação) e na prevenção de feminicídios em seus distritos de abrangência, em comparação àquelas que funcionam apenas em horário comercial?**
+> **As DEAMs que funcionam 24 horas no Brasil possuem maior impacto na ampliação de registros (redução da subnotificação) e na prevenção de feminicídios nos seus municípios de abrangência, em comparação àquelas que funcionam apenas em horário comercial?**
 
 ---
 
@@ -78,7 +69,7 @@ Para contornar isso, o modelo possui duas variáveis dependentes:
 
 ```mermaid
 flowchart LR
-    A["🏛️ Inauguração/Conversão\nDDM 24h"] --> B["📈 Aumento de Acesso\n(Denúncias/SINAN)"]
+    A["🏛️ Inauguração/Conversão\nDEAM 24h"] --> B["📈 Aumento de Acesso\n(Denúncias/SINAN)"]
     B --> C["🛡️ Proteção Ativa"]
     C --> D["📉 Redução de Letalidade\n(Feminicídios/SIM)"]
 
@@ -96,41 +87,38 @@ flowchart LR
 ## 📐 Metodologia
 
 ### Etapa 1 — Diagnóstico e Ciência de Dados
-- **Análise Descritiva Espacial:** Mapas de densidade (Heatmaps) por Bairro e Subprefeitura.
-- **Integração de Bases e Geolocalização (SINAN + CNES):** Como a base do SINAN omite endereços exatos para preservação da privacidade das vítimas, adotamos a **Hipótese de Proxy Espacial (Bairro de Atendimento)**. O SINAN é cruzado com o diretório geocodificado do CNES através da chave do estabelecimento notificador (`id_unidade_notificacao` = `id_estabelecimento_cnes`). *Foi aplicado um patch manual de geolocalização aos 5 principais hospitais públicos do município para corrigir falhas no CEP do diretório CNES, recuperando cerca de 15.000 registros na base final*. Assume-se que a vítima de agressão grave busca socorro imediato no próprio bairro ou em bairros vizinhos. Desse modo, o bairro do estabelecimento de saúde serve como proxy geográfico do local da agressão.
-- **Funil da Violência:** Evolução e correlação temporal entre Ameaças (SINAN), Violência Física (SINAN) e Feminicídios (SIM) na capital, no período padronizado de **2015–2019**.
+- **Análise Descritiva Espacial:** Mapas de densidade (Heatmaps) por município e UF em todo o Brasil.
+- **Integração de Bases (SINAN + CNES):** Cruzamento dos microdados do SINAN com o diretório geocodificado do CNES através da chave do estabelecimento notificador (`id_unidade_notificacao` = `id_estabelecimento_cnes`), utilizando a **Hipótese de Proxy Espacial (Município de Atendimento)**. Assume-se que a vítima de agressão grave busca socorro imediato no próprio município ou em municípios vizinhos. Desse modo, o município do estabelecimento de saúde serve como proxy geográfico do local da agressão.
+- **Funil da Violência:** Evolução e correlação temporal entre Ameaças (SINAN), Violência Física (SINAN) e Feminicídios (SIM) em escala nacional, no período padronizado de **2009–2019**.
 - **Sazonalidade:** Gráficos temporais cruzando horários e dias da semana.
 
 ### Etapa 2 — Avaliação de Impacto Causal
 - **Método:** Modelo empírico em duas camadas:
-  1. **Efeito Global:** Diferenças-em-Diferenças em painel comparando a presença da DDM vs ausência, usando **Propensity Score Matching (PSM)** para parear controles socioeconômicos da Fundação SEADE.
-  2. **Efeito 24h:** Estimador de **Callaway & Sant'Anna (2021) / CS DiD** para corrigir o viés de Goodman-Bacon em tratamentos escalonados no tempo, comparando as coortes de conversão (2016 e 2018) com distritos-controle "limpos".
+  1. **Efeito Global:** Diferenças-em-Diferenças em painel comparando municípios com presença de DEAM vs. municípios sem DEAM, usando **Propensity Score Matching (PSM)** para parear controles socioeconômicos.
+  2. **Efeito 24h:** Estimador de **Callaway & Sant'Anna (2021) / CS DiD** para corrigir o viés de Goodman-Bacon em tratamentos escalonados no tempo, comparando os municípios cujas DEAMs foram convertidas para 24h com municípios-controle "limpos".
 - **Heterogeneidade:** O modelo integra a **Dummy Racial Global** para mensurar impactos assimétricos sobre populações de mulheres negras (Preta+Parda).
 
 ### Produto Final
 - 📊 Relatório técnico para tomada de decisão (Word).
-- 🖥️ Dashboard interativo (Streamlit) com o mapa da capital e simulador de impactos.
+- 🖥️ Dashboard interativo (Streamlit) com mapa do Brasil e simulador de impactos.
 
 ---
 
 ## 📁 Estrutura do Repositório
 
 ```text
-deams-pp-aps/
+deam-br/
 │
 ├── 📄 README.md                    # Este arquivo
-├── 📄 pyproject.toml               # Dependências e metadados do projeto
+├── 📄 requirements.txt            # Dependências do projeto
 │
 ├── 📂 codes/                       # Scripts organizados por fases de desenvolvimento
 │   ├── 📂 extracao_filtragem/      # Extração (APIs/BigQuery) e higienização inicial
 │   │   ├── bd_config.py            # ⚠️ LOCAL APENAS — credenciais GCP (Não versionado)
-│   │   ├── extracao_706_deams.py   # Processamento e consistência factual de DEAMs
-│   │   ├── extract_cnes_bd.py      # Query de estabelecimentos geolocalizados do CNES (Com patch manual)
-│   │   ├── extract_sim_bd.py       # Query de feminicídios agregados no SIM/DataSUS
-│   │   ├── extract_sim_bd_detalhada.py # Query detalhada de feminicídios no SIM/DataSUS
-│   │   ├── extract_sinan_bd.py     # Query de notificações de agressões agregadas no SINAN/DataSUS
-│   │   ├── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS
-│   │   └── query_munic_bd.py       # Consulta exploratória de colunas do MUNIC
+│   │   ├── extract_sim_bd_detalhada.py  # Query detalhada de feminicídios no SIM/DataSUS (Brasil)
+│   │   ├── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS (Brasil)
+│   │   ├── limpar_dados_deams.py   # Limpeza e filtragem da base de DEAMs
+│   │   └── separar_deams.py        # Separação das DEAMs em 24h e Comercial
 │   │
 │   ├── 📂 analise_dados/           # Análise exploratória e visualizações
 │   │   ├── download_ibge.py        # Download de dados do IBGE
@@ -160,23 +148,27 @@ deams-pp-aps/
 │   ├── 📂 ibge/                    # Dados e arquivos auxiliares do IBGE
 │   │   ├── municipios_br.csv       # Municípios brasileiros e códigos de identificação
 │   │   └── 📂 scraping/            # Arquivos da raspagem e processamento das DEAMs
-│   │       ├── deam_delegacias_mulher_brasil.csv
-│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv
+│   │       ├── deam_delegacias_mulher_brasil.csv           # Base bruta de raspagem
+│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv  # Base enriquecida (pré-filtragem)
+│   │
+│   ├── 📂 info_delegacias/         # Dados processados das DEAMs
+│   │   ├── dados_deams.xlsx        # Base original de DEAMs
+│   │   ├── dados_deams_filtrados.xlsx # Base filtrada (apenas Delegacias da Mulher)
+│   │   ├── dados_deams_24h.xlsx    # DEAMs com regime 24h (2009–2019)
+│   │   └── dados_deams_comercial.xlsx # DEAMs com horário comercial
 │   │
 │   ├── 📂 sim/                     # Dados provenientes do SIM (Sistema de Mortalidade)
-│   │   ├── sim_feminicidios_br.csv # Óbitos agregados por agressão contra mulheres (DataSUS)
-│   │   └── sim_feminicidios_br_detalhada.csv # Microdados detalhados de óbitos (Ignorado/Local)
+│   │   └── sim_feminicidios_br_detalhada.csv # Microdados detalhados de óbitos (Brasil)
 │   │
 │   └── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
-│       ├── sinan_violencia_br.csv  # Notificações agregadas de violência contra mulheres
-│       └── sinan_violencia_br_detalhada.csv # Microdados detalhados de violência (Ignorado/Local)
+│       └── sinan_violencia_br_detalhada.csv # Microdados detalhados de violência (Brasil)
 │
-└── 📂 relatorios/                  # Relatórios gerenciais e imagens geradas
-    ├── PROJETO DE PESQUISA-VIOLENCIA SP.docx
-    └── PROJETO DE PESQUISA-VIOLENCIA SP.txt
+└── 📂 relatorios/                  # Relatórios gerenciais e documentos do projeto
+    ├── PROJETO DE PESQUISA-VIOLENCIA BR.docx
+    └── PROJETO DE PESQUISA-VIOLENCIA BR.txt
 ```
 
-> **Nota:** Dados da SSP (Secretaria de Segurança Pública), CNES bruto e SINAN bruto foram movidos para o `.gitignore` por incompatibilidade com a análise padronizada SINAN+SIM (2015–2019). Os scripts de extração SSP (`data_filter_sicpv.py`, `pipeline_feminicidio.py`) também foram ignorados.
+> **Nota:** Dados da SSP (Secretaria de Segurança Pública de SP), CNES bruto e SINAN bruto filtrado por SP foram removidos/ignorados por incompatibilidade com o escopo nacional. Os scripts de extração legados específicos de SP (`data_filter_sicpv.py`, `pipeline_feminicidio.py`, scripts antigos com sufixo `_sp`) também foram ignorados.
 
 ---
 
@@ -184,26 +176,26 @@ deams-pp-aps/
 
 Os microdados são obtidos diretamente via integração com o data lake público da **Base dos Dados (BigQuery)**, evitando downloads massivos de repositórios legados do DataSUS.
 
-**Período padronizado: 2015–2019** (início da Lei do Feminicídio até o último ano disponível no SINAN).
+**Período padronizado: 2009–2019** (abrangendo dados consolidados até o último ano disponível no SINAN).
 
-| Base | Fonte Original | Registros (2015–2019) | Papel no Modelo |
-|------|----------------|-----------------------|-----------------|
-| **SINAN+CNES** | DataSUS + CNES | **107.212** notificações | Acesso (Ameaça/Lesão) — proxy geográfico via CNES |
-| **SSP-SP** | SSP (dados abertos) | **118** BOs | Letalidade (Feminicídios) no modelo DiD (geolocalização via DP territorial) |
-| **SIM** | DataSUS | **525** óbitos | Diagnóstico de Óbitos a nível municipal (sem uso no DiD devido à ausência de bairro) |
-| **SEADE** | Gov. SP | *96 distritos* | Covariáveis (Controles socioeconômicos para PSM) |
+| Base | Fonte Original | Cobertura Geográfica | Papel no Modelo |
+|------|----------------|----------------------|-----------------|
+| **SINAN** | DataSUS | **Brasil** — todos os municípios notificadores | Acesso (Ameaça/Lesão) — variável dependente de denúncias |
+| **SIM** | DataSUS | **Brasil** — todos os municípios de ocorrência | Letalidade (Feminicídios) — variável dependente de óbitos |
+| **DEAMs** | IBGE / Raspagem | **339 DEAMs** em todo o Brasil | Variável de tratamento (regime 24h vs. comercial) |
+| **IBGE** | IBGE | **5.570 municípios** | Covariáveis socioeconômicas para PSM |
 
 ---
 
 ## 🚀 Como Extrair os Dados
 
-Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as *queries* SQL otimizadas para processar os dados em nuvem antes de baixar, trazendo apenas o escopo geográfico e de perfil do nosso estudo.
+Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as *queries* SQL otimizadas para processar os dados em nuvem antes de baixar, trazendo o escopo nacional.
 
 ### Pré-requisitos
 
-1. Ter Python 3.10+ instalado com Pandas, `basedosdados` e bibliotecas de excel:
+1. Ter Python 3.10+ instalado com as dependências listadas no `requirements.txt`:
    ```bash
-   pip install pandas basedosdados openpyxl xlrd
+   pip install -r requirements.txt
    ```
 2. Ter um projeto no **Google Cloud Platform (GCP)**.
 3. Estar autenticado no GCP no seu terminal local:
@@ -221,10 +213,13 @@ Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as 
    > **Atenção:** este arquivo está no `.gitignore` e não é enviado ao GitHub.
 3. Execute no terminal a partir da raiz do repositório:
    ```bash
-   python codes/extracao_filtragem/extract_cnes_bd.py
-   python codes/extracao_filtragem/extract_sim_bd.py
-   python codes/extracao_filtragem/extract_sinan_bd.py
-   python codes/extracao_filtragem/merge_sinan_cnes.py
+   # Extração dos microdados nacionais
+   python codes/extracao_filtragem/extract_sim_bd_detalhada.py
+   python codes/extracao_filtragem/extract_sinan_bd_detalhada.py
+   
+   # Processamento da base de DEAMs
+   python codes/extracao_filtragem/limpar_dados_deams.py
+   python codes/extracao_filtragem/separar_deams.py
    ```
 4. Os arquivos processados e consolidados aparecerão automaticamente organizados nas respectivas subpastas da pasta `dados/`.
 
@@ -234,7 +229,7 @@ Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as 
 
 A Fase 1 está acoplada a um painel analítico dinâmico desenvolvido no Streamlit com uma identidade visual premium adaptada às cores da **FEA-USP** (azul marinho e elementos de alta visibilidade/contraste).
 
-**Bases utilizadas no dashboard:** exclusivamente **SINAN+CNES** e **SIM** (período 2015–2019).
+**Bases utilizadas no dashboard:** **SINAN**, **SIM** e **DEAMs** (período 2009–2019, cobertura nacional).
 
 ### Como executar localmente:
 
@@ -252,11 +247,12 @@ A Fase 1 está acoplada a um painel analítico dinâmico desenvolvido no Streaml
 
 ## 🗺️ Roadmap
 
-- [x] Reestruturação do escopo do projeto (Foco em São Paulo e DiD Intra-municipal)
-- [x] Criação das *queries* otimizadas para extração SIM/SINAN via Base dos Dados
-- [x] Extração dos microdados SIM (525 registros — 2015-2019) e SINAN+CNES (107.212 registros — 2015-2019)
+- [x] Reestruturação do escopo do projeto (Foco nacional — Brasil inteiro com 339 DEAMs)
+- [x] Criação das *queries* otimizadas para extração SIM/SINAN via Base dos Dados (escopo nacional)
+- [x] Extração dos microdados SIM e SINAN detalhados (cobertura 2009–2019, Brasil)
+- [x] Raspagem e enriquecimento da base de DEAMs — 339 delegacias filtradas (município, UF, regime, ano 24h)
+- [x] Separação das DEAMs em grupos de tratamento (24h) e controle (comercial)
 - [x] Construção do Funil da Violência e EDA Espaço-Temporal
-- [x] Construção do Dashboard Interativo Premium no Streamlit (7 abas funcionais com mapas e sazonalidade)
-- [x] Padronização do período de análise para 2015–2019 (somente SINAN+SIM)
-- [x] Mapa de calor espacial com localização das DDMs e correção de geolocalização do CNES
+- [x] Construção do Dashboard Interativo Premium no Streamlit (9 abas funcionais com mapas e sazonalidade)
+- [x] Padronização do período de análise para 2009–2019 (SINAN + SIM)
 - [x] Estimação do modelo econométrico causal DiD em duas camadas (Global e Callaway & Sant'Anna) com moderação racial

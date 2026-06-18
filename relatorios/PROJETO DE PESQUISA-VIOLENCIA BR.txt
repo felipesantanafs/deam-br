@@ -1,0 +1,80 @@
+PROJETO DE PESQUISA — ADAPTAÇÃO PARA GESTÃO DE POLÍTICAS PÚBLICAS
+
+1. TÍTULO
+Violência contra Mulheres no Brasil: Diagnóstico Espaço-Temporal e Avaliação de Impacto das Delegacias Especializadas de Atendimento à Mulher (DEAM)
+
+2. RESUMO
+Estudos indicam a importância de políticas públicas direcionadas e acessíveis para combater a violência contra a mulher. Embora a literatura ofereça evidências robustas da importância das Delegacias Especializadas de Atendimento à Mulher (DEAMs), há necessidade de estudos voltados ao nível municipal para otimizar o planejamento local, especialmente no Brasil. Este projeto propõe uma pesquisa estruturada em duas etapas para a Brasil. 
+
+Na primeira etapa (diagnóstica), serão aplicadas técnicas de ciência de dados para análise descritiva espacial e temporal (mapas de calor, sazonalidade e funil da violência: ameaça, lesão corporal, violência notificada grave e feminicídio). Para contornar a cifra oculta e enriquecer o perfil socioepidemiológico das agressões, o projeto integra os dados de dados de feminicídios do Sistema de Informações sobre Mortalidade (SIM) com os microdados de saúde do Sistema de Informação de Agravos de Notificação (SINAN) e do Sistema de Informações sobre Mortalidade (SIM). Como o SINAN não dispõe de coordenadas residenciais ou de ocorrência detalhadas por motivos de privacidade, a geolocalização é realizada a partir do cruzamento com o Cadastro Nacional de Estabelecimentos de Saúde (CNES), sob a **Hipótese do Bairro de Atendimento**: assume-se que a vítima de agressão grave busca socorro de saúde (hospital, UPA, UBS) no mesmo município ou em região contígua/próxima de onde o crime ocorreu, tornando a geolocalização do CNES notificador um proxy espacial válido para mapeamento da violência municipal.
+
+Na segunda etapa (causal), será estimada a eficácia das DEAMs com regime de 24 horas sobre o aumento de registros de acesso (denúncias e notificações) e a redução da letalidade (eficácia em salvar vidas), comparando áreas de abrangência de DEAMs convencionais com as de plantão ininterrupto. A estratégia empírica utilizará o estimador de Diferenças-em-Diferenças (DiD) nacional. Adicionalmente, dados raciais (classificação Negra = Preta + Parda, conforme Estatuto da Igualdade Racial) serão incorporados para avaliar as nuances do impacto na letalidade. Como produtos, serão entregues um Relatório Técnico de gestão e um dashboard interativo desenvolvido em Streamlit, mapeando os resultados para tomada de decisão tática e orçamentária.
+
+Palavras-chave: Violência contra a mulher. Brasil. Diferenças-em-Diferenças. CNES. SINAN. DEAM. Políticas públicas.
+
+3. ENUNCIADO DO PROBLEMA E JUSTIFICATIVA
+3.1 Contextualização do Problema
+A violência contra mulheres é um problema de elevada gravidade e requer respostas rápidas e bem localizadas pelo Estado. Na Brasil, o volume de Boletins de Ocorrência e de notificações de saúde por agressão física e ameaça é alto, refletindo a necessidade de capilaridade das políticas de segurança e saúde.
+
+Apesar da relevância, muitas análises carecem de uma visão localizada (municipal). A análise do "funil da violência" (desde a ameaça e violência física até o feminicídio) dentro dos municípios da território nacional permite entender onde estão os gargalos do atendimento. Outra questão crítica é a limitação do horário de atendimento de parte da rede de proteção, já que muitos episódios ocorrem fora do horário comercial (madrugadas e finais de semana).
+
+Assim, levanta-se a seguinte problematização: As DEAMs que funcionam 24 hrs têm maior impacto no aumento de registros (redução da cifra oculta) e na prevenção de feminicídios em seus municípios de abrangência, em comparação àquelas que funcionam apenas em horário comercial?
+
+Para fins desta pesquisa, a rede territorial do município de Brasil é composta por 9 Delegacias Especializadas de Atendimento à Mulher (DEAM), divididas da seguinte forma:
+- DEAMs 24 Horas (Grupo de Tratamento):
+  1. 1ª DEAM Centro (Cambuci - Casa da Mulher Brasileira)
+  2. 7ª DEAM Leste (Itaquera)
+  3. 8ª DEAM Leste (Jardim Marília)
+- DEAMs de Horário Comercial (Grupo de Controle - 09h às 18h):
+  1. 2ª DEAM Sul (Saúde)
+  2. 3ª DEAM Oeste (Jaguaré)
+  3. 4ª DEAM Norte (Freguesia do Ó)
+  4. 5ª DEAM Leste (Tatuapé)
+  5. 6ª DEAM Campo Grande (Santo Amaro)
+  6. 9ª DEAM Oeste (Pirituba)
+
+3.2 Viés de Notificação e Causalidade Reversa
+Avaliar o impacto apenas pelas denúncias gera viés: uma nova DEAM 24h tende a aumentar os registros pois facilita o acesso, reduzindo a cifra oculta. Para resolver isso, o projeto integra os dados de feminicídios da ótica policial (SIM) com notificações de agressões em saúde (SINAN), que possuem dinâmicas de reporte distintas. Optou-se pelo uso exclusivo da base da SIM para a letalidade no modelo DiD, devido à ausência de informações municipais (municípios) nos registros do SIM. Essa integração constrói uma métrica de resultado robusta e neutra.
+
+3.3 Interpretação Conjunta dos Resultados
+Se a conversão de uma DEAM para 24h em um município da capital gera aumento nas queixas de ameaça/lesão (ampliação do acesso) e redução simultânea nas taxas de feminicídio locais, há evidência de que o plantão ininterrupto interrompeu o ciclo de agressões.
+
+4. OBJETIVOS E RESULTADOS ESPERADOS
+4.1 Objetivo Geral
+Realizar um diagnóstico descritivo espaço-temporal da violência contra a mulher no Brasil e avaliar o impacto causal das DEAMs 24h (comparadas ao horário comercial) sobre denúncias e feminicídios nos municípios da capital, fornecendo subsídios para a gestão municipal de segurança e saúde.
+
+4.2 Objetivos Específicos
+a) Mapear descritivamente (mapas de calor e coropléticos) a incidência de ameaças, violência física notificada e feminicídios pelos municípios de Brasil, utilizando o CNES como proxy geográfico do SINAN;
+b) Identificar padrões temporais descritivos (horas, dias da semana) de maior risco;
+c) Estimar o impacto da conversão/abertura de DEAMs 24h sobre denúncias e letalidade municipal via modelo de Diferenças-em-Diferenças (DiD);
+d) Desenvolver dashboard interativo em Streamlit com mapa da cidade, filtros por crime/horário e simulador de impacto;
+e) Elaborar relatório técnico voltado à gestão pública integrada (segurança e saúde).
+
+4.3 Resultados esperados e produtos
+1) Relatório Técnico com o diagnóstico focado em Brasil; 2) Dashboard Interativo em Streamlit; 3) Base de Dados georreferenciada/agregada por município da território nacional.
+
+5. METODOLOGIA
+5.1 ETAPA I — Ciência de Dados e Análise Descritiva
+Os dados serão estruturados integrando fontes focadas no nível municipal/município:
+- SIM: Microdados de BOs (ameaça, lesão corporal, feminicídio) na cidade de BR. Para os feminicídios, foi realizado um mapeamento completo da circunscrição da Delegacia de Polícia (DP_CIRCUNSCRICAO) para os municípios da capital.
+- SINAN (DataSUS): Notificações de violência física, psicológica e sexual contra mulheres;
+- SIM (DataSUS): Microdados de óbitos por agressão contra mulheres (Utilizado apenas no diagnóstico municipal devido à ausência de geolocalização no nível de município);
+- CNES (DataSUS): Dicionário geolocalizado para mapear as coordenadas das unidades de saúde notificadoras e seus respectivos municípios;
+- IBGE: Covariáveis sociodemográficas por município (renda, vulnerabilidade);
+- Histórico de DEAMs (SIM): Data de inauguração e status de funcionamento (comercial vs 24h).
+
+**Abordagem de Geolocalização por Bairro Notificador (SINAN-CNES):**
+Pela restrição de sigilo que omite o endereço exato das vítimas na base pública do SINAN, implementou-se o cruzamento da chave `id_unidade_notificacao` (SINAN) com o `id_estabelecimento_cnes` (CNES), importando a latitude, longitude e município do estabelecimento de saúde que atendeu a vítima.  A premissa analítica central — **Hipótese do Bairro de Atendimento** — estabelece que mulheres vítimas de violência física grave buscam atendimento emergencial ou clínico imediato no próprio município de residência/ocorrência ou em unidades geograficamente vizinhas. Logo, a distribuição espacial do CNES serve como uma aproximação territorial fidedigna da violência em nível municipal.
+
+A análise descritiva será realizada gerando mapas de calor e visualizações de evolução temporal simples (séries de tempo e gráficos de barra), mostrando a jornada do "funil da violência" (Ameaça -> Lesão -> Violência Notificada Grave -> Feminicídio).
+
+5.2 ETAPA II — Avaliação de Impacto (Modelo Causal em Duas Camadas)
+Para estimar a eficácia das DEAMs com rigor metodológico, a pesquisa adota um modelo em duas camadas:
+1. Camada Global: Impacto transversal de possuir uma DEAM (em qualquer regime de horário) versus não possuir (Distritos pareados via Propensity Score Matching com covariáveis do IBGE).
+2. Camada 24 Horas: Estimação do Efeito do Plantão Ininterrupto. Como as conversões para 24h ocorreram de forma escalonada (conforme a data de implementação do plantão 24h de cada delegacia), o estimador de Diferenças-em-Diferenças (DiD) clássico sofre do viés de pesos negativos demonstrado por Goodman-Bacon (2021). Para solucionar, aplicamos o estimador de Callaway & Sant'Anna (2021) baseado em coortes, isolando controles nunca tratados para extrair o Efeito Médio do Tratamento nas Tratadas (ATT).
+Será analisado o canal de acesso (aumento de notificações SINAN) e letalidade (redução de feminicídios SIM). A formulação incorpora a Dummy Racial Global (Lei 12.288/2010), interagindo a proporção de mulheres negras no município com a variável de tratamento, a fim de mensurar as heterogeneidades socioespaciais da política de segurança.
+
+6. PLANO DE ATIVIDADES E CRONOGRAMA
+• Mês 1: Coleta e limpeza dos microdados da SIM, SIM, SINAN, e cruzamento com CNES. Estruturação da base no nível espacial de municípios, e elaboração da análise descritiva espaço-temporal (Mapas e Funil da Violência).
+• Mês 2: Pareamento de municípios/municípios e estimação do modelo DiD municipal.
+• Mês 3: Construção do dashboard em Streamlit focado no mapa da capital e elaboração do Relatório Técnico para gestão pública.
