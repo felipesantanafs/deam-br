@@ -1,0 +1,3136 @@
+id_municipio,municipio,uf,regiao,grupo,coorte,ano,notificacoes,viol_fisica,viol_sexual,viol_psicologica,viol_parceiro
+1100023,Ariquemes,TO,Norte,24h,2017,2009,10,8,1,0,0
+1100023,Ariquemes,TO,Norte,24h,2017,2010,39,36,3,2,4
+1100023,Ariquemes,TO,Norte,24h,2017,2011,55,53,1,2,23
+1100023,Ariquemes,TO,Norte,24h,2017,2012,34,31,4,0,22
+1100023,Ariquemes,TO,Norte,24h,2017,2013,19,16,3,4,9
+1100023,Ariquemes,TO,Norte,24h,2017,2014,29,21,18,16,6
+1100023,Ariquemes,TO,Norte,24h,2017,2015,46,20,20,9,18
+1100023,Ariquemes,TO,Norte,24h,2017,2016,32,14,18,3,12
+1100023,Ariquemes,TO,Norte,24h,2017,2017,86,47,34,11,22
+1100023,Ariquemes,TO,Norte,24h,2017,2018,80,56,15,20,21
+1100023,Ariquemes,TO,Norte,24h,2017,2019,121,53,14,31,26
+1100049,Cacoal,RO,Norte,comercial,0,2009,0,0,0,0,0
+1100049,Cacoal,RO,Norte,comercial,0,2010,0,0,0,0,0
+1100049,Cacoal,RO,Norte,comercial,0,2011,0,0,0,0,0
+1100049,Cacoal,RO,Norte,comercial,0,2012,9,8,6,8,3
+1100049,Cacoal,RO,Norte,comercial,0,2013,16,11,10,3,7
+1100049,Cacoal,RO,Norte,comercial,0,2014,10,9,6,7,4
+1100049,Cacoal,RO,Norte,comercial,0,2015,15,12,2,5,7
+1100049,Cacoal,RO,Norte,comercial,0,2016,24,22,1,8,9
+1100049,Cacoal,RO,Norte,comercial,0,2017,27,14,9,8,8
+1100049,Cacoal,RO,Norte,comercial,0,2018,21,11,3,7,8
+1100049,Cacoal,RO,Norte,comercial,0,2019,48,12,8,2,5
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2009,0,0,0,0,0
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2010,2,1,2,1,0
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2011,8,5,3,1,2
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2012,43,42,3,3,33
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2013,30,30,0,7,21
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2014,14,13,0,4,14
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2015,24,20,2,11,13
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2016,15,15,2,11,8
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2017,16,13,1,2,8
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2018,25,20,4,3,16
+1100106,Guarajá Mirim,RO,Norte,comercial,0,2019,42,36,6,4,18
+1100114,Jaru,RO,Norte,24h,2014,2009,0,0,0,0,0
+1100114,Jaru,RO,Norte,24h,2014,2010,0,0,0,0,0
+1100114,Jaru,RO,Norte,24h,2014,2011,3,3,0,0,3
+1100114,Jaru,RO,Norte,24h,2014,2012,0,0,0,0,0
+1100114,Jaru,RO,Norte,24h,2014,2013,6,5,0,0,2
+1100114,Jaru,RO,Norte,24h,2014,2014,10,7,4,1,1
+1100114,Jaru,RO,Norte,24h,2014,2015,4,2,3,1,4
+1100114,Jaru,RO,Norte,24h,2014,2016,3,2,1,1,0
+1100114,Jaru,RO,Norte,24h,2014,2017,8,4,5,4,2
+1100114,Jaru,RO,Norte,24h,2014,2018,32,17,4,6,4
+1100114,Jaru,RO,Norte,24h,2014,2019,30,19,7,9,4
+1100122,Ji-Paraná,RO,Norte,comercial,0,2009,0,0,0,0,0
+1100122,Ji-Paraná,RO,Norte,comercial,0,2010,2,1,0,2,1
+1100122,Ji-Paraná,RO,Norte,comercial,0,2011,0,0,0,0,0
+1100122,Ji-Paraná,RO,Norte,comercial,0,2012,1,1,1,1,0
+1100122,Ji-Paraná,RO,Norte,comercial,0,2013,5,4,0,3,3
+1100122,Ji-Paraná,RO,Norte,comercial,0,2014,3,3,1,1,0
+1100122,Ji-Paraná,RO,Norte,comercial,0,2015,4,4,1,0,0
+1100122,Ji-Paraná,RO,Norte,comercial,0,2016,30,22,13,11,6
+1100122,Ji-Paraná,RO,Norte,comercial,0,2017,46,42,7,10,7
+1100122,Ji-Paraná,RO,Norte,comercial,0,2018,38,33,7,8,12
+1100122,Ji-Paraná,RO,Norte,comercial,0,2019,91,78,8,23,16
+1100205,Porto Velho,RO,Norte,comercial,0,2009,71,40,40,15,27
+1100205,Porto Velho,RO,Norte,comercial,0,2010,69,23,52,25,24
+1100205,Porto Velho,RO,Norte,comercial,0,2011,84,48,38,21,34
+1100205,Porto Velho,RO,Norte,comercial,0,2012,77,34,48,20,29
+1100205,Porto Velho,RO,Norte,comercial,0,2013,96,44,57,35,28
+1100205,Porto Velho,RO,Norte,comercial,0,2014,159,99,62,50,72
+1100205,Porto Velho,RO,Norte,comercial,0,2015,291,143,141,74,98
+1100205,Porto Velho,RO,Norte,comercial,0,2016,379,192,163,81,104
+1100205,Porto Velho,RO,Norte,comercial,0,2017,370,189,151,66,97
+1100205,Porto Velho,RO,Norte,comercial,0,2018,368,158,151,63,99
+1100205,Porto Velho,RO,Norte,comercial,0,2019,279,131,111,58,74
+1100288,Rolim de Moura,RO,Norte,comercial,0,2009,0,0,0,0,0
+1100288,Rolim de Moura,RO,Norte,comercial,0,2010,0,0,0,0,0
+1100288,Rolim de Moura,RO,Norte,comercial,0,2011,0,0,0,0,0
+1100288,Rolim de Moura,RO,Norte,comercial,0,2012,2,1,1,1,0
+1100288,Rolim de Moura,RO,Norte,comercial,0,2013,4,4,0,1,3
+1100288,Rolim de Moura,RO,Norte,comercial,0,2014,2,0,2,1,0
+1100288,Rolim de Moura,RO,Norte,comercial,0,2015,6,5,1,0,2
+1100288,Rolim de Moura,RO,Norte,comercial,0,2016,8,7,1,5,3
+1100288,Rolim de Moura,RO,Norte,comercial,0,2017,68,58,4,33,19
+1100288,Rolim de Moura,RO,Norte,comercial,0,2018,54,42,3,16,17
+1100288,Rolim de Moura,RO,Norte,comercial,0,2019,19,15,0,3,6
+1100304,Vilhena,RO,Norte,comercial,0,2009,0,0,0,0,0
+1100304,Vilhena,RO,Norte,comercial,0,2010,0,0,0,0,0
+1100304,Vilhena,RO,Norte,comercial,0,2011,19,16,1,9,7
+1100304,Vilhena,RO,Norte,comercial,0,2012,58,45,6,18,23
+1100304,Vilhena,RO,Norte,comercial,0,2013,26,24,2,4,16
+1100304,Vilhena,RO,Norte,comercial,0,2014,28,23,3,9,11
+1100304,Vilhena,RO,Norte,comercial,0,2015,36,29,4,6,12
+1100304,Vilhena,RO,Norte,comercial,0,2016,47,35,10,18,13
+1100304,Vilhena,RO,Norte,comercial,0,2017,80,66,6,16,17
+1100304,Vilhena,RO,Norte,comercial,0,2018,153,51,8,5,15
+1100304,Vilhena,RO,Norte,comercial,0,2019,153,61,6,4,25
+1302603,Manaus,AM,Norte,comercial,0,2009,695,269,483,368,78
+1302603,Manaus,AM,Norte,comercial,0,2010,839,462,553,581,255
+1302603,Manaus,AM,Norte,comercial,0,2011,1098,547,736,575,237
+1302603,Manaus,AM,Norte,comercial,0,2012,1263,530,924,766,234
+1302603,Manaus,AM,Norte,comercial,0,2013,1628,675,1081,1205,408
+1302603,Manaus,AM,Norte,comercial,0,2014,1470,519,1019,731,292
+1302603,Manaus,AM,Norte,comercial,0,2015,1351,465,840,584,318
+1302603,Manaus,AM,Norte,comercial,0,2016,1177,264,808,304,209
+1302603,Manaus,AM,Norte,comercial,0,2017,1531,347,1077,416,342
+1302603,Manaus,AM,Norte,comercial,0,2018,1343,224,1028,247,239
+1302603,Manaus,AM,Norte,comercial,0,2019,1441,507,838,281,212
+1500107,Abaetetuba,PA,Norte,24h,2009,2009,6,4,6,5,0
+1500107,Abaetetuba,PA,Norte,24h,2009,2010,19,12,17,10,3
+1500107,Abaetetuba,PA,Norte,24h,2009,2011,24,12,22,14,4
+1500107,Abaetetuba,PA,Norte,24h,2009,2012,34,9,34,17,5
+1500107,Abaetetuba,PA,Norte,24h,2009,2013,57,12,57,14,5
+1500107,Abaetetuba,PA,Norte,24h,2009,2014,36,11,36,20,12
+1500107,Abaetetuba,PA,Norte,24h,2009,2015,40,18,36,33,4
+1500107,Abaetetuba,PA,Norte,24h,2009,2016,58,27,52,31,12
+1500107,Abaetetuba,PA,Norte,24h,2009,2017,76,32,52,40,25
+1500107,Abaetetuba,PA,Norte,24h,2009,2018,60,26,42,36,17
+1500107,Abaetetuba,PA,Norte,24h,2009,2019,59,18,43,37,15
+1500602,Altamira,PA,Norte,comercial,0,2009,0,0,0,0,0
+1500602,Altamira,PA,Norte,comercial,0,2010,3,3,0,2,1
+1500602,Altamira,PA,Norte,comercial,0,2011,16,14,7,6,6
+1500602,Altamira,PA,Norte,comercial,0,2012,5,5,0,1,1
+1500602,Altamira,PA,Norte,comercial,0,2013,16,10,9,7,3
+1500602,Altamira,PA,Norte,comercial,0,2014,345,183,28,214,240
+1500602,Altamira,PA,Norte,comercial,0,2015,446,178,29,340,326
+1500602,Altamira,PA,Norte,comercial,0,2016,372,126,38,248,248
+1500602,Altamira,PA,Norte,comercial,0,2017,386,137,70,239,240
+1500602,Altamira,PA,Norte,comercial,0,2018,559,157,100,471,310
+1500602,Altamira,PA,Norte,comercial,0,2019,673,229,127,611,358
+1500800,Ananindeua,PA,Norte,24h,2018,2009,32,15,32,17,1
+1500800,Ananindeua,PA,Norte,24h,2018,2010,154,58,149,92,15
+1500800,Ananindeua,PA,Norte,24h,2018,2011,135,45,128,66,10
+1500800,Ananindeua,PA,Norte,24h,2018,2012,131,49,111,40,12
+1500800,Ananindeua,PA,Norte,24h,2018,2013,230,91,194,61,31
+1500800,Ananindeua,PA,Norte,24h,2018,2014,262,111,175,167,81
+1500800,Ananindeua,PA,Norte,24h,2018,2015,242,136,180,170,38
+1500800,Ananindeua,PA,Norte,24h,2018,2016,432,156,186,232,192
+1500800,Ananindeua,PA,Norte,24h,2018,2017,181,61,128,73,28
+1500800,Ananindeua,PA,Norte,24h,2018,2018,209,102,132,83,37
+1500800,Ananindeua,PA,Norte,24h,2018,2019,198,75,114,84,25
+1501402,Belém,PA,Norte,24h,2014,2009,105,55,102,66,13
+1501402,Belém,PA,Norte,24h,2014,2010,432,187,420,258,42
+1501402,Belém,PA,Norte,24h,2014,2011,526,289,328,234,110
+1501402,Belém,PA,Norte,24h,2014,2012,555,239,386,185,82
+1501402,Belém,PA,Norte,24h,2014,2013,855,414,554,204,174
+1501402,Belém,PA,Norte,24h,2014,2014,971,444,526,470,296
+1501402,Belém,PA,Norte,24h,2014,2015,994,587,500,619,275
+1501402,Belém,PA,Norte,24h,2014,2016,1800,894,591,1305,889
+1501402,Belém,PA,Norte,24h,2014,2017,766,303,441,258,170
+1501402,Belém,PA,Norte,24h,2014,2018,745,385,431,351,144
+1501402,Belém,PA,Norte,24h,2014,2019,1113,487,605,563,152
+1501709,Bragança,PA,Norte,24h,2014,2009,0,0,0,0,0
+1501709,Bragança,PA,Norte,24h,2014,2010,3,1,3,2,1
+1501709,Bragança,PA,Norte,24h,2014,2011,3,1,3,2,1
+1501709,Bragança,PA,Norte,24h,2014,2012,3,0,3,1,1
+1501709,Bragança,PA,Norte,24h,2014,2013,10,2,10,6,1
+1501709,Bragança,PA,Norte,24h,2014,2014,113,88,19,59,48
+1501709,Bragança,PA,Norte,24h,2014,2015,89,61,31,54,36
+1501709,Bragança,PA,Norte,24h,2014,2016,6,4,3,2,1
+1501709,Bragança,PA,Norte,24h,2014,2017,13,4,13,5,4
+1501709,Bragança,PA,Norte,24h,2014,2018,15,3,13,4,1
+1501709,Bragança,PA,Norte,24h,2014,2019,36,24,12,8,5
+1501808,Breves,PA,Norte,24h,2014,2009,0,0,0,0,0
+1501808,Breves,PA,Norte,24h,2014,2010,17,17,2,5,6
+1501808,Breves,PA,Norte,24h,2014,2011,8,5,5,5,3
+1501808,Breves,PA,Norte,24h,2014,2012,6,3,5,2,0
+1501808,Breves,PA,Norte,24h,2014,2013,6,3,4,2,1
+1501808,Breves,PA,Norte,24h,2014,2014,3,1,2,2,1
+1501808,Breves,PA,Norte,24h,2014,2015,2,2,2,2,0
+1501808,Breves,PA,Norte,24h,2014,2016,4,3,4,2,0
+1501808,Breves,PA,Norte,24h,2014,2017,2,1,0,2,2
+1501808,Breves,PA,Norte,24h,2014,2018,12,7,7,6,3
+1501808,Breves,PA,Norte,24h,2014,2019,45,34,21,19,12
+1502202,Capanema,PA,Norte,24h,2014,2009,0,0,0,0,0
+1502202,Capanema,PA,Norte,24h,2014,2010,1,1,1,1,0
+1502202,Capanema,PA,Norte,24h,2014,2011,1,0,1,1,0
+1502202,Capanema,PA,Norte,24h,2014,2012,3,2,1,3,1
+1502202,Capanema,PA,Norte,24h,2014,2013,14,12,3,12,5
+1502202,Capanema,PA,Norte,24h,2014,2014,6,4,2,3,3
+1502202,Capanema,PA,Norte,24h,2014,2015,6,4,2,1,2
+1502202,Capanema,PA,Norte,24h,2014,2016,2,1,2,1,0
+1502202,Capanema,PA,Norte,24h,2014,2017,10,6,3,7,6
+1502202,Capanema,PA,Norte,24h,2014,2018,10,5,4,5,2
+1502202,Capanema,PA,Norte,24h,2014,2019,75,71,3,37,30
+1502400,Castanhal,PA,Norte,comercial,0,2009,0,0,0,0,0
+1502400,Castanhal,PA,Norte,comercial,0,2010,4,1,4,2,1
+1502400,Castanhal,PA,Norte,comercial,0,2011,5,2,5,2,0
+1502400,Castanhal,PA,Norte,comercial,0,2012,12,2,7,6,0
+1502400,Castanhal,PA,Norte,comercial,0,2013,7,2,4,3,0
+1502400,Castanhal,PA,Norte,comercial,0,2014,10,5,7,4,2
+1502400,Castanhal,PA,Norte,comercial,0,2015,19,9,10,13,9
+1502400,Castanhal,PA,Norte,comercial,0,2016,13,4,11,5,4
+1502400,Castanhal,PA,Norte,comercial,0,2017,20,9,12,6,10
+1502400,Castanhal,PA,Norte,comercial,0,2018,59,23,38,13,19
+1502400,Castanhal,PA,Norte,comercial,0,2019,104,56,46,38,24
+1503606,Itaituba,PA,Norte,comercial,0,2009,0,0,0,0,0
+1503606,Itaituba,PA,Norte,comercial,0,2010,3,2,1,2,2
+1503606,Itaituba,PA,Norte,comercial,0,2011,17,12,6,7,11
+1503606,Itaituba,PA,Norte,comercial,0,2012,6,5,4,4,1
+1503606,Itaituba,PA,Norte,comercial,0,2013,8,5,5,4,4
+1503606,Itaituba,PA,Norte,comercial,0,2014,15,7,9,1,7
+1503606,Itaituba,PA,Norte,comercial,0,2015,7,4,3,3,2
+1503606,Itaituba,PA,Norte,comercial,0,2016,9,5,4,4,6
+1503606,Itaituba,PA,Norte,comercial,0,2017,3,1,2,1,1
+1503606,Itaituba,PA,Norte,comercial,0,2018,8,6,0,2,5
+1503606,Itaituba,PA,Norte,comercial,0,2019,3,2,0,2,1
+1504208,Maraba,PA,Norte,comercial,0,2009,0,0,0,0,0
+1504208,Maraba,PA,Norte,comercial,0,2010,2,1,2,1,0
+1504208,Maraba,PA,Norte,comercial,0,2011,60,44,15,24,36
+1504208,Maraba,PA,Norte,comercial,0,2012,27,24,3,13,13
+1504208,Maraba,PA,Norte,comercial,0,2013,51,43,10,22,30
+1504208,Maraba,PA,Norte,comercial,0,2014,34,26,10,12,20
+1504208,Maraba,PA,Norte,comercial,0,2015,28,21,13,12,11
+1504208,Maraba,PA,Norte,comercial,0,2016,35,17,21,9,14
+1504208,Maraba,PA,Norte,comercial,0,2017,63,38,34,18,33
+1504208,Maraba,PA,Norte,comercial,0,2018,81,39,45,21,47
+1504208,Maraba,PA,Norte,comercial,0,2019,79,29,57,22,38
+1505502,Paragominas,PA,Norte,24h,2014,2009,0,0,0,0,0
+1505502,Paragominas,PA,Norte,24h,2014,2010,1,1,1,1,0
+1505502,Paragominas,PA,Norte,24h,2014,2011,26,24,3,11,12
+1505502,Paragominas,PA,Norte,24h,2014,2012,14,13,1,4,7
+1505502,Paragominas,PA,Norte,24h,2014,2013,9,8,2,5,4
+1505502,Paragominas,PA,Norte,24h,2014,2014,18,12,7,7,6
+1505502,Paragominas,PA,Norte,24h,2014,2015,24,13,10,7,16
+1505502,Paragominas,PA,Norte,24h,2014,2016,24,15,11,3,7
+1505502,Paragominas,PA,Norte,24h,2014,2017,28,23,8,7,11
+1505502,Paragominas,PA,Norte,24h,2014,2018,29,18,7,6,11
+1505502,Paragominas,PA,Norte,24h,2014,2019,76,56,10,7,5
+1506138,Redenção,PA,Norte,comercial,0,2009,0,0,0,0,0
+1506138,Redenção,PA,Norte,comercial,0,2010,0,0,0,0,0
+1506138,Redenção,PA,Norte,comercial,0,2011,2,2,2,2,0
+1506138,Redenção,PA,Norte,comercial,0,2012,0,0,0,0,0
+1506138,Redenção,PA,Norte,comercial,0,2013,3,1,2,2,1
+1506138,Redenção,PA,Norte,comercial,0,2014,6,6,4,5,1
+1506138,Redenção,PA,Norte,comercial,0,2015,3,0,3,0,0
+1506138,Redenção,PA,Norte,comercial,0,2016,4,2,1,2,1
+1506138,Redenção,PA,Norte,comercial,0,2017,5,2,5,1,0
+1506138,Redenção,PA,Norte,comercial,0,2018,6,3,4,3,2
+1506138,Redenção,PA,Norte,comercial,0,2019,43,23,26,9,9
+1507904,Soure,PA,Norte,24h,2014,2009,1,1,1,1,0
+1507904,Soure,PA,Norte,24h,2014,2010,23,16,7,2,1
+1507904,Soure,PA,Norte,24h,2014,2011,28,26,2,0,12
+1507904,Soure,PA,Norte,24h,2014,2012,22,17,5,2,7
+1507904,Soure,PA,Norte,24h,2014,2013,35,26,8,0,10
+1507904,Soure,PA,Norte,24h,2014,2014,6,3,6,5,1
+1507904,Soure,PA,Norte,24h,2014,2015,10,5,10,8,2
+1507904,Soure,PA,Norte,24h,2014,2016,11,6,11,5,3
+1507904,Soure,PA,Norte,24h,2014,2017,5,2,5,2,0
+1507904,Soure,PA,Norte,24h,2014,2018,12,3,10,10,0
+1507904,Soure,PA,Norte,24h,2014,2019,6,1,6,4,0
+1508100,Tucuruí,PA,Norte,comercial,0,2009,0,0,0,0,0
+1508100,Tucuruí,PA,Norte,comercial,0,2010,1,1,1,1,0
+1508100,Tucuruí,PA,Norte,comercial,0,2011,4,4,1,1,2
+1508100,Tucuruí,PA,Norte,comercial,0,2012,7,5,2,6,4
+1508100,Tucuruí,PA,Norte,comercial,0,2013,48,47,4,11,22
+1508100,Tucuruí,PA,Norte,comercial,0,2014,138,106,15,78,79
+1508100,Tucuruí,PA,Norte,comercial,0,2015,59,38,17,21,15
+1508100,Tucuruí,PA,Norte,comercial,0,2016,233,124,32,174,139
+1508100,Tucuruí,PA,Norte,comercial,0,2017,427,232,91,246,251
+1508100,Tucuruí,PA,Norte,comercial,0,2018,596,297,143,351,357
+1508100,Tucuruí,PA,Norte,comercial,0,2019,469,245,81,312,265
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2009,0,0,0,0,0
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2010,0,0,0,0,0
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2011,13,10,2,6,5
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2012,6,6,1,4,5
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2013,1,1,1,0,0
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2014,2,2,0,0,1
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2015,18,14,5,2,4
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2016,15,13,3,3,7
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2017,58,56,4,17,20
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2018,83,54,28,19,40
+1600279,Laranjal do Jari,AP,Norte,comercial,0,2019,79,55,15,19,46
+1600303,Macapá,AP,Norte,24h,2019,2009,86,50,26,24,20
+1600303,Macapá,AP,Norte,24h,2019,2010,120,101,32,12,37
+1600303,Macapá,AP,Norte,24h,2019,2011,155,82,76,4,88
+1600303,Macapá,AP,Norte,24h,2019,2012,157,104,62,16,50
+1600303,Macapá,AP,Norte,24h,2019,2013,128,74,67,19,31
+1600303,Macapá,AP,Norte,24h,2019,2014,103,52,60,7,15
+1600303,Macapá,AP,Norte,24h,2019,2015,63,28,41,10,11
+1600303,Macapá,AP,Norte,24h,2019,2016,118,69,73,36,23
+1600303,Macapá,AP,Norte,24h,2019,2017,95,52,58,28,14
+1600303,Macapá,AP,Norte,24h,2019,2018,164,103,71,50,35
+1600303,Macapá,AP,Norte,24h,2019,2019,252,156,103,52,39
+1702109,Araguaína,TO,Norte,comercial,0,2009,27,22,7,7,2
+1702109,Araguaína,TO,Norte,comercial,0,2010,93,80,12,30,25
+1702109,Araguaína,TO,Norte,comercial,0,2011,97,82,17,40,33
+1702109,Araguaína,TO,Norte,comercial,0,2012,129,95,35,41,25
+1702109,Araguaína,TO,Norte,comercial,0,2013,217,126,54,33,61
+1702109,Araguaína,TO,Norte,comercial,0,2014,250,169,56,55,82
+1702109,Araguaína,TO,Norte,comercial,0,2015,345,176,47,37,80
+1702109,Araguaína,TO,Norte,comercial,0,2016,382,152,31,37,52
+1702109,Araguaína,TO,Norte,comercial,0,2017,291,125,40,35,52
+1702109,Araguaína,TO,Norte,comercial,0,2018,301,124,28,11,53
+1702109,Araguaína,TO,Norte,comercial,0,2019,274,110,24,3,39
+1702208,Araguatins,TO,Norte,comercial,0,2009,0,0,0,0,0
+1702208,Araguatins,TO,Norte,comercial,0,2010,2,2,1,0,1
+1702208,Araguatins,TO,Norte,comercial,0,2011,5,4,0,2,3
+1702208,Araguatins,TO,Norte,comercial,0,2012,13,12,0,9,5
+1702208,Araguatins,TO,Norte,comercial,0,2013,14,11,3,7,4
+1702208,Araguatins,TO,Norte,comercial,0,2014,5,3,3,4,0
+1702208,Araguatins,TO,Norte,comercial,0,2015,14,12,2,6,9
+1702208,Araguatins,TO,Norte,comercial,0,2016,20,15,5,5,6
+1702208,Araguatins,TO,Norte,comercial,0,2017,24,20,2,5,11
+1702208,Araguatins,TO,Norte,comercial,0,2018,39,30,10,15,16
+1702208,Araguatins,TO,Norte,comercial,0,2019,24,14,6,1,7
+1702406,Arraias,TO,Norte,comercial,0,2009,1,1,0,0,0
+1702406,Arraias,TO,Norte,comercial,0,2010,0,0,0,0,0
+1702406,Arraias,TO,Norte,comercial,0,2011,0,0,0,0,0
+1702406,Arraias,TO,Norte,comercial,0,2012,4,1,1,1,1
+1702406,Arraias,TO,Norte,comercial,0,2013,5,3,3,2,0
+1702406,Arraias,TO,Norte,comercial,0,2014,5,5,0,0,2
+1702406,Arraias,TO,Norte,comercial,0,2015,2,1,2,1,0
+1702406,Arraias,TO,Norte,comercial,0,2016,1,1,1,0,0
+1702406,Arraias,TO,Norte,comercial,0,2017,16,10,6,0,6
+1702406,Arraias,TO,Norte,comercial,0,2018,13,10,2,0,3
+1702406,Arraias,TO,Norte,comercial,0,2019,20,3,11,0,4
+1702554,Augustinópolis,TO,Norte,comercial,0,2009,0,0,0,0,0
+1702554,Augustinópolis,TO,Norte,comercial,0,2010,1,1,0,1,0
+1702554,Augustinópolis,TO,Norte,comercial,0,2011,2,2,0,1,0
+1702554,Augustinópolis,TO,Norte,comercial,0,2012,3,2,1,1,0
+1702554,Augustinópolis,TO,Norte,comercial,0,2013,4,2,1,0,3
+1702554,Augustinópolis,TO,Norte,comercial,0,2014,4,1,3,0,2
+1702554,Augustinópolis,TO,Norte,comercial,0,2015,6,5,1,2,2
+1702554,Augustinópolis,TO,Norte,comercial,0,2016,10,7,3,4,4
+1702554,Augustinópolis,TO,Norte,comercial,0,2017,15,12,4,2,10
+1702554,Augustinópolis,TO,Norte,comercial,0,2018,15,7,8,3,3
+1702554,Augustinópolis,TO,Norte,comercial,0,2019,22,9,12,1,7
+1705508,Colinas,TO,Norte,comercial,0,2009,1,1,0,0,1
+1705508,Colinas,TO,Norte,comercial,0,2010,3,1,1,1,1
+1705508,Colinas,TO,Norte,comercial,0,2011,6,4,1,1,2
+1705508,Colinas,TO,Norte,comercial,0,2012,9,8,2,3,5
+1705508,Colinas,TO,Norte,comercial,0,2013,7,5,0,0,1
+1705508,Colinas,TO,Norte,comercial,0,2014,18,17,3,4,11
+1705508,Colinas,TO,Norte,comercial,0,2015,23,18,4,3,12
+1705508,Colinas,TO,Norte,comercial,0,2016,51,37,9,8,25
+1705508,Colinas,TO,Norte,comercial,0,2017,52,45,7,7,20
+1705508,Colinas,TO,Norte,comercial,0,2018,41,35,6,3,21
+1705508,Colinas,TO,Norte,comercial,0,2019,46,33,7,1,20
+1707009,Dianópolis,TO,Norte,comercial,0,2009,1,1,1,1,0
+1707009,Dianópolis,TO,Norte,comercial,0,2010,4,3,0,2,3
+1707009,Dianópolis,TO,Norte,comercial,0,2011,15,14,2,1,4
+1707009,Dianópolis,TO,Norte,comercial,0,2012,22,18,6,12,13
+1707009,Dianópolis,TO,Norte,comercial,0,2013,31,27,2,14,17
+1707009,Dianópolis,TO,Norte,comercial,0,2014,35,29,4,8,16
+1707009,Dianópolis,TO,Norte,comercial,0,2015,35,25,9,13,19
+1707009,Dianópolis,TO,Norte,comercial,0,2016,50,42,8,25,17
+1707009,Dianópolis,TO,Norte,comercial,0,2017,57,42,14,16,21
+1707009,Dianópolis,TO,Norte,comercial,0,2018,54,37,5,12,6
+1707009,Dianópolis,TO,Norte,comercial,0,2019,73,52,6,13,22
+1709302,Guaraí,TO,Norte,comercial,0,2009,2,2,0,1,1
+1709302,Guaraí,TO,Norte,comercial,0,2010,1,1,1,1,0
+1709302,Guaraí,TO,Norte,comercial,0,2011,11,8,3,9,2
+1709302,Guaraí,TO,Norte,comercial,0,2012,13,8,4,6,4
+1709302,Guaraí,TO,Norte,comercial,0,2013,16,12,3,6,3
+1709302,Guaraí,TO,Norte,comercial,0,2014,20,14,7,7,11
+1709302,Guaraí,TO,Norte,comercial,0,2015,31,27,2,17,12
+1709302,Guaraí,TO,Norte,comercial,0,2016,25,18,2,3,7
+1709302,Guaraí,TO,Norte,comercial,0,2017,54,39,11,8,16
+1709302,Guaraí,TO,Norte,comercial,0,2018,76,49,6,12,21
+1709302,Guaraí,TO,Norte,comercial,0,2019,69,32,5,0,11
+1709500,Gurupi,TO,Norte,comercial,0,2009,0,0,0,0,0
+1709500,Gurupi,TO,Norte,comercial,0,2010,11,4,1,1,2
+1709500,Gurupi,TO,Norte,comercial,0,2011,7,4,2,1,2
+1709500,Gurupi,TO,Norte,comercial,0,2012,19,18,1,8,11
+1709500,Gurupi,TO,Norte,comercial,0,2013,18,16,6,10,7
+1709500,Gurupi,TO,Norte,comercial,0,2014,37,19,14,11,13
+1709500,Gurupi,TO,Norte,comercial,0,2015,95,59,8,13,11
+1709500,Gurupi,TO,Norte,comercial,0,2016,333,60,10,18,22
+1709500,Gurupi,TO,Norte,comercial,0,2017,218,38,15,11,15
+1709500,Gurupi,TO,Norte,comercial,0,2018,234,32,21,9,5
+1709500,Gurupi,TO,Norte,comercial,0,2019,210,28,28,5,13
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2009,6,5,2,4,1
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2010,8,6,1,2,1
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2011,8,7,1,3,3
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2012,4,3,2,1,0
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2013,22,15,8,6,7
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2014,80,64,17,45,33
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2015,63,48,11,39,26
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2016,79,59,18,28,30
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2017,69,51,12,29,36
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2018,69,39,18,4,24
+1713205,Miracema do Tocantins,TO,Norte,comercial,0,2019,62,29,14,7,21
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2009,4,3,1,2,1
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2010,8,5,3,2,1
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2011,13,10,2,3,5
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2012,10,6,6,4,5
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2013,42,28,10,10,8
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2014,69,40,29,35,10
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2015,69,46,24,36,9
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2016,64,27,25,15,8
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2017,87,35,33,12,19
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2018,93,42,27,9,28
+1716109,Paraíso do Tocantins,TO,Norte,comercial,0,2019,64,29,29,8,12
+1718204,Porto Nacional,TO,Norte,comercial,0,2009,3,3,2,1,0
+1718204,Porto Nacional,TO,Norte,comercial,0,2010,11,8,5,6,5
+1718204,Porto Nacional,TO,Norte,comercial,0,2011,49,35,13,7,21
+1718204,Porto Nacional,TO,Norte,comercial,0,2012,61,49,3,19,22
+1718204,Porto Nacional,TO,Norte,comercial,0,2013,91,57,12,14,30
+1718204,Porto Nacional,TO,Norte,comercial,0,2014,111,66,31,26,25
+1718204,Porto Nacional,TO,Norte,comercial,0,2015,114,68,36,19,19
+1718204,Porto Nacional,TO,Norte,comercial,0,2016,148,81,42,22,37
+1718204,Porto Nacional,TO,Norte,comercial,0,2017,198,92,68,25,52
+1718204,Porto Nacional,TO,Norte,comercial,0,2018,190,81,54,24,30
+1718204,Porto Nacional,TO,Norte,comercial,0,2019,248,93,86,36,62
+1721000,Palmas,TO,Norte,24h,2019,2009,155,114,42,69,49
+1721000,Palmas,TO,Norte,24h,2019,2010,197,129,32,68,56
+1721000,Palmas,TO,Norte,24h,2019,2011,295,269,44,98,99
+1721000,Palmas,TO,Norte,24h,2019,2012,258,212,36,77,79
+1721000,Palmas,TO,Norte,24h,2019,2013,410,350,99,155,143
+1721000,Palmas,TO,Norte,24h,2019,2014,615,399,167,287,257
+1721000,Palmas,TO,Norte,24h,2019,2015,660,454,155,286,263
+1721000,Palmas,TO,Norte,24h,2019,2016,805,422,192,220,313
+1721000,Palmas,TO,Norte,24h,2019,2017,848,386,184,133,281
+1721000,Palmas,TO,Norte,24h,2019,2018,878,271,259,77,239
+1721000,Palmas,TO,Norte,24h,2019,2019,816,199,215,46,155
+1721208,Tocantinópolis,TO,Norte,comercial,0,2009,2,2,0,0,0
+1721208,Tocantinópolis,TO,Norte,comercial,0,2010,5,5,0,0,1
+1721208,Tocantinópolis,TO,Norte,comercial,0,2011,25,22,2,2,10
+1721208,Tocantinópolis,TO,Norte,comercial,0,2012,40,33,3,2,16
+1721208,Tocantinópolis,TO,Norte,comercial,0,2013,53,46,7,14,23
+1721208,Tocantinópolis,TO,Norte,comercial,0,2014,31,29,6,20,16
+1721208,Tocantinópolis,TO,Norte,comercial,0,2015,31,29,2,7,19
+1721208,Tocantinópolis,TO,Norte,comercial,0,2016,48,43,4,15,19
+1721208,Tocantinópolis,TO,Norte,comercial,0,2017,74,57,11,10,28
+1721208,Tocantinópolis,TO,Norte,comercial,0,2018,79,63,10,10,27
+1721208,Tocantinópolis,TO,Norte,comercial,0,2019,78,61,8,7,22
+2100055,Açailândia,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2100055,Açailândia,MA,Nordeste,comercial,0,2010,1,1,0,0,1
+2100055,Açailândia,MA,Nordeste,comercial,0,2011,3,2,0,0,1
+2100055,Açailândia,MA,Nordeste,comercial,0,2012,14,11,3,2,4
+2100055,Açailândia,MA,Nordeste,comercial,0,2013,10,8,1,0,1
+2100055,Açailândia,MA,Nordeste,comercial,0,2014,8,6,1,0,0
+2100055,Açailândia,MA,Nordeste,comercial,0,2015,11,5,6,1,2
+2100055,Açailândia,MA,Nordeste,comercial,0,2016,10,5,6,3,4
+2100055,Açailândia,MA,Nordeste,comercial,0,2017,6,4,1,2,4
+2100055,Açailândia,MA,Nordeste,comercial,0,2018,3,2,2,0,0
+2100055,Açailândia,MA,Nordeste,comercial,0,2019,7,3,3,1,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2009,1,1,0,0,1
+2101202,Bacabal,MA,Nordeste,comercial,0,2010,1,1,0,0,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2011,0,0,0,0,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2012,0,0,0,0,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2013,2,1,2,1,1
+2101202,Bacabal,MA,Nordeste,comercial,0,2014,1,0,1,0,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2015,3,1,2,0,3
+2101202,Bacabal,MA,Nordeste,comercial,0,2016,2,0,1,0,0
+2101202,Bacabal,MA,Nordeste,comercial,0,2017,15,13,2,2,9
+2101202,Bacabal,MA,Nordeste,comercial,0,2018,28,21,4,9,14
+2101202,Bacabal,MA,Nordeste,comercial,0,2019,43,38,8,16,13
+2101400,Balsas,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2101400,Balsas,MA,Nordeste,comercial,0,2010,9,0,5,2,0
+2101400,Balsas,MA,Nordeste,comercial,0,2011,45,10,36,8,7
+2101400,Balsas,MA,Nordeste,comercial,0,2012,24,0,18,2,3
+2101400,Balsas,MA,Nordeste,comercial,0,2013,30,9,23,12,5
+2101400,Balsas,MA,Nordeste,comercial,0,2014,9,1,8,0,3
+2101400,Balsas,MA,Nordeste,comercial,0,2015,1,1,1,1,0
+2101400,Balsas,MA,Nordeste,comercial,0,2016,2,0,1,0,0
+2101400,Balsas,MA,Nordeste,comercial,0,2017,27,23,1,18,6
+2101400,Balsas,MA,Nordeste,comercial,0,2018,43,24,16,28,7
+2101400,Balsas,MA,Nordeste,comercial,0,2019,150,70,23,27,10
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2010,5,4,1,5,2
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2011,6,5,2,2,2
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2012,4,3,3,1,2
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2013,29,21,6,22,12
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2014,78,55,9,68,41
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2015,88,67,9,70,33
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2016,97,72,5,73,52
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2017,73,64,4,46,43
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2018,93,86,8,48,44
+2101608,Barra do Corda,MA,Nordeste,comercial,0,2019,177,142,13,107,88
+2103000,Caxias,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2103000,Caxias,MA,Nordeste,comercial,0,2010,3,3,2,1,0
+2103000,Caxias,MA,Nordeste,comercial,0,2011,4,3,1,2,1
+2103000,Caxias,MA,Nordeste,comercial,0,2012,10,5,6,2,0
+2103000,Caxias,MA,Nordeste,comercial,0,2013,317,149,14,267,129
+2103000,Caxias,MA,Nordeste,comercial,0,2014,393,168,16,361,114
+2103000,Caxias,MA,Nordeste,comercial,0,2015,517,218,19,482,126
+2103000,Caxias,MA,Nordeste,comercial,0,2016,303,148,12,271,143
+2103000,Caxias,MA,Nordeste,comercial,0,2017,175,118,6,97,106
+2103000,Caxias,MA,Nordeste,comercial,0,2018,373,232,13,281,226
+2103000,Caxias,MA,Nordeste,comercial,0,2019,356,236,65,199,138
+2103208,Chapadinha,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2103208,Chapadinha,MA,Nordeste,comercial,0,2010,0,0,0,0,0
+2103208,Chapadinha,MA,Nordeste,comercial,0,2011,1,1,0,1,1
+2103208,Chapadinha,MA,Nordeste,comercial,0,2012,0,0,0,0,0
+2103208,Chapadinha,MA,Nordeste,comercial,0,2013,5,3,2,0,2
+2103208,Chapadinha,MA,Nordeste,comercial,0,2014,6,4,1,0,5
+2103208,Chapadinha,MA,Nordeste,comercial,0,2015,8,6,1,1,1
+2103208,Chapadinha,MA,Nordeste,comercial,0,2016,17,17,5,4,12
+2103208,Chapadinha,MA,Nordeste,comercial,0,2017,105,95,23,39,51
+2103208,Chapadinha,MA,Nordeste,comercial,0,2018,10,9,6,6,4
+2103208,Chapadinha,MA,Nordeste,comercial,0,2019,10,6,5,3,2
+2103307,Codó,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2103307,Codó,MA,Nordeste,comercial,0,2010,4,4,0,0,0
+2103307,Codó,MA,Nordeste,comercial,0,2011,1,0,0,0,0
+2103307,Codó,MA,Nordeste,comercial,0,2012,170,165,0,0,9
+2103307,Codó,MA,Nordeste,comercial,0,2013,89,83,2,2,3
+2103307,Codó,MA,Nordeste,comercial,0,2014,38,36,2,6,1
+2103307,Codó,MA,Nordeste,comercial,0,2015,16,15,2,3,3
+2103307,Codó,MA,Nordeste,comercial,0,2016,13,10,2,4,3
+2103307,Codó,MA,Nordeste,comercial,0,2017,35,13,7,17,9
+2103307,Codó,MA,Nordeste,comercial,0,2018,42,41,2,15,22
+2103307,Codó,MA,Nordeste,comercial,0,2019,73,52,4,17,17
+2105302,Imperatriz,MA,Nordeste,comercial,0,2009,1,0,0,0,0
+2105302,Imperatriz,MA,Nordeste,comercial,0,2010,11,7,3,0,3
+2105302,Imperatriz,MA,Nordeste,comercial,0,2011,57,35,14,13,21
+2105302,Imperatriz,MA,Nordeste,comercial,0,2012,201,129,22,22,58
+2105302,Imperatriz,MA,Nordeste,comercial,0,2013,219,172,16,17,70
+2105302,Imperatriz,MA,Nordeste,comercial,0,2014,259,197,30,25,81
+2105302,Imperatriz,MA,Nordeste,comercial,0,2015,171,125,23,12,55
+2105302,Imperatriz,MA,Nordeste,comercial,0,2016,186,146,21,20,73
+2105302,Imperatriz,MA,Nordeste,comercial,0,2017,106,87,14,20,37
+2105302,Imperatriz,MA,Nordeste,comercial,0,2018,83,59,10,22,28
+2105302,Imperatriz,MA,Nordeste,comercial,0,2019,221,112,25,42,53
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2009,2,0,2,0,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2010,5,2,4,2,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2011,2,0,2,1,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2012,2,2,1,0,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2013,2,1,1,1,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2014,1,1,0,0,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2015,4,1,2,0,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2016,9,5,7,3,0
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2017,8,6,2,3,2
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2018,8,4,4,3,2
+2105401,Itapecuru Mirim,MA,Nordeste,comercial,0,2019,15,8,13,10,1
+2108207,Pedreiras,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2108207,Pedreiras,MA,Nordeste,comercial,0,2010,9,6,3,3,4
+2108207,Pedreiras,MA,Nordeste,comercial,0,2011,9,8,2,5,5
+2108207,Pedreiras,MA,Nordeste,comercial,0,2012,5,0,1,1,1
+2108207,Pedreiras,MA,Nordeste,comercial,0,2013,10,5,2,5,4
+2108207,Pedreiras,MA,Nordeste,comercial,0,2014,7,6,5,6,0
+2108207,Pedreiras,MA,Nordeste,comercial,0,2015,3,1,2,0,1
+2108207,Pedreiras,MA,Nordeste,comercial,0,2016,0,0,0,0,0
+2108207,Pedreiras,MA,Nordeste,comercial,0,2017,3,3,0,0,2
+2108207,Pedreiras,MA,Nordeste,comercial,0,2018,25,21,6,8,10
+2108207,Pedreiras,MA,Nordeste,comercial,0,2019,38,32,7,18,18
+2108603,Pinheiro,MA,Nordeste,comercial,0,2009,1,1,0,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2010,0,0,0,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2011,1,1,0,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2012,3,0,3,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2013,1,0,1,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2014,0,0,0,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2015,2,0,2,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2016,1,0,0,0,0
+2108603,Pinheiro,MA,Nordeste,comercial,0,2017,4,2,2,3,1
+2108603,Pinheiro,MA,Nordeste,comercial,0,2018,9,5,5,3,4
+2108603,Pinheiro,MA,Nordeste,comercial,0,2019,21,9,12,4,6
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2010,0,0,0,0,0
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2011,5,3,1,2,2
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2012,2,2,2,2,1
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2013,1,1,0,1,0
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2014,0,0,0,0,0
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2015,4,4,0,3,4
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2016,5,4,0,3,2
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2017,5,4,1,3,2
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2018,34,34,2,7,13
+2109106,Presidente Dutra,MA,Nordeste,comercial,0,2019,88,80,6,37,36
+2109601,Rosário,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2109601,Rosário,MA,Nordeste,comercial,0,2010,6,3,4,2,1
+2109601,Rosário,MA,Nordeste,comercial,0,2011,3,2,3,1,0
+2109601,Rosário,MA,Nordeste,comercial,0,2012,3,2,2,0,1
+2109601,Rosário,MA,Nordeste,comercial,0,2013,1,0,1,1,0
+2109601,Rosário,MA,Nordeste,comercial,0,2014,10,9,1,4,4
+2109601,Rosário,MA,Nordeste,comercial,0,2015,16,13,5,6,5
+2109601,Rosário,MA,Nordeste,comercial,0,2016,17,9,7,4,5
+2109601,Rosário,MA,Nordeste,comercial,0,2017,4,2,2,1,1
+2109601,Rosário,MA,Nordeste,comercial,0,2018,7,4,3,3,2
+2109601,Rosário,MA,Nordeste,comercial,0,2019,11,3,6,3,2
+2109908,Santa Inês,MA,Nordeste,comercial,0,2009,1,1,1,1,0
+2109908,Santa Inês,MA,Nordeste,comercial,0,2010,2,1,0,1,1
+2109908,Santa Inês,MA,Nordeste,comercial,0,2011,6,0,5,1,2
+2109908,Santa Inês,MA,Nordeste,comercial,0,2012,10,8,0,2,4
+2109908,Santa Inês,MA,Nordeste,comercial,0,2013,4,3,1,1,2
+2109908,Santa Inês,MA,Nordeste,comercial,0,2014,5,5,0,2,1
+2109908,Santa Inês,MA,Nordeste,comercial,0,2015,26,25,2,19,10
+2109908,Santa Inês,MA,Nordeste,comercial,0,2016,4,3,1,3,2
+2109908,Santa Inês,MA,Nordeste,comercial,0,2017,15,13,3,9,6
+2109908,Santa Inês,MA,Nordeste,comercial,0,2018,18,12,8,9,5
+2109908,Santa Inês,MA,Nordeste,comercial,0,2019,16,12,6,10,7
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2009,0,0,0,0,0
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2010,0,0,0,0,0
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2011,0,0,0,0,0
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2012,0,0,0,0,0
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2013,4,1,2,3,1
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2014,2,2,0,2,1
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2015,0,0,0,0,0
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2016,2,2,0,1,2
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2017,5,3,3,1,3
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2018,5,3,2,1,2
+2111102,São João dos Patos,MA,Nordeste,24h,2015,2019,6,6,0,5,3
+2111300,São Luís,MA,Nordeste,24h,2017,2009,93,45,55,40,17
+2111300,São Luís,MA,Nordeste,24h,2017,2010,170,70,116,52,29
+2111300,São Luís,MA,Nordeste,24h,2017,2011,177,80,104,69,37
+2111300,São Luís,MA,Nordeste,24h,2017,2012,137,77,64,48,30
+2111300,São Luís,MA,Nordeste,24h,2017,2013,199,108,105,94,60
+2111300,São Luís,MA,Nordeste,24h,2017,2014,194,115,70,62,62
+2111300,São Luís,MA,Nordeste,24h,2017,2015,422,213,104,144,111
+2111300,São Luís,MA,Nordeste,24h,2017,2016,448,130,121,112,73
+2111300,São Luís,MA,Nordeste,24h,2017,2017,322,138,137,116,96
+2111300,São Luís,MA,Nordeste,24h,2017,2018,518,239,172,194,126
+2111300,São Luís,MA,Nordeste,24h,2017,2019,703,244,165,167,119
+2112209,Timon,MA,Nordeste,comercial,0,2009,2,2,0,0,1
+2112209,Timon,MA,Nordeste,comercial,0,2010,10,9,1,1,4
+2112209,Timon,MA,Nordeste,comercial,0,2011,22,18,1,4,8
+2112209,Timon,MA,Nordeste,comercial,0,2012,21,9,2,2,5
+2112209,Timon,MA,Nordeste,comercial,0,2013,33,17,6,4,8
+2112209,Timon,MA,Nordeste,comercial,0,2014,17,10,5,4,1
+2112209,Timon,MA,Nordeste,comercial,0,2015,21,9,2,3,3
+2112209,Timon,MA,Nordeste,comercial,0,2016,30,10,6,2,4
+2112209,Timon,MA,Nordeste,comercial,0,2017,51,36,8,11,12
+2112209,Timon,MA,Nordeste,comercial,0,2018,44,33,3,14,17
+2112209,Timon,MA,Nordeste,comercial,0,2019,43,19,10,11,6
+2112803,Viana,MA,Nordeste,comercial,0,2009,1,0,1,0,0
+2112803,Viana,MA,Nordeste,comercial,0,2010,15,12,4,7,5
+2112803,Viana,MA,Nordeste,comercial,0,2011,6,3,0,4,1
+2112803,Viana,MA,Nordeste,comercial,0,2012,7,3,6,1,2
+2112803,Viana,MA,Nordeste,comercial,0,2013,10,6,3,3,5
+2112803,Viana,MA,Nordeste,comercial,0,2014,4,3,1,1,2
+2112803,Viana,MA,Nordeste,comercial,0,2015,11,8,2,7,4
+2112803,Viana,MA,Nordeste,comercial,0,2016,9,3,5,3,1
+2112803,Viana,MA,Nordeste,comercial,0,2017,2,2,1,2,1
+2112803,Viana,MA,Nordeste,comercial,0,2018,24,2,22,1,22
+2112803,Viana,MA,Nordeste,comercial,0,2019,14,3,11,2,10
+2114007,Zé Doca,MA,Nordeste,comercial,0,2009,0,0,0,0,0
+2114007,Zé Doca,MA,Nordeste,comercial,0,2010,1,1,0,0,0
+2114007,Zé Doca,MA,Nordeste,comercial,0,2011,1,0,1,0,0
+2114007,Zé Doca,MA,Nordeste,comercial,0,2012,8,3,6,3,2
+2114007,Zé Doca,MA,Nordeste,comercial,0,2013,13,11,2,4,8
+2114007,Zé Doca,MA,Nordeste,comercial,0,2014,34,28,2,5,15
+2114007,Zé Doca,MA,Nordeste,comercial,0,2015,35,33,1,5,19
+2114007,Zé Doca,MA,Nordeste,comercial,0,2016,35,31,5,1,14
+2114007,Zé Doca,MA,Nordeste,comercial,0,2017,25,24,3,4,12
+2114007,Zé Doca,MA,Nordeste,comercial,0,2018,58,48,6,4,32
+2114007,Zé Doca,MA,Nordeste,comercial,0,2019,51,51,3,0,24
+2211001,Teresina,PI,Nordeste,24h,2015,2009,126,63,9,105,89
+2211001,Teresina,PI,Nordeste,24h,2015,2010,108,88,17,20,23
+2211001,Teresina,PI,Nordeste,24h,2015,2011,204,129,24,41,49
+2211001,Teresina,PI,Nordeste,24h,2015,2012,313,117,79,38,53
+2211001,Teresina,PI,Nordeste,24h,2015,2013,1793,1435,246,60,507
+2211001,Teresina,PI,Nordeste,24h,2015,2014,382,102,170,24,52
+2211001,Teresina,PI,Nordeste,24h,2015,2015,633,131,251,23,76
+2211001,Teresina,PI,Nordeste,24h,2015,2016,758,173,249,36,98
+2211001,Teresina,PI,Nordeste,24h,2015,2017,764,239,211,100,78
+2211001,Teresina,PI,Nordeste,24h,2015,2018,955,278,155,75,123
+2211001,Teresina,PI,Nordeste,24h,2015,2019,1321,370,194,83,138
+2303709,Caucaia,CE,Nordeste,comercial,0,2009,5,3,3,3,1
+2303709,Caucaia,CE,Nordeste,comercial,0,2010,10,4,7,4,2
+2303709,Caucaia,CE,Nordeste,comercial,0,2011,10,8,3,3,6
+2303709,Caucaia,CE,Nordeste,comercial,0,2012,11,6,6,6,7
+2303709,Caucaia,CE,Nordeste,comercial,0,2013,7,7,1,5,2
+2303709,Caucaia,CE,Nordeste,comercial,0,2014,35,22,9,12,13
+2303709,Caucaia,CE,Nordeste,comercial,0,2015,55,34,11,7,9
+2303709,Caucaia,CE,Nordeste,comercial,0,2016,66,37,22,22,26
+2303709,Caucaia,CE,Nordeste,comercial,0,2017,134,81,30,39,40
+2303709,Caucaia,CE,Nordeste,comercial,0,2018,250,218,33,68,62
+2303709,Caucaia,CE,Nordeste,comercial,0,2019,340,271,44,103,75
+2304202,Crato,CE,Nordeste,comercial,0,2009,2,0,1,1,1
+2304202,Crato,CE,Nordeste,comercial,0,2010,0,0,0,0,0
+2304202,Crato,CE,Nordeste,comercial,0,2011,2,2,0,1,2
+2304202,Crato,CE,Nordeste,comercial,0,2012,2,2,0,0,1
+2304202,Crato,CE,Nordeste,comercial,0,2013,14,14,1,7,8
+2304202,Crato,CE,Nordeste,comercial,0,2014,32,29,5,20,16
+2304202,Crato,CE,Nordeste,comercial,0,2015,87,84,3,65,41
+2304202,Crato,CE,Nordeste,comercial,0,2016,69,65,5,53,29
+2304202,Crato,CE,Nordeste,comercial,0,2017,37,33,5,22,21
+2304202,Crato,CE,Nordeste,comercial,0,2018,25,23,6,22,12
+2304202,Crato,CE,Nordeste,comercial,0,2019,77,71,6,16,15
+2304400,Fortaleza,CE,Nordeste,24h,2018,2009,39,20,12,18,11
+2304400,Fortaleza,CE,Nordeste,24h,2018,2010,25,15,4,16,8
+2304400,Fortaleza,CE,Nordeste,24h,2018,2011,36,20,17,14,9
+2304400,Fortaleza,CE,Nordeste,24h,2018,2012,204,120,54,144,133
+2304400,Fortaleza,CE,Nordeste,24h,2018,2013,99,64,32,52,38
+2304400,Fortaleza,CE,Nordeste,24h,2018,2014,589,245,201,117,241
+2304400,Fortaleza,CE,Nordeste,24h,2018,2015,695,297,126,205,153
+2304400,Fortaleza,CE,Nordeste,24h,2018,2016,1063,513,227,348,316
+2304400,Fortaleza,CE,Nordeste,24h,2018,2017,1090,518,238,279,306
+2304400,Fortaleza,CE,Nordeste,24h,2018,2018,2756,1282,371,1802,1243
+2304400,Fortaleza,CE,Nordeste,24h,2018,2019,4377,1952,465,2732,1508
+2305407,Icó,CE,Nordeste,comercial,0,2009,0,0,0,0,0
+2305407,Icó,CE,Nordeste,comercial,0,2010,0,0,0,0,0
+2305407,Icó,CE,Nordeste,comercial,0,2011,1,1,0,0,1
+2305407,Icó,CE,Nordeste,comercial,0,2012,2,1,1,2,1
+2305407,Icó,CE,Nordeste,comercial,0,2013,1,1,0,1,1
+2305407,Icó,CE,Nordeste,comercial,0,2014,2,1,1,2,1
+2305407,Icó,CE,Nordeste,comercial,0,2015,3,1,1,1,0
+2305407,Icó,CE,Nordeste,comercial,0,2016,4,1,1,1,1
+2305407,Icó,CE,Nordeste,comercial,0,2017,8,5,0,2,3
+2305407,Icó,CE,Nordeste,comercial,0,2018,12,8,4,5,3
+2305407,Icó,CE,Nordeste,comercial,0,2019,10,7,3,5,1
+2305506,Iguatu,CE,Nordeste,comercial,0,2009,0,0,0,0,0
+2305506,Iguatu,CE,Nordeste,comercial,0,2010,19,6,4,7,3
+2305506,Iguatu,CE,Nordeste,comercial,0,2011,1,0,0,1,0
+2305506,Iguatu,CE,Nordeste,comercial,0,2012,2,2,0,2,2
+2305506,Iguatu,CE,Nordeste,comercial,0,2013,4,1,1,1,2
+2305506,Iguatu,CE,Nordeste,comercial,0,2014,9,7,1,5,2
+2305506,Iguatu,CE,Nordeste,comercial,0,2015,3,1,1,0,1
+2305506,Iguatu,CE,Nordeste,comercial,0,2016,16,7,2,5,4
+2305506,Iguatu,CE,Nordeste,comercial,0,2017,23,17,2,9,11
+2305506,Iguatu,CE,Nordeste,comercial,0,2018,24,18,2,9,10
+2305506,Iguatu,CE,Nordeste,comercial,0,2019,40,27,8,8,5
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2009,0,0,0,0,0
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2010,1,1,1,0,0
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2011,19,16,2,5,9
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2012,33,30,2,20,14
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2013,75,68,7,33,21
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2014,112,87,17,34,39
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2015,104,61,9,23,25
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2016,67,35,3,10,16
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2017,101,43,6,12,18
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2018,150,54,23,16,15
+2307304,Juazeiro do Norte,CE,Nordeste,comercial,0,2019,178,40,20,17,22
+2307650,Maracanaú,CE,Nordeste,comercial,0,2009,15,11,2,3,4
+2307650,Maracanaú,CE,Nordeste,comercial,0,2010,10,7,2,3,1
+2307650,Maracanaú,CE,Nordeste,comercial,0,2011,8,8,1,5,6
+2307650,Maracanaú,CE,Nordeste,comercial,0,2012,8,7,0,3,6
+2307650,Maracanaú,CE,Nordeste,comercial,0,2013,4,4,1,1,3
+2307650,Maracanaú,CE,Nordeste,comercial,0,2014,22,11,9,8,9
+2307650,Maracanaú,CE,Nordeste,comercial,0,2015,29,16,5,5,4
+2307650,Maracanaú,CE,Nordeste,comercial,0,2016,36,18,9,13,9
+2307650,Maracanaú,CE,Nordeste,comercial,0,2017,52,31,18,12,12
+2307650,Maracanaú,CE,Nordeste,comercial,0,2018,116,81,21,27,22
+2307650,Maracanaú,CE,Nordeste,comercial,0,2019,133,83,30,39,39
+2309706,Pacatuba,CE,Nordeste,comercial,0,2009,0,0,0,0,0
+2309706,Pacatuba,CE,Nordeste,comercial,0,2010,2,1,1,0,1
+2309706,Pacatuba,CE,Nordeste,comercial,0,2011,20,17,0,15,15
+2309706,Pacatuba,CE,Nordeste,comercial,0,2012,19,11,0,16,18
+2309706,Pacatuba,CE,Nordeste,comercial,0,2013,55,23,5,43,45
+2309706,Pacatuba,CE,Nordeste,comercial,0,2014,36,16,5,17,15
+2309706,Pacatuba,CE,Nordeste,comercial,0,2015,7,4,1,2,3
+2309706,Pacatuba,CE,Nordeste,comercial,0,2016,10,6,2,0,1
+2309706,Pacatuba,CE,Nordeste,comercial,0,2017,21,15,5,12,12
+2309706,Pacatuba,CE,Nordeste,comercial,0,2018,17,6,4,8,8
+2309706,Pacatuba,CE,Nordeste,comercial,0,2019,36,26,4,15,18
+2311306,Quixadá,CE,Nordeste,comercial,0,2009,28,13,2,9,9
+2311306,Quixadá,CE,Nordeste,comercial,0,2010,4,1,2,2,1
+2311306,Quixadá,CE,Nordeste,comercial,0,2011,8,6,2,1,4
+2311306,Quixadá,CE,Nordeste,comercial,0,2012,8,6,1,0,4
+2311306,Quixadá,CE,Nordeste,comercial,0,2013,18,12,4,13,4
+2311306,Quixadá,CE,Nordeste,comercial,0,2014,8,6,2,2,1
+2311306,Quixadá,CE,Nordeste,comercial,0,2015,12,7,5,1,3
+2311306,Quixadá,CE,Nordeste,comercial,0,2016,22,19,2,3,8
+2311306,Quixadá,CE,Nordeste,comercial,0,2017,15,12,4,8,4
+2311306,Quixadá,CE,Nordeste,comercial,0,2018,36,29,5,11,9
+2311306,Quixadá,CE,Nordeste,comercial,0,2019,33,25,3,10,11
+2312908,Sobral,CE,Nordeste,comercial,0,2009,35,16,8,16,8
+2312908,Sobral,CE,Nordeste,comercial,0,2010,21,12,8,11,8
+2312908,Sobral,CE,Nordeste,comercial,0,2011,41,31,9,18,11
+2312908,Sobral,CE,Nordeste,comercial,0,2012,60,44,7,16,13
+2312908,Sobral,CE,Nordeste,comercial,0,2013,92,70,7,30,22
+2312908,Sobral,CE,Nordeste,comercial,0,2014,123,80,18,27,26
+2312908,Sobral,CE,Nordeste,comercial,0,2015,147,91,10,41,33
+2312908,Sobral,CE,Nordeste,comercial,0,2016,216,93,32,53,45
+2312908,Sobral,CE,Nordeste,comercial,0,2017,232,84,39,65,48
+2312908,Sobral,CE,Nordeste,comercial,0,2018,204,62,32,23,34
+2312908,Sobral,CE,Nordeste,comercial,0,2019,321,144,104,79,90
+2402006,Caicó,RN,Nordeste,comercial,0,2009,0,0,0,0,0
+2402006,Caicó,RN,Nordeste,comercial,0,2010,4,4,0,0,0
+2402006,Caicó,RN,Nordeste,comercial,0,2011,12,8,3,3,1
+2402006,Caicó,RN,Nordeste,comercial,0,2012,24,14,2,10,2
+2402006,Caicó,RN,Nordeste,comercial,0,2013,26,18,1,4,9
+2402006,Caicó,RN,Nordeste,comercial,0,2014,31,26,2,7,9
+2402006,Caicó,RN,Nordeste,comercial,0,2015,22,17,2,7,6
+2402006,Caicó,RN,Nordeste,comercial,0,2016,41,34,2,6,8
+2402006,Caicó,RN,Nordeste,comercial,0,2017,23,19,2,6,6
+2402006,Caicó,RN,Nordeste,comercial,0,2018,32,23,1,3,3
+2402006,Caicó,RN,Nordeste,comercial,0,2019,59,52,1,4,5
+2403251,Parnamirim,RN,Nordeste,comercial,0,2009,14,12,5,2,4
+2403251,Parnamirim,RN,Nordeste,comercial,0,2010,15,13,2,8,9
+2403251,Parnamirim,RN,Nordeste,comercial,0,2011,39,31,16,19,14
+2403251,Parnamirim,RN,Nordeste,comercial,0,2012,41,35,14,17,11
+2403251,Parnamirim,RN,Nordeste,comercial,0,2013,63,45,14,26,24
+2403251,Parnamirim,RN,Nordeste,comercial,0,2014,69,55,19,15,23
+2403251,Parnamirim,RN,Nordeste,comercial,0,2015,81,67,14,33,32
+2403251,Parnamirim,RN,Nordeste,comercial,0,2016,177,129,35,79,46
+2403251,Parnamirim,RN,Nordeste,comercial,0,2017,190,119,30,68,54
+2403251,Parnamirim,RN,Nordeste,comercial,0,2018,250,119,50,51,68
+2403251,Parnamirim,RN,Nordeste,comercial,0,2019,309,158,44,55,58
+2408102,Natal,RN,Nordeste,comercial,0,2009,41,19,32,14,4
+2408102,Natal,RN,Nordeste,comercial,0,2010,127,95,41,30,34
+2408102,Natal,RN,Nordeste,comercial,0,2011,165,146,23,21,50
+2408102,Natal,RN,Nordeste,comercial,0,2012,262,230,34,28,57
+2408102,Natal,RN,Nordeste,comercial,0,2013,324,292,41,42,63
+2408102,Natal,RN,Nordeste,comercial,0,2014,294,257,42,33,44
+2408102,Natal,RN,Nordeste,comercial,0,2015,290,247,26,60,36
+2408102,Natal,RN,Nordeste,comercial,0,2016,315,260,22,63,56
+2408102,Natal,RN,Nordeste,comercial,0,2017,500,359,46,82,87
+2408102,Natal,RN,Nordeste,comercial,0,2018,635,405,76,111,98
+2408102,Natal,RN,Nordeste,comercial,0,2019,844,499,74,106,101
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2009,1,1,0,0,0
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2010,1,1,0,0,0
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2011,2,2,1,1,1
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2012,3,2,1,2,2
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2013,10,9,0,2,4
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2014,13,13,1,1,0
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2015,32,29,0,8,9
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2016,26,24,3,19,7
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2017,77,68,8,53,34
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2018,21,11,4,6,4
+2503704,Cajazeiras,PB,Nordeste,24h,2018,2019,159,112,10,48,48
+2506301,Guabira,PB,Nordeste,comercial,0,2009,2,2,0,2,0
+2506301,Guabira,PB,Nordeste,comercial,0,2010,5,1,0,0,0
+2506301,Guabira,PB,Nordeste,comercial,0,2011,10,9,1,2,0
+2506301,Guabira,PB,Nordeste,comercial,0,2012,30,15,0,3,3
+2506301,Guabira,PB,Nordeste,comercial,0,2013,27,10,0,3,6
+2506301,Guabira,PB,Nordeste,comercial,0,2014,10,4,2,0,2
+2506301,Guabira,PB,Nordeste,comercial,0,2015,29,21,1,2,6
+2506301,Guabira,PB,Nordeste,comercial,0,2016,18,12,3,0,1
+2506301,Guabira,PB,Nordeste,comercial,0,2017,18,14,2,1,6
+2506301,Guabira,PB,Nordeste,comercial,0,2018,16,7,3,2,4
+2506301,Guabira,PB,Nordeste,comercial,0,2019,7,6,1,1,2
+2507507,João Pessoa,PB,Nordeste,comercial,0,2009,170,142,28,79,54
+2507507,João Pessoa,PB,Nordeste,comercial,0,2010,213,171,41,48,46
+2507507,João Pessoa,PB,Nordeste,comercial,0,2011,354,244,69,159,153
+2507507,João Pessoa,PB,Nordeste,comercial,0,2012,1125,566,153,341,253
+2507507,João Pessoa,PB,Nordeste,comercial,0,2013,1102,481,87,254,192
+2507507,João Pessoa,PB,Nordeste,comercial,0,2014,722,537,131,355,210
+2507507,João Pessoa,PB,Nordeste,comercial,0,2015,603,407,141,303,252
+2507507,João Pessoa,PB,Nordeste,comercial,0,2016,40,27,11,15,12
+2507507,João Pessoa,PB,Nordeste,comercial,0,2017,762,476,129,205,193
+2507507,João Pessoa,PB,Nordeste,comercial,0,2018,778,460,150,242,208
+2507507,João Pessoa,PB,Nordeste,comercial,0,2019,1206,564,177,325,267
+2510808,Patos,PB,Nordeste,comercial,0,2009,0,0,0,0,0
+2510808,Patos,PB,Nordeste,comercial,0,2010,1,1,0,0,0
+2510808,Patos,PB,Nordeste,comercial,0,2011,3,2,1,1,0
+2510808,Patos,PB,Nordeste,comercial,0,2012,1,0,0,0,0
+2510808,Patos,PB,Nordeste,comercial,0,2013,5,4,1,4,2
+2510808,Patos,PB,Nordeste,comercial,0,2014,10,9,1,5,4
+2510808,Patos,PB,Nordeste,comercial,0,2015,10,10,0,5,4
+2510808,Patos,PB,Nordeste,comercial,0,2016,22,21,1,11,11
+2510808,Patos,PB,Nordeste,comercial,0,2017,43,41,3,5,17
+2510808,Patos,PB,Nordeste,comercial,0,2018,73,68,6,8,9
+2510808,Patos,PB,Nordeste,comercial,0,2019,56,47,8,2,16
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2009,78,62,11,23,30
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2010,107,81,22,21,31
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2011,144,102,35,60,57
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2012,177,126,43,61,67
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2013,181,148,21,15,56
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2014,192,164,32,26,65
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2015,184,141,39,56,78
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2016,194,139,39,53,75
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2017,287,202,43,72,115
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2018,338,220,45,71,117
+2602902,Cabo de Santo Agostinho,PE,Nordeste,comercial,0,2019,450,310,61,132,211
+2604106,Caruaru,PE,Nordeste,24h,2016,2009,162,161,3,0,4
+2604106,Caruaru,PE,Nordeste,24h,2016,2010,85,83,3,4,2
+2604106,Caruaru,PE,Nordeste,24h,2016,2011,115,101,19,21,30
+2604106,Caruaru,PE,Nordeste,24h,2016,2012,95,82,15,13,28
+2604106,Caruaru,PE,Nordeste,24h,2016,2013,213,176,32,38,55
+2604106,Caruaru,PE,Nordeste,24h,2016,2014,215,140,54,30,41
+2604106,Caruaru,PE,Nordeste,24h,2016,2015,301,218,52,35,46
+2604106,Caruaru,PE,Nordeste,24h,2016,2016,184,153,28,23,41
+2604106,Caruaru,PE,Nordeste,24h,2016,2017,278,196,44,37,62
+2604106,Caruaru,PE,Nordeste,24h,2016,2018,414,269,52,115,147
+2604106,Caruaru,PE,Nordeste,24h,2016,2019,622,337,88,188,207
+2606002,Garanhuns,PE,Nordeste,comercial,0,2009,2,1,2,1,0
+2606002,Garanhuns,PE,Nordeste,comercial,0,2010,3,2,1,1,1
+2606002,Garanhuns,PE,Nordeste,comercial,0,2011,4,0,0,1,0
+2606002,Garanhuns,PE,Nordeste,comercial,0,2012,8,5,5,6,1
+2606002,Garanhuns,PE,Nordeste,comercial,0,2013,55,41,6,14,8
+2606002,Garanhuns,PE,Nordeste,comercial,0,2014,75,24,8,24,13
+2606002,Garanhuns,PE,Nordeste,comercial,0,2015,508,200,37,257,165
+2606002,Garanhuns,PE,Nordeste,comercial,0,2016,363,145,32,185,123
+2606002,Garanhuns,PE,Nordeste,comercial,0,2017,490,256,51,352,160
+2606002,Garanhuns,PE,Nordeste,comercial,0,2018,608,325,65,425,241
+2606002,Garanhuns,PE,Nordeste,comercial,0,2019,798,424,100,556,314
+2610707,Paulista,PE,Nordeste,comercial,0,2009,23,5,21,4,4
+2610707,Paulista,PE,Nordeste,comercial,0,2010,27,12,8,8,5
+2610707,Paulista,PE,Nordeste,comercial,0,2011,61,39,30,17,20
+2610707,Paulista,PE,Nordeste,comercial,0,2012,80,33,32,14,22
+2610707,Paulista,PE,Nordeste,comercial,0,2013,143,48,36,21,47
+2610707,Paulista,PE,Nordeste,comercial,0,2014,207,105,40,18,49
+2610707,Paulista,PE,Nordeste,comercial,0,2015,153,84,46,30,33
+2610707,Paulista,PE,Nordeste,comercial,0,2016,130,68,34,52,50
+2610707,Paulista,PE,Nordeste,comercial,0,2017,186,96,55,42,44
+2610707,Paulista,PE,Nordeste,comercial,0,2018,234,103,70,30,46
+2610707,Paulista,PE,Nordeste,comercial,0,2019,358,155,79,97,96
+2611101,Petrolina,PE,Nordeste,comercial,0,2009,147,109,13,79,76
+2611101,Petrolina,PE,Nordeste,comercial,0,2010,855,363,44,787,337
+2611101,Petrolina,PE,Nordeste,comercial,0,2011,797,335,33,745,166
+2611101,Petrolina,PE,Nordeste,comercial,0,2012,1186,482,125,1015,238
+2611101,Petrolina,PE,Nordeste,comercial,0,2013,1227,501,198,890,299
+2611101,Petrolina,PE,Nordeste,comercial,0,2014,1256,510,296,768,615
+2611101,Petrolina,PE,Nordeste,comercial,0,2015,1039,461,110,749,606
+2611101,Petrolina,PE,Nordeste,comercial,0,2016,1146,582,167,347,378
+2611101,Petrolina,PE,Nordeste,comercial,0,2017,1318,431,113,224,239
+2611101,Petrolina,PE,Nordeste,comercial,0,2018,1584,396,103,173,279
+2611101,Petrolina,PE,Nordeste,comercial,0,2019,1871,433,83,209,297
+2614501,Surubim,PE,Nordeste,comercial,0,2009,4,3,1,1,0
+2614501,Surubim,PE,Nordeste,comercial,0,2010,2,2,0,0,0
+2614501,Surubim,PE,Nordeste,comercial,0,2011,4,1,2,1,0
+2614501,Surubim,PE,Nordeste,comercial,0,2012,8,3,1,1,0
+2614501,Surubim,PE,Nordeste,comercial,0,2013,5,1,2,2,0
+2614501,Surubim,PE,Nordeste,comercial,0,2014,9,3,2,3,1
+2614501,Surubim,PE,Nordeste,comercial,0,2015,37,19,15,6,5
+2614501,Surubim,PE,Nordeste,comercial,0,2016,21,9,10,6,0
+2614501,Surubim,PE,Nordeste,comercial,0,2017,34,20,12,9,9
+2614501,Surubim,PE,Nordeste,comercial,0,2018,31,18,9,8,8
+2614501,Surubim,PE,Nordeste,comercial,0,2019,21,15,6,6,8
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2009,8,4,6,0,0
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2010,6,3,6,3,0
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2011,24,16,10,10,2
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2012,26,15,6,4,8
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2013,183,129,12,32,56
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2014,153,101,10,49,41
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2015,132,86,16,23,24
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2016,156,114,26,43,41
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2017,317,156,19,12,19
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2018,301,176,18,9,27
+2616407,Vitória de Santo Abraão,PE,Nordeste,comercial,0,2019,149,90,10,8,14
+2700300,Arapiraca,AL,Nordeste,comercial,0,2009,302,143,13,3,4
+2700300,Arapiraca,AL,Nordeste,comercial,0,2010,301,156,6,4,10
+2700300,Arapiraca,AL,Nordeste,comercial,0,2011,337,145,15,6,5
+2700300,Arapiraca,AL,Nordeste,comercial,0,2012,277,111,7,3,11
+2700300,Arapiraca,AL,Nordeste,comercial,0,2013,388,159,13,7,31
+2700300,Arapiraca,AL,Nordeste,comercial,0,2014,406,153,21,11,17
+2700300,Arapiraca,AL,Nordeste,comercial,0,2015,395,172,12,9,16
+2700300,Arapiraca,AL,Nordeste,comercial,0,2016,341,146,25,11,9
+2700300,Arapiraca,AL,Nordeste,comercial,0,2017,385,158,46,24,25
+2700300,Arapiraca,AL,Nordeste,comercial,0,2018,466,140,31,19,17
+2700300,Arapiraca,AL,Nordeste,comercial,0,2019,558,146,36,23,15
+2704302,Maceió,AL,Nordeste,comercial,0,2009,24,10,16,4,0
+2704302,Maceió,AL,Nordeste,comercial,0,2010,97,76,29,17,17
+2704302,Maceió,AL,Nordeste,comercial,0,2011,379,331,55,28,25
+2704302,Maceió,AL,Nordeste,comercial,0,2012,439,402,60,28,21
+2704302,Maceió,AL,Nordeste,comercial,0,2013,442,407,46,29,21
+2704302,Maceió,AL,Nordeste,comercial,0,2014,517,458,47,36,38
+2704302,Maceió,AL,Nordeste,comercial,0,2015,504,437,48,60,66
+2704302,Maceió,AL,Nordeste,comercial,0,2016,572,460,70,120,81
+2704302,Maceió,AL,Nordeste,comercial,0,2017,1011,869,120,202,129
+2704302,Maceió,AL,Nordeste,comercial,0,2018,689,425,126,145,128
+2704302,Maceió,AL,Nordeste,comercial,0,2019,1128,506,285,130,175
+2800308,Aracaju,SE,Nordeste,24h,2018,2009,29,6,23,7,5
+2800308,Aracaju,SE,Nordeste,24h,2018,2010,11,2,7,6,3
+2800308,Aracaju,SE,Nordeste,24h,2018,2011,106,17,90,30,19
+2800308,Aracaju,SE,Nordeste,24h,2018,2012,188,37,83,45,21
+2800308,Aracaju,SE,Nordeste,24h,2018,2013,311,137,95,65,33
+2800308,Aracaju,SE,Nordeste,24h,2018,2014,291,152,71,39,32
+2800308,Aracaju,SE,Nordeste,24h,2018,2015,361,160,93,54,41
+2800308,Aracaju,SE,Nordeste,24h,2018,2016,225,137,49,16,24
+2800308,Aracaju,SE,Nordeste,24h,2018,2017,329,143,61,31,38
+2800308,Aracaju,SE,Nordeste,24h,2018,2018,376,146,72,42,49
+2800308,Aracaju,SE,Nordeste,24h,2018,2019,376,144,90,18,51
+2802908,Itabaiana,SE,Nordeste,24h,2016,2009,4,1,4,1,0
+2802908,Itabaiana,SE,Nordeste,24h,2016,2010,4,1,4,3,0
+2802908,Itabaiana,SE,Nordeste,24h,2016,2011,7,0,7,3,2
+2802908,Itabaiana,SE,Nordeste,24h,2016,2012,6,1,6,1,0
+2802908,Itabaiana,SE,Nordeste,24h,2016,2013,11,4,8,2,0
+2802908,Itabaiana,SE,Nordeste,24h,2016,2014,19,10,10,4,8
+2802908,Itabaiana,SE,Nordeste,24h,2016,2015,33,30,2,22,13
+2802908,Itabaiana,SE,Nordeste,24h,2016,2016,1,1,0,0,0
+2802908,Itabaiana,SE,Nordeste,24h,2016,2017,5,0,5,0,1
+2802908,Itabaiana,SE,Nordeste,24h,2016,2018,7,2,5,0,1
+2802908,Itabaiana,SE,Nordeste,24h,2016,2019,4,0,2,0,0
+2803500,Lagarto,SE,Nordeste,24h,2014,2009,3,0,3,1,1
+2803500,Lagarto,SE,Nordeste,24h,2014,2010,1,1,1,0,1
+2803500,Lagarto,SE,Nordeste,24h,2014,2011,18,2,18,8,3
+2803500,Lagarto,SE,Nordeste,24h,2014,2012,16,2,15,2,5
+2803500,Lagarto,SE,Nordeste,24h,2014,2013,20,2,17,1,2
+2803500,Lagarto,SE,Nordeste,24h,2014,2014,15,4,10,3,2
+2803500,Lagarto,SE,Nordeste,24h,2014,2015,22,6,17,3,3
+2803500,Lagarto,SE,Nordeste,24h,2014,2016,11,5,7,2,1
+2803500,Lagarto,SE,Nordeste,24h,2014,2017,13,7,7,1,1
+2803500,Lagarto,SE,Nordeste,24h,2014,2018,73,48,26,9,19
+2803500,Lagarto,SE,Nordeste,24h,2014,2019,125,78,13,12,25
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2009,12,2,11,6,2
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2010,4,0,4,0,1
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2011,30,3,30,6,2
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2012,32,3,27,12,7
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2013,72,52,25,10,13
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2014,66,47,20,9,4
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2015,62,46,18,5,6
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2016,42,32,12,2,6
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2017,68,50,17,5,8
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2018,90,75,12,11,33
+2804805,Nossa Senhora do Socorro,SE,Nordeste,comercial,0,2019,155,81,30,20,25
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2009,1,1,0,1,0
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2010,1,0,1,0,0
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2011,3,1,3,1,0
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2012,7,3,7,5,1
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2013,31,19,12,10,9
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2014,70,62,8,11,23
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2015,24,17,12,7,8
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2016,37,37,4,5,14
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2017,29,25,8,7,3
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2018,27,21,9,2,5
+2900702,Alagoinhas,BA,Nordeste,comercial,0,2019,36,33,6,8,8
+2903201,Barreiras,BA,Nordeste,comercial,0,2009,13,11,4,6,10
+2903201,Barreiras,BA,Nordeste,comercial,0,2010,25,18,9,6,15
+2903201,Barreiras,BA,Nordeste,comercial,0,2011,69,37,9,52,52
+2903201,Barreiras,BA,Nordeste,comercial,0,2012,204,81,8,156,175
+2903201,Barreiras,BA,Nordeste,comercial,0,2013,383,172,22,331,302
+2903201,Barreiras,BA,Nordeste,comercial,0,2014,330,160,20,295,253
+2903201,Barreiras,BA,Nordeste,comercial,0,2015,354,176,20,294,281
+2903201,Barreiras,BA,Nordeste,comercial,0,2016,201,102,10,149,148
+2903201,Barreiras,BA,Nordeste,comercial,0,2017,29,21,8,4,2
+2903201,Barreiras,BA,Nordeste,comercial,0,2018,272,126,17,220,172
+2903201,Barreiras,BA,Nordeste,comercial,0,2019,507,251,20,359,298
+2906501,Candeias,BA,Nordeste,comercial,0,2009,1,1,0,0,0
+2906501,Candeias,BA,Nordeste,comercial,0,2010,3,1,0,0,0
+2906501,Candeias,BA,Nordeste,comercial,0,2011,3,2,1,0,0
+2906501,Candeias,BA,Nordeste,comercial,0,2012,2,2,0,0,0
+2906501,Candeias,BA,Nordeste,comercial,0,2013,5,1,4,0,0
+2906501,Candeias,BA,Nordeste,comercial,0,2014,7,1,5,2,1
+2906501,Candeias,BA,Nordeste,comercial,0,2015,19,11,8,3,3
+2906501,Candeias,BA,Nordeste,comercial,0,2016,13,10,4,6,7
+2906501,Candeias,BA,Nordeste,comercial,0,2017,34,21,15,9,8
+2906501,Candeias,BA,Nordeste,comercial,0,2018,34,25,7,6,13
+2906501,Candeias,BA,Nordeste,comercial,0,2019,8,7,2,2,1
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2009,116,80,44,63,21
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2010,185,119,55,92,32
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2011,172,142,41,71,50
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2012,403,297,77,237,135
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2013,360,238,95,202,110
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2014,289,241,71,168,119
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2015,413,324,69,179,141
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2016,580,444,87,276,255
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2017,660,473,102,347,322
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2018,712,436,115,311,288
+2910800,Feira de Santana,BA,Nordeste,comercial,0,2019,885,537,126,489,413
+2913606,Ilhéus,BA,Nordeste,comercial,0,2009,8,6,4,3,2
+2913606,Ilhéus,BA,Nordeste,comercial,0,2010,17,12,6,8,5
+2913606,Ilhéus,BA,Nordeste,comercial,0,2011,12,7,9,3,2
+2913606,Ilhéus,BA,Nordeste,comercial,0,2012,21,14,5,6,9
+2913606,Ilhéus,BA,Nordeste,comercial,0,2013,20,12,9,7,5
+2913606,Ilhéus,BA,Nordeste,comercial,0,2014,13,12,3,5,7
+2913606,Ilhéus,BA,Nordeste,comercial,0,2015,21,19,3,7,10
+2913606,Ilhéus,BA,Nordeste,comercial,0,2016,19,13,8,7,4
+2913606,Ilhéus,BA,Nordeste,comercial,0,2017,24,21,4,3,8
+2913606,Ilhéus,BA,Nordeste,comercial,0,2018,61,43,16,19,15
+2913606,Ilhéus,BA,Nordeste,comercial,0,2019,108,84,23,28,28
+2914802,Itabuna,BA,Nordeste,comercial,0,2009,10,3,3,2,0
+2914802,Itabuna,BA,Nordeste,comercial,0,2010,49,17,6,12,9
+2914802,Itabuna,BA,Nordeste,comercial,0,2011,80,27,11,23,15
+2914802,Itabuna,BA,Nordeste,comercial,0,2012,39,23,11,17,13
+2914802,Itabuna,BA,Nordeste,comercial,0,2013,87,53,11,23,13
+2914802,Itabuna,BA,Nordeste,comercial,0,2014,133,119,11,21,18
+2914802,Itabuna,BA,Nordeste,comercial,0,2015,173,148,8,18,26
+2914802,Itabuna,BA,Nordeste,comercial,0,2016,151,122,9,13,14
+2914802,Itabuna,BA,Nordeste,comercial,0,2017,176,117,12,7,20
+2914802,Itabuna,BA,Nordeste,comercial,0,2018,165,130,13,10,11
+2914802,Itabuna,BA,Nordeste,comercial,0,2019,179,102,18,8,13
+2918407,Juazeiro,BA,Nordeste,comercial,0,2009,11,7,8,4,2
+2918407,Juazeiro,BA,Nordeste,comercial,0,2010,67,39,10,61,43
+2918407,Juazeiro,BA,Nordeste,comercial,0,2011,31,16,6,13,11
+2918407,Juazeiro,BA,Nordeste,comercial,0,2012,42,30,15,26,20
+2918407,Juazeiro,BA,Nordeste,comercial,0,2013,86,70,20,24,33
+2918407,Juazeiro,BA,Nordeste,comercial,0,2014,108,79,26,40,51
+2918407,Juazeiro,BA,Nordeste,comercial,0,2015,100,85,16,38,43
+2918407,Juazeiro,BA,Nordeste,comercial,0,2016,142,90,34,28,40
+2918407,Juazeiro,BA,Nordeste,comercial,0,2017,200,75,41,44,60
+2918407,Juazeiro,BA,Nordeste,comercial,0,2018,271,119,71,45,91
+2918407,Juazeiro,BA,Nordeste,comercial,0,2019,380,124,76,66,90
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2009,5,3,5,3,0
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2010,1,1,1,0,0
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2011,16,9,8,6,5
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2012,29,27,3,4,6
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2013,40,37,4,14,19
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2014,15,13,3,3,7
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2015,11,6,7,6,0
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2016,14,6,8,7,1
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2017,5,1,5,0,2
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2018,16,6,7,4,1
+2924009,Paulo Afonso,BA,Nordeste,comercial,0,2019,23,8,11,5,6
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2009,1,1,0,0,0
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2010,5,2,2,0,1
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2011,3,1,3,2,0
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2012,11,5,10,6,2
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2013,47,24,13,23,25
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2014,93,47,24,57,57
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2015,83,51,21,66,57
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2016,32,19,22,14,9
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2017,53,34,28,22,19
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2018,117,58,37,66,37
+2925303,Porto Seguro,BA,Nordeste,comercial,0,2019,279,186,50,205,146
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2009,3,3,0,0,0
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2010,0,0,0,0,0
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2011,0,0,0,0,0
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2012,0,0,0,0,0
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2013,6,6,0,0,4
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2014,5,5,1,3,3
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2015,3,2,3,0,1
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2016,3,3,0,1,1
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2017,3,2,0,1,1
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2018,7,5,0,0,1
+2928604,Santo Amaro,PE,Nordeste,24h,2012,2019,3,1,0,2,1
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2009,0,0,0,0,0
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2010,0,0,0,0,0
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2011,0,0,0,0,0
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2012,4,3,3,2,1
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2013,3,3,1,1,0
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2014,5,4,1,1,1
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2015,66,54,19,29,33
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2016,116,95,15,30,59
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2017,28,17,15,12,6
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2018,31,23,14,14,10
+2931350,Teixeira de Freitas,BA,Nordeste,comercial,0,2019,156,82,21,130,82
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2009,7,2,7,2,0
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2010,314,166,109,182,126
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2011,426,227,128,325,252
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2012,322,211,95,266,221
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2013,252,125,101,198,135
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2014,462,258,210,360,232
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2015,341,186,166,281,139
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2016,422,267,276,331,204
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2017,243,165,163,194,152
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2018,507,334,246,349,212
+2933307,Vitória da Conquista,BA,Nordeste,comercial,0,2019,497,346,243,327,211
+3106705,Betim,MG,Sudeste,comercial,0,2009,64,41,38,22,12
+3106705,Betim,MG,Sudeste,comercial,0,2010,111,89,32,16,17
+3106705,Betim,MG,Sudeste,comercial,0,2011,143,112,51,32,18
+3106705,Betim,MG,Sudeste,comercial,0,2012,143,89,54,20,21
+3106705,Betim,MG,Sudeste,comercial,0,2013,131,58,39,23,20
+3106705,Betim,MG,Sudeste,comercial,0,2014,193,124,69,39,32
+3106705,Betim,MG,Sudeste,comercial,0,2015,376,274,78,33,36
+3106705,Betim,MG,Sudeste,comercial,0,2016,586,412,89,172,145
+3106705,Betim,MG,Sudeste,comercial,0,2017,996,661,170,387,375
+3106705,Betim,MG,Sudeste,comercial,0,2018,825,574,189,144,125
+3106705,Betim,MG,Sudeste,comercial,0,2019,852,625,166,217,205
+3118601,Contagem,MG,Sudeste,comercial,0,2009,78,64,10,18,18
+3118601,Contagem,MG,Sudeste,comercial,0,2010,15,11,9,8,4
+3118601,Contagem,MG,Sudeste,comercial,0,2011,22,13,10,8,4
+3118601,Contagem,MG,Sudeste,comercial,0,2012,73,37,42,26,6
+3118601,Contagem,MG,Sudeste,comercial,0,2013,142,99,54,23,17
+3118601,Contagem,MG,Sudeste,comercial,0,2014,310,236,61,88,87
+3118601,Contagem,MG,Sudeste,comercial,0,2015,610,525,90,171,165
+3118601,Contagem,MG,Sudeste,comercial,0,2016,320,248,48,50,61
+3118601,Contagem,MG,Sudeste,comercial,0,2017,334,249,90,58,39
+3118601,Contagem,MG,Sudeste,comercial,0,2018,314,225,56,58,43
+3118601,Contagem,MG,Sudeste,comercial,0,2019,326,194,79,56,35
+3129806,Ibirite,MG,Sudeste,comercial,0,2009,9,6,6,3,3
+3129806,Ibirite,MG,Sudeste,comercial,0,2010,19,9,3,5,4
+3129806,Ibirite,MG,Sudeste,comercial,0,2011,45,32,15,16,10
+3129806,Ibirite,MG,Sudeste,comercial,0,2012,55,36,14,9,7
+3129806,Ibirite,MG,Sudeste,comercial,0,2013,45,21,16,10,7
+3129806,Ibirite,MG,Sudeste,comercial,0,2014,52,32,19,9,8
+3129806,Ibirite,MG,Sudeste,comercial,0,2015,169,139,25,21,26
+3129806,Ibirite,MG,Sudeste,comercial,0,2016,100,68,32,16,20
+3129806,Ibirite,MG,Sudeste,comercial,0,2017,146,75,34,15,31
+3129806,Ibirite,MG,Sudeste,comercial,0,2018,240,194,48,22,40
+3129806,Ibirite,MG,Sudeste,comercial,0,2019,277,162,49,29,47
+3144805,Nova Lima,MG,Sudeste,comercial,0,2009,4,3,3,3,2
+3144805,Nova Lima,MG,Sudeste,comercial,0,2010,5,3,4,2,0
+3144805,Nova Lima,MG,Sudeste,comercial,0,2011,2,1,1,0,0
+3144805,Nova Lima,MG,Sudeste,comercial,0,2012,19,12,8,6,6
+3144805,Nova Lima,MG,Sudeste,comercial,0,2013,20,9,4,5,3
+3144805,Nova Lima,MG,Sudeste,comercial,0,2014,25,15,5,11,6
+3144805,Nova Lima,MG,Sudeste,comercial,0,2015,34,23,8,6,6
+3144805,Nova Lima,MG,Sudeste,comercial,0,2016,21,11,6,9,7
+3144805,Nova Lima,MG,Sudeste,comercial,0,2017,29,22,7,9,7
+3144805,Nova Lima,MG,Sudeste,comercial,0,2018,26,17,10,8,4
+3144805,Nova Lima,MG,Sudeste,comercial,0,2019,48,26,5,9,10
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2009,22,8,14,9,1
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2010,47,23,19,31,15
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2011,61,38,32,27,15
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2012,64,35,36,16,7
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2013,68,39,30,25,10
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2014,114,74,30,26,15
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2015,116,80,31,23,17
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2016,101,63,27,12,11
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2017,190,122,53,39,24
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2018,171,118,41,31,19
+3154606,Ribeirão das Neves,MG,Sudeste,comercial,0,2019,181,101,53,32,16
+3156700,Sabará,MG,Sudeste,comercial,0,2009,6,3,4,1,2
+3156700,Sabará,MG,Sudeste,comercial,0,2010,12,4,10,4,1
+3156700,Sabará,MG,Sudeste,comercial,0,2011,17,9,12,3,2
+3156700,Sabará,MG,Sudeste,comercial,0,2012,59,27,11,5,7
+3156700,Sabará,MG,Sudeste,comercial,0,2013,100,48,21,31,17
+3156700,Sabará,MG,Sudeste,comercial,0,2014,70,38,12,21,17
+3156700,Sabará,MG,Sudeste,comercial,0,2015,75,54,17,25,25
+3156700,Sabará,MG,Sudeste,comercial,0,2016,121,93,20,46,50
+3156700,Sabará,MG,Sudeste,comercial,0,2017,99,79,15,30,35
+3156700,Sabará,MG,Sudeste,comercial,0,2018,124,93,20,42,41
+3156700,Sabará,MG,Sudeste,comercial,0,2019,134,85,34,53,46
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2009,36,27,17,12,6
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2010,72,63,17,12,9
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2011,44,32,10,5,8
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2012,30,11,16,5,4
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2013,82,67,13,12,25
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2014,248,208,26,23,43
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2015,253,223,15,16,71
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2016,124,93,15,11,26
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2017,382,351,22,16,100
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2018,470,392,44,67,123
+3157807,Santa Luzia,MG,Sudeste,comercial,0,2019,297,218,44,31,73
+3170206,Uberlândia,MG,Sudeste,comercial,0,2009,1,1,1,1,0
+3170206,Uberlândia,MG,Sudeste,comercial,0,2010,368,194,108,66,27
+3170206,Uberlândia,MG,Sudeste,comercial,0,2011,421,244,108,154,59
+3170206,Uberlândia,MG,Sudeste,comercial,0,2012,562,365,114,88,66
+3170206,Uberlândia,MG,Sudeste,comercial,0,2013,406,286,99,261,77
+3170206,Uberlândia,MG,Sudeste,comercial,0,2014,474,378,138,303,63
+3170206,Uberlândia,MG,Sudeste,comercial,0,2015,368,248,118,192,52
+3170206,Uberlândia,MG,Sudeste,comercial,0,2016,300,187,91,126,48
+3170206,Uberlândia,MG,Sudeste,comercial,0,2017,455,346,158,264,61
+3170206,Uberlândia,MG,Sudeste,comercial,0,2018,386,248,137,163,48
+3170206,Uberlândia,MG,Sudeste,comercial,0,2019,596,461,221,237,53
+3171204,Vespasiano,MG,Sudeste,comercial,0,2009,6,4,3,1,2
+3171204,Vespasiano,MG,Sudeste,comercial,0,2010,15,11,6,4,9
+3171204,Vespasiano,MG,Sudeste,comercial,0,2011,10,5,9,6,1
+3171204,Vespasiano,MG,Sudeste,comercial,0,2012,23,14,12,13,8
+3171204,Vespasiano,MG,Sudeste,comercial,0,2013,46,34,12,10,19
+3171204,Vespasiano,MG,Sudeste,comercial,0,2014,67,56,12,17,24
+3171204,Vespasiano,MG,Sudeste,comercial,0,2015,79,65,11,16,29
+3171204,Vespasiano,MG,Sudeste,comercial,0,2016,69,45,9,20,27
+3171204,Vespasiano,MG,Sudeste,comercial,0,2017,106,75,20,27,29
+3171204,Vespasiano,MG,Sudeste,comercial,0,2018,120,93,14,31,37
+3171204,Vespasiano,MG,Sudeste,comercial,0,2019,151,82,14,22,31
+3200607,Aracruz,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3200607,Aracruz,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3200607,Aracruz,ES,Sudeste,comercial,0,2011,1,0,1,0,0
+3200607,Aracruz,ES,Sudeste,comercial,0,2012,2,0,2,1,0
+3200607,Aracruz,ES,Sudeste,comercial,0,2013,21,18,4,3,7
+3200607,Aracruz,ES,Sudeste,comercial,0,2014,50,37,14,13,22
+3200607,Aracruz,ES,Sudeste,comercial,0,2015,55,27,12,18,20
+3200607,Aracruz,ES,Sudeste,comercial,0,2016,380,321,23,149,170
+3200607,Aracruz,ES,Sudeste,comercial,0,2017,349,310,18,124,131
+3200607,Aracruz,ES,Sudeste,comercial,0,2018,466,422,22,72,183
+3200607,Aracruz,ES,Sudeste,comercial,0,2019,91,76,10,15,23
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2010,1,1,1,1,1
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2011,6,6,4,4,1
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2012,8,6,3,2,1
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2013,21,16,5,5,9
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2014,50,44,5,13,23
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2015,79,55,9,15,32
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2016,137,84,14,18,33
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2017,116,70,11,7,39
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2018,186,94,21,19,22
+3201209,Cachoeiro de Itapemirim,ES,Sudeste,comercial,0,2019,232,128,15,22,36
+3201308,Cariacica,ES,Sudeste,comercial,0,2009,5,1,4,0,0
+3201308,Cariacica,ES,Sudeste,comercial,0,2010,72,56,10,62,56
+3201308,Cariacica,ES,Sudeste,comercial,0,2011,214,157,37,151,129
+3201308,Cariacica,ES,Sudeste,comercial,0,2012,277,161,49,157,182
+3201308,Cariacica,ES,Sudeste,comercial,0,2013,545,305,50,392,410
+3201308,Cariacica,ES,Sudeste,comercial,0,2014,469,252,49,202,336
+3201308,Cariacica,ES,Sudeste,comercial,0,2015,376,211,55,170,187
+3201308,Cariacica,ES,Sudeste,comercial,0,2016,429,234,42,123,201
+3201308,Cariacica,ES,Sudeste,comercial,0,2017,409,135,90,56,89
+3201308,Cariacica,ES,Sudeste,comercial,0,2018,414,116,55,19,61
+3201308,Cariacica,ES,Sudeste,comercial,0,2019,525,163,79,35,77
+3201506,Colatina,ES,Sudeste,comercial,0,2009,1,0,1,0,0
+3201506,Colatina,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3201506,Colatina,ES,Sudeste,comercial,0,2011,0,0,0,0,0
+3201506,Colatina,ES,Sudeste,comercial,0,2012,3,3,1,2,1
+3201506,Colatina,ES,Sudeste,comercial,0,2013,57,22,6,9,12
+3201506,Colatina,ES,Sudeste,comercial,0,2014,96,67,8,3,33
+3201506,Colatina,ES,Sudeste,comercial,0,2015,193,144,11,12,65
+3201506,Colatina,ES,Sudeste,comercial,0,2016,238,144,25,25,58
+3201506,Colatina,ES,Sudeste,comercial,0,2017,216,118,23,15,48
+3201506,Colatina,ES,Sudeste,comercial,0,2018,220,134,11,8,64
+3201506,Colatina,ES,Sudeste,comercial,0,2019,165,64,14,10,26
+3202405,Guarapari,ES,Sudeste,comercial,0,2009,11,9,2,6,6
+3202405,Guarapari,ES,Sudeste,comercial,0,2010,23,22,3,14,8
+3202405,Guarapari,ES,Sudeste,comercial,0,2011,17,13,8,10,5
+3202405,Guarapari,ES,Sudeste,comercial,0,2012,31,21,13,15,10
+3202405,Guarapari,ES,Sudeste,comercial,0,2013,50,37,9,11,12
+3202405,Guarapari,ES,Sudeste,comercial,0,2014,74,43,8,13,21
+3202405,Guarapari,ES,Sudeste,comercial,0,2015,131,69,18,30,41
+3202405,Guarapari,ES,Sudeste,comercial,0,2016,148,102,16,45,64
+3202405,Guarapari,ES,Sudeste,comercial,0,2017,224,138,28,97,102
+3202405,Guarapari,ES,Sudeste,comercial,0,2018,284,169,23,100,122
+3202405,Guarapari,ES,Sudeste,comercial,0,2019,338,164,47,26,110
+3203205,Linhares,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3203205,Linhares,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3203205,Linhares,ES,Sudeste,comercial,0,2011,1,1,0,1,1
+3203205,Linhares,ES,Sudeste,comercial,0,2012,0,0,0,0,0
+3203205,Linhares,ES,Sudeste,comercial,0,2013,17,1,0,1,0
+3203205,Linhares,ES,Sudeste,comercial,0,2014,29,24,5,6,6
+3203205,Linhares,ES,Sudeste,comercial,0,2015,61,56,6,3,4
+3203205,Linhares,ES,Sudeste,comercial,0,2016,68,66,2,11,6
+3203205,Linhares,ES,Sudeste,comercial,0,2017,171,138,29,35,35
+3203205,Linhares,ES,Sudeste,comercial,0,2018,233,180,30,46,64
+3203205,Linhares,ES,Sudeste,comercial,0,2019,202,184,20,76,36
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2011,1,1,0,0,1
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2012,0,0,0,0,0
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2013,0,0,0,0,0
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2014,9,8,4,4,1
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2015,3,1,2,0,0
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2016,3,1,2,0,1
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2017,51,48,3,26,23
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2018,108,92,12,33,22
+3203908,Nova Venécia,ES,Sudeste,comercial,0,2019,92,78,4,12,15
+3204906,São Mateus,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3204906,São Mateus,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3204906,São Mateus,ES,Sudeste,comercial,0,2011,2,1,1,1,0
+3204906,São Mateus,ES,Sudeste,comercial,0,2012,3,0,3,0,0
+3204906,São Mateus,ES,Sudeste,comercial,0,2013,10,2,9,3,2
+3204906,São Mateus,ES,Sudeste,comercial,0,2014,77,38,28,50,15
+3204906,São Mateus,ES,Sudeste,comercial,0,2015,25,16,16,8,3
+3204906,São Mateus,ES,Sudeste,comercial,0,2016,75,57,18,13,12
+3204906,São Mateus,ES,Sudeste,comercial,0,2017,114,92,18,20,38
+3204906,São Mateus,ES,Sudeste,comercial,0,2018,127,86,12,20,26
+3204906,São Mateus,ES,Sudeste,comercial,0,2019,183,84,23,8,39
+3205002,Serra,ES,Sudeste,comercial,0,2009,1,1,1,0,0
+3205002,Serra,ES,Sudeste,comercial,0,2010,1,1,1,1,0
+3205002,Serra,ES,Sudeste,comercial,0,2011,25,10,20,3,2
+3205002,Serra,ES,Sudeste,comercial,0,2012,247,134,96,88,52
+3205002,Serra,ES,Sudeste,comercial,0,2013,374,222,99,78,117
+3205002,Serra,ES,Sudeste,comercial,0,2014,496,249,89,114,157
+3205002,Serra,ES,Sudeste,comercial,0,2015,864,373,161,203,306
+3205002,Serra,ES,Sudeste,comercial,0,2016,965,443,141,283,442
+3205002,Serra,ES,Sudeste,comercial,0,2017,982,427,167,228,363
+3205002,Serra,ES,Sudeste,comercial,0,2018,1244,425,175,248,340
+3205002,Serra,ES,Sudeste,comercial,0,2019,1290,414,167,215,307
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2010,0,0,0,0,0
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2011,2,1,2,2,0
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2012,2,1,2,0,0
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2013,1,0,1,0,0
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2014,9,8,1,4,4
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2015,48,34,0,13,7
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2016,28,18,1,7,3
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2017,19,11,1,6,1
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2018,43,19,6,3,4
+3205069,Venda Nova do Imigrante,ES,Sudeste,comercial,0,2019,112,41,6,25,23
+3205101,Viana,ES,Sudeste,comercial,0,2009,0,0,0,0,0
+3205101,Viana,ES,Sudeste,comercial,0,2010,4,2,1,2,3
+3205101,Viana,ES,Sudeste,comercial,0,2011,11,9,3,8,8
+3205101,Viana,ES,Sudeste,comercial,0,2012,13,5,8,4,1
+3205101,Viana,ES,Sudeste,comercial,0,2013,16,5,8,9,8
+3205101,Viana,ES,Sudeste,comercial,0,2014,15,11,1,3,3
+3205101,Viana,ES,Sudeste,comercial,0,2015,46,36,3,5,8
+3205101,Viana,ES,Sudeste,comercial,0,2016,64,35,13,6,8
+3205101,Viana,ES,Sudeste,comercial,0,2017,62,38,9,7,14
+3205101,Viana,ES,Sudeste,comercial,0,2018,96,48,11,7,19
+3205101,Viana,ES,Sudeste,comercial,0,2019,100,55,12,11,15
+3205200,Vila Velha,ES,Sudeste,comercial,0,2009,3,0,3,0,0
+3205200,Vila Velha,ES,Sudeste,comercial,0,2010,2,0,2,1,0
+3205200,Vila Velha,ES,Sudeste,comercial,0,2011,43,12,27,12,2
+3205200,Vila Velha,ES,Sudeste,comercial,0,2012,60,24,38,20,3
+3205200,Vila Velha,ES,Sudeste,comercial,0,2013,57,25,32,17,11
+3205200,Vila Velha,ES,Sudeste,comercial,0,2014,179,81,48,98,83
+3205200,Vila Velha,ES,Sudeste,comercial,0,2015,182,105,40,58,58
+3205200,Vila Velha,ES,Sudeste,comercial,0,2016,225,130,53,47,54
+3205200,Vila Velha,ES,Sudeste,comercial,0,2017,323,176,76,77,89
+3205200,Vila Velha,ES,Sudeste,comercial,0,2018,597,310,114,264,240
+3205200,Vila Velha,ES,Sudeste,comercial,0,2019,765,285,167,222,136
+3205309,Vitória,ES,Sudeste,comercial,0,2009,9,0,7,1,1
+3205309,Vitória,ES,Sudeste,comercial,0,2010,7,3,3,3,1
+3205309,Vitória,ES,Sudeste,comercial,0,2011,92,31,24,25,10
+3205309,Vitória,ES,Sudeste,comercial,0,2012,178,57,67,34,17
+3205309,Vitória,ES,Sudeste,comercial,0,2013,240,89,75,32,44
+3205309,Vitória,ES,Sudeste,comercial,0,2014,466,186,103,52,85
+3205309,Vitória,ES,Sudeste,comercial,0,2015,635,313,118,45,124
+3205309,Vitória,ES,Sudeste,comercial,0,2016,957,458,142,141,309
+3205309,Vitória,ES,Sudeste,comercial,0,2017,1126,437,158,184,361
+3205309,Vitória,ES,Sudeste,comercial,0,2018,1251,375,169,209,364
+3205309,Vitória,ES,Sudeste,comercial,0,2019,1586,427,241,167,392
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2009,2,0,0,0,0
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2010,6,5,3,3,2
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2011,10,8,6,4,2
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2012,16,11,8,7,6
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2013,14,10,5,6,4
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2014,17,13,7,6,5
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2015,13,10,6,6,6
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2016,20,15,8,12,6
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2017,38,30,9,19,17
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2018,22,14,7,11,8
+3300704,Cabo Frio,RJ,Sudeste,24h,2013,2019,34,23,10,16,12
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2009,61,12,26,7,6
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2010,292,96,81,49,35
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2011,880,599,75,267,287
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2012,1334,993,142,455,456
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2013,1174,866,106,386,417
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2014,1451,1208,128,653,625
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2015,1527,1058,107,551,526
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2016,1193,793,119,424,446
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2017,1072,613,143,354,302
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2018,1006,505,162,253,249
+3301702,Duque de Caxias,RJ,Sudeste,24h,2011,2019,1267,746,166,387,367
+3303302,Niterói,RJ,Sudeste,24h,2011,2009,5,2,1,2,1
+3303302,Niterói,RJ,Sudeste,24h,2011,2010,120,18,28,16,11
+3303302,Niterói,RJ,Sudeste,24h,2011,2011,116,38,24,27,15
+3303302,Niterói,RJ,Sudeste,24h,2011,2012,134,69,46,55,30
+3303302,Niterói,RJ,Sudeste,24h,2011,2013,150,93,41,51,35
+3303302,Niterói,RJ,Sudeste,24h,2011,2014,147,102,35,46,44
+3303302,Niterói,RJ,Sudeste,24h,2011,2015,284,195,36,87,47
+3303302,Niterói,RJ,Sudeste,24h,2011,2016,282,178,64,114,58
+3303302,Niterói,RJ,Sudeste,24h,2011,2017,359,219,70,106,62
+3303302,Niterói,RJ,Sudeste,24h,2011,2018,566,366,73,172,88
+3303302,Niterói,RJ,Sudeste,24h,2011,2019,494,200,68,116,80
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2009,4,0,4,2,1
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2010,54,22,22,14,3
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2011,146,87,27,50,32
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2012,174,84,41,42,19
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2013,341,158,66,95,48
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2014,254,107,26,73,31
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2015,202,88,30,67,17
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2016,81,36,25,25,17
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2017,816,245,73,211,54
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2018,1093,315,114,266,98
+3303500,Nova Iguaçu,RJ,Sudeste,24h,2013,2019,1188,349,103,254,113
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2009,66,46,9,43,24
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2010,265,145,39,203,147
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2011,240,130,67,173,114
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2012,503,265,123,381,280
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2013,369,201,84,220,190
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2014,257,134,95,117,87
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2015,297,160,104,73,43
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2016,231,115,69,59,41
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2017,257,149,54,59,45
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2018,475,275,107,90,93
+3304904,São Gonçalo,RJ,Sudeste,24h,2014,2019,1447,956,197,263,388
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2009,9,2,6,3,0
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2010,18,6,10,3,2
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2011,37,22,16,12,7
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2012,42,20,16,8,8
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2013,162,126,20,33,50
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2014,45,23,15,18,9
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2015,113,76,33,52,30
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2016,128,63,39,40,38
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2017,83,44,12,25,16
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2018,114,52,52,39,20
+3305109,São João de Meriti,RJ,Sudeste,comercial,0,2019,167,102,42,52,52
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2009,12,6,5,1,2
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2010,15,13,6,6,6
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2011,31,25,7,15,11
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2012,44,40,7,13,14
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2013,45,41,8,14,26
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2014,66,62,6,24,33
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2015,108,103,6,51,53
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2016,77,72,6,26,43
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2017,173,157,16,83,72
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2018,269,251,18,83,116
+3306305,Volta Redonda,RJ,Sudeste,24h,2014,2019,233,214,21,82,83
+3500105,Adamantina,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3500105,Adamantina,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3500105,Adamantina,SP,Sudeste,comercial,0,2011,19,10,1,4,3
+3500105,Adamantina,SP,Sudeste,comercial,0,2012,62,33,1,10,14
+3500105,Adamantina,SP,Sudeste,comercial,0,2013,45,26,0,1,9
+3500105,Adamantina,SP,Sudeste,comercial,0,2014,89,42,1,7,21
+3500105,Adamantina,SP,Sudeste,comercial,0,2015,73,35,0,5,10
+3500105,Adamantina,SP,Sudeste,comercial,0,2016,56,24,1,1,10
+3500105,Adamantina,SP,Sudeste,comercial,0,2017,50,14,1,1,7
+3500105,Adamantina,SP,Sudeste,comercial,0,2018,55,21,5,6,10
+3500105,Adamantina,SP,Sudeste,comercial,0,2019,48,4,1,1,1
+3501608,Americana,SP,Sudeste,comercial,0,2009,99,44,12,77,48
+3501608,Americana,SP,Sudeste,comercial,0,2010,118,45,11,77,55
+3501608,Americana,SP,Sudeste,comercial,0,2011,219,148,20,80,112
+3501608,Americana,SP,Sudeste,comercial,0,2012,456,359,16,176,223
+3501608,Americana,SP,Sudeste,comercial,0,2013,333,277,20,137,163
+3501608,Americana,SP,Sudeste,comercial,0,2014,251,222,15,93,125
+3501608,Americana,SP,Sudeste,comercial,0,2015,259,197,21,92,104
+3501608,Americana,SP,Sudeste,comercial,0,2016,314,238,26,68,155
+3501608,Americana,SP,Sudeste,comercial,0,2017,323,231,14,57,126
+3501608,Americana,SP,Sudeste,comercial,0,2018,342,262,16,100,162
+3501608,Americana,SP,Sudeste,comercial,0,2019,284,195,12,54,120
+3502101,Andradina,SP,Sudeste,comercial,0,2009,8,7,1,1,4
+3502101,Andradina,SP,Sudeste,comercial,0,2010,48,42,2,4,17
+3502101,Andradina,SP,Sudeste,comercial,0,2011,88,82,1,14,20
+3502101,Andradina,SP,Sudeste,comercial,0,2012,119,108,8,11,35
+3502101,Andradina,SP,Sudeste,comercial,0,2013,81,72,3,8,26
+3502101,Andradina,SP,Sudeste,comercial,0,2014,60,56,7,7,14
+3502101,Andradina,SP,Sudeste,comercial,0,2015,62,48,5,7,27
+3502101,Andradina,SP,Sudeste,comercial,0,2016,86,66,5,14,26
+3502101,Andradina,SP,Sudeste,comercial,0,2017,99,96,4,20,23
+3502101,Andradina,SP,Sudeste,comercial,0,2018,138,131,4,25,29
+3502101,Andradina,SP,Sudeste,comercial,0,2019,62,62,1,14,10
+3503208,Araraquara,SP,Sudeste,comercial,0,2009,9,5,9,1,1
+3503208,Araraquara,SP,Sudeste,comercial,0,2010,9,2,8,1,1
+3503208,Araraquara,SP,Sudeste,comercial,0,2011,5,2,3,1,2
+3503208,Araraquara,SP,Sudeste,comercial,0,2012,51,35,17,17,23
+3503208,Araraquara,SP,Sudeste,comercial,0,2013,94,83,12,21,53
+3503208,Araraquara,SP,Sudeste,comercial,0,2014,115,90,19,53,79
+3503208,Araraquara,SP,Sudeste,comercial,0,2015,275,132,30,145,182
+3503208,Araraquara,SP,Sudeste,comercial,0,2016,69,64,4,30,49
+3503208,Araraquara,SP,Sudeste,comercial,0,2017,526,318,41,272,281
+3503208,Araraquara,SP,Sudeste,comercial,0,2018,449,295,30,117,175
+3503208,Araraquara,SP,Sudeste,comercial,0,2019,1128,627,72,730,653
+3503307,Araras,SP,Sudeste,comercial,0,2009,3,2,3,2,1
+3503307,Araras,SP,Sudeste,comercial,0,2010,1,0,1,1,0
+3503307,Araras,SP,Sudeste,comercial,0,2011,1,0,1,0,0
+3503307,Araras,SP,Sudeste,comercial,0,2012,6,1,5,0,0
+3503307,Araras,SP,Sudeste,comercial,0,2013,1,0,1,0,1
+3503307,Araras,SP,Sudeste,comercial,0,2014,15,10,3,9,12
+3503307,Araras,SP,Sudeste,comercial,0,2015,48,46,4,25,24
+3503307,Araras,SP,Sudeste,comercial,0,2016,72,62,6,41,40
+3503307,Araras,SP,Sudeste,comercial,0,2017,66,56,6,45,38
+3503307,Araras,SP,Sudeste,comercial,0,2018,72,66,9,53,30
+3503307,Araras,SP,Sudeste,comercial,0,2019,79,64,13,28,29
+3505500,Barretos,SP,Sudeste,comercial,0,2009,1,0,1,0,0
+3505500,Barretos,SP,Sudeste,comercial,0,2010,2,1,2,1,0
+3505500,Barretos,SP,Sudeste,comercial,0,2011,16,7,8,4,4
+3505500,Barretos,SP,Sudeste,comercial,0,2012,10,8,2,1,0
+3505500,Barretos,SP,Sudeste,comercial,0,2013,20,18,3,1,5
+3505500,Barretos,SP,Sudeste,comercial,0,2014,92,87,8,3,22
+3505500,Barretos,SP,Sudeste,comercial,0,2015,116,81,5,1,18
+3505500,Barretos,SP,Sudeste,comercial,0,2016,64,29,1,1,13
+3505500,Barretos,SP,Sudeste,comercial,0,2017,81,29,8,3,10
+3505500,Barretos,SP,Sudeste,comercial,0,2018,85,32,10,4,12
+3505500,Barretos,SP,Sudeste,comercial,0,2019,79,41,8,4,22
+3505708,Barueri,SP,Sudeste,comercial,0,2009,72,66,7,16,17
+3505708,Barueri,SP,Sudeste,comercial,0,2010,93,74,5,4,11
+3505708,Barueri,SP,Sudeste,comercial,0,2011,105,82,7,7,5
+3505708,Barueri,SP,Sudeste,comercial,0,2012,74,34,15,9,9
+3505708,Barueri,SP,Sudeste,comercial,0,2013,91,45,8,27,27
+3505708,Barueri,SP,Sudeste,comercial,0,2014,138,90,11,23,42
+3505708,Barueri,SP,Sudeste,comercial,0,2015,278,173,48,96,134
+3505708,Barueri,SP,Sudeste,comercial,0,2016,217,133,63,89,101
+3505708,Barueri,SP,Sudeste,comercial,0,2017,230,145,69,102,96
+3505708,Barueri,SP,Sudeste,comercial,0,2018,372,223,74,199,179
+3505708,Barueri,SP,Sudeste,comercial,0,2019,414,250,95,194,168
+3505807,Bastos,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3505807,Bastos,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3505807,Bastos,SP,Sudeste,comercial,0,2011,0,0,0,0,0
+3505807,Bastos,SP,Sudeste,comercial,0,2012,4,4,0,2,0
+3505807,Bastos,SP,Sudeste,comercial,0,2013,26,15,0,1,11
+3505807,Bastos,SP,Sudeste,comercial,0,2014,41,36,1,1,14
+3505807,Bastos,SP,Sudeste,comercial,0,2015,58,48,0,10,15
+3505807,Bastos,SP,Sudeste,comercial,0,2016,71,62,4,19,20
+3505807,Bastos,SP,Sudeste,comercial,0,2017,100,95,2,12,31
+3505807,Bastos,SP,Sudeste,comercial,0,2018,77,73,1,48,32
+3505807,Bastos,SP,Sudeste,comercial,0,2019,52,48,2,22,18
+3505906,Batatais,SP,Sudeste,comercial,0,2009,1,1,1,1,0
+3505906,Batatais,SP,Sudeste,comercial,0,2010,69,62,4,18,28
+3505906,Batatais,SP,Sudeste,comercial,0,2011,109,102,8,13,46
+3505906,Batatais,SP,Sudeste,comercial,0,2012,205,198,3,52,67
+3505906,Batatais,SP,Sudeste,comercial,0,2013,278,270,6,67,83
+3505906,Batatais,SP,Sudeste,comercial,0,2014,263,254,9,40,92
+3505906,Batatais,SP,Sudeste,comercial,0,2015,224,215,7,20,96
+3505906,Batatais,SP,Sudeste,comercial,0,2016,192,188,3,28,82
+3505906,Batatais,SP,Sudeste,comercial,0,2017,247,232,15,38,104
+3505906,Batatais,SP,Sudeste,comercial,0,2018,270,208,9,22,100
+3505906,Batatais,SP,Sudeste,comercial,0,2019,255,190,11,36,81
+3506102,Bebedouro,SP,Sudeste,comercial,0,2009,3,0,3,0,0
+3506102,Bebedouro,SP,Sudeste,comercial,0,2010,3,1,3,0,0
+3506102,Bebedouro,SP,Sudeste,comercial,0,2011,180,174,3,2,35
+3506102,Bebedouro,SP,Sudeste,comercial,0,2012,343,336,5,20,103
+3506102,Bebedouro,SP,Sudeste,comercial,0,2013,276,271,8,12,105
+3506102,Bebedouro,SP,Sudeste,comercial,0,2014,135,133,2,17,38
+3506102,Bebedouro,SP,Sudeste,comercial,0,2015,200,196,3,3,65
+3506102,Bebedouro,SP,Sudeste,comercial,0,2016,258,252,5,6,109
+3506102,Bebedouro,SP,Sudeste,comercial,0,2017,216,207,8,0,81
+3506102,Bebedouro,SP,Sudeste,comercial,0,2018,263,256,4,10,108
+3506102,Bebedouro,SP,Sudeste,comercial,0,2019,153,147,3,42,67
+3509502,Campinas,SP,Sudeste,comercial,0,2009,611,239,237,212,118
+3509502,Campinas,SP,Sudeste,comercial,0,2010,567,200,198,186,110
+3509502,Campinas,SP,Sudeste,comercial,0,2011,816,331,251,238,178
+3509502,Campinas,SP,Sudeste,comercial,0,2012,852,363,180,292,273
+3509502,Campinas,SP,Sudeste,comercial,0,2013,865,358,204,347,294
+3509502,Campinas,SP,Sudeste,comercial,0,2014,717,280,193,181,194
+3509502,Campinas,SP,Sudeste,comercial,0,2015,1164,495,232,81,304
+3509502,Campinas,SP,Sudeste,comercial,0,2016,1337,474,258,103,323
+3509502,Campinas,SP,Sudeste,comercial,0,2017,1385,541,261,119,358
+3509502,Campinas,SP,Sudeste,comercial,0,2018,1692,705,287,155,530
+3509502,Campinas,SP,Sudeste,comercial,0,2019,1291,520,247,190,452
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2009,2,2,2,1,0
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2010,2,1,2,1,0
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2011,2,1,2,2,0
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2012,2,2,2,2,0
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2013,2,1,1,0,1
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2014,5,3,3,1,1
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2015,4,4,1,1,2
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2016,7,6,3,1,2
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2017,15,15,8,9,3
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2018,20,12,2,1,0
+3510203,Capão Bonito,SP,Sudeste,comercial,0,2019,20,15,3,3,0
+3510401,Capivari,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3510401,Capivari,SP,Sudeste,comercial,0,2010,4,3,2,1,1
+3510401,Capivari,SP,Sudeste,comercial,0,2011,3,3,0,1,3
+3510401,Capivari,SP,Sudeste,comercial,0,2012,5,4,1,2,1
+3510401,Capivari,SP,Sudeste,comercial,0,2013,1,1,0,0,0
+3510401,Capivari,SP,Sudeste,comercial,0,2014,2,2,0,0,2
+3510401,Capivari,SP,Sudeste,comercial,0,2015,0,0,0,0,0
+3510401,Capivari,SP,Sudeste,comercial,0,2016,37,36,1,7,13
+3510401,Capivari,SP,Sudeste,comercial,0,2017,128,128,0,59,61
+3510401,Capivari,SP,Sudeste,comercial,0,2018,150,138,4,42,44
+3510401,Capivari,SP,Sudeste,comercial,0,2019,126,122,2,29,38
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2009,33,5,31,3,0
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2010,45,4,35,0,7
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2011,30,8,20,6,3
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2012,174,51,47,58,69
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2013,59,16,37,17,3
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2014,48,24,22,25,19
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2015,115,87,21,88,80
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2016,161,111,55,76,67
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2017,86,56,30,31,25
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2018,129,90,37,31,49
+3510609,Carapicuíba,SP,Sudeste,comercial,0,2019,120,70,42,33,34
+3511102,Catanduva,SP,Sudeste,comercial,0,2009,132,78,16,34,28
+3511102,Catanduva,SP,Sudeste,comercial,0,2010,191,121,8,20,44
+3511102,Catanduva,SP,Sudeste,comercial,0,2011,184,114,4,8,49
+3511102,Catanduva,SP,Sudeste,comercial,0,2012,166,102,4,19,46
+3511102,Catanduva,SP,Sudeste,comercial,0,2013,147,87,6,18,35
+3511102,Catanduva,SP,Sudeste,comercial,0,2014,222,135,10,31,65
+3511102,Catanduva,SP,Sudeste,comercial,0,2015,170,104,15,34,49
+3511102,Catanduva,SP,Sudeste,comercial,0,2016,218,123,11,44,58
+3511102,Catanduva,SP,Sudeste,comercial,0,2017,232,109,10,1,60
+3511102,Catanduva,SP,Sudeste,comercial,0,2018,238,124,8,2,75
+3511102,Catanduva,SP,Sudeste,comercial,0,2019,229,84,15,1,58
+3513009,Cotia,SP,Sudeste,comercial,0,2009,16,4,16,0,2
+3513009,Cotia,SP,Sudeste,comercial,0,2010,16,2,15,1,2
+3513009,Cotia,SP,Sudeste,comercial,0,2011,24,10,16,7,7
+3513009,Cotia,SP,Sudeste,comercial,0,2012,13,5,8,3,3
+3513009,Cotia,SP,Sudeste,comercial,0,2013,27,20,7,8,12
+3513009,Cotia,SP,Sudeste,comercial,0,2014,50,41,4,16,21
+3513009,Cotia,SP,Sudeste,comercial,0,2015,146,108,45,42,54
+3513009,Cotia,SP,Sudeste,comercial,0,2016,202,168,27,40,75
+3513009,Cotia,SP,Sudeste,comercial,0,2017,259,182,50,60,71
+3513009,Cotia,SP,Sudeste,comercial,0,2018,338,253,45,71,100
+3513009,Cotia,SP,Sudeste,comercial,0,2019,458,341,42,90,151
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2009,1,1,1,0,0
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2011,1,1,1,1,1
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2012,3,2,2,1,1
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2013,30,21,1,19,14
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2014,49,42,1,25,21
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2015,22,21,1,4,5
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2016,16,15,0,10,1
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2017,79,70,4,26,21
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2018,82,72,3,34,36
+3513405,Cruzeiro,SP,Sudeste,comercial,0,2019,141,129,4,64,56
+3513504,Cubatão,SP,Sudeste,comercial,0,2009,126,117,6,0,17
+3513504,Cubatão,SP,Sudeste,comercial,0,2010,150,147,4,1,17
+3513504,Cubatão,SP,Sudeste,comercial,0,2011,118,111,7,6,26
+3513504,Cubatão,SP,Sudeste,comercial,0,2012,376,202,7,168,281
+3513504,Cubatão,SP,Sudeste,comercial,0,2013,323,134,7,177,229
+3513504,Cubatão,SP,Sudeste,comercial,0,2014,67,52,9,1,13
+3513504,Cubatão,SP,Sudeste,comercial,0,2015,89,77,10,0,20
+3513504,Cubatão,SP,Sudeste,comercial,0,2016,114,101,7,1,38
+3513504,Cubatão,SP,Sudeste,comercial,0,2017,124,113,6,1,31
+3513504,Cubatão,SP,Sudeste,comercial,0,2018,126,73,23,0,19
+3513504,Cubatão,SP,Sudeste,comercial,0,2019,135,86,20,20,36
+3513801,Diadema,SP,Sudeste,comercial,0,2009,297,147,41,219,209
+3513801,Diadema,SP,Sudeste,comercial,0,2010,227,93,46,156,161
+3513801,Diadema,SP,Sudeste,comercial,0,2011,172,75,45,90,80
+3513801,Diadema,SP,Sudeste,comercial,0,2012,334,144,84,148,129
+3513801,Diadema,SP,Sudeste,comercial,0,2013,378,196,79,214,220
+3513801,Diadema,SP,Sudeste,comercial,0,2014,294,143,123,119,108
+3513801,Diadema,SP,Sudeste,comercial,0,2015,283,216,65,135,123
+3513801,Diadema,SP,Sudeste,comercial,0,2016,337,261,82,206,181
+3513801,Diadema,SP,Sudeste,comercial,0,2017,553,370,60,83,277
+3513801,Diadema,SP,Sudeste,comercial,0,2018,791,493,61,77,365
+3513801,Diadema,SP,Sudeste,comercial,0,2019,892,515,60,41,377
+3514403,Dracena,SP,Sudeste,comercial,0,2009,1,1,0,0,1
+3514403,Dracena,SP,Sudeste,comercial,0,2010,1,0,1,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2011,3,3,0,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2012,0,0,0,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2013,0,0,0,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2014,1,0,0,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2015,3,2,1,1,1
+3514403,Dracena,SP,Sudeste,comercial,0,2016,2,2,0,0,1
+3514403,Dracena,SP,Sudeste,comercial,0,2017,2,2,0,0,1
+3514403,Dracena,SP,Sudeste,comercial,0,2018,1,1,0,0,0
+3514403,Dracena,SP,Sudeste,comercial,0,2019,10,7,2,1,0
+3515004,Embu,SP,Sudeste,comercial,0,2009,44,34,16,14,16
+3515004,Embu,SP,Sudeste,comercial,0,2010,64,40,20,18,17
+3515004,Embu,SP,Sudeste,comercial,0,2011,74,61,15,19,23
+3515004,Embu,SP,Sudeste,comercial,0,2012,81,71,11,21,27
+3515004,Embu,SP,Sudeste,comercial,0,2013,107,96,18,15,32
+3515004,Embu,SP,Sudeste,comercial,0,2014,109,95,13,18,31
+3515004,Embu,SP,Sudeste,comercial,0,2015,167,137,17,47,59
+3515004,Embu,SP,Sudeste,comercial,0,2016,421,337,56,147,165
+3515004,Embu,SP,Sudeste,comercial,0,2017,248,200,35,67,83
+3515004,Embu,SP,Sudeste,comercial,0,2018,213,179,28,39,53
+3515004,Embu,SP,Sudeste,comercial,0,2019,338,269,39,76,114
+3516200,Franca,SP,Sudeste,comercial,0,2009,6,3,6,3,0
+3516200,Franca,SP,Sudeste,comercial,0,2010,7,2,6,2,0
+3516200,Franca,SP,Sudeste,comercial,0,2011,11,5,6,0,1
+3516200,Franca,SP,Sudeste,comercial,0,2012,4,2,1,1,0
+3516200,Franca,SP,Sudeste,comercial,0,2013,14,7,10,2,1
+3516200,Franca,SP,Sudeste,comercial,0,2014,13,11,3,1,4
+3516200,Franca,SP,Sudeste,comercial,0,2015,10,7,4,2,3
+3516200,Franca,SP,Sudeste,comercial,0,2016,49,37,12,13,17
+3516200,Franca,SP,Sudeste,comercial,0,2017,160,134,22,38,57
+3516200,Franca,SP,Sudeste,comercial,0,2018,168,145,14,49,63
+3516200,Franca,SP,Sudeste,comercial,0,2019,85,79,8,44,33
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2009,51,16,35,25,2
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2010,81,33,63,46,14
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2011,82,34,63,41,13
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2012,60,26,44,20,12
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2013,71,24,54,41,10
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2014,70,20,57,31,8
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2015,57,23,39,40,10
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2016,133,84,42,39,39
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2017,166,114,39,19,54
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2018,248,186,43,4,104
+3516309,Francisco Morato,SP,Sudeste,comercial,0,2019,198,144,11,5,84
+3516705,Garça,SP,Sudeste,comercial,0,2009,1,0,1,0,0
+3516705,Garça,SP,Sudeste,comercial,0,2010,1,1,0,0,0
+3516705,Garça,SP,Sudeste,comercial,0,2011,45,43,3,18,25
+3516705,Garça,SP,Sudeste,comercial,0,2012,102,101,1,43,45
+3516705,Garça,SP,Sudeste,comercial,0,2013,179,177,1,52,65
+3516705,Garça,SP,Sudeste,comercial,0,2014,262,256,6,85,97
+3516705,Garça,SP,Sudeste,comercial,0,2015,219,208,7,92,85
+3516705,Garça,SP,Sudeste,comercial,0,2016,245,237,7,83,95
+3516705,Garça,SP,Sudeste,comercial,0,2017,197,190,5,75,82
+3516705,Garça,SP,Sudeste,comercial,0,2018,184,170,9,80,64
+3516705,Garça,SP,Sudeste,comercial,0,2019,143,141,4,66,60
+3517406,Guaíra,SP,Sudeste,comercial,0,2009,5,5,0,0,5
+3517406,Guaíra,SP,Sudeste,comercial,0,2010,12,12,0,0,4
+3517406,Guaíra,SP,Sudeste,comercial,0,2011,337,332,3,44,164
+3517406,Guaíra,SP,Sudeste,comercial,0,2012,340,332,3,35,143
+3517406,Guaíra,SP,Sudeste,comercial,0,2013,223,221,2,36,110
+3517406,Guaíra,SP,Sudeste,comercial,0,2014,268,262,4,28,134
+3517406,Guaíra,SP,Sudeste,comercial,0,2015,124,98,5,26,73
+3517406,Guaíra,SP,Sudeste,comercial,0,2016,87,75,2,41,49
+3517406,Guaíra,SP,Sudeste,comercial,0,2017,60,50,1,26,29
+3517406,Guaíra,SP,Sudeste,comercial,0,2018,34,20,3,3,8
+3517406,Guaíra,SP,Sudeste,comercial,0,2019,26,16,3,5,5
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2009,2,0,2,0,0
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2010,3,2,2,2,2
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2011,4,3,3,2,0
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2012,11,5,7,5,4
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2013,17,9,11,3,4
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2014,3,3,0,1,2
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2015,56,38,7,22,16
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2016,64,47,11,10,16
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2017,39,22,6,5,13
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2018,33,15,1,3,6
+3518404,Guaratinguetá,SP,Sudeste,comercial,0,2019,62,37,6,10,14
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2011,0,0,0,0,0
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2012,4,3,3,2,1
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2013,2,2,1,1,1
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2014,3,1,2,1,1
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2015,3,3,0,3,0
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2016,5,3,2,3,2
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2017,16,9,6,4,0
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2018,26,22,4,8,11
+3520442,Ilha Solteira,SP,Sudeste,comercial,0,2019,27,22,2,14,13
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2009,7,2,5,1,1
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2010,9,1,9,0,1
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2011,8,2,5,1,0
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2012,11,1,10,3,2
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2013,39,21,17,7,6
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2014,42,19,18,13,8
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2015,54,27,16,14,15
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2016,97,66,20,16,16
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2017,88,63,15,18,21
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2018,65,31,18,10,9
+3520509,Indaiatuba,SP,Sudeste,comercial,0,2019,61,23,12,10,7
+3522307,Itapetininga,SP,Sudeste,comercial,0,2009,29,2,26,6,1
+3522307,Itapetininga,SP,Sudeste,comercial,0,2010,29,4,21,4,1
+3522307,Itapetininga,SP,Sudeste,comercial,0,2011,42,20,25,23,6
+3522307,Itapetininga,SP,Sudeste,comercial,0,2012,53,23,27,35,18
+3522307,Itapetininga,SP,Sudeste,comercial,0,2013,98,62,42,42,35
+3522307,Itapetininga,SP,Sudeste,comercial,0,2014,46,17,30,18,8
+3522307,Itapetininga,SP,Sudeste,comercial,0,2015,74,29,42,23,20
+3522307,Itapetininga,SP,Sudeste,comercial,0,2016,116,53,72,42,27
+3522307,Itapetininga,SP,Sudeste,comercial,0,2017,84,38,40,37,25
+3522307,Itapetininga,SP,Sudeste,comercial,0,2018,157,55,36,45,23
+3522307,Itapetininga,SP,Sudeste,comercial,0,2019,115,48,40,31,17
+3522406,Itapeva,SP,Sudeste,comercial,0,2009,11,6,5,8,2
+3522406,Itapeva,SP,Sudeste,comercial,0,2010,7,2,6,4,2
+3522406,Itapeva,SP,Sudeste,comercial,0,2011,31,19,13,22,7
+3522406,Itapeva,SP,Sudeste,comercial,0,2012,56,37,14,41,21
+3522406,Itapeva,SP,Sudeste,comercial,0,2013,31,20,18,17,11
+3522406,Itapeva,SP,Sudeste,comercial,0,2014,54,34,25,22,16
+3522406,Itapeva,SP,Sudeste,comercial,0,2015,71,42,24,28,23
+3522406,Itapeva,SP,Sudeste,comercial,0,2016,69,39,24,21,17
+3522406,Itapeva,SP,Sudeste,comercial,0,2017,81,41,32,36,19
+3522406,Itapeva,SP,Sudeste,comercial,0,2018,131,80,22,41,36
+3522406,Itapeva,SP,Sudeste,comercial,0,2019,161,120,19,48,37
+3522505,Itapevi,SP,Sudeste,comercial,0,2009,9,5,4,3,3
+3522505,Itapevi,SP,Sudeste,comercial,0,2010,19,14,7,7,7
+3522505,Itapevi,SP,Sudeste,comercial,0,2011,50,24,14,4,13
+3522505,Itapevi,SP,Sudeste,comercial,0,2012,69,36,16,8,26
+3522505,Itapevi,SP,Sudeste,comercial,0,2013,55,23,14,9,13
+3522505,Itapevi,SP,Sudeste,comercial,0,2014,49,20,14,4,9
+3522505,Itapevi,SP,Sudeste,comercial,0,2015,50,32,18,9,9
+3522505,Itapevi,SP,Sudeste,comercial,0,2016,38,23,17,7,17
+3522505,Itapevi,SP,Sudeste,comercial,0,2017,34,26,10,3,13
+3522505,Itapevi,SP,Sudeste,comercial,0,2018,47,35,11,14,18
+3522505,Itapevi,SP,Sudeste,comercial,0,2019,124,49,29,26,35
+3522703,Itápolis,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3522703,Itápolis,SP,Sudeste,comercial,0,2010,1,1,0,0,0
+3522703,Itápolis,SP,Sudeste,comercial,0,2011,1,1,0,0,0
+3522703,Itápolis,SP,Sudeste,comercial,0,2012,0,0,0,0,0
+3522703,Itápolis,SP,Sudeste,comercial,0,2013,2,1,2,1,0
+3522703,Itápolis,SP,Sudeste,comercial,0,2014,3,3,0,0,2
+3522703,Itápolis,SP,Sudeste,comercial,0,2015,13,9,5,2,3
+3522703,Itápolis,SP,Sudeste,comercial,0,2016,35,32,0,3,19
+3522703,Itápolis,SP,Sudeste,comercial,0,2017,58,53,3,2,36
+3522703,Itápolis,SP,Sudeste,comercial,0,2018,57,50,3,2,26
+3522703,Itápolis,SP,Sudeste,comercial,0,2019,37,37,1,2,18
+3523909,Itu,SP,Sudeste,comercial,0,2009,40,14,34,14,4
+3523909,Itu,SP,Sudeste,comercial,0,2010,116,81,39,16,34
+3523909,Itu,SP,Sudeste,comercial,0,2011,199,174,29,8,92
+3523909,Itu,SP,Sudeste,comercial,0,2012,91,82,20,12,46
+3523909,Itu,SP,Sudeste,comercial,0,2013,44,43,1,12,24
+3523909,Itu,SP,Sudeste,comercial,0,2014,18,16,3,5,9
+3523909,Itu,SP,Sudeste,comercial,0,2015,20,17,2,8,8
+3523909,Itu,SP,Sudeste,comercial,0,2016,13,6,12,5,2
+3523909,Itu,SP,Sudeste,comercial,0,2017,33,20,19,8,4
+3523909,Itu,SP,Sudeste,comercial,0,2018,47,30,27,16,8
+3523909,Itu,SP,Sudeste,comercial,0,2019,154,125,33,73,70
+3524402,Jacareí,SP,Sudeste,comercial,0,2009,14,5,6,3,2
+3524402,Jacareí,SP,Sudeste,comercial,0,2010,50,26,17,17,3
+3524402,Jacareí,SP,Sudeste,comercial,0,2011,165,88,25,55,41
+3524402,Jacareí,SP,Sudeste,comercial,0,2012,193,125,31,44,56
+3524402,Jacareí,SP,Sudeste,comercial,0,2013,280,227,28,51,77
+3524402,Jacareí,SP,Sudeste,comercial,0,2014,267,218,31,73,84
+3524402,Jacareí,SP,Sudeste,comercial,0,2015,187,127,36,49,47
+3524402,Jacareí,SP,Sudeste,comercial,0,2016,317,210,51,79,85
+3524402,Jacareí,SP,Sudeste,comercial,0,2017,450,266,81,84,95
+3524402,Jacareí,SP,Sudeste,comercial,0,2018,409,225,91,103,100
+3524402,Jacareí,SP,Sudeste,comercial,0,2019,557,334,121,182,148
+3525904,Jundiaí,SP,Sudeste,comercial,0,2009,56,11,39,7,3
+3525904,Jundiaí,SP,Sudeste,comercial,0,2010,60,17,34,1,13
+3525904,Jundiaí,SP,Sudeste,comercial,0,2011,110,25,48,9,10
+3525904,Jundiaí,SP,Sudeste,comercial,0,2012,124,53,47,27,16
+3525904,Jundiaí,SP,Sudeste,comercial,0,2013,185,68,71,35,31
+3525904,Jundiaí,SP,Sudeste,comercial,0,2014,186,95,77,34,41
+3525904,Jundiaí,SP,Sudeste,comercial,0,2015,262,118,64,41,61
+3525904,Jundiaí,SP,Sudeste,comercial,0,2016,327,150,64,45,77
+3525904,Jundiaí,SP,Sudeste,comercial,0,2017,395,165,102,63,86
+3525904,Jundiaí,SP,Sudeste,comercial,0,2018,403,140,107,12,71
+3525904,Jundiaí,SP,Sudeste,comercial,0,2019,365,116,103,6,65
+3526704,Leme,SP,Sudeste,comercial,0,2009,3,1,2,2,0
+3526704,Leme,SP,Sudeste,comercial,0,2010,2,1,2,1,0
+3526704,Leme,SP,Sudeste,comercial,0,2011,5,3,4,3,0
+3526704,Leme,SP,Sudeste,comercial,0,2012,6,3,6,2,3
+3526704,Leme,SP,Sudeste,comercial,0,2013,4,1,4,0,0
+3526704,Leme,SP,Sudeste,comercial,0,2014,4,2,4,2,1
+3526704,Leme,SP,Sudeste,comercial,0,2015,8,3,7,2,0
+3526704,Leme,SP,Sudeste,comercial,0,2016,5,1,3,1,1
+3526704,Leme,SP,Sudeste,comercial,0,2017,6,3,1,0,0
+3526704,Leme,SP,Sudeste,comercial,0,2018,8,5,3,2,1
+3526704,Leme,SP,Sudeste,comercial,0,2019,22,11,10,8,1
+3526902,Limeira,SP,Sudeste,comercial,0,2009,258,250,9,35,125
+3526902,Limeira,SP,Sudeste,comercial,0,2010,191,186,4,9,106
+3526902,Limeira,SP,Sudeste,comercial,0,2011,104,93,14,5,57
+3526902,Limeira,SP,Sudeste,comercial,0,2012,117,111,7,2,59
+3526902,Limeira,SP,Sudeste,comercial,0,2013,133,126,7,4,63
+3526902,Limeira,SP,Sudeste,comercial,0,2014,96,90,8,30,25
+3526902,Limeira,SP,Sudeste,comercial,0,2015,83,67,10,16,21
+3526902,Limeira,SP,Sudeste,comercial,0,2016,91,82,5,29,40
+3526902,Limeira,SP,Sudeste,comercial,0,2017,212,188,16,53,41
+3526902,Limeira,SP,Sudeste,comercial,0,2018,335,298,38,53,47
+3526902,Limeira,SP,Sudeste,comercial,0,2019,328,297,26,41,70
+3529302,Matão,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3529302,Matão,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3529302,Matão,SP,Sudeste,comercial,0,2011,4,4,0,0,4
+3529302,Matão,SP,Sudeste,comercial,0,2012,1,0,0,0,0
+3529302,Matão,SP,Sudeste,comercial,0,2013,49,30,2,16,26
+3529302,Matão,SP,Sudeste,comercial,0,2014,37,21,6,8,22
+3529302,Matão,SP,Sudeste,comercial,0,2015,19,18,0,7,12
+3529302,Matão,SP,Sudeste,comercial,0,2016,15,12,4,5,4
+3529302,Matão,SP,Sudeste,comercial,0,2017,7,5,2,1,2
+3529302,Matão,SP,Sudeste,comercial,0,2018,13,13,3,4,4
+3529302,Matão,SP,Sudeste,comercial,0,2019,3,3,0,0,1
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2009,18,17,1,8,6
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2010,19,8,5,6,2
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2011,83,35,13,14,9
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2012,1972,969,124,1611,1162
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2013,1576,796,87,1375,1002
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2014,1371,727,56,1141,887
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2015,1481,760,95,1117,848
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2016,1372,741,76,915,766
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2017,1519,919,152,903,774
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2018,1739,1015,144,1000,858
+3530607,Mogi das Cruzes,SP,Sudeste,comercial,0,2019,1783,1131,170,1008,772
+3531100,Mongaguá,SP,Sudeste,comercial,0,2009,9,4,6,2,2
+3531100,Mongaguá,SP,Sudeste,comercial,0,2010,18,15,2,6,8
+3531100,Mongaguá,SP,Sudeste,comercial,0,2011,67,62,2,18,35
+3531100,Mongaguá,SP,Sudeste,comercial,0,2012,33,30,2,14,16
+3531100,Mongaguá,SP,Sudeste,comercial,0,2013,13,8,4,3,3
+3531100,Mongaguá,SP,Sudeste,comercial,0,2014,12,7,7,4,2
+3531100,Mongaguá,SP,Sudeste,comercial,0,2015,11,6,4,1,1
+3531100,Mongaguá,SP,Sudeste,comercial,0,2016,7,7,2,2,2
+3531100,Mongaguá,SP,Sudeste,comercial,0,2017,19,13,6,6,7
+3531100,Mongaguá,SP,Sudeste,comercial,0,2018,36,26,13,12,6
+3531100,Mongaguá,SP,Sudeste,comercial,0,2019,60,45,7,8,12
+3531308,Monte Alto,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3531308,Monte Alto,SP,Sudeste,comercial,0,2010,2,2,0,0,1
+3531308,Monte Alto,SP,Sudeste,comercial,0,2011,0,0,0,0,0
+3531308,Monte Alto,SP,Sudeste,comercial,0,2012,1,0,1,0,0
+3531308,Monte Alto,SP,Sudeste,comercial,0,2013,1,0,1,1,0
+3531308,Monte Alto,SP,Sudeste,comercial,0,2014,8,8,0,1,5
+3531308,Monte Alto,SP,Sudeste,comercial,0,2015,13,12,0,0,6
+3531308,Monte Alto,SP,Sudeste,comercial,0,2016,6,5,1,0,4
+3531308,Monte Alto,SP,Sudeste,comercial,0,2017,8,8,1,1,3
+3531308,Monte Alto,SP,Sudeste,comercial,0,2018,6,2,1,2,3
+3531308,Monte Alto,SP,Sudeste,comercial,0,2019,3,3,3,1,1
+3533908,Olímpia,SP,Sudeste,comercial,0,2009,2,1,1,1,0
+3533908,Olímpia,SP,Sudeste,comercial,0,2010,1,1,0,1,1
+3533908,Olímpia,SP,Sudeste,comercial,0,2011,8,5,5,2,0
+3533908,Olímpia,SP,Sudeste,comercial,0,2012,23,17,3,10,11
+3533908,Olímpia,SP,Sudeste,comercial,0,2013,29,12,0,2,6
+3533908,Olímpia,SP,Sudeste,comercial,0,2014,6,6,2,2,2
+3533908,Olímpia,SP,Sudeste,comercial,0,2015,4,2,1,2,1
+3533908,Olímpia,SP,Sudeste,comercial,0,2016,27,24,1,4,17
+3533908,Olímpia,SP,Sudeste,comercial,0,2017,91,66,2,35,26
+3533908,Olímpia,SP,Sudeste,comercial,0,2018,169,152,4,38,58
+3533908,Olímpia,SP,Sudeste,comercial,0,2019,145,128,3,27,51
+3534401,Osasco,SP,Sudeste,comercial,0,2009,129,42,94,46,12
+3534401,Osasco,SP,Sudeste,comercial,0,2010,136,79,49,50,39
+3534401,Osasco,SP,Sudeste,comercial,0,2011,220,125,91,80,81
+3534401,Osasco,SP,Sudeste,comercial,0,2012,221,111,106,55,63
+3534401,Osasco,SP,Sudeste,comercial,0,2013,169,61,83,11,26
+3534401,Osasco,SP,Sudeste,comercial,0,2014,125,46,68,19,23
+3534401,Osasco,SP,Sudeste,comercial,0,2015,123,52,63,21,26
+3534401,Osasco,SP,Sudeste,comercial,0,2016,214,112,93,96,73
+3534401,Osasco,SP,Sudeste,comercial,0,2017,288,185,89,107,95
+3534401,Osasco,SP,Sudeste,comercial,0,2018,583,410,151,235,242
+3534401,Osasco,SP,Sudeste,comercial,0,2019,485,282,142,182,177
+3534708,Ourinhos,SP,Sudeste,comercial,0,2009,64,61,11,16,24
+3534708,Ourinhos,SP,Sudeste,comercial,0,2010,70,64,12,10,20
+3534708,Ourinhos,SP,Sudeste,comercial,0,2011,17,16,5,6,8
+3534708,Ourinhos,SP,Sudeste,comercial,0,2012,67,62,9,22,26
+3534708,Ourinhos,SP,Sudeste,comercial,0,2013,118,111,16,38,42
+3534708,Ourinhos,SP,Sudeste,comercial,0,2014,184,181,13,61,83
+3534708,Ourinhos,SP,Sudeste,comercial,0,2015,139,121,18,23,61
+3534708,Ourinhos,SP,Sudeste,comercial,0,2016,127,119,11,24,48
+3534708,Ourinhos,SP,Sudeste,comercial,0,2017,160,152,16,34,65
+3534708,Ourinhos,SP,Sudeste,comercial,0,2018,159,152,11,44,65
+3534708,Ourinhos,SP,Sudeste,comercial,0,2019,139,132,12,41,51
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2010,2,1,1,1,0
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2011,1,1,1,0,0
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2012,3,3,1,2,1
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2013,3,3,1,2,2
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2014,2,2,0,0,0
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2015,4,2,2,2,1
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2016,12,6,3,4,4
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2017,14,9,4,5,3
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2018,32,14,4,2,10
+3537404,Pereira Barreto,SP,Sudeste,comercial,0,2019,21,11,5,6,6
+3537602,Peruíbe,SP,Sudeste,comercial,0,2009,9,1,7,1,0
+3537602,Peruíbe,SP,Sudeste,comercial,0,2010,9,4,6,1,1
+3537602,Peruíbe,SP,Sudeste,comercial,0,2011,11,8,3,4,2
+3537602,Peruíbe,SP,Sudeste,comercial,0,2012,41,25,4,1,20
+3537602,Peruíbe,SP,Sudeste,comercial,0,2013,17,8,9,4,5
+3537602,Peruíbe,SP,Sudeste,comercial,0,2014,22,11,13,4,8
+3537602,Peruíbe,SP,Sudeste,comercial,0,2015,10,5,5,2,2
+3537602,Peruíbe,SP,Sudeste,comercial,0,2016,10,3,5,1,1
+3537602,Peruíbe,SP,Sudeste,comercial,0,2017,6,5,4,2,1
+3537602,Peruíbe,SP,Sudeste,comercial,0,2018,11,5,5,1,2
+3537602,Peruíbe,SP,Sudeste,comercial,0,2019,13,8,4,2,3
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2009,1,1,1,1,1
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2010,3,3,0,2,1
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2011,12,7,2,10,9
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2012,11,5,4,6,4
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2013,17,13,4,6,6
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2014,17,14,0,6,9
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2015,133,117,19,46,36
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2016,182,144,13,38,49
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2017,234,151,22,55,56
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2018,344,178,14,66,89
+3538006,Pindamonhangaba,SP,Sudeste,comercial,0,2019,355,204,30,98,94
+3538709,Piracicaba,SP,Sudeste,comercial,0,2009,8,2,6,2,1
+3538709,Piracicaba,SP,Sudeste,comercial,0,2010,34,7,29,4,5
+3538709,Piracicaba,SP,Sudeste,comercial,0,2011,31,16,21,7,8
+3538709,Piracicaba,SP,Sudeste,comercial,0,2012,32,19,17,8,11
+3538709,Piracicaba,SP,Sudeste,comercial,0,2013,45,28,22,20,20
+3538709,Piracicaba,SP,Sudeste,comercial,0,2014,86,66,25,23,29
+3538709,Piracicaba,SP,Sudeste,comercial,0,2015,199,178,29,34,48
+3538709,Piracicaba,SP,Sudeste,comercial,0,2016,211,178,38,30,58
+3538709,Piracicaba,SP,Sudeste,comercial,0,2017,254,148,38,35,57
+3538709,Piracicaba,SP,Sudeste,comercial,0,2018,355,189,45,53,94
+3538709,Piracicaba,SP,Sudeste,comercial,0,2019,619,304,45,47,107
+3539301,Pirassununga,SP,Sudeste,comercial,0,2009,2,0,2,0,0
+3539301,Pirassununga,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3539301,Pirassununga,SP,Sudeste,comercial,0,2011,77,72,5,0,15
+3539301,Pirassununga,SP,Sudeste,comercial,0,2012,218,215,2,1,42
+3539301,Pirassununga,SP,Sudeste,comercial,0,2013,64,63,2,0,10
+3539301,Pirassununga,SP,Sudeste,comercial,0,2014,6,3,4,2,2
+3539301,Pirassununga,SP,Sudeste,comercial,0,2015,15,12,4,4,5
+3539301,Pirassununga,SP,Sudeste,comercial,0,2016,34,21,3,10,8
+3539301,Pirassununga,SP,Sudeste,comercial,0,2017,64,20,4,3,5
+3539301,Pirassununga,SP,Sudeste,comercial,0,2018,83,42,5,23,17
+3539301,Pirassununga,SP,Sudeste,comercial,0,2019,80,43,1,15,10
+3541000,Praia Grande,SP,Sudeste,comercial,0,2009,33,6,28,5,1
+3541000,Praia Grande,SP,Sudeste,comercial,0,2010,55,16,33,4,1
+3541000,Praia Grande,SP,Sudeste,comercial,0,2011,120,97,13,11,17
+3541000,Praia Grande,SP,Sudeste,comercial,0,2012,117,84,31,20,26
+3541000,Praia Grande,SP,Sudeste,comercial,0,2013,42,23,17,11,12
+3541000,Praia Grande,SP,Sudeste,comercial,0,2014,33,14,19,8,7
+3541000,Praia Grande,SP,Sudeste,comercial,0,2015,34,16,22,9,4
+3541000,Praia Grande,SP,Sudeste,comercial,0,2016,59,30,24,12,18
+3541000,Praia Grande,SP,Sudeste,comercial,0,2017,57,37,28,21,19
+3541000,Praia Grande,SP,Sudeste,comercial,0,2018,96,58,32,24,38
+3541000,Praia Grande,SP,Sudeste,comercial,0,2019,98,45,43,22,21
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2011,4,2,1,1,2
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2012,5,2,5,3,0
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2013,2,1,1,0,0
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2014,3,1,2,0,0
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2015,10,7,3,1,3
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2016,4,3,0,0,3
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2017,29,18,2,7,6
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2018,21,13,7,4,2
+3541307,Presidente Epitácio,SP,Sudeste,comercial,0,2019,6,2,0,0,0
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2010,62,24,3,5,5
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2011,174,53,11,3,10
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2012,120,37,6,1,13
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2013,102,42,14,2,17
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2014,118,78,30,9,22
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2015,95,75,10,7,16
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2016,97,79,9,9,15
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2017,155,123,17,26,33
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2018,281,172,37,30,48
+3541406,Presidente Prudente,SP,Sudeste,comercial,0,2019,356,189,40,58,58
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2009,11,7,1,6,4
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2010,3,1,0,2,2
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2011,3,3,1,0,1
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2012,2,0,0,0,0
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2013,0,0,0,0,0
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2014,3,3,0,0,0
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2015,14,14,1,4,9
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2016,27,26,2,7,11
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2017,29,25,0,8,14
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2018,41,29,2,13,19
+3541505,Presidente Venceslau,SP,Sudeste,comercial,0,2019,26,23,0,1,7
+3542206,Rancharia,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3542206,Rancharia,SP,Sudeste,comercial,0,2010,8,8,0,0,0
+3542206,Rancharia,SP,Sudeste,comercial,0,2011,26,13,2,1,5
+3542206,Rancharia,SP,Sudeste,comercial,0,2012,132,116,5,12,33
+3542206,Rancharia,SP,Sudeste,comercial,0,2013,92,89,2,22,32
+3542206,Rancharia,SP,Sudeste,comercial,0,2014,124,120,1,26,38
+3542206,Rancharia,SP,Sudeste,comercial,0,2015,130,124,3,80,47
+3542206,Rancharia,SP,Sudeste,comercial,0,2016,65,59,1,46,19
+3542206,Rancharia,SP,Sudeste,comercial,0,2017,67,55,1,39,25
+3542206,Rancharia,SP,Sudeste,comercial,0,2018,44,35,2,17,7
+3542206,Rancharia,SP,Sudeste,comercial,0,2019,13,11,1,3,7
+3542602,Registro,SP,Sudeste,comercial,0,2009,1,0,1,0,0
+3542602,Registro,SP,Sudeste,comercial,0,2010,23,14,4,21,19
+3542602,Registro,SP,Sudeste,comercial,0,2011,52,39,7,41,40
+3542602,Registro,SP,Sudeste,comercial,0,2012,50,27,11,37,32
+3542602,Registro,SP,Sudeste,comercial,0,2013,57,40,11,28,32
+3542602,Registro,SP,Sudeste,comercial,0,2014,120,100,11,66,63
+3542602,Registro,SP,Sudeste,comercial,0,2015,118,104,8,83,65
+3542602,Registro,SP,Sudeste,comercial,0,2016,197,182,13,93,100
+3542602,Registro,SP,Sudeste,comercial,0,2017,171,155,7,57,78
+3542602,Registro,SP,Sudeste,comercial,0,2018,242,212,9,27,136
+3542602,Registro,SP,Sudeste,comercial,0,2019,174,153,17,49,89
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2009,1521,833,83,1248,1042
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2010,1577,792,85,1281,1064
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2011,2058,970,126,1593,1412
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2012,1874,863,96,1596,1370
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2013,1567,704,125,1259,1004
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2014,865,465,75,676,507
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2015,1183,577,95,956,831
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2016,710,340,83,505,403
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2017,263,222,94,68,66
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2018,409,302,109,110,107
+3543402,Ribeirão Preto,SP,Sudeste,comercial,0,2019,846,475,165,226,231
+3543907,Rio Claro,SP,Sudeste,comercial,0,2009,47,45,3,4,16
+3543907,Rio Claro,SP,Sudeste,comercial,0,2010,203,191,12,16,61
+3543907,Rio Claro,SP,Sudeste,comercial,0,2011,298,292,16,29,87
+3543907,Rio Claro,SP,Sudeste,comercial,0,2012,436,408,27,46,158
+3543907,Rio Claro,SP,Sudeste,comercial,0,2013,448,427,25,49,156
+3543907,Rio Claro,SP,Sudeste,comercial,0,2014,373,362,13,29,160
+3543907,Rio Claro,SP,Sudeste,comercial,0,2015,291,265,17,43,145
+3543907,Rio Claro,SP,Sudeste,comercial,0,2016,330,320,8,67,158
+3543907,Rio Claro,SP,Sudeste,comercial,0,2017,465,442,9,99,206
+3543907,Rio Claro,SP,Sudeste,comercial,0,2018,465,416,18,114,199
+3543907,Rio Claro,SP,Sudeste,comercial,0,2019,472,403,24,135,199
+3545209,Salto,SP,Sudeste,comercial,0,2009,15,4,12,3,0
+3545209,Salto,SP,Sudeste,comercial,0,2010,17,4,17,5,0
+3545209,Salto,SP,Sudeste,comercial,0,2011,13,5,12,3,3
+3545209,Salto,SP,Sudeste,comercial,0,2012,11,4,8,2,3
+3545209,Salto,SP,Sudeste,comercial,0,2013,12,9,0,3,4
+3545209,Salto,SP,Sudeste,comercial,0,2014,9,3,6,1,0
+3545209,Salto,SP,Sudeste,comercial,0,2015,10,7,3,2,2
+3545209,Salto,SP,Sudeste,comercial,0,2016,11,7,3,2,2
+3545209,Salto,SP,Sudeste,comercial,0,2017,54,33,14,7,0
+3545209,Salto,SP,Sudeste,comercial,0,2018,52,31,24,15,3
+3545209,Salto,SP,Sudeste,comercial,0,2019,76,51,16,7,7
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2009,9,5,1,5,4
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2010,10,3,0,7,7
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2011,22,9,3,5,6
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2012,38,19,7,7,8
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2013,36,17,13,8,9
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2014,72,62,5,18,28
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2015,104,75,6,29,32
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2016,175,131,5,55,57
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2017,193,151,14,58,64
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2018,175,143,5,53,67
+3545803,Santa Bárbara d'Oeste,SP,Sudeste,comercial,0,2019,179,131,9,54,54
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2009,31,28,1,14,17
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2010,69,56,7,17,24
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2011,39,34,5,9,14
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2012,19,16,3,0,7
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2013,69,45,10,1,23
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2014,184,90,22,7,43
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2015,62,32,16,12,19
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2016,13,9,4,2,3
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2017,180,67,57,50,33
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2018,176,84,31,69,56
+3547304,Santana de Parnaíba,SP,Sudeste,comercial,0,2019,261,155,47,93,77
+3547809,Santo André,SP,Sudeste,comercial,0,2009,207,108,92,53,40
+3547809,Santo André,SP,Sudeste,comercial,0,2010,218,96,82,32,46
+3547809,Santo André,SP,Sudeste,comercial,0,2011,290,126,106,44,73
+3547809,Santo André,SP,Sudeste,comercial,0,2012,328,141,137,89,72
+3547809,Santo André,SP,Sudeste,comercial,0,2013,413,247,137,117,136
+3547809,Santo André,SP,Sudeste,comercial,0,2014,453,327,84,207,199
+3547809,Santo André,SP,Sudeste,comercial,0,2015,642,343,163,158,253
+3547809,Santo André,SP,Sudeste,comercial,0,2016,771,399,142,131,224
+3547809,Santo André,SP,Sudeste,comercial,0,2017,830,431,165,133,229
+3547809,Santo André,SP,Sudeste,comercial,0,2018,1009,450,211,72,236
+3547809,Santo André,SP,Sudeste,comercial,0,2019,944,383,143,65,255
+3548500,Santos,SP,Sudeste,24h,2019,2009,324,91,71,13,71
+3548500,Santos,SP,Sudeste,24h,2019,2010,365,98,71,13,30
+3548500,Santos,SP,Sudeste,24h,2019,2011,365,98,69,9,47
+3548500,Santos,SP,Sudeste,24h,2019,2012,327,94,76,12,52
+3548500,Santos,SP,Sudeste,24h,2019,2013,223,72,60,15,26
+3548500,Santos,SP,Sudeste,24h,2019,2014,560,238,80,156,194
+3548500,Santos,SP,Sudeste,24h,2019,2015,1427,616,90,612,635
+3548500,Santos,SP,Sudeste,24h,2019,2016,285,150,46,25,81
+3548500,Santos,SP,Sudeste,24h,2019,2017,416,190,101,16,101
+3548500,Santos,SP,Sudeste,24h,2019,2018,506,217,105,16,129
+3548500,Santos,SP,Sudeste,24h,2019,2019,573,223,100,14,153
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2009,108,36,89,25,4
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2010,382,266,76,16,130
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2011,1048,752,113,30,412
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2012,1325,966,114,35,501
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2013,1373,936,138,29,481
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2014,1709,1214,142,23,610
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2015,1780,1301,152,11,619
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2016,1930,1391,164,26,704
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2017,2012,1335,156,15,632
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2018,2196,1293,178,39,659
+3548708,São Bernardo do Campo,SP,Sudeste,comercial,0,2019,2418,1149,203,17,591
+3548906,São Carlos,SP,Sudeste,comercial,0,2009,8,5,6,3,5
+3548906,São Carlos,SP,Sudeste,comercial,0,2010,7,4,5,4,0
+3548906,São Carlos,SP,Sudeste,comercial,0,2011,12,8,7,3,4
+3548906,São Carlos,SP,Sudeste,comercial,0,2012,33,22,11,11,12
+3548906,São Carlos,SP,Sudeste,comercial,0,2013,49,39,10,13,19
+3548906,São Carlos,SP,Sudeste,comercial,0,2014,50,37,15,19,21
+3548906,São Carlos,SP,Sudeste,comercial,0,2015,106,90,15,26,32
+3548906,São Carlos,SP,Sudeste,comercial,0,2016,136,116,23,38,37
+3548906,São Carlos,SP,Sudeste,comercial,0,2017,166,141,22,36,47
+3548906,São Carlos,SP,Sudeste,comercial,0,2018,175,138,31,36,48
+3548906,São Carlos,SP,Sudeste,comercial,0,2019,146,130,24,36,41
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2009,313,91,56,96,44
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2010,293,172,48,137,103
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2011,519,351,54,167,159
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2012,1010,745,68,291,356
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2013,1122,718,93,384,434
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2014,964,686,79,309,334
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2015,1108,680,101,343,305
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2016,1254,663,120,438,373
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2017,1435,622,116,226,410
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2018,1495,619,138,87,483
+3549805,São José do Rio Preto,SP,Sudeste,comercial,0,2019,1933,690,163,287,705
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2009,504,276,72,62,53
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2010,650,353,80,94,63
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2011,834,440,79,161,140
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2012,1941,1485,110,202,194
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2013,1066,631,92,226,219
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2014,583,349,56,197,188
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2015,712,393,137,235,183
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2016,1321,643,218,583,445
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2017,1830,955,209,941,735
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2018,1395,637,217,362,257
+3549904,São José dos Campos,SP,Sudeste,comercial,0,2019,1223,595,223,285,221
+3550100,São Manuel,SP,Sudeste,comercial,0,2009,9,7,6,6,1
+3550100,São Manuel,SP,Sudeste,comercial,0,2010,14,4,11,5,1
+3550100,São Manuel,SP,Sudeste,comercial,0,2011,11,2,7,3,1
+3550100,São Manuel,SP,Sudeste,comercial,0,2012,11,6,6,4,2
+3550100,São Manuel,SP,Sudeste,comercial,0,2013,24,10,11,4,6
+3550100,São Manuel,SP,Sudeste,comercial,0,2014,20,8,14,1,3
+3550100,São Manuel,SP,Sudeste,comercial,0,2015,17,4,8,2,3
+3550100,São Manuel,SP,Sudeste,comercial,0,2016,28,11,5,1,4
+3550100,São Manuel,SP,Sudeste,comercial,0,2017,46,32,12,6,11
+3550100,São Manuel,SP,Sudeste,comercial,0,2018,42,25,6,8,9
+3550100,São Manuel,SP,Sudeste,comercial,0,2019,48,28,8,15,11
+3550308,São Paulo,SP,Sudeste,comercial,0,2009,58,32,31,22,6
+3550308,São Paulo,SP,Sudeste,comercial,0,2010,72,41,33,32,19
+3550308,São Paulo,SP,Sudeste,comercial,0,2011,121,80,38,23,27
+3550308,São Paulo,SP,Sudeste,comercial,0,2012,256,159,102,69,51
+3550308,São Paulo,SP,Sudeste,comercial,0,2013,184,128,66,47,52
+3550308,São Paulo,SP,Sudeste,comercial,0,2014,214,146,70,57,78
+3550308,São Paulo,SP,Sudeste,comercial,0,2015,4734,3815,455,1344,1522
+3550308,São Paulo,SP,Sudeste,comercial,0,2016,11713,9162,1237,3998,3722
+3550308,São Paulo,SP,Sudeste,comercial,0,2017,16148,12002,1777,5297,4824
+3550308,São Paulo,SP,Sudeste,comercial,0,2018,19177,12982,2099,5061,5500
+3550308,São Paulo,SP,Sudeste,comercial,0,2019,22272,13669,2292,4520,6182
+3551009,São Vicente,SP,Sudeste,comercial,0,2009,102,71,17,15,10
+3551009,São Vicente,SP,Sudeste,comercial,0,2010,203,165,18,12,23
+3551009,São Vicente,SP,Sudeste,comercial,0,2011,145,105,13,6,36
+3551009,São Vicente,SP,Sudeste,comercial,0,2012,196,153,23,5,46
+3551009,São Vicente,SP,Sudeste,comercial,0,2013,124,87,24,1,25
+3551009,São Vicente,SP,Sudeste,comercial,0,2014,194,152,24,18,53
+3551009,São Vicente,SP,Sudeste,comercial,0,2015,143,97,32,23,33
+3551009,São Vicente,SP,Sudeste,comercial,0,2016,143,97,33,17,22
+3551009,São Vicente,SP,Sudeste,comercial,0,2017,255,206,22,54,61
+3551009,São Vicente,SP,Sudeste,comercial,0,2018,250,186,27,70,79
+3551009,São Vicente,SP,Sudeste,comercial,0,2019,251,181,26,16,53
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2009,8,7,6,4,1
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2010,12,7,8,3,3
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2011,17,8,10,7,3
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2012,46,35,17,13,14
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2013,18,13,8,6,5
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2014,75,51,24,17,24
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2015,113,85,19,5,37
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2016,118,95,22,34,58
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2017,303,187,40,117,164
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2018,273,218,32,37,151
+3551702,Sertãozinho,SP,Sudeste,comercial,0,2019,123,98,27,51,66
+3552205,Sorocaba,SP,Sudeste,24h,2019,2009,158,91,77,32,26
+3552205,Sorocaba,SP,Sudeste,24h,2019,2010,201,121,103,49,26
+3552205,Sorocaba,SP,Sudeste,24h,2019,2011,254,189,95,36,35
+3552205,Sorocaba,SP,Sudeste,24h,2019,2012,188,133,74,23,38
+3552205,Sorocaba,SP,Sudeste,24h,2019,2013,101,77,16,9,20
+3552205,Sorocaba,SP,Sudeste,24h,2019,2014,119,92,24,8,30
+3552205,Sorocaba,SP,Sudeste,24h,2019,2015,218,196,23,25,52
+3552205,Sorocaba,SP,Sudeste,24h,2019,2016,219,162,54,35,42
+3552205,Sorocaba,SP,Sudeste,24h,2019,2017,255,167,111,51,43
+3552205,Sorocaba,SP,Sudeste,24h,2019,2018,286,182,87,62,64
+3552205,Sorocaba,SP,Sudeste,24h,2019,2019,401,260,80,71,90
+3552403,Sumaré,SP,Sudeste,comercial,0,2009,24,11,10,10,6
+3552403,Sumaré,SP,Sudeste,comercial,0,2010,32,13,16,6,11
+3552403,Sumaré,SP,Sudeste,comercial,0,2011,60,49,15,22,21
+3552403,Sumaré,SP,Sudeste,comercial,0,2012,115,94,23,55,48
+3552403,Sumaré,SP,Sudeste,comercial,0,2013,153,118,44,78,64
+3552403,Sumaré,SP,Sudeste,comercial,0,2014,96,77,19,44,39
+3552403,Sumaré,SP,Sudeste,comercial,0,2015,253,209,50,104,99
+3552403,Sumaré,SP,Sudeste,comercial,0,2016,274,222,44,108,106
+3552403,Sumaré,SP,Sudeste,comercial,0,2017,289,228,35,129,117
+3552403,Sumaré,SP,Sudeste,comercial,0,2018,272,210,26,89,100
+3552403,Sumaré,SP,Sudeste,comercial,0,2019,306,243,31,81,96
+3552502,Suzano,SP,Sudeste,comercial,0,2009,66,42,16,21,19
+3552502,Suzano,SP,Sudeste,comercial,0,2010,66,58,10,19,35
+3552502,Suzano,SP,Sudeste,comercial,0,2011,184,164,24,42,93
+3552502,Suzano,SP,Sudeste,comercial,0,2012,256,222,34,77,132
+3552502,Suzano,SP,Sudeste,comercial,0,2013,196,171,19,22,97
+3552502,Suzano,SP,Sudeste,comercial,0,2014,228,195,27,21,113
+3552502,Suzano,SP,Sudeste,comercial,0,2015,252,214,40,84,124
+3552502,Suzano,SP,Sudeste,comercial,0,2016,199,163,39,98,77
+3552502,Suzano,SP,Sudeste,comercial,0,2017,243,203,39,100,83
+3552502,Suzano,SP,Sudeste,comercial,0,2018,94,76,17,33,28
+3552502,Suzano,SP,Sudeste,comercial,0,2019,147,108,25,46,36
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2009,4,3,1,3,4
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2010,21,16,5,2,6
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2011,48,36,10,4,11
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2012,74,61,13,17,21
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2013,52,40,11,6,14
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2014,121,88,37,12,28
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2015,157,130,18,8,33
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2016,192,139,21,20,40
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2017,293,246,25,49,77
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2018,323,279,16,35,86
+3552809,Taboão da Serra,SP,Sudeste,comercial,0,2019,314,261,27,52,64
+3554003,Tatuí,SP,Sudeste,comercial,0,2009,2,1,2,1,0
+3554003,Tatuí,SP,Sudeste,comercial,0,2010,5,2,4,2,2
+3554003,Tatuí,SP,Sudeste,comercial,0,2011,7,5,7,6,0
+3554003,Tatuí,SP,Sudeste,comercial,0,2012,21,7,20,13,3
+3554003,Tatuí,SP,Sudeste,comercial,0,2013,14,8,14,10,1
+3554003,Tatuí,SP,Sudeste,comercial,0,2014,10,6,8,5,2
+3554003,Tatuí,SP,Sudeste,comercial,0,2015,6,3,2,2,3
+3554003,Tatuí,SP,Sudeste,comercial,0,2016,18,12,13,5,4
+3554003,Tatuí,SP,Sudeste,comercial,0,2017,26,16,12,14,4
+3554003,Tatuí,SP,Sudeste,comercial,0,2018,31,19,17,12,2
+3554003,Tatuí,SP,Sudeste,comercial,0,2019,43,29,12,16,13
+3555000,Tupã,SP,Sudeste,comercial,0,2009,0,0,0,0,0
+3555000,Tupã,SP,Sudeste,comercial,0,2010,0,0,0,0,0
+3555000,Tupã,SP,Sudeste,comercial,0,2011,0,0,0,0,0
+3555000,Tupã,SP,Sudeste,comercial,0,2012,6,1,6,4,0
+3555000,Tupã,SP,Sudeste,comercial,0,2013,15,14,2,6,7
+3555000,Tupã,SP,Sudeste,comercial,0,2014,5,4,2,1,1
+3555000,Tupã,SP,Sudeste,comercial,0,2015,0,0,0,0,0
+3555000,Tupã,SP,Sudeste,comercial,0,2016,3,2,1,1,2
+3555000,Tupã,SP,Sudeste,comercial,0,2017,20,19,1,12,15
+3555000,Tupã,SP,Sudeste,comercial,0,2018,22,18,3,8,6
+3555000,Tupã,SP,Sudeste,comercial,0,2019,11,10,1,1,5
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2009,2,1,1,1,1
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2010,3,3,2,0,0
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2011,7,3,6,2,0
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2012,3,3,0,0,0
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2013,9,4,4,3,1
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2014,6,6,1,0,2
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2015,3,3,0,2,1
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2016,21,20,1,3,8
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2017,21,19,3,2,6
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2018,28,26,3,9,12
+3556404,Vargem Grande do Sul,SP,Sudeste,comercial,0,2019,16,12,1,3,6
+3557006,Votorantim,SP,Sudeste,comercial,0,2009,19,5,15,3,0
+3557006,Votorantim,SP,Sudeste,comercial,0,2010,26,8,25,3,1
+3557006,Votorantim,SP,Sudeste,comercial,0,2011,22,10,22,7,2
+3557006,Votorantim,SP,Sudeste,comercial,0,2012,10,1,10,2,1
+3557006,Votorantim,SP,Sudeste,comercial,0,2013,0,0,0,0,0
+3557006,Votorantim,SP,Sudeste,comercial,0,2014,15,10,8,2,2
+3557006,Votorantim,SP,Sudeste,comercial,0,2015,14,8,6,1,2
+3557006,Votorantim,SP,Sudeste,comercial,0,2016,24,10,15,4,4
+3557006,Votorantim,SP,Sudeste,comercial,0,2017,38,17,23,5,2
+3557006,Votorantim,SP,Sudeste,comercial,0,2018,35,23,22,11,6
+3557006,Votorantim,SP,Sudeste,comercial,0,2019,42,28,16,12,8
+4101408,Apucarana,PR,Sul,comercial,0,2009,0,0,0,0,0
+4101408,Apucarana,PR,Sul,comercial,0,2010,7,7,3,1,1
+4101408,Apucarana,PR,Sul,comercial,0,2011,18,15,3,3,8
+4101408,Apucarana,PR,Sul,comercial,0,2012,61,55,8,19,23
+4101408,Apucarana,PR,Sul,comercial,0,2013,38,32,6,7,13
+4101408,Apucarana,PR,Sul,comercial,0,2014,46,40,14,24,28
+4101408,Apucarana,PR,Sul,comercial,0,2015,182,99,54,149,150
+4101408,Apucarana,PR,Sul,comercial,0,2016,212,145,43,157,143
+4101408,Apucarana,PR,Sul,comercial,0,2017,280,207,80,214,196
+4101408,Apucarana,PR,Sul,comercial,0,2018,265,172,50,179,173
+4101408,Apucarana,PR,Sul,comercial,0,2019,306,225,83,216,200
+4101804,Araucária,PR,Sul,comercial,0,2009,24,8,17,7,1
+4101804,Araucária,PR,Sul,comercial,0,2010,15,4,11,5,0
+4101804,Araucária,PR,Sul,comercial,0,2011,74,28,25,17,11
+4101804,Araucária,PR,Sul,comercial,0,2012,171,85,35,48,30
+4101804,Araucária,PR,Sul,comercial,0,2013,185,55,35,39,30
+4101804,Araucária,PR,Sul,comercial,0,2014,400,144,110,104,63
+4101804,Araucária,PR,Sul,comercial,0,2015,263,91,46,70,38
+4101804,Araucária,PR,Sul,comercial,0,2016,274,93,66,73,47
+4101804,Araucária,PR,Sul,comercial,0,2017,336,127,51,95,75
+4101804,Araucária,PR,Sul,comercial,0,2018,560,249,114,187,157
+4101804,Araucária,PR,Sul,comercial,0,2019,844,426,100,357,332
+4104303,Campo Mourão,PR,Sul,comercial,0,2009,0,0,0,0,0
+4104303,Campo Mourão,PR,Sul,comercial,0,2010,0,0,0,0,0
+4104303,Campo Mourão,PR,Sul,comercial,0,2011,1,1,1,0,0
+4104303,Campo Mourão,PR,Sul,comercial,0,2012,13,10,2,10,9
+4104303,Campo Mourão,PR,Sul,comercial,0,2013,12,9,4,5,6
+4104303,Campo Mourão,PR,Sul,comercial,0,2014,19,16,2,9,11
+4104303,Campo Mourão,PR,Sul,comercial,0,2015,33,26,10,1,5
+4104303,Campo Mourão,PR,Sul,comercial,0,2016,37,25,2,1,4
+4104303,Campo Mourão,PR,Sul,comercial,0,2017,61,51,8,6,16
+4104303,Campo Mourão,PR,Sul,comercial,0,2018,81,74,12,12,12
+4104303,Campo Mourão,PR,Sul,comercial,0,2019,169,143,10,32,25
+4104808,Cascavel,PR,Sul,comercial,0,2009,2,2,2,2,1
+4104808,Cascavel,PR,Sul,comercial,0,2010,35,30,5,18,14
+4104808,Cascavel,PR,Sul,comercial,0,2011,88,70,21,33,33
+4104808,Cascavel,PR,Sul,comercial,0,2012,323,146,26,57,61
+4104808,Cascavel,PR,Sul,comercial,0,2013,297,162,9,33,75
+4104808,Cascavel,PR,Sul,comercial,0,2014,489,264,30,39,88
+4104808,Cascavel,PR,Sul,comercial,0,2015,601,258,55,47,122
+4104808,Cascavel,PR,Sul,comercial,0,2016,500,187,33,25,86
+4104808,Cascavel,PR,Sul,comercial,0,2017,702,229,35,65,110
+4104808,Cascavel,PR,Sul,comercial,0,2018,921,212,51,61,114
+4104808,Cascavel,PR,Sul,comercial,0,2019,1166,197,37,59,102
+4105508,Cianorte,PR,Sul,comercial,0,2009,0,0,0,0,0
+4105508,Cianorte,PR,Sul,comercial,0,2010,0,0,0,0,0
+4105508,Cianorte,PR,Sul,comercial,0,2011,5,4,5,4,0
+4105508,Cianorte,PR,Sul,comercial,0,2012,13,8,6,7,1
+4105508,Cianorte,PR,Sul,comercial,0,2013,26,16,5,12,6
+4105508,Cianorte,PR,Sul,comercial,0,2014,26,12,0,6,2
+4105508,Cianorte,PR,Sul,comercial,0,2015,40,10,3,3,5
+4105508,Cianorte,PR,Sul,comercial,0,2016,31,9,1,4,8
+4105508,Cianorte,PR,Sul,comercial,0,2017,94,35,6,12,10
+4105508,Cianorte,PR,Sul,comercial,0,2018,115,33,6,2,8
+4105508,Cianorte,PR,Sul,comercial,0,2019,134,48,14,12,17
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2009,0,0,0,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2010,3,3,0,0,1
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2011,6,4,2,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2012,1,1,0,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2013,1,1,0,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2014,3,3,0,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2015,14,13,2,0,3
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2016,2,1,0,0,0
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2017,11,9,2,3,2
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2018,7,4,3,1,2
+4106407,Cornélio Procópio,PR,Sul,comercial,0,2019,21,20,0,0,0
+4106902,Curitiba,PR,Sul,24h,2016,2009,655,347,224,272,217
+4106902,Curitiba,PR,Sul,24h,2016,2010,641,352,214,273,228
+4106902,Curitiba,PR,Sul,24h,2016,2011,620,341,200,231,143
+4106902,Curitiba,PR,Sul,24h,2016,2012,1322,570,285,472,280
+4106902,Curitiba,PR,Sul,24h,2016,2013,1865,868,372,732,413
+4106902,Curitiba,PR,Sul,24h,2016,2014,3781,1494,552,1415,885
+4106902,Curitiba,PR,Sul,24h,2016,2015,4355,1532,503,1125,861
+4106902,Curitiba,PR,Sul,24h,2016,2016,4186,1181,504,233,594
+4106902,Curitiba,PR,Sul,24h,2016,2017,4991,1245,594,489,565
+4106902,Curitiba,PR,Sul,24h,2016,2018,5303,1321,640,641,654
+4106902,Curitiba,PR,Sul,24h,2016,2019,5974,1315,711,551,659
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2009,2,1,2,1,0
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2010,29,24,5,15,16
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2011,128,95,37,66,53
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2012,306,225,86,133,109
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2013,294,202,104,120,93
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2014,380,267,110,119,114
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2015,461,265,141,129,95
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2016,449,285,142,109,81
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2017,528,364,161,137,102
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2018,456,312,95,64,70
+4108304,Foz do Iguaçi,PR,Sul,comercial,0,2019,741,525,196,113,98
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2009,4,1,3,0,1
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2010,2,1,2,1,0
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2011,2,1,2,1,0
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2012,5,3,4,3,1
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2013,12,7,6,5,6
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2014,11,6,5,4,6
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2015,33,29,9,11,14
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2016,50,43,10,26,28
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2017,143,121,18,63,31
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2018,129,92,9,29,17
+4108403,Francisco Beltrão,PR,Sul,comercial,0,2019,167,144,19,50,28
+4111803,Jacarezinho,PR,Sul,comercial,0,2009,0,0,0,0,0
+4111803,Jacarezinho,PR,Sul,comercial,0,2010,0,0,0,0,0
+4111803,Jacarezinho,PR,Sul,comercial,0,2011,3,2,1,2,1
+4111803,Jacarezinho,PR,Sul,comercial,0,2012,5,4,1,1,3
+4111803,Jacarezinho,PR,Sul,comercial,0,2013,49,46,6,5,13
+4111803,Jacarezinho,PR,Sul,comercial,0,2014,42,40,3,9,14
+4111803,Jacarezinho,PR,Sul,comercial,0,2015,34,30,5,9,14
+4111803,Jacarezinho,PR,Sul,comercial,0,2016,16,11,4,6,3
+4111803,Jacarezinho,PR,Sul,comercial,0,2017,41,33,5,7,16
+4111803,Jacarezinho,PR,Sul,comercial,0,2018,48,47,2,10,11
+4111803,Jacarezinho,PR,Sul,comercial,0,2019,23,18,7,9,7
+4113700,Londrina,PR,Sul,comercial,0,2009,0,0,0,0,0
+4113700,Londrina,PR,Sul,comercial,0,2010,1,0,1,0,0
+4113700,Londrina,PR,Sul,comercial,0,2011,209,145,39,140,129
+4113700,Londrina,PR,Sul,comercial,0,2012,647,423,73,316,281
+4113700,Londrina,PR,Sul,comercial,0,2013,690,517,72,375,267
+4113700,Londrina,PR,Sul,comercial,0,2014,738,504,91,439,279
+4113700,Londrina,PR,Sul,comercial,0,2015,661,462,59,450,295
+4113700,Londrina,PR,Sul,comercial,0,2016,894,597,108,447,355
+4113700,Londrina,PR,Sul,comercial,0,2017,913,453,148,76,249
+4113700,Londrina,PR,Sul,comercial,0,2018,1061,509,172,420,367
+4113700,Londrina,PR,Sul,comercial,0,2019,1282,589,210,707,417
+4115200,Maringá,PR,Sul,comercial,0,2009,23,12,18,7,5
+4115200,Maringá,PR,Sul,comercial,0,2010,30,14,23,9,3
+4115200,Maringá,PR,Sul,comercial,0,2011,44,25,27,16,8
+4115200,Maringá,PR,Sul,comercial,0,2012,251,184,44,99,60
+4115200,Maringá,PR,Sul,comercial,0,2013,350,251,91,135,98
+4115200,Maringá,PR,Sul,comercial,0,2014,364,287,55,164,123
+4115200,Maringá,PR,Sul,comercial,0,2015,459,381,67,172,135
+4115200,Maringá,PR,Sul,comercial,0,2016,646,463,72,120,140
+4115200,Maringá,PR,Sul,comercial,0,2017,861,300,83,14,129
+4115200,Maringá,PR,Sul,comercial,0,2018,1008,267,83,18,145
+4115200,Maringá,PR,Sul,comercial,0,2019,977,239,95,27,141
+4118402,Paranavaí,PR,Sul,comercial,0,2009,0,0,0,0,0
+4118402,Paranavaí,PR,Sul,comercial,0,2010,22,21,0,0,2
+4118402,Paranavaí,PR,Sul,comercial,0,2011,32,31,2,2,3
+4118402,Paranavaí,PR,Sul,comercial,0,2012,23,19,5,3,1
+4118402,Paranavaí,PR,Sul,comercial,0,2013,6,6,0,1,1
+4118402,Paranavaí,PR,Sul,comercial,0,2014,13,13,0,2,5
+4118402,Paranavaí,PR,Sul,comercial,0,2015,24,22,1,4,7
+4118402,Paranavaí,PR,Sul,comercial,0,2016,22,18,5,2,5
+4118402,Paranavaí,PR,Sul,comercial,0,2017,22,21,1,1,6
+4118402,Paranavaí,PR,Sul,comercial,0,2018,44,40,5,2,9
+4118402,Paranavaí,PR,Sul,comercial,0,2019,73,61,15,3,20
+4118501,Pato Brancp,PR,Sul,comercial,0,2009,0,0,0,0,0
+4118501,Pato Brancp,PR,Sul,comercial,0,2010,45,42,2,7,19
+4118501,Pato Brancp,PR,Sul,comercial,0,2011,86,80,8,29,34
+4118501,Pato Brancp,PR,Sul,comercial,0,2012,88,83,6,41,47
+4118501,Pato Brancp,PR,Sul,comercial,0,2013,115,98,12,57,53
+4118501,Pato Brancp,PR,Sul,comercial,0,2014,147,129,18,93,56
+4118501,Pato Brancp,PR,Sul,comercial,0,2015,163,150,16,144,56
+4118501,Pato Brancp,PR,Sul,comercial,0,2016,137,119,15,99,34
+4118501,Pato Brancp,PR,Sul,comercial,0,2017,190,148,20,79,49
+4118501,Pato Brancp,PR,Sul,comercial,0,2018,400,162,114,118,67
+4118501,Pato Brancp,PR,Sul,comercial,0,2019,380,157,91,124,79
+4119905,Ponta Grossa,PR,Sul,comercial,0,2009,2,0,2,0,0
+4119905,Ponta Grossa,PR,Sul,comercial,0,2010,28,13,18,5,2
+4119905,Ponta Grossa,PR,Sul,comercial,0,2011,126,13,23,13,5
+4119905,Ponta Grossa,PR,Sul,comercial,0,2012,99,14,19,12,7
+4119905,Ponta Grossa,PR,Sul,comercial,0,2013,172,38,35,15,13
+4119905,Ponta Grossa,PR,Sul,comercial,0,2014,150,27,33,14,18
+4119905,Ponta Grossa,PR,Sul,comercial,0,2015,127,20,22,12,15
+4119905,Ponta Grossa,PR,Sul,comercial,0,2016,149,47,44,20,29
+4119905,Ponta Grossa,PR,Sul,comercial,0,2017,264,76,47,32,44
+4119905,Ponta Grossa,PR,Sul,comercial,0,2018,371,61,63,9,45
+4119905,Ponta Grossa,PR,Sul,comercial,0,2019,530,130,60,16,62
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2009,190,113,47,87,64
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2010,213,127,37,79,69
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2011,261,122,45,90,69
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2012,293,164,68,116,71
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2013,446,214,86,218,190
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2014,392,177,84,122,112
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2015,512,270,97,193,160
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2016,530,237,100,182,155
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2017,590,190,139,134,112
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2018,624,216,130,129,147
+4125506,São José dos Pinhais,PR,Sul,comercial,0,2019,642,202,128,121,117
+4127700,Toledo,PR,Sul,comercial,0,2009,54,42,5,20,26
+4127700,Toledo,PR,Sul,comercial,0,2010,82,56,1,36,32
+4127700,Toledo,PR,Sul,comercial,0,2011,111,48,11,26,23
+4127700,Toledo,PR,Sul,comercial,0,2012,153,79,10,46,52
+4127700,Toledo,PR,Sul,comercial,0,2013,131,76,17,36,40
+4127700,Toledo,PR,Sul,comercial,0,2014,107,75,8,34,34
+4127700,Toledo,PR,Sul,comercial,0,2015,162,65,47,58,25
+4127700,Toledo,PR,Sul,comercial,0,2016,102,45,9,35,32
+4127700,Toledo,PR,Sul,comercial,0,2017,157,66,15,46,37
+4127700,Toledo,PR,Sul,comercial,0,2018,250,105,37,74,61
+4127700,Toledo,PR,Sul,comercial,0,2019,323,160,54,78,66
+4128104,Umuarama,PR,Sul,comercial,0,2009,0,0,0,0,0
+4128104,Umuarama,PR,Sul,comercial,0,2010,0,0,0,0,0
+4128104,Umuarama,PR,Sul,comercial,0,2011,1,1,0,1,1
+4128104,Umuarama,PR,Sul,comercial,0,2012,3,2,0,1,0
+4128104,Umuarama,PR,Sul,comercial,0,2013,3,2,1,1,0
+4128104,Umuarama,PR,Sul,comercial,0,2014,18,17,3,13,9
+4128104,Umuarama,PR,Sul,comercial,0,2015,13,11,2,5,7
+4128104,Umuarama,PR,Sul,comercial,0,2016,24,21,4,10,8
+4128104,Umuarama,PR,Sul,comercial,0,2017,19,15,4,9,8
+4128104,Umuarama,PR,Sul,comercial,0,2018,22,20,2,12,10
+4128104,Umuarama,PR,Sul,comercial,0,2019,29,21,5,4,6
+4128203,União da Vitória,PR,Sul,comercial,0,2009,0,0,0,0,0
+4128203,União da Vitória,PR,Sul,comercial,0,2010,0,0,0,0,0
+4128203,União da Vitória,PR,Sul,comercial,0,2011,4,3,1,1,1
+4128203,União da Vitória,PR,Sul,comercial,0,2012,4,3,2,2,3
+4128203,União da Vitória,PR,Sul,comercial,0,2013,7,5,1,4,3
+4128203,União da Vitória,PR,Sul,comercial,0,2014,17,14,1,9,8
+4128203,União da Vitória,PR,Sul,comercial,0,2015,29,22,1,13,15
+4128203,União da Vitória,PR,Sul,comercial,0,2016,20,17,1,5,11
+4128203,União da Vitória,PR,Sul,comercial,0,2017,69,61,3,10,9
+4128203,União da Vitória,PR,Sul,comercial,0,2018,67,59,5,11,15
+4128203,União da Vitória,PR,Sul,comercial,0,2019,77,70,5,10,14
+4201406,Araranguá,SC,Sul,comercial,0,2009,0,0,0,0,0
+4201406,Araranguá,SC,Sul,comercial,0,2010,3,2,1,0,0
+4201406,Araranguá,SC,Sul,comercial,0,2011,15,10,6,3,4
+4201406,Araranguá,SC,Sul,comercial,0,2012,61,44,1,5,16
+4201406,Araranguá,SC,Sul,comercial,0,2013,100,76,2,7,11
+4201406,Araranguá,SC,Sul,comercial,0,2014,106,95,4,10,18
+4201406,Araranguá,SC,Sul,comercial,0,2015,110,81,1,7,19
+4201406,Araranguá,SC,Sul,comercial,0,2016,92,67,2,17,19
+4201406,Araranguá,SC,Sul,comercial,0,2017,121,93,6,13,22
+4201406,Araranguá,SC,Sul,comercial,0,2018,90,61,3,8,12
+4201406,Araranguá,SC,Sul,comercial,0,2019,92,43,2,8,12
+4202404,Blumenau,SC,Sul,comercial,0,2009,46,31,17,28,14
+4202404,Blumenau,SC,Sul,comercial,0,2010,55,35,17,16,16
+4202404,Blumenau,SC,Sul,comercial,0,2011,182,89,42,59,47
+4202404,Blumenau,SC,Sul,comercial,0,2012,285,122,33,80,66
+4202404,Blumenau,SC,Sul,comercial,0,2013,332,137,61,87,71
+4202404,Blumenau,SC,Sul,comercial,0,2014,304,131,67,74,78
+4202404,Blumenau,SC,Sul,comercial,0,2015,371,146,79,87,72
+4202404,Blumenau,SC,Sul,comercial,0,2016,354,133,83,101,72
+4202404,Blumenau,SC,Sul,comercial,0,2017,410,124,108,76,51
+4202404,Blumenau,SC,Sul,comercial,0,2018,453,145,107,96,69
+4202404,Blumenau,SC,Sul,comercial,0,2019,555,164,118,84,74
+4203006,Caçador,SC,Sul,comercial,0,2009,48,41,6,1,26
+4203006,Caçador,SC,Sul,comercial,0,2010,13,5,13,5,6
+4203006,Caçador,SC,Sul,comercial,0,2011,28,16,19,7,7
+4203006,Caçador,SC,Sul,comercial,0,2012,116,105,12,7,35
+4203006,Caçador,SC,Sul,comercial,0,2013,77,54,26,2,20
+4203006,Caçador,SC,Sul,comercial,0,2014,75,55,25,13,15
+4203006,Caçador,SC,Sul,comercial,0,2015,62,39,21,9,15
+4203006,Caçador,SC,Sul,comercial,0,2016,29,12,18,6,9
+4203006,Caçador,SC,Sul,comercial,0,2017,68,51,15,14,33
+4203006,Caçador,SC,Sul,comercial,0,2018,68,45,20,21,13
+4203006,Caçador,SC,Sul,comercial,0,2019,181,161,26,29,33
+4203204,Camboriú,SC,Sul,comercial,0,2009,1,0,1,1,0
+4203204,Camboriú,SC,Sul,comercial,0,2010,3,3,0,0,1
+4203204,Camboriú,SC,Sul,comercial,0,2011,4,1,3,0,0
+4203204,Camboriú,SC,Sul,comercial,0,2012,10,3,4,5,2
+4203204,Camboriú,SC,Sul,comercial,0,2013,13,5,4,3,1
+4203204,Camboriú,SC,Sul,comercial,0,2014,17,6,7,3,4
+4203204,Camboriú,SC,Sul,comercial,0,2015,47,26,10,9,11
+4203204,Camboriú,SC,Sul,comercial,0,2016,66,38,15,12,17
+4203204,Camboriú,SC,Sul,comercial,0,2017,54,19,15,5,10
+4203204,Camboriú,SC,Sul,comercial,0,2018,94,32,26,15,9
+4203204,Camboriú,SC,Sul,comercial,0,2019,119,56,19,15,24
+4204202,Chapecó,SC,Sul,comercial,0,2009,6,2,6,0,1
+4204202,Chapecó,SC,Sul,comercial,0,2010,0,0,0,0,0
+4204202,Chapecó,SC,Sul,comercial,0,2011,41,20,8,6,4
+4204202,Chapecó,SC,Sul,comercial,0,2012,120,71,26,18,21
+4204202,Chapecó,SC,Sul,comercial,0,2013,177,162,19,29,24
+4204202,Chapecó,SC,Sul,comercial,0,2014,187,178,17,36,33
+4204202,Chapecó,SC,Sul,comercial,0,2015,230,212,29,163,46
+4204202,Chapecó,SC,Sul,comercial,0,2016,221,198,48,161,50
+4204202,Chapecó,SC,Sul,comercial,0,2017,240,218,61,195,61
+4204202,Chapecó,SC,Sul,comercial,0,2018,203,121,44,92,53
+4204202,Chapecó,SC,Sul,comercial,0,2019,233,197,40,94,66
+4204608,Criciúma,SC,Sul,24h,2012,2009,65,52,4,9,13
+4204608,Criciúma,SC,Sul,24h,2012,2010,156,89,16,33,32
+4204608,Criciúma,SC,Sul,24h,2012,2011,358,176,22,47,65
+4204608,Criciúma,SC,Sul,24h,2012,2012,405,140,32,59,82
+4204608,Criciúma,SC,Sul,24h,2012,2013,549,177,41,56,116
+4204608,Criciúma,SC,Sul,24h,2012,2014,483,110,26,38,49
+4204608,Criciúma,SC,Sul,24h,2012,2015,414,131,30,59,59
+4204608,Criciúma,SC,Sul,24h,2012,2016,312,103,27,53,24
+4204608,Criciúma,SC,Sul,24h,2012,2017,512,176,40,41,68
+4204608,Criciúma,SC,Sul,24h,2012,2018,585,212,30,70,77
+4204608,Criciúma,SC,Sul,24h,2012,2019,750,188,64,74,96
+4205407,Florianópolis,SC,Sul,24h,2014,2009,42,17,30,17,2
+4205407,Florianópolis,SC,Sul,24h,2014,2010,64,23,41,21,6
+4205407,Florianópolis,SC,Sul,24h,2014,2011,78,30,45,31,18
+4205407,Florianópolis,SC,Sul,24h,2014,2012,135,74,64,41,29
+4205407,Florianópolis,SC,Sul,24h,2014,2013,252,117,66,53,56
+4205407,Florianópolis,SC,Sul,24h,2014,2014,335,163,96,68,65
+4205407,Florianópolis,SC,Sul,24h,2014,2015,428,197,97,69,70
+4205407,Florianópolis,SC,Sul,24h,2014,2016,449,262,138,105,94
+4205407,Florianópolis,SC,Sul,24h,2014,2017,577,310,162,168,116
+4205407,Florianópolis,SC,Sul,24h,2014,2018,572,236,151,111,76
+4205407,Florianópolis,SC,Sul,24h,2014,2019,594,179,171,97,69
+4208203,Itajaí,SC,Sul,comercial,0,2009,2,2,0,0,1
+4208203,Itajaí,SC,Sul,comercial,0,2010,39,35,13,4,7
+4208203,Itajaí,SC,Sul,comercial,0,2011,534,334,19,279,309
+4208203,Itajaí,SC,Sul,comercial,0,2012,267,109,18,27,45
+4208203,Itajaí,SC,Sul,comercial,0,2013,306,162,33,71,89
+4208203,Itajaí,SC,Sul,comercial,0,2014,356,139,31,65,68
+4208203,Itajaí,SC,Sul,comercial,0,2015,463,171,28,68,66
+4208203,Itajaí,SC,Sul,comercial,0,2016,552,167,33,61,78
+4208203,Itajaí,SC,Sul,comercial,0,2017,568,189,43,71,78
+4208203,Itajaí,SC,Sul,comercial,0,2018,595,170,50,82,75
+4208203,Itajaí,SC,Sul,comercial,0,2019,566,179,62,89,103
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2009,0,0,0,0,0
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2010,2,2,0,2,1
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2011,6,2,6,5,0
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2012,103,47,52,20,25
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2013,71,56,19,19,17
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2014,182,131,33,50,31
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2015,179,146,19,59,21
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2016,142,85,25,8,27
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2017,301,231,22,99,25
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2018,328,263,36,66,24
+4208906,Jaraguá do Su,SC,Sul,comercial,0,2019,294,273,45,13,33
+4209300,Lages,SC,Sul,comercial,0,2009,0,0,0,0,0
+4209300,Lages,SC,Sul,comercial,0,2010,323,304,21,231,111
+4209300,Lages,SC,Sul,comercial,0,2011,477,468,26,410,149
+4209300,Lages,SC,Sul,comercial,0,2012,432,416,27,308,155
+4209300,Lages,SC,Sul,comercial,0,2013,182,161,21,29,41
+4209300,Lages,SC,Sul,comercial,0,2014,540,521,25,18,171
+4209300,Lages,SC,Sul,comercial,0,2015,142,128,14,4,52
+4209300,Lages,SC,Sul,comercial,0,2016,130,89,24,25,30
+4209300,Lages,SC,Sul,comercial,0,2017,159,76,33,13,25
+4209300,Lages,SC,Sul,comercial,0,2018,198,93,62,15,22
+4209300,Lages,SC,Sul,comercial,0,2019,215,131,46,28,27
+4216602,São José,SC,Sul,comercial,0,2009,10,8,5,7,2
+4216602,São José,SC,Sul,comercial,0,2010,34,16,14,8,4
+4216602,São José,SC,Sul,comercial,0,2011,125,92,31,33,52
+4216602,São José,SC,Sul,comercial,0,2012,479,399,64,146,297
+4216602,São José,SC,Sul,comercial,0,2013,495,353,79,152,207
+4216602,São José,SC,Sul,comercial,0,2014,547,425,72,198,306
+4216602,São José,SC,Sul,comercial,0,2015,511,338,67,166,244
+4216602,São José,SC,Sul,comercial,0,2016,303,144,57,48,57
+4216602,São José,SC,Sul,comercial,0,2017,391,151,68,65,51
+4216602,São José,SC,Sul,comercial,0,2018,509,189,82,89,82
+4216602,São José,SC,Sul,comercial,0,2019,555,163,104,78,111
+4218707,Tubarão,SC,Sul,comercial,0,2009,19,8,8,4,3
+4218707,Tubarão,SC,Sul,comercial,0,2010,48,24,3,11,9
+4218707,Tubarão,SC,Sul,comercial,0,2011,102,71,4,15,23
+4218707,Tubarão,SC,Sul,comercial,0,2012,120,74,10,24,25
+4218707,Tubarão,SC,Sul,comercial,0,2013,161,87,12,75,33
+4218707,Tubarão,SC,Sul,comercial,0,2014,99,54,12,63,27
+4218707,Tubarão,SC,Sul,comercial,0,2015,163,105,10,125,35
+4218707,Tubarão,SC,Sul,comercial,0,2016,162,91,7,34,38
+4218707,Tubarão,SC,Sul,comercial,0,2017,186,96,4,13,32
+4218707,Tubarão,SC,Sul,comercial,0,2018,166,85,7,23,28
+4218707,Tubarão,SC,Sul,comercial,0,2019,187,90,21,22,23
+4300604,Alvorada,RS,Sul,comercial,0,2009,6,3,5,5,0
+4300604,Alvorada,RS,Sul,comercial,0,2010,75,33,42,30,13
+4300604,Alvorada,RS,Sul,comercial,0,2011,64,17,45,46,4
+4300604,Alvorada,RS,Sul,comercial,0,2012,67,13,43,27,3
+4300604,Alvorada,RS,Sul,comercial,0,2013,58,14,38,14,7
+4300604,Alvorada,RS,Sul,comercial,0,2014,74,14,46,20,8
+4300604,Alvorada,RS,Sul,comercial,0,2015,140,24,64,29,6
+4300604,Alvorada,RS,Sul,comercial,0,2016,129,22,51,26,16
+4300604,Alvorada,RS,Sul,comercial,0,2017,184,37,42,22,10
+4300604,Alvorada,RS,Sul,comercial,0,2018,202,33,59,4,28
+4300604,Alvorada,RS,Sul,comercial,0,2019,314,45,67,9,27
+4301602,Bagé,RS,Sul,comercial,0,2009,1,0,1,0,0
+4301602,Bagé,RS,Sul,comercial,0,2010,10,9,0,9,5
+4301602,Bagé,RS,Sul,comercial,0,2011,26,22,5,20,12
+4301602,Bagé,RS,Sul,comercial,0,2012,65,63,5,65,43
+4301602,Bagé,RS,Sul,comercial,0,2013,80,74,3,75,55
+4301602,Bagé,RS,Sul,comercial,0,2014,129,120,6,122,79
+4301602,Bagé,RS,Sul,comercial,0,2015,117,114,3,113,89
+4301602,Bagé,RS,Sul,comercial,0,2016,61,56,7,57,25
+4301602,Bagé,RS,Sul,comercial,0,2017,125,116,7,118,47
+4301602,Bagé,RS,Sul,comercial,0,2018,81,47,5,34,28
+4301602,Bagé,RS,Sul,comercial,0,2019,117,50,7,1,27
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2009,0,0,0,0,0
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2010,0,0,0,0,0
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2011,22,20,0,5,8
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2012,18,15,1,8,7
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2013,107,89,6,59,34
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2014,69,43,4,31,19
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2015,53,24,6,14,11
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2016,125,39,14,32,20
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2017,130,38,8,21,18
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2018,146,29,9,0,16
+4302808,Caçapava Do Sul,RS,Sul,comercial,0,2019,219,82,21,1,46
+4305108,Caxias do Sul,RS,Sul,comercial,0,2009,1,0,1,0,0
+4305108,Caxias do Sul,RS,Sul,comercial,0,2010,712,368,64,128,164
+4305108,Caxias do Sul,RS,Sul,comercial,0,2011,848,463,82,176,168
+4305108,Caxias do Sul,RS,Sul,comercial,0,2012,1018,443,94,195,172
+4305108,Caxias do Sul,RS,Sul,comercial,0,2013,867,326,92,165,168
+4305108,Caxias do Sul,RS,Sul,comercial,0,2014,788,306,95,168,141
+4305108,Caxias do Sul,RS,Sul,comercial,0,2015,637,236,65,115,106
+4305108,Caxias do Sul,RS,Sul,comercial,0,2016,750,258,70,136,155
+4305108,Caxias do Sul,RS,Sul,comercial,0,2017,860,271,96,111,104
+4305108,Caxias do Sul,RS,Sul,comercial,0,2018,645,183,107,27,106
+4305108,Caxias do Sul,RS,Sul,comercial,0,2019,1168,230,105,12,130
+4309209,Gravataí,RS,Sul,comercial,0,2009,20,6,16,5,1
+4309209,Gravataí,RS,Sul,comercial,0,2010,49,19,41,25,1
+4309209,Gravataí,RS,Sul,comercial,0,2011,48,13,40,38,2
+4309209,Gravataí,RS,Sul,comercial,0,2012,81,31,57,37,6
+4309209,Gravataí,RS,Sul,comercial,0,2013,126,51,56,34,15
+4309209,Gravataí,RS,Sul,comercial,0,2014,170,58,72,45,15
+4309209,Gravataí,RS,Sul,comercial,0,2015,145,44,67,41,15
+4309209,Gravataí,RS,Sul,comercial,0,2016,190,62,64,44,24
+4309209,Gravataí,RS,Sul,comercial,0,2017,214,56,93,30,32
+4309209,Gravataí,RS,Sul,comercial,0,2018,356,105,169,61,93
+4309209,Gravataí,RS,Sul,comercial,0,2019,476,95,166,115,174
+4310207,Ijuí,RS,Sul,comercial,0,2009,0,0,0,0,0
+4310207,Ijuí,RS,Sul,comercial,0,2010,18,17,0,3,5
+4310207,Ijuí,RS,Sul,comercial,0,2011,74,55,8,22,19
+4310207,Ijuí,RS,Sul,comercial,0,2012,218,133,32,133,138
+4310207,Ijuí,RS,Sul,comercial,0,2013,200,115,23,127,139
+4310207,Ijuí,RS,Sul,comercial,0,2014,650,294,15,466,505
+4310207,Ijuí,RS,Sul,comercial,0,2015,413,234,5,363,315
+4310207,Ijuí,RS,Sul,comercial,0,2016,298,173,8,217,192
+4310207,Ijuí,RS,Sul,comercial,0,2017,181,100,6,99,82
+4310207,Ijuí,RS,Sul,comercial,0,2018,427,223,14,317,262
+4310207,Ijuí,RS,Sul,comercial,0,2019,645,239,14,429,380
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2009,0,0,0,0,0
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2010,7,5,3,6,1
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2011,28,17,4,10,9
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2012,15,12,5,8,6
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2013,39,11,13,14,5
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2014,86,44,30,59,12
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2015,49,30,26,30,8
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2016,44,27,22,17,5
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2017,37,14,24,9,3
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2018,134,97,23,8,20
+4313409,Novo Hamburgo,RS,Sul,24h,2012,2019,144,50,29,5,15
+4314100,Passo Fundo,RS,Sul,comercial,0,2009,0,0,0,0,0
+4314100,Passo Fundo,RS,Sul,comercial,0,2010,95,77,9,14,25
+4314100,Passo Fundo,RS,Sul,comercial,0,2011,299,185,32,37,57
+4314100,Passo Fundo,RS,Sul,comercial,0,2012,377,203,42,46,61
+4314100,Passo Fundo,RS,Sul,comercial,0,2013,368,190,18,16,57
+4314100,Passo Fundo,RS,Sul,comercial,0,2014,396,172,33,10,50
+4314100,Passo Fundo,RS,Sul,comercial,0,2015,482,207,35,20,53
+4314100,Passo Fundo,RS,Sul,comercial,0,2016,414,184,34,40,58
+4314100,Passo Fundo,RS,Sul,comercial,0,2017,568,201,30,40,50
+4314100,Passo Fundo,RS,Sul,comercial,0,2018,523,148,36,7,60
+4314100,Passo Fundo,RS,Sul,comercial,0,2019,644,136,40,8,68
+4314407,Pelotas,RS,Sul,comercial,0,2009,0,0,0,0,0
+4314407,Pelotas,RS,Sul,comercial,0,2010,0,0,0,0,0
+4314407,Pelotas,RS,Sul,comercial,0,2011,2,0,1,1,0
+4314407,Pelotas,RS,Sul,comercial,0,2012,10,7,1,4,4
+4314407,Pelotas,RS,Sul,comercial,0,2013,13,11,4,6,1
+4314407,Pelotas,RS,Sul,comercial,0,2014,2,2,0,0,1
+4314407,Pelotas,RS,Sul,comercial,0,2015,46,30,12,7,9
+4314407,Pelotas,RS,Sul,comercial,0,2016,119,107,11,3,15
+4314407,Pelotas,RS,Sul,comercial,0,2017,141,83,10,27,21
+4314407,Pelotas,RS,Sul,comercial,0,2018,394,181,29,21,40
+4314407,Pelotas,RS,Sul,comercial,0,2019,403,185,26,26,36
+4314902,Porto Alegre,RS,Sul,24h,2012,2009,354,114,233,155,22
+4314902,Porto Alegre,RS,Sul,24h,2012,2010,565,277,266,265,95
+4314902,Porto Alegre,RS,Sul,24h,2012,2011,521,199,285,293,76
+4314902,Porto Alegre,RS,Sul,24h,2012,2012,717,244,330,299,123
+4314902,Porto Alegre,RS,Sul,24h,2012,2013,875,269,381,328,146
+4314902,Porto Alegre,RS,Sul,24h,2012,2014,896,293,324,319,149
+4314902,Porto Alegre,RS,Sul,24h,2012,2015,1309,396,341,383,194
+4314902,Porto Alegre,RS,Sul,24h,2012,2016,1350,368,320,359,213
+4314902,Porto Alegre,RS,Sul,24h,2012,2017,1619,331,428,65,231
+4314902,Porto Alegre,RS,Sul,24h,2012,2018,2128,390,464,63,264
+4314902,Porto Alegre,RS,Sul,24h,2012,2019,2927,492,590,208,342
+4316907,Santa Maria,RS,Sul,comercial,0,2009,1,1,0,0,0
+4316907,Santa Maria,RS,Sul,comercial,0,2010,30,18,6,1,9
+4316907,Santa Maria,RS,Sul,comercial,0,2011,108,27,21,15,5
+4316907,Santa Maria,RS,Sul,comercial,0,2012,216,59,46,44,30
+4316907,Santa Maria,RS,Sul,comercial,0,2013,194,76,46,56,25
+4316907,Santa Maria,RS,Sul,comercial,0,2014,286,132,46,107,36
+4316907,Santa Maria,RS,Sul,comercial,0,2015,234,98,31,60,34
+4316907,Santa Maria,RS,Sul,comercial,0,2016,225,97,60,69,49
+4316907,Santa Maria,RS,Sul,comercial,0,2017,276,110,61,87,55
+4316907,Santa Maria,RS,Sul,comercial,0,2018,315,88,55,35,58
+4316907,Santa Maria,RS,Sul,comercial,0,2019,536,103,120,27,79
+4318705,São Leopoldo,RS,Sul,comercial,0,2009,1,0,1,0,0
+4318705,São Leopoldo,RS,Sul,comercial,0,2010,6,0,5,1,0
+4318705,São Leopoldo,RS,Sul,comercial,0,2011,5,2,2,2,1
+4318705,São Leopoldo,RS,Sul,comercial,0,2012,8,5,3,2,1
+4318705,São Leopoldo,RS,Sul,comercial,0,2013,41,27,14,18,13
+4318705,São Leopoldo,RS,Sul,comercial,0,2014,37,26,14,10,10
+4318705,São Leopoldo,RS,Sul,comercial,0,2015,13,6,6,1,0
+4318705,São Leopoldo,RS,Sul,comercial,0,2016,136,100,16,31,27
+4318705,São Leopoldo,RS,Sul,comercial,0,2017,169,106,32,54,45
+4318705,São Leopoldo,RS,Sul,comercial,0,2018,359,196,43,9,126
+4318705,São Leopoldo,RS,Sul,comercial,0,2019,400,211,29,22,151
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2009,2,1,0,0,1
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2010,7,5,3,1,3
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2011,33,30,2,6,21
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2012,46,38,9,18,22
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2013,17,13,2,7,5
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2014,48,18,11,5,15
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2015,34,17,9,13,16
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2016,62,29,20,25,27
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2017,83,36,23,25,34
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2018,95,37,12,15,14
+5001102,Aquidauana,MS,Centro-Oeste,comercial,0,2019,89,53,11,20,12
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2009,1608,930,145,436,437
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2010,1745,889,140,463,407
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2011,2164,1062,175,512,507
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2012,2105,901,183,443,465
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2013,2477,1100,210,535,511
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2014,2472,1237,185,469,503
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2015,2366,1052,125,311,416
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2016,2429,1011,156,248,480
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2017,2630,810,132,112,437
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2018,2582,692,170,109,379
+5002704,Campo Grande,MS,Centro-Oeste,24h,2015,2019,2970,763,197,89,407
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2009,47,35,5,9,10
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2010,380,262,13,150,258
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2011,202,136,16,28,81
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2012,182,127,12,13,65
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2013,302,135,30,15,68
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2014,545,220,48,80,171
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2015,640,300,33,143,245
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2016,640,303,23,175,255
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2017,648,298,38,102,193
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2018,1078,383,58,213,302
+5003207,Corumbá,MS,Centro-Oeste,comercial,0,2019,1079,349,69,134,313
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2010,0,0,0,0,0
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2011,2,2,0,0,2
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2012,6,3,4,2,1
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2013,27,21,7,10,13
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2014,18,17,2,10,12
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2015,30,28,2,10,12
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2016,32,29,3,17,15
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2017,61,52,5,24,29
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2018,87,71,2,31,36
+5003306,Coxim,MS,Centro-Oeste,comercial,0,2019,117,81,11,25,29
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2009,26,15,11,9,6
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2010,77,30,49,20,13
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2011,114,106,17,53,47
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2012,179,139,47,59,80
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2013,231,172,60,61,102
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2014,223,134,70,45,103
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2015,166,130,41,31,58
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2016,174,124,55,30,76
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2017,152,100,58,43,56
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2018,238,162,72,58,100
+5003702,Dourados,MS,Centro-Oeste,comercial,0,2019,315,163,79,46,90
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2010,5,0,3,1,1
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2011,30,29,1,12,17
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2012,41,36,1,18,17
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2013,66,64,2,9,33
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2014,59,59,0,19,35
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2015,44,43,4,23,21
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2016,65,63,3,37,31
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2017,45,43,2,27,18
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2018,55,53,1,24,31
+5003801,Fátima do Sul,MS,Centro-Oeste,comercial,0,2019,79,73,3,16,33
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2009,1,1,0,0,0
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2010,59,53,5,20,24
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2011,133,123,6,22,57
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2012,150,141,7,50,63
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2013,127,121,4,46,50
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2014,92,90,6,36,43
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2015,34,29,4,3,11
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2016,34,34,2,13,16
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2017,37,32,3,12,14
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2018,43,38,2,7,14
+5005004,Jardim,MS,Centro-Oeste,comercial,0,2019,33,25,0,10,15
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2009,6,5,3,3,1
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2010,3,0,3,0,0
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2011,7,5,7,5,0
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2012,5,3,4,0,1
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2013,11,7,5,6,4
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2014,80,52,19,32,50
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2015,106,46,21,49,33
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2016,135,105,13,46,76
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2017,37,33,5,14,23
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2018,20,11,3,5,9
+5005707,Naviraí,MS,Centro-Oeste,comercial,0,2019,50,22,14,10,8
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2010,3,0,1,0,0
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2011,132,123,7,45,57
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2012,137,130,5,57,70
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2013,92,86,5,37,50
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2014,97,92,5,45,48
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2015,130,127,7,60,81
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2016,141,136,10,65,71
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2017,170,151,13,68,75
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2018,152,127,4,55,73
+5006200,Nova Andradina,MS,Centro-Oeste,comercial,0,2019,206,179,14,61,87
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2010,1,0,1,1,0
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2011,7,3,3,3,4
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2012,2,2,1,1,2
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2013,2,2,1,1,0
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2014,3,2,1,1,2
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2015,9,7,2,1,4
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2016,13,11,1,4,7
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2017,55,51,3,16,20
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2018,39,32,3,7,8
+5006309,Paranaíba,MS,Centro-Oeste,comercial,0,2019,39,20,2,4,5
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2009,2,1,1,0,0
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2010,2,0,0,0,0
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2011,40,34,12,32,14
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2012,48,41,13,23,22
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2013,51,40,10,15,20
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2014,54,42,6,13,25
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2015,99,73,24,23,40
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2016,75,49,16,22,20
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2017,51,39,12,11,21
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2018,107,95,16,34,37
+5006606,Ponta Porã,MS,Centro-Oeste,comercial,0,2019,166,113,17,37,39
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2009,34,20,12,13,16
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2010,144,80,35,26,56
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2011,122,72,3,10,55
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2012,122,58,11,12,39
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2013,73,36,3,1,26
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2014,72,43,11,1,26
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2015,105,50,10,1,34
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2016,104,51,13,1,33
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2017,157,66,11,2,45
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2018,197,64,15,3,45
+5008305,Três Lagoas,MS,Centro-Oeste,comercial,0,2019,289,85,16,3,56
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2009,2,1,0,1,0
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2010,4,4,2,2,1
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2011,9,7,2,3,3
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2012,15,13,2,4,7
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2013,2,1,2,1,1
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2014,7,6,2,4,2
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2015,31,28,3,12,15
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2016,58,52,6,24,26
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2017,60,54,1,8,10
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2018,59,44,3,7,10
+5101803,Barra do Garças,MT,Centro-Oeste,comercial,0,2019,126,90,6,23,19
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2009,1,1,0,1,0
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2010,3,2,2,2,1
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2011,6,5,1,1,3
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2012,13,10,3,3,5
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2013,22,14,7,4,7
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2014,32,21,9,8,11
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2015,22,17,9,8,7
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2016,22,16,7,5,6
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2017,19,16,4,3,4
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2018,22,18,2,8,10
+5102504,Cáceres,MT,Centro-Oeste,comercial,0,2019,79,39,38,9,11
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2009,21,15,4,13,10
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2010,35,26,12,14,19
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2011,282,121,183,67,60
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2012,282,184,98,76,60
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2013,253,146,86,64,58
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2014,148,85,69,50,54
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2015,190,90,92,41,33
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2016,196,97,99,47,36
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2017,252,136,132,41,52
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2018,319,150,106,41,65
+5103403,Cuiabá,MT,Centro-Oeste,comercial,0,2019,422,135,123,56,75
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2009,5,2,5,3,0
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2010,14,12,8,8,5
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2011,27,18,16,10,7
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2012,14,7,10,9,2
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2013,67,41,31,46,28
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2014,102,72,54,58,36
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2015,132,80,61,24,35
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2016,145,81,84,57,38
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2017,88,56,45,30,17
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2018,78,62,38,30,24
+5107602,Rondonópolis,MT,Centro-Oeste,comercial,0,2019,111,88,25,28,39
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2010,0,0,0,0,0
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2011,0,0,0,0,0
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2012,7,5,2,5,2
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2013,3,2,2,2,1
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2014,5,4,3,3,1
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2015,9,6,5,6,2
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2016,19,15,9,10,4
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2017,13,9,6,7,2
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2018,44,27,15,19,10
+5107958,Tangará da Serra,MT,Centro-Oeste,comercial,0,2019,83,58,17,22,11
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2009,9,7,2,3,4
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2010,2,0,2,1,0
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2011,61,20,47,7,6
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2012,60,29,28,28,23
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2013,195,60,35,145,136
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2014,33,13,27,8,2
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2015,33,11,25,9,4
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2016,27,11,19,6,4
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2017,57,32,28,11,9
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2018,97,45,46,19,19
+5108402,Várzea Grande,MT,Centro-Oeste,comercial,0,2019,195,51,77,21,32
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2009,51,42,17,8,10
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2010,117,96,15,21,28
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2011,35,26,14,13,8
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2012,35,14,23,9,5
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2013,108,77,34,15,47
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2014,55,30,26,8,16
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2015,58,29,32,12,12
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2016,73,37,29,25,20
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2017,180,83,66,30,51
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2018,168,109,38,37,44
+5200258,Águas Lindas de Goiás,GO,Centro-Oeste,comercial,0,2019,229,155,34,55,59
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2009,3,1,3,2,0
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2010,5,3,5,2,0
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2011,23,17,14,10,7
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2012,44,34,18,13,11
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2013,74,51,34,30,22
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2014,122,85,41,32,37
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2015,308,200,76,65,79
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2016,308,193,93,76,76
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2017,354,179,132,87,66
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2018,521,287,121,98,96
+5201108,Anápolis,GO,Centro-Oeste,comercial,0,2019,706,469,130,128,119
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2009,49,30,27,22,5
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2010,94,48,69,52,11
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2011,32,23,27,15,2
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2012,189,127,47,41,47
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2013,239,139,62,46,44
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2014,334,169,108,46,62
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2015,534,297,152,199,168
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2016,479,179,164,41,96
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2017,383,151,146,52,70
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2018,525,297,151,132,99
+5201405,Aparecida de Goiânia,GO,Centro-Oeste,comercial,0,2019,843,395,136,150,126
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2009,1,0,1,0,0
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2010,4,4,2,3,2
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2011,0,0,0,0,0
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2012,6,4,3,2,1
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2013,12,2,11,3,0
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2014,7,7,1,4,1
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2015,16,7,8,2,2
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2016,12,6,8,5,2
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2017,21,8,13,5,6
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2018,47,29,19,18,18
+5204508,Caldas Novas,GO,Centro-Oeste,comercial,0,2019,73,29,22,26,17
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2010,0,0,0,0,0
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2011,0,0,0,0,0
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2012,3,2,0,0,2
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2013,19,15,2,4,11
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2014,28,19,5,1,9
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2015,16,11,6,1,6
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2016,33,19,9,13,11
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2017,36,14,4,5,6
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2018,55,30,3,7,13
+5205109,Catalão,GO,Centro-Oeste,comercial,0,2019,89,34,3,6,8
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2009,3,1,1,1,0
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2010,1,1,1,1,0
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2011,2,1,2,0,0
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2012,3,1,2,0,0
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2013,20,10,11,4,3
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2014,39,30,12,7,14
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2015,111,99,11,24,38
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2016,95,75,19,21,27
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2017,81,52,29,25,22
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2018,79,53,21,26,25
+5208004,Formosa,GO,Centro-Oeste,comercial,0,2019,118,87,25,33,45
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2009,1,0,1,0,0
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2010,2,2,0,1,0
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2011,0,0,0,0,0
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2012,0,0,0,0,0
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2013,4,1,3,1,1
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2014,35,20,8,21,28
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2015,14,10,4,8,4
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2016,15,12,3,7,11
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2017,23,16,6,10,8
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2018,30,24,6,14,10
+5208608,Goianésia,GO,Centro-Oeste,comercial,0,2019,16,11,1,8,9
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2009,250,200,61,101,63
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2010,446,260,214,177,100
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2011,265,171,113,111,71
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2012,636,410,219,203,140
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2013,929,543,276,256,166
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2014,895,481,263,145,133
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2015,819,402,294,140,160
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2016,858,373,291,65,180
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2017,831,329,230,59,127
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2018,978,355,242,99,168
+5208707,Goiânia,GO,Centro-Oeste,24h,2014,2019,1403,460,316,181,208
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2009,5,3,3,3,1
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2010,1,1,0,0,1
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2011,3,3,0,0,0
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2012,8,4,4,2,1
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2013,2,2,1,1,0
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2014,9,9,0,6,7
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2015,15,11,1,10,6
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2016,28,23,3,14,11
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2017,14,10,2,4,3
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2018,48,26,8,6,5
+5211503,Itumbiara,GO,Centro-Oeste,comercial,0,2019,46,27,5,16,7
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2009,31,10,23,7,3
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2010,14,6,12,5,2
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2011,23,13,16,8,5
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2012,48,31,26,20,12
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2013,47,19,32,11,7
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2014,68,45,26,14,13
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2015,90,30,41,14,13
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2016,169,90,54,58,88
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2017,175,64,52,24,62
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2018,273,101,98,31,88
+5212501,Luziânia,GO,Centro-Oeste,comercial,0,2019,340,142,113,36,109
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2009,9,9,0,0,7
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2010,2,2,1,1,1
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2011,4,2,2,0,0
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2012,3,3,0,2,1
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2013,44,39,5,6,21
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2014,31,29,5,6,14
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2015,41,31,12,4,10
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2016,29,23,7,0,9
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2017,46,43,5,5,19
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2018,21,19,3,2,10
+5213103,Mineiros,GO,Centro-Oeste,comercial,0,2019,50,38,2,7,13
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2009,44,16,20,6,5
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2010,27,6,22,8,3
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2011,31,20,12,5,3
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2012,27,9,15,3,1
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2013,30,14,14,11,11
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2014,27,14,14,9,10
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2015,24,9,13,2,4
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2016,37,10,23,4,10
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2017,79,30,35,12,28
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2018,77,28,37,12,17
+5215231,Novo Gama,GO,Centro-Oeste,comercial,0,2019,73,37,26,31,30
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2009,0,0,0,0,0
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2010,0,0,0,0,0
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2011,1,1,1,1,0
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2012,2,1,0,0,0
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2013,8,5,1,3,3
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2014,1,0,1,1,0
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2015,19,14,5,10,5
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2016,16,8,2,2,3
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2017,44,31,3,10,8
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2018,18,10,0,0,4
+5218003,Porangatu,GO,Centro-Oeste,comercial,0,2019,13,8,0,1,2
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2009,3,3,2,2,0
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2010,5,5,2,2,0
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2011,6,5,4,1,1
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2012,29,17,8,4,6
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2013,31,19,7,9,12
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2014,47,31,22,8,15
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2015,38,29,13,11,5
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2016,45,25,16,5,13
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2017,65,40,16,2,13
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2018,77,48,26,6,16
+5220454,Senador Canedo,GO,Centro-Oeste,comercial,0,2019,120,88,27,16,19
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2009,12,8,5,4,2
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2010,13,5,11,6,1
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2011,8,6,5,6,1
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2012,10,4,4,4,2
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2013,34,22,9,6,4
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2014,32,16,14,1,3
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2015,48,23,34,12,9
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2016,43,22,17,3,12
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2017,96,67,16,11,28
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2018,133,101,9,10,36
+5221403,Trindade,GO,Centro-Oeste,comercial,0,2019,140,78,14,16,43
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2009,43,26,15,6,8
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2010,20,11,11,10,5
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2011,33,24,8,7,10
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2012,22,18,10,9,7
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2013,44,24,24,15,9
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2014,39,23,14,11,13
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2015,91,54,27,21,29
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2016,54,28,28,15,17
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2017,151,102,37,27,31
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2018,262,173,56,44,55
+5221858,Valparaíso,GO,Centro-Oeste,comercial,0,2019,182,141,33,45,39
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2009,562,288,243,186,87
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2010,564,274,279,175,86
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2011,791,458,309,256,127
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2012,1104,538,545,406,186
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2013,1361,553,618,341,248
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2014,1107,456,488,265,213
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2015,1172,489,450,209,177
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2016,1520,553,637,323,236
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2017,2297,761,988,439,369
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2018,3145,913,1114,456,415
+5300108,Taguatinga,DF,Centro-Oeste,24h,2019,2019,4366,1157,1035,503,447

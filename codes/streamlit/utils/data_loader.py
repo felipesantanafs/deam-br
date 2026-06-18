@@ -75,6 +75,37 @@ def load_funil() -> pd.DataFrame:
     return pd.read_csv(path)
 
 
+@st.cache_data(ttl=3600, show_spinner="Carregando painel municipal DEAM (2009-2019)...")
+def load_painel_deam() -> pd.DataFrame:
+    """
+    Painel municipal balanceado (município × ano) das cidades com DEAM, integrando
+    feminicídios (SIM) e notificações de violência contra a mulher (SINAN) de forma anual.
+
+    Pronto para inferência causal (staggered DiD / Callaway & Sant'Anna):
+      - grupo:            '24h' (tratado) ou 'comercial' (controle)
+      - coorte:           ano de adoção do regime 24h (0 = nunca tratado)
+      - tratamento_ativo: 1 a partir do ano de adoção nas cidades tratadas
+    Métricas anuais por município: feminicidios, notificacoes, viol_fisica,
+    viol_sexual, viol_psicologica, viol_parceiro.
+    """
+    path = os.path.join(DATA_DIR, 'consolidado', 'painel_deam_anual.csv')
+    return pd.read_csv(path)
+
+
+@st.cache_data(ttl=3600, show_spinner="Carregando feminicídios anuais...")
+def load_feminicidios_anual() -> pd.DataFrame:
+    """Série anual de feminicídios (SIM) por município com DEAM."""
+    path = os.path.join(DATA_DIR, 'consolidado', 'feminicidios_anual.csv')
+    return pd.read_csv(path)
+
+
+@st.cache_data(ttl=3600, show_spinner="Carregando notificações anuais...")
+def load_notificacoes_anual() -> pd.DataFrame:
+    """Série anual de notificações de violência contra a mulher (SINAN) por município com DEAM."""
+    path = os.path.join(DATA_DIR, 'consolidado', 'notificacoes_anual.csv')
+    return pd.read_csv(path)
+
+
 # ─── Mapeamentos de códigos ──────────────────────────────────────────
 LOCAL_OCORRENCIA_MAP = {
     1: "Residência",
