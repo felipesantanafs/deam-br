@@ -1,0 +1,1073 @@
+% ============================================================
+%  Relatório de Avaliação de Impacto Causal — DEAMs 24h Brasil
+%  Estilo: academic-corporate (Journal of Investing / Factor Archives)
+%  Compilar com: pdflatex -shell-escape deam24h_relatorio.tex
+% ============================================================
+\documentclass[twocolumn, 10pt]{article}
+
+% ── Codificação e língua ────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+% ── Fontes ─────────────────────────────────────────────────
+\usepackage{lmodern}
+\usepackage{helvet}           % fonte sans-serif para títulos
+
+% ── Layout ─────────────────────────────────────────────────
+\usepackage[
+  top=2.0cm, bottom=2.2cm,
+  left=1.6cm, right=1.6cm,
+  columnsep=0.7cm
+]{geometry}
+\usepackage{microtype}
+\usepackage[hyphens]{url}
+\usepackage{setspace}
+\setstretch{1.08}            % espaçamento entre linhas mais arejado
+\emergencystretch=3em
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{1.1em}
+
+% ── Cabeçalho e rodapé ─────────────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\footnotesize\sffamily AVALIAÇÃO DE IMPACTO CAUSAL — DEAMs 24H}
+\fancyhead[R]{\footnotesize\sffamily\thepage}
+\fancyfoot[C]{\footnotesize\sffamily Projeto DEAM-BR \textbar{} Callaway \& Sant'Anna (2021)}
+
+% ── Seções em sans-serif ───────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\sffamily\bfseries\large}{\thesection}{0.6em}{}[\titlerule]
+\titleformat{\subsection}
+  {\sffamily\bfseries\normalsize}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}
+  {\sffamily\itshape\normalsize}{\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{16pt plus 2pt minus 2pt}{8pt}
+\titlespacing*{\subsection}{0pt}{11pt plus 1pt minus 1pt}{5pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 1pt}{3pt}
+
+% ── Tabelas ─────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\renewcommand{\arraystretch}{1.15}
+
+% ── Figuras ─────────────────────────────────────────────────
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{
+  font={small,sf},
+  labelfont={bf,sf},
+  labelsep=period,
+  skip=4pt
+}
+
+% ── Matemática ──────────────────────────────────────────────
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% ── Hiperlinks discretos ────────────────────────────────────
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue!60!black,
+  bookmarks=true,
+  pdftitle={Avaliação de Impacto Causal: DEAMs 24h Brasil},
+  pdfauthor={Felipe Silva}
+]{hyperref}
+
+% ── Utilitários ─────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=*}
+\setlist[enumerate]{noitemsep, topsep=2pt, leftmargin=*}
+
+% ── Notas de rodapé compactas ───────────────────────────────
+\usepackage[hang, flushmargin]{footmisc}
+\renewcommand{\footnotelayout}{\footnotesize}
+
+% ── Macro de caixa de resultado ─────────────────────────────
+\usepackage{tcolorbox}
+\tcbset{
+  resultbox/.style={
+    colback=gray!8, colframe=gray!40,
+    fonttitle=\sffamily\bfseries\small,
+    boxrule=0.4pt, arc=2pt,
+    left=4pt, right=4pt, top=3pt, bottom=3pt
+  }
+}
+
+% ============================================================
+%  INÍCIO DO DOCUMENTO
+% ============================================================
+\begin{document}
+
+% ── Página de capa (uma coluna) ─────────────────────────────
+\twocolumn[{%
+\begin{@twocolumnfalse}
+
+  \vspace*{0.3cm}
+  \hrule height 2pt
+  \vspace{0.5cm}
+
+  {\sffamily\bfseries\LARGE
+    Avaliação de Impacto Causal:\\[4pt]
+    Conversão de DEAMs para Plantão 24h no Brasil}
+
+  \vspace{0.5cm}
+  \hrule height 0.4pt
+  \vspace{0.4cm}
+
+  {\sffamily\large
+    Felipe Santana Soares Silva\textsuperscript{1} \quad
+    Rafael Issa de Lima\textsuperscript{2}}
+
+  \vspace{0.15cm}
+  {\sffamily\small\color{gray}
+    \textsuperscript{1}E-mail: \href{mailto:santana.felipe@usp.br}{santana.felipe@usp.br}
+    — N\textsuperscript{o}~USP: 14569884\\
+    \textsuperscript{2}E-mail: \href{mailto:rafael.issa.lima12@usp.br}{rafael.issa.lima12@usp.br}
+    — N\textsuperscript{o}~USP: 11847516}
+
+  \vspace{0.6cm}
+  \hrule height 0.4pt
+  \vspace{0.5cm}
+
+  % ABSTRACT em uma coluna
+  \begin{minipage}[t]{0.48\textwidth}
+    {\sffamily\bfseries\small Abstract}
+
+    \vspace{4pt}
+    \small
+    Este estudo avalia o impacto causal da conversão de Delegacias Especializadas
+    de Atendimento à Mulher (DEAMs) do regime de horário comercial para plantão
+    24 horas em municípios brasileiros, utilizando um painel balanceado de
+    285 municípios ao longo de 11 anos (2009--2019). A estratégia empírica
+    adota o estimador de Diferenças-em-Diferenças com adoção escalonada de
+    Callaway \& Sant'Anna (2021), que corrige os vieses de heterogeneidade de
+    tratamento presentes no estimador clássico de Efeitos Fixos de Duas Vias
+    (TWFE). Os desfechos analisados são a taxa de notificações de violência
+    por 100 mil habitantes (canal de acesso, via SINAN/DataSUS) e a taxa de
+    feminicídios por 100 mil habitantes (canal de letalidade, via SIM/DataSUS).
+    O efeito médio do tratamento nas tratadas (ATT) global para notificações
+    foi de $-20{,}513$ (IC~95\%: $[-35{,}312;\,-6{,}578]$; $p=0{,}001$),
+    porém com violação das pré-tendências paralelas ($p_{\text{Wald}}=0{,}004$),
+    o que impede inferência causal direta. Para feminicídios, o ATT estimado foi
+    de $+0{,}438$ ($p=0{,}082$), na direção oposta ao esperado, sugerindo
+    endogeneidade na adoção do tratamento. Resultados motivam a estimação
+    duplamente robusta (DR-DiD) com covariáveis socioeconômicas como próximo passo.
+
+    \vspace{4pt}
+    {\sffamily\bfseries\small Palavras-chave:} \small Violência contra a mulher;
+    DEAMs; Diferenças-em-Diferenças; Callaway \& Sant'Anna; Política Pública;
+    Feminicídio; SINAN; SIM.
+
+    \vspace{4pt}
+    {\sffamily\bfseries\small JEL:} \small I18, J18, C21, C23.
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    {\sffamily\bfseries\small Informações do Artigo}
+
+    \vspace{4pt}
+    \small
+    \begin{tabular}{@{}ll}
+      \textbf{Período de análise:} & 2009--2019 \\
+      \textbf{Unidade:}            & Municípios brasileiros \\
+      \textbf{N tratados:}         & 38 municípios (DEAMs 24h) \\
+      \textbf{N controle:}         & 247 municípios (DEAMs comerciais) \\
+      \textbf{Observações:}        & 3.135 (painel balanceado) \\
+      \textbf{Estimador:}          & Callaway \& Sant'Anna (2021) \\
+      \textbf{Bootstrap:}          & 999 réplicas, cluster município \\
+      \textbf{Desfechos:}          & Taxas /100k hab. \\
+    \end{tabular}
+
+    \vspace{8pt}
+    {\sffamily\bfseries\small Cadeia Causal Central}
+
+    \vspace{4pt}
+    \small
+    \begin{center}
+      \fbox{%
+        \begin{minipage}{0.85\linewidth}
+          \centering\small
+          DEAM $\to$ 24h\\[2pt]
+          $\downarrow$\\[2pt]
+          $\uparrow$ Acesso\\(mais notificações noturnas)\\[2pt]
+          $\downarrow$\\[2pt]
+          Medidas protetivas ativas\\[2pt]
+          $\downarrow$\\[2pt]
+          $\downarrow$ Letalidade\\(feminicídios)
+        \end{minipage}}
+    \end{center}
+  \end{minipage}
+
+  \vspace{0.8cm}
+  \hrule height 0.4pt
+  \vspace{0.6cm}
+
+\end{@twocolumnfalse}
+}]
+
+% ============================================================
+\section{Introdução}
+% ============================================================
+
+A violência contra a mulher constitui um dos problemas mais persistentes
+e multidimensionais enfrentados pelo Brasil. Segundo o Fórum Brasileiro de
+Segurança Pública, o país registrou mais de 1.400 feminicídios em 2022,
+colocando-o entre os países com maiores taxas de violência letal de gênero
+no mundo. A estrutura institucional criada pela Lei Maria da Penha
+(Lei n\textsuperscript{o}~11.340/2006) estabeleceu as Delegacias Especializadas
+de Atendimento à Mulher (DEAMs) como porta de entrada privilegiada do sistema
+de proteção, responsáveis por receber denúncias, lavrar boletins de ocorrência
+e solicitar medidas protetivas de urgência junto ao Poder Judiciário.
+
+Apesar do papel central que as DEAMs exercem nessa cadeia de proteção, a grande
+maioria dessas unidades opera em horário comercial — tipicamente das 9h às 18h,
+de segunda a sexta-feira — deixando um intervalo considerável sem atendimento
+especializado. Evidências exploratórias da análise de sazonalidade do Sistema de
+Informação de Agravos de Notificação (SINAN/DataSUS) revelam que
+aproximadamente 57\% das notificações de violência contra a mulher ocorrem fora
+desse intervalo, sugerindo que a restrição de horário pode representar um
+gargalo relevante no acesso institucional.\footnote{A hora no SINAN refere-se ao
+momento do fato (não do registro), tornando-a um indicador de mecanismo
+complementar à estimação causal, e não de acesso direto.}
+
+\subsection{Pergunta de Pesquisa}
+
+A pergunta central que orienta este estudo é: \textit{A conversão de DEAMs do
+regime de horário comercial para plantão 24 horas reduz a letalidade por
+feminicídio e aumenta o acesso institucional (medido pelas notificações de
+violência) nos municípios brasileiros?}
+
+Esta pergunta emerge da hipótese de que a disponibilidade ininterrupta de
+atendimento especializado remove uma barreira temporal crítica que impede a
+vítima de acessar proteção no momento imediatamente posterior ao episódio de
+violência — período de maior vulnerabilidade e, ao mesmo tempo, janela de
+oportunidade para a interrupção do ciclo de agressões.
+
+\subsection{Cadeia Causal}
+
+A cadeia causal operacional do projeto pode ser descrita em três elos
+sequenciais. Primeiramente, a \textbf{expansão do horário de atendimento}
+elimina a descontinuidade temporal no acesso à DEAM, tornando a instituição
+disponível durante madrugadas e fins de semana — períodos de elevada incidência
+de violência doméstica. Em segundo lugar, essa disponibilidade ampliada deve
+resultar em \textbf{maior volume de notificações e denúncias}, tanto pelo
+atendimento imediato no momento do evento quanto pela sinalização de que o
+Estado está presente e responsivo. Por fim, o aumento do acesso deve ativar
+mecanismos de proteção — medidas protetivas de urgência, encaminhamentos a
+redes de apoio, investigações mais rápidas — que, em conjunto, devem conduzir
+a uma \textbf{redução da letalidade}.
+
+Formalmente:
+\[
+  \text{DEAM}_{24\text{h}} \to \uparrow\text{Notificações}
+  \to \text{Proteção} \to \downarrow\text{Feminicídios}
+\]
+
+\subsection{Contribuição e Posicionamento na Literatura}
+
+A literatura de avaliação de políticas de segurança pública para a mulher no
+Brasil concentra-se majoritariamente em estudos descritivos ou em designs
+quasi-experimentais que não contemplam a heterogeneidade temporal da adoção
+das DEAMs. Estudos como Bueno et al.\ (2020) e Cerqueira \& Mello (2012) avançam
+no mapeamento descritivo da violência, mas raramente exploram a variação
+exógena na data de conversão das delegacias. O presente estudo contribui ao
+ser o primeiro, do nosso conhecimento, a aplicar o estimador de coortes de
+Callaway \& Sant'Anna (2021) a esse contexto, aproveitando a adoção escalonada
+— 10 coortes entre 2009 e 2019 — como variação identificadora do efeito causal.
+
+A escolha desse estimador não é meramente técnica: ela responde a uma
+característica estrutural do fenômeno estudado. A conversão de DEAMs para o
+regime 24h não ocorreu por meio de uma reforma nacional simultânea, mas de
+decisões municipais e estaduais descentralizadas, dispersas ao longo de mais de
+uma década. Essa dispersão temporal — virtude do ponto de vista identificatório,
+pois gera variação exógena na data de tratamento — é precisamente o cenário em
+que o estimador clássico de Efeitos Fixos de Duas Vias (TWFE) produz estimativas
+viesadas, como demonstrado por Goodman-Bacon (2021). Antecipar essa limitação
+metodológica é central para a leitura honesta dos resultados.
+
+\subsection{Estrutura do Relatório}
+
+O restante deste relatório organiza-se da seguinte forma. A Seção~2 detalha a
+construção do painel municipal balanceado e discute criticamente as fontes de
+dados, incluindo a curadoria das delegacias e o levantamento manual do ano de
+transição — etapa que introduz potencial erro de medida na definição das coortes.
+A Seção~3 formaliza a estratégia de identificação, justificando o abandono do
+TWFE em favor do estimador de Callaway \& Sant'Anna (2021) com grupo de controle
+de nunca-tratados. A Seção~4 apresenta os resultados do efeito médio do tratamento
+(ATT) global e por coorte, com discussão aprofundada do viés de seleção e da
+adoção reativa de política pública. A Seção~5 conclui sintetizando os achados,
+a evidência de mecanismo via sazonalidade horária e a agenda de pesquisa futura
+centrada no estimador duplamente robusto (DR-DiD).
+
+% ============================================================
+\section{Dados}
+% ============================================================
+
+A construção do painel analítico envolveu a integração de quatro fontes de dados
+primárias, descritas nas subseções a seguir. O produto final é um painel
+balanceado de 285 municípios brasileiros observados anualmente de 2009 a 2019,
+totalizando 3.135 observações.
+
+\subsection{Fontes Primárias}
+
+\subsubsection{Sistema de Informações sobre Mortalidade (SIM)}
+Os microdados anuais do SIM constituem a fonte para a variável de letalidade.
+Em vez de extrair os arquivos brutos do FTP do DataSUS, optou-se pela versão
+tratada e padronizada disponibilizada pela \textbf{Base dos Dados}, que harmoniza
+nomes de colunas, tipos e códigos municipais entre anos, reduzindo o risco de
+inconsistências de \textit{parsing}. Foram selecionados todos os registros com
+classificação de sexo feminino (\texttt{sexo == 2}) e causa de óbito por agressão
+(CID-10: X85--Y09, Y87.1), construindo a contagem anual de feminicídios por
+município. A codificação de sexo no SIM diverge da utilizada no SINAN, ponto
+crítico documentado no processo de integração das bases.
+
+\subsubsection{Sistema de Informação de Agravos de Notificação (SINAN)}
+O SINAN fornece os registros de violência doméstica, sexual e/ou outras
+violências contra a mulher, também acessado por meio da \textbf{Base dos Dados}.
+Por conta do volume dos microdados (aproximadamente 306 MB por ciclo anual), o
+processamento foi realizado em lotes (\textit{chunks}) de 300.000 linhas, com
+filtragem por \texttt{sexo\_paciente == 0} para o sexo feminino.\footnote{No
+SINAN, \texttt{sexo\_paciente == 0} corresponde ao sexo feminino, divergindo da
+codificação do SIM (\texttt{sexo == 2}). A consistência foi verificada por
+tabulação cruzada com a variável \texttt{gestante\_paciente}.}
+O painel de sazonalidade (\textit{saz\_hora.csv}) foi gerado agregando as
+notificações pela hora de ocorrência do fato (não do registro) — variável
+preenchida em aproximadamente 53\% dos registros.
+
+\subsubsection{SIDRA IBGE — Estimativas Populacionais}
+A população municipal foi obtida via API do SIDRA (tabela 6579, variável 9324)
+em lotes de 50 municípios. Para o ano censitário de 2010, ausente na série SIDRA
+de estimativas, aplicou-se interpolação linear entre os valores de 2009 e 2011,
+resultando em zero valores faltantes nas 3.135 linhas do painel.
+
+\subsubsection{Cadastro e Curadoria das DEAMs}
+A identificação das delegacias — sua localização municipal e o status de
+funcionamento (horário comercial \textit{versus} plantão 24h) — partiu da
+curadoria inicial realizada pela \textbf{Revista AzMina}, que mantém um dos mais
+completos levantamentos jornalísticos sobre a rede de atendimento à mulher no
+Brasil. Esse cadastro-base foi consolidado em duas planilhas:
+\textit{dados\_deams\_24h.xlsx} (38 municípios tratados) e
+\textit{dados\_deams\_comercial.xlsx} (247 municípios controle). O pareamento
+desses registros com o código IBGE de 7 dígitos foi realizado por correspondência
+de texto difusa (\textit{fuzzy matching}) via \texttt{difflib.get\_close\_matches},
+complementada por um dicionário de 12 correções manuais para casos de erro de
+digitação, UF incorreta, nomes truncados ou municípios renomeados.\footnote{Exemplos:
+(\textit{``Embu'', SP}) $\to$ (\textit{``Embu das Artes'', SP});
+(\textit{``Ariquemes'', TO}) $\to$ (\textit{``Ariquemes'', RO}).}
+
+\subsubsection{O Ano de Transição e o Erro de Medida}
+A definição da coorte de tratamento em um desenho de adoção escalonada depende
+crucialmente da \textit{data exata} em que cada delegacia migrou para o regime
+24h. Diferentemente do status atual (relativamente bem documentado), o
+\textbf{ano de transição} não está disponível de forma sistemática em nenhuma
+base oficial consolidada. Seu levantamento foi, portanto, realizado de forma
+\textbf{manual}, cruzando recortes de notícias localizados via Google, portais
+de notícias regionais e diários oficiais estaduais e municipais que registravam
+o ato administrativo de implantação do plantão ininterrupto.
+
+Esse procedimento, embora cuidadoso, é fonte legítima de \textbf{erro de medida}
+(\textit{measurement error}) na variável de tratamento. Há dois vetores de
+imprecisão: (i) a data noticiada pode corresponder ao \textit{anúncio} político
+da medida, e não à sua \textit{efetiva} entrada em operação, que frequentemente
+ocorre meses depois; e (ii) delegacias cuja transição não teve cobertura
+jornalística podem ter sido classificadas com data incorreta ou ausente. Como o
+erro de medida incide sobre a variável de tratamento — e não sobre o desfecho —,
+o efeito esperado é de \textbf{atenuação} dos coeficientes estimados em direção
+a zero (\textit{attenuation bias}): coortes mal datadas contaminam períodos
+pré e pós com observações trocadas, diluindo o contraste que identifica o ATT.
+Em termos práticos, isso implica que os efeitos reais da política podem ser
+\textit{maiores em magnitude} do que os aqui estimados, reforçando a leitura
+conservadora dos resultados.
+
+\subsection{Construção do Painel}
+
+\begin{table}[H]
+\centering
+\caption{Estatísticas Descritivas por Grupo (Média, 2009--2019)}
+\label{tab:descritivas}
+\small
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+\textbf{Variável} & \textbf{Tratado (24h)} & \textbf{Controle} \\
+\midrule
+N municípios            & 38        & 247      \\
+N observações           & 418       & 2.717    \\
+População média         & 608.975   & 236.689  \\
+Taxa notificações/100k  & 59,74     & 79,28    \\
+Taxa feminicídios/100k  & 2,952     & 2,652    \\
+Notificações (abs.)     & 448,6     & 182,3    \\
+Feminicídios (abs.)     & 20,0      & 5,8      \\
+\bottomrule
+\end{tabularx}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: municípios tratados são 3,4$\times$ maiores que os controles.
+Taxas calculadas por 100 mil habitantes. Fonte: SIM, SINAN, SIDRA/IBGE.}
+\end{table}
+
+A tabela~\ref{tab:descritivas} revela uma heterogeneidade estrutural relevante:
+os municípios que converteram suas DEAMs para 24h são, em média, 3,4 vezes mais
+populosos do que os controles. Essa assimetria motiva o uso de taxas por 100 mil
+habitantes como variável de desfecho, em substituição às contagens absolutas, e
+levanta questões sobre a comparabilidade dos grupos que serão endereçadas pela
+metodologia de Callaway \& Sant'Anna.
+
+\begin{table}[H]
+\centering
+\caption{Coortes de Adoção do Plantão 24h}
+\label{tab:coortes}
+\small
+\begin{tabular}{@{}cr@{}}
+\toprule
+\textbf{Ano de Adoção} & \textbf{N Municípios} \\
+\midrule
+2009 & 1  \\
+2011 & 2  \\
+2012 & 4  \\
+2013 & 2  \\
+2014 & 12 \\
+2015 & 3  \\
+2016 & 3  \\
+2017 & 2  \\
+2018 & 4  \\
+2019 & 5  \\
+\midrule
+\textbf{Total} & \textbf{38} \\
+\bottomrule
+\end{tabular}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: 10 coortes distintas de adoção entre 2009 e 2019.
+Coorte 2014 é a maior, com 12 municípios (31,6\% do grupo tratado).
+Municípios de controle recebem \texttt{coorte = 0} (nunca tratados).}
+\end{table}
+
+\subsection{Variáveis do Painel}
+
+As variáveis finais do painel consolidado são:
+\begin{itemize}
+  \item \texttt{id\_municipio}: código IBGE de 7 dígitos (chave de junção);
+  \item \texttt{ano}: 2009 a 2019;
+  \item \texttt{grupo}: ``24h'' ou ``comercial'';
+  \item \texttt{coorte}: ano de adoção do 24h (0 = nunca tratado);
+  \item \texttt{taxa\_feminicidios}: óbitos femininos por agressão / pop $\times$ 100.000;
+  \item \texttt{taxa\_notificacoes}: notificações SINAN / pop $\times$ 100.000;
+  \item \texttt{tratamento\_ativo}: $\mathbf{1}[\text{tratado} \wedge \text{ano} \geq \text{coorte}]$.
+\end{itemize}
+
+\subsection{Normalização por População}
+
+A heterogeneidade de porte municipal documentada na Tabela~\ref{tab:descritivas}
+— municípios tratados são, em média, 3,4 vezes mais populosos — torna as
+contagens absolutas de feminicídios e notificações incomparáveis entre grupos.
+Para neutralizar esse efeito de escala, todos os desfechos são expressos como
+\textbf{taxas por 100 mil habitantes}:
+
+\begin{equation}
+\text{taxa}_{it} = \frac{\text{contagem}_{it}}{\text{população}_{it}} \times 100\,000,
+\label{eq:taxa}
+\end{equation}
+
+\noindent onde a população municipal anual provém da Tabela 6579 do SIDRA/IBGE.
+A normalização garante que o estimador capture variação na \textit{intensidade}
+do fenômeno por habitante, e não diferenças mecânicas de tamanho populacional —
+condição necessária para que a hipótese de tendências paralelas seja
+substantivamente plausível entre municípios de portes distintos.
+
+% ============================================================
+\section{Metodologia}
+% ============================================================
+
+\subsection{O Problema com o TWFE Clássico}
+
+O estimador de Efeitos Fixos de Duas Vias (TWFE), especificado como
+
+\begin{equation}
+Y_{it} = \alpha_i + \lambda_t + \delta \cdot D_{it} + \varepsilon_{it},
+\label{eq:twfe}
+\end{equation}
+
+\noindent onde $\alpha_i$ são efeitos fixos de unidade, $\lambda_t$ são efeitos
+fixos de tempo e $D_{it}$ é o indicador de tratamento ativo, constitui o padrão
+de estimação em diferenças-em-diferenças por décadas. Contudo, Goodman-Bacon
+(2021) demonstrou que, em contextos de adoção escalonada, o estimador TWFE
+é uma média ponderada de todos os comparadores $2\times2$ possíveis — incluindo
+comparações entre unidades \textit{precocemente tratadas} e \textit{tardiamente
+tratadas} — podendo atribuir pesos negativos a alguns desses termos quando os
+efeitos do tratamento variam ao longo do tempo
+(\textit{heterogeneous treatment effects}).
+
+No contexto das DEAMs, com 10 coortes distintas de adoção e uma janela de
+observação de 11 anos, essa fonte de viés é particularmente severa: municípios
+que converteram sua DEAM em 2009 seriam utilizados como controles para
+municípios que converteram em 2014, mesmo que já estivessem sob tratamento.
+A estimativa TWFE resultante seria, portanto, uma mistura de efeitos de curto
+e longo prazo que não tem interpretação causal clara.
+
+\subsection{Estimador de Callaway \& Sant'Anna (2021)}
+
+Para contornar esses problemas, adotamos o estimador de \textbf{Callaway \&
+Sant'Anna (2021)}, que parte da definição de efeitos causais ao nível de
+grupo-tempo (\textit{group-time ATTs}):
+
+\begin{equation}
+ATT(g, t) = \mathbb{E}\bigl[Y_{t}(g) - Y_{t}(0) \mid G = g\bigr],
+\label{eq:att_gt}
+\end{equation}
+
+\noindent onde $g$ indexa o grupo de coorte (ano de adoção), $t$ indexa o
+período calendário, $Y_t(g)$ é o resultado potencial sob tratamento na coorte
+$g$, e $Y_t(0)$ é o resultado potencial sem tratamento. O parâmetro
+$ATT(g,t)$ mede o efeito médio do tratamento no período $t$ para os
+municípios que adotaram o 24h no ano $g$.
+
+A estimação de cada $ATT(g,t)$ utiliza um modelo de regressão simples
+(\texttt{estimation\_method='reg'}) com o grupo de controle definido como
+\textbf{munícipios nunca tratados} (\texttt{control\_group='never\_treated'}),
+ou seja, os 247 municípios com DEAMs em horário comercial que não converteram
+para 24h em nenhum momento do período amostral. Essa escolha garante que
+as comparações sejam feitas apenas contra unidades que não receberam o
+tratamento, eliminando o problema de pesos negativos apontado por
+Goodman-Bacon (2021).
+
+\subsection{Hipótese de Tendências Paralelas}
+
+A validade do estimador CS DiD requer que, na ausência do tratamento, os grupos
+teriam seguido trajetórias paralelas. Formalmente, a hipótese de identificação é:
+
+\begin{equation}
+\begin{split}
+\mathbb{E}\bigl[Y_t(0) - Y_{g-1}(0) \mid G = g\bigr] \\
+= \mathbb{E}\bigl[Y_t(0) - Y_{g-1}(0) \mid G = \infty\bigr],\; t < g,
+\end{split}
+\label{eq:parallel_trends}
+\end{equation}
+
+\noindent onde $G = \infty$ denota o grupo de controle (nunca tratados). Essa
+hipótese é testada empiricamente pela análise dos coeficientes do \textit{event
+study} no período pré-tratamento: se as estimativas de $ATT(g,t)$ para $t < g$
+forem estatisticamente indistinguíveis de zero, há suporte para a hipótese de
+tendências paralelas.
+
+Formalmente, conduzimos o \textbf{teste de Wald diagonal} sobre os $k$
+coeficientes pré-tratamento do \textit{event study}, calculado como:
+
+\begin{equation}
+W = \sum_{j=1}^{k} \left(\frac{\hat{\delta}_{-j}}{\widehat{SE}_{-j}}\right)^2
+\sim \chi^2(k),
+\label{eq:wald}
+\end{equation}
+
+\noindent onde $\hat{\delta}_{-j}$ é o coeficiente do período $-j$ no
+\textit{event study} e $\widehat{SE}_{-j}$ é seu erro padrão bootstrap.
+
+\subsection{ATT Global Agregado}
+
+Os efeitos grupo-tempo são agregados em um único parâmetro de resumo por
+uma média ponderada pelo tamanho de cada grupo-tempo:
+
+\begin{equation}
+\overline{ATT} = \sum_{g} \sum_{t \geq g} w_{g,t} \cdot ATT(g, t),
+\label{eq:att_global}
+\end{equation}
+
+\noindent com pesos $w_{g,t} \propto \Pr(G = g) \cdot \mathbf{1}[t \geq g]$.
+A inferência é baseada em 999 réplicas de bootstrap com estratificação por
+município (\texttt{cluster='id\_municipio'}), com semente fixada em 42 para
+reprodutibilidade.
+
+\subsection{Especificação Implementada}
+
+A implementação utiliza a biblioteca \texttt{diff-diff} (v3.5.2) para Python,
+com os seguintes parâmetros:
+
+\begin{itemize}
+  \item \texttt{control\_group = 'never\_treated'}
+  \item \texttt{estimation\_method = 'reg'} (OLS simples)
+  \item \texttt{n\_bootstrap = 999}
+  \item \texttt{cluster = 'id\_municipio'}
+  \item \texttt{aggregate}: \texttt{'simple'} (ATT global), \texttt{'event\_study'}
+        (efeitos dinâmicos) e \texttt{'group'} (por coorte)
+\end{itemize}
+
+A agregação \texttt{'simple'} fornece o ATT global reportado nas caixas de
+resultado; \texttt{'event\_study'} produz a trajetória dinâmica de efeitos em
+torno do ano de adoção, base do teste de pré-tendências; e \texttt{'group'}
+decompõe o efeito por coorte de adoção, revelando a heterogeneidade temporal que
+um estimador agregado mascararia. A escolha de \texttt{estimation\_method='reg'}
+nesta especificação-base é deliberada: ela isola o efeito do tratamento sem
+condicionar em covariáveis, servindo como referência transparente sobre a qual a
+extensão duplamente robusta (DR-DiD), discutida na Seção~5, será comparada.
+
+% ============================================================
+\section{Resultados}
+% ============================================================
+
+\subsection{ATT Global por Desfecho}
+
+A tabela~\ref{tab:att} apresenta os resultados principais da estimação CS DiD
+para os dois desfechos analisados. Em ambos os casos, o sinal estimado é
+contrário ao esperado pela cadeia causal teórica, e os resultados do teste de
+pré-tendências para o desfecho de notificações comprometem a interpretação
+causal direta.
+
+\begin{table}[H]
+\centering
+\caption{ATT Global — Estimador Callaway \& Sant'Anna (2021)}
+\label{tab:att}
+\small
+\begin{tabularx}{\columnwidth}{@{}Xrrrr@{}}
+\toprule
+\textbf{Desfecho} & \textbf{ATT} & \textbf{SE} & \textbf{IC 95\%} & \textbf{\textit{p}} \\
+\midrule
+Notificações/100k & $-20{,}513$ & $7{,}418$ & $[-35{,}3;\,-6{,}6]$ & $0{,}001$ \\
+Feminicídios/100k & $+0{,}438$  & $0{,}255$ & $[-0{,}05;\,+0{,}91]$& $0{,}082$ \\
+\bottomrule
+\end{tabularx}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: 999 réplicas bootstrap, cluster por município. Grupo controle:
+nunca-tratados (247 municípios). N tratados: 38 municípios.
+Desfechos em taxa por 100 mil habitantes.}
+\end{table}
+
+\begin{tcolorbox}[resultbox, title={Resultado Central: Notificações}]
+\small
+$\text{ATT} = -20{,}513$ \hfill $p = 0{,}001$ \\
+IC~95\%: $[-35{,}312;\;-6{,}578]$ \\[4pt]
+\textit{Leitura: municípios tratados apresentam, em média, 20,5 notificações/100k
+a menos que os controles após a conversão.}\\[4pt]
+\textbf{Atenção:} pré-tendências violadas ($p_{\text{Wald}}=0{,}004$).
+Efeito \emph{não} interpretável como causal.
+\end{tcolorbox}
+
+\vspace{4pt}
+
+\begin{tcolorbox}[resultbox, title={Resultado Central: Feminicídios}]
+\small
+$\text{ATT} = +0{,}438$ \hfill $p = 0{,}082$ \\
+IC~95\%: $[-0{,}054;\;+0{,}913]$ \\[4pt]
+\textit{Leitura: pré-tendências passam no teste ($p_{\text{Wald}}=0{,}165$),
+mas o sinal é positivo — municípios tratados têm leve aumento de feminicídios.}\\[4pt]
+\textbf{Hipótese:} endogeneidade na adoção (municípios em piora adotam 24h).
+\end{tcolorbox}
+
+\subsection{Teste de Pré-Tendências (Wald Diagonal)}
+
+\begin{table}[H]
+\centering
+\caption{Teste Conjunto de Pré-Tendências Paralelas}
+\label{tab:pretrend}
+\small
+\begin{tabularx}{\columnwidth}{@{}Xrrrr@{}}
+\toprule
+\textbf{Desfecho} & $W$ & $p$ & $k$ & \textbf{Veredicto} \\
+\midrule
+Notificações/100k & 24,141 & 0,004 & 9 & \textbf{VIOLAÇÃO} \\
+Feminicídios/100k & 12,948 & 0,165 & 9 & \checkmark\,OK \\
+\bottomrule
+\end{tabularx}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: $W = \sum (z_j)^2 \sim \chi^2(k)$.
+$k$ = número de coeficientes pré-tratamento no event study.
+2 coeficientes individuais significativos ($p<0{,}05$) para notificações.}
+\end{table}
+
+O resultado para notificações é particularmente preocupante: a estatística Wald
+de 24,141 com $p=0{,}004$ indica que os grupos tratado e controle seguiam
+trajetórias divergentes \textit{antes} da conversão. Isso implica que o ATT
+estimado de $-20{,}513$ captura, ao menos parcialmente, uma tendência pré-existente
+de queda relativa nas notificações dos municípios que vieram a adotar o 24h —
+não um efeito causal da política.
+
+Para feminicídios, o teste não rejeita a hipótese de tendências paralelas
+($p=0{,}165$), conferindo maior credibilidade identificatória ao estimador.
+Contudo, o ATT positivo de $+0{,}438$ ($p=0{,}082$), embora marginalmente
+não-significativo, aponta na direção oposta à esperada, sugerindo a presença
+de \textbf{viés de seleção endógena}: municípios que adotam o plantão 24h
+podem estar respondendo reativamente a um \textit{aumento} prévio na violência
+letal local, e não antecipando-a proativamente.
+
+\subsection{Efeitos por Coorte}
+
+\begin{table}[H]
+\centering
+\caption{Efeitos por Coorte — Notificações/100k}
+\label{tab:coorte_notif}
+\small
+\begin{tabular}{@{}crr@{}}
+\toprule
+\textbf{Coorte} & \textbf{ATT} & \textbf{SE} \\
+\midrule
+2011 & $-2{,}15$  & 25,46 \\
+2012 & $-19{,}13$ & 13,63 \\
+2013 & $-13{,}02$ & 17,31 \\
+2014 & $-32{,}30$ & 12,17 \\
+2015 & $-12{,}12$ & 14,97 \\
+2016 & $-28{,}84$ & 16,91 \\
+2017 & $-6{,}55$  & 18,47 \\
+2018 & $+2{,}03$  & 18,85 \\
+2019 & $-4{,}74$  & 10,47 \\
+\bottomrule
+\end{tabular}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: coorte 2014 (maior, 12 municípios) apresenta o maior efeito
+negativo em módulo ($-32{,}3$). Coorte 2018 é única com ATT positivo.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Efeitos por Coorte — Feminicídios/100k}
+\label{tab:coorte_femin}
+\small
+\begin{tabular}{@{}crr@{}}
+\toprule
+\textbf{Coorte} & \textbf{ATT} & \textbf{SE} \\
+\midrule
+2011 & $+0{,}244$ & 0,168 \\
+2012 & $+1{,}287$ & 0,716 \\
+2013 & $+0{,}782$ & 0,143 \\
+2014 & $+0{,}790$ & 0,318 \\
+2015 & $+0{,}202$ & 0,614 \\
+2016 & $-2{,}356$ & 0,955 \\
+2017 & $-1{,}075$ & 0,152 \\
+2018 & $-0{,}044$ & 0,226 \\
+2019 & $-0{,}345$ & 0,474 \\
+\bottomrule
+\end{tabular}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: padrão heterogêneo. Coortes 2011--2015 exibem ATT positivo;
+coortes 2016--2019 exibem ATT negativo, sugerindo dinâmica temporal complexa.}
+\end{table}
+
+\subsection{Forest Plot e Event Study}
+
+As Figuras~\ref{fig:forest}, \ref{fig:es_notif} e \ref{fig:es_femin}
+sintetizam graficamente a estimação. O \textit{forest plot} compara os ATTs
+globais dos dois desfechos com seus intervalos de confiança; os \textit{event
+studies} exibem a trajetória dinâmica de efeitos, com os períodos $t<0$ servindo
+de teste visual para a hipótese de tendências paralelas.
+
+\begin{figure*}[tbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{../figuras_causal/05_forest_att.png}
+  \caption{Forest plot dos ATTs globais por desfecho, com intervalos de confiança
+           de 95\% (bootstrap, 999 réplicas). A linha tracejada vertical em zero
+           indica efeito nulo. O intervalo de Notificações/100k situa-se
+           inteiramente à esquerda de zero (efeito significativo, porém com
+           pré-tendências violadas); o de Feminicídios/100k cruza o zero
+           (marginalmente não-significativo).}
+  \label{fig:forest}
+\end{figure*}
+
+\begin{figure*}[tbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{../figuras_causal/notificacoes_02_event_study.png}
+  \caption{Event study — Taxa de Notificações/100k. Cada ponto é o ATT estimado
+           no ano relativo à adoção do 24h; as barras representam o IC~95\%
+           bootstrap. Os coeficientes pré-tratamento ($t<0$) afastam-se
+           sistematicamente de zero, evidenciando a violação das tendências
+           paralelas ($p_{\text{Wald}}=0{,}004$) que invalida a leitura causal
+           direta deste desfecho.}
+  \label{fig:es_notif}
+\end{figure*}
+
+\begin{figure*}[tbp]
+  \centering
+  \includegraphics[width=0.86\textwidth]{../figuras_causal/feminicidios_02_event_study.png}
+  \caption{Event study — Taxa de Feminicídios/100k. Os coeficientes
+           pré-tratamento são estatisticamente indistinguíveis de zero
+           ($p_{\text{Wald}}=0{,}165$), conferindo credibilidade identificatória.
+           Os efeitos pós-adoção, contudo, são em média positivos, padrão
+           compatível com adoção reativa da política (ver Seção~\ref{sec:disc}).}
+  \label{fig:es_femin}
+\end{figure*}
+
+\subsection{Discussão: Viés de Seleção e Endogeneidade}
+\label{sec:disc}
+
+A interpretação honesta dos resultados exige reconhecer duas fontes principais
+de viés que comprometem a inferência causal direta desta estimação base.
+
+\textbf{Adoção reativa de política pública.} O ATT positivo estimado para
+feminicídios ($+0{,}438$) \textit{não} deve ser lido como evidência de que a
+abertura de um plantão 24h \textit{causa} mortes — interpretação que seria
+absurda do ponto de vista substantivo. O que o coeficiente captura é um padrão
+de \textbf{causalidade reversa}: gestores públicos não convertem delegacias
+aleatoriamente, mas concentram a abertura de plantões justamente nos municípios
+onde a violência letal já se encontra em \textit{viés de alta}. A decisão de
+ampliar o horário é, ela própria, uma \textit{resposta} ao agravamento do
+problema — fenômeno conhecido na literatura como \textit{reactive policy
+adoption}. Sob esse mecanismo, os municípios tratados já trilhavam uma
+trajetória ascendente de feminicídios no momento da adoção, e o estimador, ao
+comparar seu nível pós-tratamento com o de controles em situação mais estável,
+atribui ao tratamento um efeito positivo que é, na verdade, resíduo da seleção
+endógena. A direção do viés é, portanto, \textbf{previsível e ascendente},
+mascarando — e possivelmente invertendo o sinal de — um eventual efeito
+protetor real da política.
+
+\textbf{Ruído de trajetórias prévias não paralelas nas notificações.} Para o
+desfecho de acesso, o estimador CS-DiD acusa violação clara das pré-tendências
+($p_{\text{Wald}}=0{,}004$). Isso significa que, antes mesmo da conversão, os
+municípios tratados e os controles já \textit{divergiam} em suas trajetórias de
+notificação. Nesse cenário, o estimador não está medindo o efeito do plantão
+24h, mas \textbf{absorvendo o ruído dessas trajetórias prévias não paralelas} —
+diferenças estruturais ligadas a capacidade de notificação, cobertura da rede de
+saúde, ou processos de reorganização institucional anteriores à conversão
+formal. O ATT de $-20{,}5$ é, assim, uma estimativa contaminada: parte do que se
+atribui ao tratamento é, na realidade, a continuação de uma tendência que já
+existia.
+
+\textbf{Por que o DR-DiD é a solução técnica adequada.} Ambas as falhas têm a
+mesma raiz: os grupos tratado e controle \textit{não são comparáveis} em suas
+características observáveis e em suas dinâmicas pré-tratamento. A especificação
+base, ao usar \texttt{estimation\_method='reg'} sem covariáveis, assume
+tendências paralelas \textit{incondicionais} — hipótese que os dados rejeitam.
+O estimador \textbf{duplamente robusto (DR-DiD)} corrige isso ao combinar dois
+componentes: (i) um modelo de \textit{propensity score} que reponderar os
+controles para que se assemelhem aos tratados em covariáveis socioeconômicas
+(IDH, renda, urbanização, porte), efetivamente \textit{pareando} os municípios;
+e (ii) um modelo de resultados que ajusta as diferenças remanescentes. A
+propriedade de dupla robustez garante consistência ainda que apenas \textit{um}
+dos dois modelos esteja corretamente especificado. Ao condicionar em
+covariáveis, o DR-DiD relaxa a exigência para tendências paralelas
+\textit{condicionais} — substancialmente mais plausíveis —, oferecendo o
+caminho técnico direto para isolar o efeito causal das fontes de viés aqui
+documentadas.
+
+% ============================================================
+\section{Conclusão}
+% ============================================================
+
+\subsection{Síntese dos Achados}
+
+Esta pesquisa realizou a primeira avaliação causal sistemática do impacto da
+conversão de DEAMs para regime de plantão 24 horas no Brasil, utilizando o
+estimador de Callaway \& Sant'Anna (2021) aplicado a um painel balanceado de
+285 municípios e 11 anos de dados (2009--2019). Os resultados da estimação base
+revelam um quadro que contraria as hipóteses teóricas iniciais, mas que é
+altamente informativo sobre as limitações metodológicas e os caminhos futuros
+da pesquisa.
+
+Para o desfecho de acesso institucional (taxa de notificações por 100k
+habitantes), estimou-se um ATT global de $-20{,}513$, estatisticamente
+significativo ao nível de 0,1\%, mas acompanhado de uma violação clara das
+tendências paralelas pré-tratamento ($p_{\text{Wald}}=0{,}004$). Esse resultado
+impede qualquer interpretação causal direta: a diferença observada entre grupos
+pode refletir trajetórias pré-existentes divergentes, e não o efeito da política.
+
+Para o desfecho de letalidade (taxa de feminicídios por 100k habitantes), a
+situação de identificação é mais favorável — as pré-tendências não são rejeitadas
+($p_{\text{Wald}}=0{,}165$) —, mas o sinal do ATT estimado ($+0{,}438$,
+$p=0{,}082$) é positivo, indicando um leve aumento de feminicídios nos municípios
+que converteram suas DEAMs. A hipótese mais plausível para esse resultado é a
+\textbf{causalidade reversa}: municípios adotam o plantão 24h em resposta a
+picos de violência letal, de modo que o tratamento é endógeno à trajetória
+da violência — fenômeno documentado na literatura de políticas de segurança
+pública como \textit{reactive policy adoption}.
+
+\subsection{Evidência de Mecanismo: Sazonalidade Horária}
+
+Embora os resultados causais principais exijam cautela interpretativa, a análise
+de sazonalidade do SINAN oferece evidência sugestiva do mecanismo causal proposto.
+A variável de hora de ocorrência do fato, preenchida em aproximadamente 53\% dos
+registros, revela a seguinte distribuição de notificações fora do horário
+comercial (08h--17h):
+
+\begin{table}[H]
+\centering
+\caption{Notificações Fora do Horário Comercial por Grupo e Período}
+\label{tab:saz}
+\small
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Grupo / Período} & \textbf{\% fora do hor. comercial} \\
+\midrule
+Tratados — Antes do 24h  & 57,1\% \\
+Tratados — Após o 24h    & 55,9\% \\
+Controles (comercial)    & 57,6\% \\
+\bottomrule
+\end{tabular}
+\smallskip\par
+{\footnotesize\sffamily\itshape
+Nota: hora refere-se ao momento do fato, não do registro.
+Fonte: SINAN/DataSUS, painel de sazonalidade \texttt{saz\_hora.csv}.}
+\end{table}
+
+Os valores próximos entre os três grupos e períodos sugerem que a \textit{hora
+de ocorrência} da violência é relativamente estável — mais de 55\% dos eventos
+ocorrem fora do horário comercial em todos os subgrupos. Isso é consistente com
+a cadeia causal proposta (há demanda por atendimento noturno), mas indica que a
+conversão para 24h não alterou substantivamente o perfil temporal das
+\textit{ocorrências registradas}. Uma explicação possível é que o atendimento
+24h amplia o volume de notificações, mas não o horário em que as vítimas buscam
+registrar a ocorrência — que pode permanecer concentrado no período diurno por
+outros motivos (presença de apoio social, deslocamento, crianças na escola etc.).
+
+É importante ressaltar que a hora no SINAN reflete o momento do fato, e não
+o momento do registro na delegacia. Portanto, essa análise constitui
+\textbf{evidência de mecanismo} — demonstrando que há substantiva violência
+fora do horário comercial — e não demonstração direta de impacto no acesso.
+
+\subsection{Próximos Passos da Pesquisa}
+
+Com base nos resultados e nas limitações identificadas, os seguintes
+desenvolvimentos metodológicos são prioritários:
+
+\begin{enumerate}
+  \item \textbf{Estimador duplamente robusto (DR-DiD):} A reestimação com
+        \texttt{estimation\_method='dr'} permite incorporar covariáveis
+        socioeconômicas (IDH, renda per capita, taxa de urbanização, índice
+        de Gini) que controlem as diferenças pré-existentes entre grupos e
+        reduzam o viés de seleção. O DR-DiD é consistente sob má-especificação
+        de um dos dois componentes do modelo (propensity score ou modelo de
+        resultados), conferindo robustez adicional.
+
+  \item \textbf{Grupo de controle \texttt{not\_yet\_treated}:} A especificação
+        atual usa apenas municípios nunca tratados como controle. Uma
+        especificação alternativa com \texttt{control\_group='not\_yet\_treated'}
+        expande o conjunto de controles válidos para incluir municípios que
+        adotarão o 24h no futuro, aumentando a eficiência da estimação.
+
+  \item \textbf{Parâmetro de antecipação:} A conversão formal para 24h pode
+        ser precedida de mobilização institucional e aumento de divulgação,
+        gerando efeitos de antecipação (\textit{anticipation effects})
+        mensuráveis. A especificação \texttt{anticipation=1} permite modelar
+        explicitamente esse fenômeno.
+
+  \item \textbf{Variáveis raciais:} A incorporação da proporção de mulheres
+        negras (pretas + pardas, conforme Estatuto da Igualdade Racial,
+        Lei n\textsuperscript{o}~12.288/2010) como interação com o tratamento
+        permite avaliar heterogeneidades socioespaciais no impacto da política,
+        uma dimensão crítica dadas as desigualdades estruturais de raça no
+        acesso à justiça no Brasil.
+
+  \item \textbf{Integração ao Dashboard:} Os resultados da estimação causal
+        estão parcialmente integrados ao painel Streamlit (página
+        \textit{Modelo Causal}), mas as visualizações de event study e os
+        heatmaps $ATT(g,t)$ aguardam integração completa.
+\end{enumerate}
+
+\subsection{Implicações para Política Pública}
+
+Mesmo diante das limitações identificadas, os resultados desta pesquisa têm
+implicações relevantes para o desenho de políticas públicas de segurança da
+mulher. A heterogeneidade substancial dos efeitos por coorte — com coortes
+2016--2019 exibindo ATTs negativos para feminicídios ($-2{,}36$ para coorte
+2016; $-1{,}08$ para coorte 2017) e coortes mais antigas com ATTs positivos
+— sugere que a \textbf{maturidade institucional} da DEAM 24h pode ser
+determinante para a efetividade da política. DEAMs convertidas mais
+recentemente podem precisar de tempo para desenvolver protocolos de atendimento
+noturno, articulação com a rede de proteção e treinamento específico para
+os plantões. Essa dinâmica temporal seria invisível num estimador TWFE,
+mas emerge claramente na decomposição por coorte do estimador CS DiD.
+
+Para a gestão pública, três recomendações operacionais decorrem da análise.
+Primeiro, a avaliação de impacto de plantões 24h deve incorporar explicitamente
+o problema da adoção reativa: comparar municípios tratados com controles sem
+ajustar para a trajetória prévia de violência produzirá, sistematicamente,
+estimativas pessimistas do efeito da política. Segundo, o registro administrativo
+padronizado da data de conversão de cada delegacia — hoje inexistente — eliminaria
+o erro de medida que atenua os coeficientes e permitiria avaliações mais precisas.
+Terceiro, a heterogeneidade por coorte sugere que o monitoramento de efeito deve
+respeitar uma janela de maturação institucional, evitando avaliações precoces que
+captem apenas a fase de implantação dos protocolos noturnos.
+
+\subsection{Limitações}
+
+Além das fontes de viés já discutidas, três limitações merecem registro. A
+estimação base não inclui covariáveis, por opção metodológica de transparência,
+o que a torna sensível a confundidores observáveis — limitação que o DR-DiD
+endereçará. O número reduzido de municípios em algumas coortes (por exemplo, uma
+única unidade na coorte de 2009) amplia a incerteza dos efeitos por coorte,
+refletida nos erros-padrão elevados. Por fim, a hora de ocorrência no SINAN,
+preenchida em apenas 53\% dos registros, restringe a análise de sazonalidade a
+uma evidência de mecanismo, não de impacto direto sobre o acesso.
+
+% ============================================================
+% REFERÊNCIAS (não numerada)
+% ============================================================
+\section*{Referências}
+\addcontentsline{toc}{section}{Referências}
+\begingroup
+\setlength{\parindent}{-0.4cm}
+\setlength{\leftskip}{0.4cm}
+\setlength{\parskip}{2pt}
+\small
+
+\textbf{Bases de Dados}
+
+Base dos Dados. \textit{Sistema de Informações sobre Mortalidade (SIM)}.
+Tratamento e disponibilização dos microdados do DataSUS. Disponível em:
+\href{https://basedosdados.org/dataset/5beeec93-cbf3-43f6-9eea-9bee6a0d1683?table=dea823a5-cad7-4014-b77c-4aa33b3b0541}{basedosdados.org/dataset/SIM}.
+Acesso em: jun. 2026.
+
+Base dos Dados. \textit{Sistema de Informação de Agravos de Notificação
+(SINAN)}. Tratamento e disponibilização dos microdados do DataSUS. Disponível em:
+\href{https://basedosdados.org/dataset/f51134c2-5ab9-4bbc-882f-f1034603147a?table=7d2d29c1-cfa8-470b-ab13-a83cf522c5ac}{basedosdados.org/dataset/SINAN}.
+Acesso em: jun. 2026.
+
+Instituto Brasileiro de Geografia e Estatística — IBGE. \textit{Tabela 6579:
+População residente estimada}. SIDRA. Disponível em:
+\href{https://sidra.ibge.gov.br/tabela/6579}{https://sidra.ibge.gov.br/tabela/6579}.
+Acesso em: jun. 2026.
+
+\smallskip
+\textbf{Referências Metodológicas}
+
+Callaway, B., \& Sant'Anna, P. H. C. (2021). Difference-in-Differences with
+multiple time periods. \textit{Journal of Econometrics}, 225(2), 200--230.
+\href{https://doi.org/10.1016/j.jeconom.2020.12.001}{https://doi.org/10.1016/j.jeconom.2020.12.001}.
+
+Goodman-Bacon, A. (2021). Difference-in-differences with variation in
+treatment timing. \textit{Journal of Econometrics}, 225(2), 254--277.
+\href{https://doi.org/10.1016/j.jeconom.2021.03.014}{https://doi.org/10.1016/j.jeconom.2021.03.014}.
+
+Sun, L., \& Abraham, S. (2021). Estimating dynamic treatment effects in
+event studies with heterogeneous treatment effects. \textit{Journal of
+Econometrics}, 225(2), 175--199.
+\href{https://doi.org/10.1016/j.jeconom.2020.09.006}{https://doi.org/10.1016/j.jeconom.2020.09.006}.
+
+\smallskip
+\textbf{Literatura Substantiva}
+
+Cerqueira, D., \& Mello, J. M. P. (2012). Menos armas, menos crimes.
+\textit{Brazilian Journal of Economics}, 66(1), 29--57.
+
+Lei n\textsuperscript{o}~11.340, de 7 de agosto de 2006. \textit{Lei Maria
+da Penha}. Presidência da República, Brasília, DF.
+\href{https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11340.htm}{Texto integral}.
+
+Lei n\textsuperscript{o}~12.288, de 20 de julho de 2010. \textit{Estatuto
+da Igualdade Racial}. Presidência da República, Brasília, DF.
+\href{https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12288.htm}{Texto integral}.
+
+Revista AzMina. \textit{Levantamento de Delegacias Especializadas de
+Atendimento à Mulher no Brasil}. Curadoria jornalística da rede de atendimento.
+Disponível em: \href{https://azmina.com.br}{azmina.com.br}. Acesso em: jun. 2026.
+
+\smallskip
+\textbf{Recursos do Projeto}
+
+Silva, F. \textit{Repositório do Projeto DEAM-BR}. GitHub, 2026.
+\href{https://github.com/felipesantanafs/deam-br}{https://github.com/felipesantanafs/deam-br}.
+
+Silva, F. \textit{Dashboard Interativo — Avaliação de Impacto das DEAMs 24h}.
+Streamlit, 2026.
+\href{https://deam-br.streamlit.app}{https://deam-br.streamlit.app}.
+
+\endgroup
+
+\end{document}
