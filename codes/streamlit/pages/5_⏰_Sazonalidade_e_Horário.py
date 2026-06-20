@@ -75,6 +75,74 @@ if delta is not None:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
+# ─── Distribuição horária consolidada (contagens) ────────────────────
+st.markdown(section_header("🕐 Distribuição Horária das Ocorrências (SINAN)"), unsafe_allow_html=True)
+
+FILTRO_HORA = {
+    'Todos os grupos': None,
+    'DEAM 24h — após conversão': 'Depois 24h',
+    'DEAM 24h — antes da conversão': 'Antes 24h',
+    'DEAM comercial (controle)': 'Comercial',
+}
+sel = st.selectbox("Recorte", list(FILTRO_HORA.keys()), index=0, key="hora_consolidada")
+per_sel = FILTRO_HORA[sel]
+
+base = hora if per_sel is None else hora[hora['periodo'] == per_sel]
+por_hora = (base.groupby('hora')['n'].sum()
+            .reindex(range(24), fill_value=0).reset_index(name='n'))
+total_h = por_hora['n'].sum()
+
+col_bar, col_resumo = st.columns([3, 1])
+with col_bar:
+    cores_h = [COLORS['secondary'] if 8 <= h < 18 else COLORS['danger'] for h in por_hora['hora']]
+    figc = go.Figure(go.Bar(
+        x=por_hora['hora'], y=por_hora['n'], marker_color=cores_h,
+        hovertemplate='<b>%{x}h</b><br>%{y:,.0f} ocorrências<extra></extra>',
+    ))
+    figc.add_vrect(x0=-0.5, x1=7.5, fillcolor=COLORS['danger'], opacity=0.06, line_width=0)
+    figc.add_vrect(x0=7.5, x1=17.5, fillcolor=COLORS['secondary'], opacity=0.08, line_width=0,
+                   annotation_text="Horário comercial", annotation_position="top",
+                   annotation_font_color=COLORS['text_dim'])
+    figc.add_vrect(x0=17.5, x1=23.5, fillcolor=COLORS['danger'], opacity=0.06, line_width=0,
+                   annotation_text="Fora do expediente", annotation_position="top right",
+                   annotation_font_color=COLORS['text_dim'])
+    figc.update_layout(title="Nº de ocorrências por hora do dia",
+                       xaxis=dict(title="Hora do dia", dtick=1, range=[-0.5, 23.5]),
+                       yaxis_title="Nº de ocorrências")
+    apply_theme(figc, height=440, show_legend=False)
+    st.plotly_chart(figc, use_container_width=True)
+
+with col_resumo:
+    st.markdown("##### 🧾 Resumo Horário")
+    faixas = [
+        ('🌙 Madrugada (0h–6h)', range(0, 6)),
+        ('🌅 Manhã (6h–12h)', range(6, 12)),
+        ('☀️ Tarde (12h–18h)', range(12, 18)),
+        ('🌆 Noite (18h–0h)', range(18, 24)),
+    ]
+    linhas = []
+    for nome, rng in faixas:
+        n = int(por_hora[por_hora['hora'].isin(rng)]['n'].sum())
+        linhas.append({'Faixa': nome, '%': f"{n / total_h * 100:.1f}%" if total_h else "—"})
+    st.dataframe(pd.DataFrame(linhas), hide_index=True, use_container_width=True)
+
+    n_fora = int(por_hora[~por_hora['hora'].between(8, 17)]['n'].sum())
+    pct_fora = n_fora / total_h * 100 if total_h else 0
+    st.markdown(f"""
+    <div class="insight-box" style="border-left-color:{COLORS['danger']};">
+        🔴 <strong>Fora do horário comercial</strong> (antes das 8h e a partir das 18h):
+        <strong>{pct_fora:.1f}%</strong> das ocorrências.
+    </div>
+    <div class="insight-box">
+        🔵 <strong>Dentro do horário comercial</strong> (08–17h): <strong>{100 - pct_fora:.1f}%</strong>.
+    </div>
+    """, unsafe_allow_html=True)
+
+st.caption("Barras em vermelho = fora do expediente comercial; em azul = horário comercial (08–17h). "
+           "Use o recorte acima para comparar antes/depois da conversão e o grupo de controle.")
+
+st.markdown("<br>", unsafe_allow_html=True)
+
 # ─── Distribuição por hora do dia ────────────────────────────────────
 st.markdown(section_header("🕐 Distribuição por Hora do Dia"), unsafe_allow_html=True)
 
