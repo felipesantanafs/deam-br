@@ -17,6 +17,7 @@ Saídas (em dados/consolidado/):
   notificacoes_anual.csv         -> série anual de notificações + desagregações (tidy)
 """
 
+import numpy as np
 import pandas as pd
 from pathlib import Path
 
@@ -26,6 +27,7 @@ PATH_24H   = ROOT / "dados/info_delegacias/dados_deams_24h_com_id.xlsx"
 PATH_COM   = ROOT / "dados/info_delegacias/dados_deams_comercial_com_id.xlsx"
 PATH_IBGE  = ROOT / "dados/ibge/municipios_br.csv"
 PATH_POP   = ROOT / "dados/ibge/populacao_municipios.csv"
+PATH_PIB   = ROOT / "dados/ibge/pib_percapita_municipios.csv"
 PATH_SIM      = ROOT / "dados/sim/sim_feminicidios_br_detalhada.csv"
 PATH_SINAN    = ROOT / "dados/sinan/sinan_violencia_br_detalhada.csv"
 PATH_HOM_GER  = ROOT / "dados/consolidado/homicidios_gerais_anual.csv"
@@ -194,6 +196,16 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
     painel["taxa_homicidios_gerais"] = painel["taxa_homicidios_gerais"].fillna(0).round(4)
     painel["taxa_homicidios_masc"] = painel["taxa_homicidios_masc"].fillna(0).round(4)
 
+    # Log da população: covariável de porte municipal para pareamento (DR-DiD).
+    # População é fortemente assimétrica (skew ~12); em log fica ~simétrica (~0.5),
+    # evitando que megacidades dominem o escore de propensão.
+    painel["log_populacao"] = np.log(painel["populacao"]).round(4)
+
+    # PIB per capita (covariável de desenvolvimento econômico). Entra em LOG pelo
+    # mesmo motivo do log_populacao (forte assimetria entre municípios).
+    pib = pd.read_csv(PATH_PIB)[["id_municipio", "ano", "pib_per_capita", "log_pib_per_capita"]]
+    painel = painel.merge(pib, on=["id_municipio", "ano"], how="left")
+
     # Variáveis de tratamento (staggered adoption)
     painel["tratado"] = (painel["grupo"] == "24h").astype(int)
     painel["pos_tratamento"] = (
@@ -203,7 +215,8 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
 
     cols = [
         "id_municipio", "municipio", "uf", "regiao", "grupo",
-        "ano_implementacao", "coorte", "ano", "populacao",
+        "ano_implementacao", "coorte", "ano", "populacao", "log_populacao",
+        "pib_per_capita", "log_pib_per_capita",
         "tratado", "pos_tratamento", "tratamento_ativo",
         "feminicidios", "notificacoes",
         "viol_fisica", "viol_sexual", "viol_psicologica", "viol_parceiro",

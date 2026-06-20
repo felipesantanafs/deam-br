@@ -65,7 +65,12 @@ OUTCOMES = {
 # covariável no BASE PERIOD de cada coorte (g-1), nunca no valor pós-tratamento
 # (staggered.py:730) — funciona como baseline pré-tratamento cohort-specific, sem
 # risco de bad control. A coorte 2009 (sem g-1 no painel) é descartada pelo estimador.
-COVARIATES: list[str] = ["taxa_homicidios_masc"]
+# log_populacao: porte municipal. Municípios com DEAM 24h são ~3,4x maiores que os
+# controles; a população é fortemente assimétrica (skew ~12), então entra em LOG
+# (~simétrica) para parear cidades por tamanho sem que megacidades dominem o pscore.
+# log_pib_per_capita: desenvolvimento econômico do município, também em LOG (mesma
+# assimetria). Pareia tratados e controles por nível de renda além do porte.
+COVARIATES: list[str] = ["taxa_homicidios_masc", "log_populacao", "log_pib_per_capita"]
 EST_METHOD = "dr" if COVARIATES else "reg"
 
 N_BOOTSTRAP = 999
