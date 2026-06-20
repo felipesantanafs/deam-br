@@ -24,3 +24,6 @@ seaborn>=0.13
 
 # Utilitários
 python-docx>=1.0
+tabulate>=0.9          # render de tabelas markdown (relatórios)
+scipy>=1.10            # testes estatísticos (pré-tendências)
+jupyter>=1.0           # notebook da análise causal

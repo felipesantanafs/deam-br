@@ -1,0 +1,214 @@
+{
+    "metadata": {
+        "escopo": "Nacional (municípios brasileiros)",
+        "periodo": "2009-2019",
+        "hipotese": "Impacto causal da conversão de DEAMs para o regime 24h",
+        "metodo_principal": "Callaway & Sant'Anna (2021) via diff-diff",
+        "estimation_method": "reg",
+        "covariaveis": [],
+        "contrafactual": "DEAMs de horário comercial (nunca convertidas para 24h)",
+        "control_group": "never_treated",
+        "coortes": {
+            "2009": 1,
+            "2011": 2,
+            "2012": 4,
+            "2013": 2,
+            "2014": 12,
+            "2015": 3,
+            "2016": 3,
+            "2017": 2,
+            "2018": 4,
+            "2019": 5
+        },
+        "n_municipios_tratados": 38,
+        "n_municipios_controle": 247,
+        "robustez": "Sun & Abraham (2021), Borusyak et al. (2024)",
+        "nota_psm": "PSM separado dispensável: CS DiD faz ajuste por escore de propensão internamente (dr/ipw). Habilitar ao anexar covariáveis."
+    },
+    "cs_did_24h": {
+        "notificacoes": {
+            "cs_att": -20.5133,
+            "cs_se": 7.4183,
+            "cs_p_value": 0.001,
+            "cs_ci_lower": -35.3121,
+            "cs_ci_upper": -6.5781,
+            "sa_att": null,
+            "sa_se": null,
+            "bjs_att": -26.3055,
+            "bjs_se": 8.5048,
+            "event_study": {
+                "-9": {
+                    "effect": -5.1002,
+                    "se": 2.8527
+                },
+                "-8": {
+                    "effect": -8.2821,
+                    "se": 4.5039
+                },
+                "-7": {
+                    "effect": -16.9012,
+                    "se": 5.4535
+                },
+                "-6": {
+                    "effect": -11.5411,
+                    "se": 5.4464
+                },
+                "-5": {
+                    "effect": -2.1814,
+                    "se": 6.92
+                },
+                "-4": {
+                    "effect": 5.1555,
+                    "se": 7.7846
+                },
+                "-3": {
+                    "effect": -14.2004,
+                    "se": 8.848
+                },
+                "-2": {
+                    "effect": 0.8885,
+                    "se": 6.6059
+                },
+                "-1": {
+                    "effect": -3.8949,
+                    "se": 6.7127
+                },
+                "0": {
+                    "effect": -11.0649,
+                    "se": 6.359
+                },
+                "1": {
+                    "effect": -5.1468,
+                    "se": 7.9502
+                },
+                "2": {
+                    "effect": -18.744,
+                    "se": 7.1525
+                },
+                "3": {
+                    "effect": -32.1978,
+                    "se": 9.5973
+                },
+                "4": {
+                    "effect": -34.0532,
+                    "se": 11.6113
+                },
+                "5": {
+                    "effect": -32.0547,
+                    "se": 13.568
+                },
+                "6": {
+                    "effect": -23.732,
+                    "se": 15.991
+                },
+                "7": {
+                    "effect": -17.5658,
+                    "se": 25.2468
+                },
+                "8": {
+                    "effect": -38.8917,
+                    "se": 13.9023
+                }
+            },
+            "group_effects": {},
+            "n_treated_units": 38,
+            "n_control_units": 247
+        },
+        "feminicidios": {
+            "cs_att": 0.4377,
+            "cs_se": 0.2547,
+            "cs_p_value": 0.0821,
+            "cs_ci_lower": -0.0544,
+            "cs_ci_upper": 0.9131,
+            "sa_att": null,
+            "sa_se": null,
+            "bjs_att": 0.327,
+            "bjs_se": 0.1345,
+            "event_study": {
+                "-9": {
+                    "effect": 0.2255,
+                    "se": 0.4983
+                },
+                "-8": {
+                    "effect": 0.531,
+                    "se": 0.6299
+                },
+                "-7": {
+                    "effect": -1.643,
+                    "se": 1.066
+                },
+                "-6": {
+                    "effect": 0.4235,
+                    "se": 0.2139
+                },
+                "-5": {
+                    "effect": 0.8089,
+                    "se": 0.5168
+                },
+                "-4": {
+                    "effect": -0.2146,
+                    "se": 0.5126
+                },
+                "-3": {
+                    "effect": -0.1352,
+                    "se": 0.4056
+                },
+                "-2": {
+                    "effect": 0.4942,
+                    "se": 0.3105
+                },
+                "-1": {
+                    "effect": -0.228,
+                    "se": 0.3332
+                },
+                "0": {
+                    "effect": 0.5911,
+                    "se": 0.3864
+                },
+                "1": {
+                    "effect": 0.0239,
+                    "se": 0.3954
+                },
+                "2": {
+                    "effect": 0.4135,
+                    "se": 0.3422
+                },
+                "3": {
+                    "effect": 0.2515,
+                    "se": 0.4097
+                },
+                "4": {
+                    "effect": 0.7305,
+                    "se": 0.2848
+                },
+                "5": {
+                    "effect": 0.8593,
+                    "se": 0.3761
+                },
+                "6": {
+                    "effect": -0.0335,
+                    "se": 0.6504
+                },
+                "7": {
+                    "effect": 0.7588,
+                    "se": 0.6272
+                },
+                "8": {
+                    "effect": 0.3156,
+                    "se": 0.1726
+                }
+            },
+            "group_effects": {},
+            "n_treated_units": 38,
+            "n_control_units": 247
+        }
+    },
+    "psm_matching": {
+        "descricao": "Não aplicado (sem covariáveis socioeconômicas).",
+        "pares": {}
+    },
+    "balanco_socioeconomico": {
+        "descricao": "Pendente de covariáveis.",
+        "covariates": {}
+    }
+}

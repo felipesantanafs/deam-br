@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PATH_24H   = ROOT / "dados/info_delegacias/dados_deams_24h_com_id.xlsx"
 PATH_COM   = ROOT / "dados/info_delegacias/dados_deams_comercial_com_id.xlsx"
 PATH_IBGE  = ROOT / "dados/ibge/municipios_br.csv"
+PATH_POP   = ROOT / "dados/ibge/populacao_municipios.csv"
 PATH_SIM   = ROOT / "dados/sim/sim_feminicidios_br_detalhada.csv"
 PATH_SINAN = ROOT / "dados/sinan/sinan_violencia_br_detalhada.csv"
 
@@ -164,6 +165,12 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
                 "viol_sexual", "viol_psicologica", "viol_parceiro"]
     painel[metricas] = painel[metricas].fillna(0).astype(int)
 
+    # População municipal anual (estimativas IBGE/SIDRA) e taxas por 100 mil habitantes
+    pop = pd.read_csv(PATH_POP)
+    painel = painel.merge(pop, on=["id_municipio", "ano"], how="left")
+    for m in metricas:
+        painel[f"taxa_{m}"] = (painel[m] / painel["populacao"] * 100_000).round(4)
+
     # Variáveis de tratamento (staggered adoption)
     painel["tratado"] = (painel["grupo"] == "24h").astype(int)
     painel["pos_tratamento"] = (
@@ -173,10 +180,13 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
 
     cols = [
         "id_municipio", "municipio", "uf", "regiao", "grupo",
-        "ano_implementacao", "coorte", "ano",
+        "ano_implementacao", "coorte", "ano", "populacao",
         "tratado", "pos_tratamento", "tratamento_ativo",
         "feminicidios", "notificacoes",
         "viol_fisica", "viol_sexual", "viol_psicologica", "viol_parceiro",
+        "taxa_feminicidios", "taxa_notificacoes",
+        "taxa_viol_fisica", "taxa_viol_sexual",
+        "taxa_viol_psicologica", "taxa_viol_parceiro",
     ]
     return painel[cols].sort_values(["id_municipio", "ano"]).reset_index(drop=True)
 
@@ -205,13 +215,16 @@ def main() -> None:
     painel.to_csv(p_painel, index=False, encoding="utf-8")
 
     # Saídas tidy para o Streamlit
-    cols_id = ["id_municipio", "municipio", "uf", "regiao", "grupo", "coorte", "ano"]
+    cols_id = ["id_municipio", "municipio", "uf", "regiao", "grupo", "coorte", "ano", "populacao"]
     p_fem = OUT_DIR / "feminicidios_anual.csv"
-    painel[cols_id + ["feminicidios"]].to_csv(p_fem, index=False, encoding="utf-8")
+    painel[cols_id + ["feminicidios", "taxa_feminicidios"]].to_csv(
+        p_fem, index=False, encoding="utf-8")
 
     p_not = OUT_DIR / "notificacoes_anual.csv"
     painel[cols_id + ["notificacoes", "viol_fisica", "viol_sexual",
-                       "viol_psicologica", "viol_parceiro"]].to_csv(
+                       "viol_psicologica", "viol_parceiro",
+                       "taxa_notificacoes", "taxa_viol_fisica", "taxa_viol_sexual",
+                       "taxa_viol_psicologica", "taxa_viol_parceiro"]].to_csv(
         p_not, index=False, encoding="utf-8")
 
     print(f"\nPainel: {painel.shape[0]} linhas x {painel.shape[1]} colunas")
