@@ -56,6 +56,18 @@ N_BOOTSTRAP = 999
 SEED = 42
 TREAT_KW = dict(unit="id_municipio", time="ano", first_treat="first_treat")
 
+# Covariáveis da estimação duplamente robusta (DR-DiD). Idênticas às de
+# modelo_causal_brasil.py para coerência entre figuras e modelo principal:
+#   taxa_homicidios_masc  -> violência estrutural basal (recorte masculino evita
+#                            containment com o outcome de feminicídio)
+#   log_populacao         -> porte municipal (assimétrico -> log)
+#   log_pib_per_capita    -> desenvolvimento econômico (assimétrico -> log)
+#   delta_homicidios_masc -> surto recente de violência letal; corrige a adoção
+#                            reativa (tendência pré-tratamento do feminicídio)
+COVARIATES: list[str] = ["taxa_homicidios_masc", "log_populacao",
+                         "log_pib_per_capita", "delta_homicidios_masc"]
+EST_METHOD = "dr" if COVARIATES else "reg"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
@@ -69,12 +81,13 @@ def carregar() -> pd.DataFrame:
 def fit_cs(df: pd.DataFrame, col: str, aggregate: str) -> "object":
     cs = CallawaySantAnna(
         control_group="never_treated",
-        estimation_method="reg",
+        estimation_method=EST_METHOD,
         n_bootstrap=N_BOOTSTRAP,
         cluster="id_municipio",
         seed=SEED,
     )
-    return cs.fit(df, outcome=col, aggregate=aggregate, **TREAT_KW)
+    return cs.fit(df, outcome=col, aggregate=aggregate,
+                  covariates=(COVARIATES or None), **TREAT_KW)
 
 
 def es_df(res) -> pd.DataFrame:
@@ -296,8 +309,12 @@ def fig_forest(resultados: dict) -> None:
 def escrever_relatorio(desc: pd.DataFrame, coortes, resultados: dict) -> None:
     L = []
     L.append("# Estatísticas — Callaway & Sant'Anna (DEAMs 24h, Brasil)\n")
-    L.append("Desfechos em **taxa por 100 mil habitantes**. Estimador CS DiD, "
-             "controle = nunca-tratados (DEAMs comerciais), 999 réplicas bootstrap.\n")
+    metodo = (f"estimação **duplamente robusta (DR)** com covariáveis "
+              f"({', '.join(COVARIATES)})" if COVARIATES
+              else "estimação por regressão (`reg`), sem covariáveis")
+    L.append(f"Desfechos em **taxa por 100 mil habitantes**. Estimador CS DiD, "
+             f"controle = nunca-tratados (DEAMs comerciais), 999 réplicas bootstrap, "
+             f"{metodo}.\n")
 
     L.append("## 1. Estatísticas descritivas\n")
     L.append(desc.to_markdown(index=False))
