@@ -115,41 +115,50 @@ deam-br/
 ├── 📂 codes/                       # Scripts organizados por fases de desenvolvimento
 │   ├── 📂 extracao_filtragem/      # Extração (APIs/BigQuery) e higienização inicial
 │   │   ├── bd_config.py            # ⚠️ LOCAL APENAS — credenciais GCP (Não versionado)
-│   │   ├── extract_sim_bd_detalhada.py  # Query detalhada de feminicídios no SIM/DataSUS (Brasil)
-│   │   ├── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS (Brasil)
-│   │   ├── limpar_dados_deams.py   # Limpeza e filtragem da base de DEAMs
-│   │   └── separar_deams.py        # Separação das DEAMs em 24h e Comercial
+│   │   ├── 📂 sim_sinan/           # Extração dos microdados nacionais
+│   │   │   ├── extract_sim_bd_detalhada.py   # Query detalhada de feminicídios no SIM/DataSUS
+│   │   │   └── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS
+│   │   ├── 📂 deams/               # Processamento da base de DEAMs
+│   │   │   ├── limpar_dados_deams.py  # Limpeza e filtragem da base de DEAMs
+│   │   │   └── separar_deams.py       # Separação em grupos 24h e Comercial
+│   │   └── 📂 ibge/                # Download e pareamento de dados do IBGE
+│   │       ├── download_ibge.py       # Download de dados socioeconômicos
+│   │       ├── fetch_populacao.py     # Série histórica de população por município
+│   │       ├── inspect_data.py        # Inspeção rápida de consistência
+│   │       └── parear_municipios_ibge.py # Pareamento de municípios IBGE × DEAMs
 │   │
-│   ├── 📂 analise_dados/           # Análise exploratória e visualizações
-│   │   ├── download_ibge.py        # Download de dados do IBGE
-│   │   └── inspect_data.py         # Inspeção rápida de consistência dos dados
+│   ├── 📂 analise_dados/           # Agregações e preparação dos painéis
+│   │   ├── agregar_painel_anual.py    # Consolida painel município-ano para o modelo DiD
+│   │   └── agregar_sazonalidade.py    # Agrega séries horárias e semanais (SINAN)
 │   │
-│   ├── 📂 streamlit/               # Dashboard Interativo Premium (FEA-USP)
-│   │   ├── Home.py                 # Arquivo de entrada do painel principal
-│   │   ├── 📂 assets/              # Plano de fundo minimalista e bases espaciais (GeoJSON)
-│   │   ├── 📂 utils/               # Funções de carregamento rápido e geradores de gráficos Plotly
-│   │   └── 📂 pages/               # Páginas estruturadas para navegação
-│   │       ├── 1_📊_Funil_da_Violencia.py
-│   │       ├── 2_📈_Series_Temporais.py
-│   │       ├── 3_🏢_Delegacias_Bairros.py
-│   │       ├── 4_🗺️_Mapa_Bairros.py
-│   │       ├── 5_🔥_Mapa_Calor_DDMs.py
-│   │       ├── 6_👤_Perfil_Vitimas.py
-│   │       ├── 7_⏰_Sazonalidade.py
-│   │       ├── 8_🚨_Analise_DDMs.py
-│   │       └── 9_🔬_Modelo_Causal.py
+│   ├── 📂 streamlit/               # Dashboard Interativo (FEA-USP)
+│   │   ├── Home.py                 # Entrada do painel principal
+│   │   ├── 📂 assets/              # Fundo, GeoJSON e imagens do modelo causal
+│   │   ├── 📂 utils/               # Carregamento de dados e geradores de gráficos Plotly
+│   │   │   ├── data_loader.py
+│   │   │   └── charts.py
+│   │   └── 📂 pages/               # Sete páginas de navegação
+│   │       ├── 1_📊_Funil_da_Violência.py
+│   │       ├── 2_📈_Séries_Temporais.py
+│   │       ├── 3_🗺️_Panorama_Territorial.py
+│   │       ├── 4_🏛️_Adoção_das_DEAMs_24h.py
+│   │       ├── 5_⏰_Sazonalidade_e_Horário.py
+│   │       ├── 6_⚖️_Tratado_vs_Controle.py
+│   │       └── 7_🔬_Modelo_Causal.py
 │   │
 │   └── 📂 inferencia_causal/       # Estimação do modelo econométrico DiD
-│       ├── causal_model.py         # Estimação do modelo DiD e pareamento por PSM
-│       ├── generate_notebook.py    # Geração de notebook explicativo
-│       └── modelo_causal.ipynb     # Notebook com a execução do modelo
+│       ├── causal_model.py                 # DiD global e pareamento PSM
+│       ├── modelo_causal_brasil.py         # Estimador Callaway & Sant'Anna (CS DiD)
+│       ├── diagnostico_callaway_santanna.py # Diagnósticos: pré-tendências e forest plot
+│       ├── generate_notebook_brasil.py     # Geração do notebook de replicação
+│       └── modelo_causal_brasil.ipynb      # Notebook com a execução completa do modelo
 │
 ├── 📂 dados/                       # Armazenamento estruturado de fontes e consolidações
 │   ├── 📂 ibge/                    # Dados e arquivos auxiliares do IBGE
 │   │   ├── municipios_br.csv       # Municípios brasileiros e códigos de identificação
 │   │   └── 📂 scraping/            # Arquivos da raspagem e processamento das DEAMs
-│   │       ├── deam_delegacias_mulher_brasil.csv           # Base bruta de raspagem
-│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv  # Base enriquecida (pré-filtragem)
+│   │       ├── deam_delegacias_mulher_brasil.csv                      # Base bruta de raspagem
+│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv      # Base enriquecida (pré-filtragem)
 │   │
 │   ├── 📂 info_delegacias/         # Dados processados das DEAMs
 │   │   ├── dados_deams.xlsx        # Base original de DEAMs
@@ -158,17 +167,41 @@ deam-br/
 │   │   └── dados_deams_comercial.xlsx # DEAMs com horário comercial
 │   │
 │   ├── 📂 sim/                     # Dados provenientes do SIM (Sistema de Mortalidade)
-│   │   └── sim_feminicidios_br_detalhada.csv # Microdados detalhados de óbitos (Brasil)
+│   │   └── sim_feminicidios_br_detalhada.csv  # Microdados detalhados de óbitos (Brasil) — ignorado pelo git
 │   │
 │   └── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
-│       └── sinan_violencia_br_detalhada.csv # Microdados detalhados de violência (Brasil)
+│       └── sinan_violencia_br_detalhada.csv   # Microdados detalhados de violência (Brasil) — ignorado pelo git
 │
-└── 📂 relatorios/                  # Relatórios gerenciais e documentos do projeto
-    ├── PROJETO DE PESQUISA-VIOLENCIA BR.docx
-    └── PROJETO DE PESQUISA-VIOLENCIA BR.txt
+└── 📂 relatorios/                  # Relatórios, apresentações e saídas do modelo
+    ├── 📂 pre_relatorio/           # Documentos textuais do projeto de pesquisa
+    │   ├── PROJETO DE PESQUISA-VIOLENCIA BR.txt
+    │   ├── estatisticas_causal.md
+    │   └── resumo_sessao.md
+    ├── 📂 relatorios_finais/       # Relatório técnico completo em LaTeX/PDF
+    │   ├── deam24h_relatorio.tex
+    │   └── deam24h_relatorio.pdf
+    ├── 📂 apresentacao/            # Slides da pesquisa (LaTeX Beamer + PPTX)
+    │   ├── deam24h_slides.tex
+    │   ├── deam24h_slides.pdf
+    │   ├── deam24h_slides.pptx
+    │   ├── build_pptx.py           # Geração programática do PPTX
+    │   └── 📂 render/              # Renderizações PNG dos slides
+    ├── 📂 figuras_causal/          # Gráficos gerados pelo modelo causal
+    │   ├── 00_adocao_escalonada.png
+    │   ├── *_raw_trends.png        # Tendências brutas pré/pós tratamento
+    │   ├── *_event_study.png       # Estudos de evento (pré-tendências + ATT)
+    │   ├── *_heatmap_gt.png        # Heatmaps dos efeitos por coorte-tempo
+    │   ├── *_efeitos_coorte.png    # ATT por coorte de adoção
+    │   └── 05_forest_att.png       # Forest plot comparativo (notificações vs feminicídios)
+    └── 📂 csv_causal/              # Tabelas de resultados do modelo causal
+        ├── descritivas.csv
+        ├── notificacoes_event_study.csv
+        ├── notificacoes_efeitos_coorte.csv
+        ├── feminicidios_event_study.csv
+        └── feminicidios_efeitos_coorte.csv
 ```
 
-> **Nota:** Dados da SSP (Secretaria de Segurança Pública de SP), CNES bruto e SINAN bruto filtrado por SP foram removidos/ignorados por incompatibilidade com o escopo nacional. Os scripts de extração legados específicos de SP (`data_filter_sicpv.py`, `pipeline_feminicidio.py`, scripts antigos com sufixo `_sp`) também foram ignorados.
+> **Nota:** Dados da SSP (Secretaria de Segurança Pública de SP), CNES bruto e SINAN bruto filtrado por SP foram removidos/ignorados por incompatibilidade com o escopo nacional. Microdados pesados do SIM e SINAN (`*_detalhada.csv`) estão listados no `.gitignore` e não são versionados.
 
 ---
 
@@ -214,12 +247,21 @@ Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as 
 3. Execute no terminal a partir da raiz do repositório:
    ```bash
    # Extração dos microdados nacionais
-   python codes/extracao_filtragem/extract_sim_bd_detalhada.py
-   python codes/extracao_filtragem/extract_sinan_bd_detalhada.py
-   
+   python codes/extracao_filtragem/sim_sinan/extract_sim_bd_detalhada.py
+   python codes/extracao_filtragem/sim_sinan/extract_sinan_bd_detalhada.py
+
    # Processamento da base de DEAMs
-   python codes/extracao_filtragem/limpar_dados_deams.py
-   python codes/extracao_filtragem/separar_deams.py
+   python codes/extracao_filtragem/deams/limpar_dados_deams.py
+   python codes/extracao_filtragem/deams/separar_deams.py
+
+   # Download e pareamento de dados IBGE (covariáveis para PSM)
+   python codes/extracao_filtragem/ibge/download_ibge.py
+   python codes/extracao_filtragem/ibge/fetch_populacao.py
+   python codes/extracao_filtragem/ibge/parear_municipios_ibge.py
+
+   # Agregação do painel anual e séries de sazonalidade
+   python codes/analise_dados/agregar_painel_anual.py
+   python codes/analise_dados/agregar_sazonalidade.py
    ```
 4. Os arquivos processados e consolidados aparecerão automaticamente organizados nas respectivas subpastas da pasta `dados/`.
 
@@ -227,9 +269,19 @@ Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as 
 
 ## 🖥️ Dashboard Interativo (Streamlit)
 
-A Fase 1 está acoplada a um painel analítico dinâmico desenvolvido no Streamlit com uma identidade visual premium adaptada às cores da **FEA-USP** (azul marinho e elementos de alta visibilidade/contraste).
+O projeto conta com um painel analítico desenvolvido no Streamlit com identidade visual adaptada às cores da **FEA-USP** (azul marinho e elementos de alto contraste), organizado em **7 páginas**:
 
-**Bases utilizadas no dashboard:** **SINAN**, **SIM** e **DEAMs** (período 2009–2019, cobertura nacional).
+| # | Página | Conteúdo |
+|---|--------|----------|
+| 1 | 📊 Funil da Violência | Evolução nacional de ameaças, lesões e feminicídios |
+| 2 | 📈 Séries Temporais | Tendências anuais por UF e grupo de tratamento |
+| 3 | 🗺️ Panorama Territorial | Mapa coroplético de incidência por município |
+| 4 | 🏛️ Adoção das DEAMs 24h | Adoção escalonada e coortes de tratamento |
+| 5 | ⏰ Sazonalidade e Horário | Distribuição horária e semanal das notificações (SINAN) |
+| 6 | ⚖️ Tratado vs Controle | Comparativo de tendências pré/pós tratamento |
+| 7 | 🔬 Modelo Causal | Resultados CS DiD: event study, heatmaps e forest plot |
+
+**Bases utilizadas:** **SINAN**, **SIM** e **DEAMs** (período 2009–2019, cobertura nacional).
 
 ### Como executar localmente:
 
@@ -252,7 +304,13 @@ A Fase 1 está acoplada a um painel analítico dinâmico desenvolvido no Streaml
 - [x] Extração dos microdados SIM e SINAN detalhados (cobertura 2009–2019, Brasil)
 - [x] Raspagem e enriquecimento da base de DEAMs — 339 delegacias filtradas (município, UF, regime, ano 24h)
 - [x] Separação das DEAMs em grupos de tratamento (24h) e controle (comercial)
+- [x] Download e pareamento de covariáveis socioeconômicas do IBGE (PSM)
 - [x] Construção do Funil da Violência e EDA Espaço-Temporal
-- [x] Construção do Dashboard Interativo Premium no Streamlit (9 abas funcionais com mapas e sazonalidade)
+- [x] Agregação do painel anual município-ano e séries de sazonalidade horárias/semanais
 - [x] Padronização do período de análise para 2009–2019 (SINAN + SIM)
 - [x] Estimação do modelo econométrico causal DiD em duas camadas (Global e Callaway & Sant'Anna) com moderação racial
+- [x] Diagnósticos do CS DiD: estudos de evento, heatmaps coorte-tempo e forest plot ATT
+- [x] Exportação de figuras e tabelas dos resultados causais (`figuras_causal/`, `csv_causal/`)
+- [x] Reestruturação do Dashboard Streamlit para 7 páginas focadas (Panorama Territorial, Adoção 24h, Tratado vs Controle)
+- [x] Relatório técnico completo em LaTeX/PDF (`relatorios/relatorios_finais/`)
+- [x] Apresentação em LaTeX Beamer exportada para PDF e PPTX (`relatorios/apresentacao/`)

@@ -46,11 +46,27 @@ Thumbs.db
 desktop.ini
 
 # ===========================
-# Excel — arquivos temporários
+# Office — arquivos temporários
 # ===========================
 ~$*.xlsx
 ~$*.xls
 ~$*.xlsm
+~$*.docx
+~$*.pptx
+
+# ===========================
+# LaTeX — arquivos auxiliares
+# ===========================
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
 
 # ===========================
 # Dados pesados / Não utilizados
