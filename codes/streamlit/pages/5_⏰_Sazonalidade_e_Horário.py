@@ -94,17 +94,19 @@ total_h = por_hora['n'].sum()
 
 col_bar, col_resumo = st.columns([3, 1])
 with col_bar:
-    cores_h = [COLORS['secondary'] if 8 <= h < 18 else COLORS['danger'] for h in por_hora['hora']]
+    COR_FORA = PERIODO_COLORS['Antes 24h']   # laranja da paleta da página
+    COR_DENTRO = PERIODO_COLORS['Depois 24h']  # azul da paleta da página
+    cores_h = [COR_DENTRO if 8 <= h < 18 else COR_FORA for h in por_hora['hora']]
     figc = go.Figure(go.Bar(
         x=por_hora['hora'], y=por_hora['n'], marker_color=cores_h,
         hovertemplate='<b>%{x}h</b><br>%{y:,.0f} ocorrências<extra></extra>',
     ))
-    figc.add_vrect(x0=-0.5, x1=7.5, fillcolor=COLORS['danger'], opacity=0.06, line_width=0)
-    figc.add_vrect(x0=7.5, x1=17.5, fillcolor=COLORS['secondary'], opacity=0.08, line_width=0,
+    figc.add_vrect(x0=-0.5, x1=7.5, fillcolor=COR_FORA, opacity=0.06, line_width=0)
+    figc.add_vrect(x0=7.5, x1=17.5, fillcolor=COR_DENTRO, opacity=0.08, line_width=0,
                    annotation_text="Horário comercial", annotation_position="top",
                    annotation_font_color=COLORS['text_dim'])
-    figc.add_vrect(x0=17.5, x1=23.5, fillcolor=COLORS['danger'], opacity=0.06, line_width=0,
-                   annotation_text="Fora do expediente", annotation_position="top right",
+    figc.add_vrect(x0=17.5, x1=23.5, fillcolor=COR_FORA, opacity=0.06, line_width=0,
+                   annotation_text="Fora do expediente", annotation_position="top left",
                    annotation_font_color=COLORS['text_dim'])
     figc.update_layout(title="Nº de ocorrências por hora do dia",
                        xaxis=dict(title="Hora do dia", dtick=1, range=[-0.5, 23.5]),
@@ -129,16 +131,16 @@ with col_resumo:
     n_fora = int(por_hora[~por_hora['hora'].between(8, 17)]['n'].sum())
     pct_fora = n_fora / total_h * 100 if total_h else 0
     st.markdown(f"""
-    <div class="insight-box" style="border-left-color:{COLORS['danger']};">
-        🔴 <strong>Fora do horário comercial</strong> (antes das 8h e a partir das 18h):
+    <div class="insight-box" style="border-left-color:{PERIODO_COLORS['Antes 24h']};">
+        🟠 <strong>Fora do horário comercial</strong> (antes das 8h e a partir das 18h):
         <strong>{pct_fora:.1f}%</strong> das ocorrências.
     </div>
-    <div class="insight-box">
+    <div class="insight-box" style="border-left-color:{PERIODO_COLORS['Depois 24h']};">
         🔵 <strong>Dentro do horário comercial</strong> (08–17h): <strong>{100 - pct_fora:.1f}%</strong>.
     </div>
     """, unsafe_allow_html=True)
 
-st.caption("Barras em vermelho = fora do expediente comercial; em azul = horário comercial (08–17h). "
+st.caption("Barras em laranja = fora do expediente comercial; em azul = horário comercial (08–17h). "
            "Use o recorte acima para comparar antes/depois da conversão e o grupo de controle.")
 
 st.markdown("<br>", unsafe_allow_html=True)
