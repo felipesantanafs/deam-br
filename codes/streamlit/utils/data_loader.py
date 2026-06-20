@@ -1,139 +1,167 @@
 """
-Módulo centralizado de carregamento e cache dos dados.
-Usa @st.cache_data para evitar recarregar a cada interação.
+Módulo centralizado de carregamento e cache dos dados — escopo NACIONAL.
+
+Estudo DEAM 24h (Brasil, 2009-2019): avaliação de impacto da conversão de
+Delegacias Especializadas de Atendimento à Mulher para o regime de plantão 24h.
+
+Fonte mestre: painel municipal anual balanceado (285 municípios × 11 anos),
+integrando feminicídios (SIM) e notificações de violência (SINAN), mais os
+agregados temporais (hora/mês/dia) pré-processados para a análise de sazonalidade.
 """
-import pandas as pd
-import streamlit as st
+import json
 import os
 
-# Caminho base dos dados (relativo ao diretório do streamlit)
+import pandas as pd
+import streamlit as st
+
+# dados/ na raiz do repositório (utils -> streamlit -> codes -> raiz)
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'dados'))
+CONS_DIR = os.path.join(DATA_DIR, 'consolidado')
+ASSETS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'assets'))
 
 
-@st.cache_data(ttl=3600, show_spinner="Carregando dados do SINAN + CNES (2015-2019)...")
-def load_sinan_cnes() -> pd.DataFrame:
-    """Carrega a base integrada SINAN + CNES filtrada para o período de 2015 a 2019 (107.212 registros)."""
-    path = os.path.join(DATA_DIR, 'sinan', 'sinan_cnes_merged.csv')
-    df = pd.read_csv(path, low_memory=False)
-
-    # Filtrar para o período de 2015 a 2019
-    if 'ano' in df.columns:
-        df = df[(df['ano'] >= 2015) & (df['ano'] <= 2019)]
-
-    # Converter colunas binárias para numérico
-    binary_cols = [
-        'ocorreu_violencia_fisica', 'ocorreu_violencia_psicologica',
-        'ocorreu_violencia_sexual', 'ocorreu_negligencia_abandono',
-        'meio_forca', 'meio_enforcamento', 'meio_objeto_contundente',
-        'meio_objeto_perfurante', 'meio_objeto_quente', 'meio_envenenamento',
-        'meio_arma_fogo', 'meio_ameaca', 'meio_outros',
-        'autor_pai', 'autor_mae', 'autor_padrasto', 'autor_madrasta',
-        'autor_conjugue', 'autor_ex_conjugue', 'autor_namorado_a',
-        'autor_ex_namorado_a', 'autor_filho_a', 'autor_desconhecido',
-        'autor_irmao', 'autor_conhecido', 'autor_cuidador',
-        'autor_patrao_chefe', 'autor_propria_pessoa',
-        'encaminhamento_delegacia_mulher', 'encaminhamento_delegacia',
-        'lesao_autoprovocada', 'autor_sexo'
-    ]
-    for col in binary_cols:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
-
-    # Extrair hora como inteiro
-    if 'hora_ocorrencia' in df.columns:
-        df['hora'] = pd.to_datetime(df['hora_ocorrencia'], format='%H:%M:%S', errors='coerce').dt.hour
-
-    # Converter data_ocorrencia para datetime
-    if 'data_ocorrencia' in df.columns:
-        df['data_ocorrencia'] = pd.to_datetime(df['data_ocorrencia'], errors='coerce')
-        df['mes'] = df['data_ocorrencia'].dt.month
-        df['ano_mes'] = df['data_ocorrencia'].dt.to_period('M').astype(str)
-
-    return df
-
-
-@st.cache_data(ttl=3600, show_spinner="Carregando dados do SIM (2015-2019)...")
-def load_sim() -> pd.DataFrame:
-    """Carrega a base de feminicídios do SIM/DataSUS filtrada para 2015-2019 (525 registros)."""
-    path = os.path.join(DATA_DIR, 'sim', 'sim_feminicidios_sp.csv')
-    df = pd.read_csv(path)
-    
-    # Filtrar para o período de 2015 a 2019
-    if 'ano' in df.columns:
-        df = df[(df['ano'] >= 2015) & (df['ano'] <= 2019)]
-
-    df['data_obito'] = pd.to_datetime(df['data_obito'], errors='coerce')
-    df['idade'] = pd.to_numeric(df['idade'], errors='coerce')
-    return df
-
-
-
-@st.cache_data(ttl=3600, show_spinner="Carregando funil consolidado...")
-def load_funil() -> pd.DataFrame:
-    """Carrega a tabela consolidada do funil da violência."""
-    path = os.path.join(DATA_DIR, 'consolidado', 'funil_violencia_ano.csv')
-    return pd.read_csv(path)
-
-
+# ─── Painel mestre e séries tidy ─────────────────────────────────────
 @st.cache_data(ttl=3600, show_spinner="Carregando painel municipal DEAM (2009-2019)...")
 def load_painel_deam() -> pd.DataFrame:
     """
-    Painel municipal balanceado (município × ano) das cidades com DEAM, integrando
-    feminicídios (SIM) e notificações de violência contra a mulher (SINAN) de forma anual.
+    Painel municipal balanceado (município × ano) das 285 cidades com DEAM,
+    integrando feminicídios (SIM) e notificações (SINAN) anualmente.
 
     Pronto para inferência causal (staggered DiD / Callaway & Sant'Anna):
       - grupo:            '24h' (tratado) ou 'comercial' (controle)
       - coorte:           ano de adoção do regime 24h (0 = nunca tratado)
       - tratamento_ativo: 1 a partir do ano de adoção nas cidades tratadas
-    Métricas anuais por município: feminicidios, notificacoes, viol_fisica,
-    viol_sexual, viol_psicologica, viol_parceiro.
+    Métricas anuais por município (contagem e taxa /100k): feminicidios,
+    notificacoes, viol_fisica, viol_sexual, viol_psicologica, viol_parceiro.
     """
-    path = os.path.join(DATA_DIR, 'consolidado', 'painel_deam_anual.csv')
-    return pd.read_csv(path)
+    return pd.read_csv(os.path.join(CONS_DIR, 'painel_deam_anual.csv'))
 
 
 @st.cache_data(ttl=3600, show_spinner="Carregando feminicídios anuais...")
 def load_feminicidios_anual() -> pd.DataFrame:
     """Série anual de feminicídios (SIM) por município com DEAM."""
-    path = os.path.join(DATA_DIR, 'consolidado', 'feminicidios_anual.csv')
-    return pd.read_csv(path)
+    return pd.read_csv(os.path.join(CONS_DIR, 'feminicidios_anual.csv'))
 
 
 @st.cache_data(ttl=3600, show_spinner="Carregando notificações anuais...")
 def load_notificacoes_anual() -> pd.DataFrame:
-    """Série anual de notificações de violência contra a mulher (SINAN) por município com DEAM."""
-    path = os.path.join(DATA_DIR, 'consolidado', 'notificacoes_anual.csv')
-    return pd.read_csv(path)
+    """Série anual de notificações (SINAN) por município com DEAM."""
+    return pd.read_csv(os.path.join(CONS_DIR, 'notificacoes_anual.csv'))
 
 
-# ─── Mapeamentos de códigos ──────────────────────────────────────────
-LOCAL_OCORRENCIA_MAP = {
-    1: "Residência",
-    2: "Habitação coletiva",
-    3: "Escola",
-    4: "Local de prática esportiva",
-    5: "Bar ou similar",
-    6: "Via pública",
-    7: "Comércio/Serviços",
-    8: "Indústrias/Construção",
-    9: "Outros",
+# ─── Agregados temporais (sazonalidade / horário) ────────────────────
+@st.cache_data(ttl=3600, show_spinner="Carregando distribuição horária...")
+def load_saz_hora() -> pd.DataFrame:
+    """Contagem de notificações por (grupo, periodo, hora 0-23)."""
+    return pd.read_csv(os.path.join(CONS_DIR, 'saz_hora.csv'))
+
+
+@st.cache_data(ttl=3600)
+def load_saz_mes() -> pd.DataFrame:
+    """Contagem de notificações por (grupo, periodo, mes 1-12)."""
+    return pd.read_csv(os.path.join(CONS_DIR, 'saz_mes.csv'))
+
+
+@st.cache_data(ttl=3600)
+def load_saz_dow() -> pd.DataFrame:
+    """Contagem de notificações por (grupo, periodo, dia da semana 0=Seg..6=Dom)."""
+    return pd.read_csv(os.path.join(CONS_DIR, 'saz_dow.csv'))
+
+
+@st.cache_data(ttl=3600)
+def load_saz_resumo() -> pd.DataFrame:
+    """Notificações dentro x fora do horário comercial por grupo/periodo."""
+    return pd.read_csv(os.path.join(CONS_DIR, 'saz_resumo.csv'))
+
+
+# ─── Inferência causal ───────────────────────────────────────────────
+@st.cache_data(ttl=3600)
+def load_causal_results() -> dict:
+    """Resultados do modelo CS DiD (ATT, event study, robustez)."""
+    path = os.path.join(CONS_DIR, 'causal_results.json')
+    if not os.path.exists(path):
+        return {}
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+@st.cache_data(ttl=3600)
+def load_causal_panel() -> pd.DataFrame:
+    """Painel usado na estimação causal (inclui first_treat)."""
+    path = os.path.join(CONS_DIR, 'causal_panel.csv')
+    if os.path.exists(path):
+        return pd.read_csv(path)
+    return load_painel_deam().rename(columns={'coorte': 'first_treat'})
+
+
+@st.cache_data(ttl=3600)
+def load_geojson_uf() -> dict | None:
+    """GeoJSON das UFs do Brasil (chave de junção: properties.sigla)."""
+    path = os.path.join(ASSETS_DIR, 'brasil_uf.geojson')
+    if not os.path.exists(path):
+        return None
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+# ─── Agregações reutilizáveis ────────────────────────────────────────
+@st.cache_data(ttl=3600)
+def serie_nacional_anual(grupo: str | None = None) -> pd.DataFrame:
+    """
+    Série nacional por ano: somatórios de eventos e taxas /100k corretas
+    (total de eventos / população total × 100k). `grupo` filtra '24h'/'comercial'.
+    """
+    df = load_painel_deam()
+    if grupo:
+        df = df[df['grupo'] == grupo]
+    agg = df.groupby('ano').agg(
+        feminicidios=('feminicidios', 'sum'),
+        notificacoes=('notificacoes', 'sum'),
+        viol_fisica=('viol_fisica', 'sum'),
+        viol_sexual=('viol_sexual', 'sum'),
+        viol_psicologica=('viol_psicologica', 'sum'),
+        viol_parceiro=('viol_parceiro', 'sum'),
+        populacao=('populacao', 'sum'),
+        municipios=('id_municipio', 'nunique'),
+    ).reset_index()
+    for m in ['feminicidios', 'notificacoes', 'viol_fisica',
+              'viol_sexual', 'viol_psicologica', 'viol_parceiro']:
+        agg[f'taxa_{m}'] = (agg[m] / agg['populacao'] * 100_000).round(3)
+    return agg
+
+
+@st.cache_data(ttl=3600)
+def referencia_municipios() -> pd.DataFrame:
+    """1 linha por município: grupo, coorte, uf, regiao, população 2019."""
+    df = load_painel_deam()
+    pop19 = df[df['ano'] == 2019][['id_municipio', 'populacao']]
+    ref = (df[['id_municipio', 'municipio', 'uf', 'regiao', 'grupo', 'coorte']]
+           .drop_duplicates('id_municipio')
+           .merge(pop19, on='id_municipio', how='left'))
+    return ref
+
+
+# ─── Rótulos e paletas de domínio ────────────────────────────────────
+MESES = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
+         'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+
+DIAS_SEMANA = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom']
+
+REGIAO_COLORS = {
+    'Norte':        '#27AE60',
+    'Nordeste':     '#F39C12',
+    'Centro-Oeste': '#8E44AD',
+    'Sudeste':      '#2E86C1',
+    'Sul':          '#E74C3C',
 }
 
-RACA_PACIENTE_MAP = {
-    1: "Branca",
-    2: "Preta",
-    3: "Amarela",
-    4: "Parda",
-    5: "Indígena",
+GRUPO_COLORS = {
+    '24h':       '#2E86C1',   # tratado
+    'comercial': '#95A5A6',   # controle
 }
 
-ESCOLARIDADE_MAP = {
-    0: "Sem escolaridade",
-    1: "1ª a 4ª série",
-    2: "5ª a 8ª série",
-    3: "Ensino médio",
-    4: "Superior incompleto",
-    5: "Superior completo",
-    6: "Não se aplica",
-    9: "Ignorado",
+PERIODO_COLORS = {
+    'Antes 24h':  '#F39C12',
+    'Depois 24h': '#2E86C1',
+    'Comercial':  '#95A5A6',
 }

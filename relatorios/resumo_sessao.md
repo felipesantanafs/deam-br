@@ -121,6 +121,43 @@
 
 ---
 
+## Dashboard Streamlit — Migração para Escopo Nacional (Brasil)
+
+O app foi **inteiramente reescrito** do escopo São Paulo (bairros/DDMs/microdados) para o
+escopo nacional (painel municipal DEAM). Páginas SP sem dado nacional foram removidas
+(Mapa de Bairros, Mapa de Calor, Perfil de Vítimas, Delegacias&Bairros). Nova estrutura:
+
+| Página | Conteúdo | Fonte |
+|--------|----------|-------|
+| `Home.py` | Panorama nacional, KPIs, cadeia causal | painel |
+| `1_📊_Funil_da_Violencia.py` | Cascata notificações→tipos→feminicídios | painel |
+| `2_📈_Series_Temporais.py` | Taxas /100k por grupo/região/UF | painel |
+| `3_🗺️_Panorama_Territorial.py` | Choropleth por UF, treemap, ranking | painel + `assets/brasil_uf.geojson` |
+| `4_🏛️_Adocao_DEAMs_24h.py` | Coortes da adoção escalonada + swimmer | painel |
+| `5_⏰_Sazonalidade_Horario.py` | Hora/dia/mês, antes×depois 24h (mecanismo) | `saz_*.csv` |
+| `6_⚖️_Tratado_vs_Controle.py` | Comparação descritiva, event-time, gap | painel |
+| `7_🔬_Modelo_Causal.py` | CS DiD nacional (ATT, event study, discussão) | `causal_results.json` |
+
+### Mudanças técnicas
+- `utils/data_loader.py`: removidos loaders SP (`load_sinan_cnes`, `load_sim`, `load_funil`);
+  adicionados loaders de sazonalidade, causal, geojson e helpers (`serie_nacional_anual`,
+  `referencia_municipios`) + paletas de domínio (REGIAO/GRUPO/PERIODO_COLORS).
+- Corrigido bug pré-existente de CSS (chaves duplas `{{}}` em string não-f) no Home.
+- `codes/analise_dados/agregar_sazonalidade.py` **(novo)**: pré-agrega os 306 MB do SINAN em
+  `saz_hora.csv`, `saz_mes.csv`, `saz_dow.csv`, `saz_resumo.csv` por (grupo, periodo, dimensão).
+  Período = "Antes 24h" / "Depois 24h" (tratados, relativo à coorte) / "Comercial" (controle).
+  Hora de **ocorrência** preenchida em ~53% dos registros; distribuições normalizadas (% intra-grupo).
+- `assets/brasil_uf.geojson` **(novo)**: GeoJSON dos 27 estados (chave `properties.sigla`).
+- Validação: todas as 8 páginas passam no `streamlit.testing.v1.AppTest` sem exceções.
+- **plotly** estava em `requirements.txt` mas não instalado no Python do sistema — instalado.
+
+### Achado de mecanismo (sazonalidade)
+% de notificações fora do horário comercial (08–17h): Antes 24h = 57,1% · Depois 24h = 55,9% ·
+Comercial = 57,6%. A hora do SINAN é a do **fato** (não do registro), então o gráfico é
+evidência de mecanismo complementar à estimação causal, não prova direta de acesso.
+
+---
+
 ## Pendências / Próximos Passos Sugeridos
 
 - [ ] Reestimar com `estimation_method='dr'` e covariáveis socioeconômicas

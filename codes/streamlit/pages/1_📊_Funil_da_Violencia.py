@@ -1,157 +1,151 @@
 """
-📊 Página 1 — Funil da Violência
-Cascata da violência: Ameaça → Lesão → Notificações → Feminicídios
+📊 Página 1 — Funil da Violência (Nacional)
+Cascata: Notificações → tipos de violência → Feminicídios, nos municípios com DEAM.
 """
-import streamlit as st
+import os
+import sys
+
 import plotly.graph_objects as go
-import pandas as pd
-import sys, os
+import streamlit as st
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-from utils.data_loader import load_funil, load_sinan_cnes, load_sim
-from utils.charts import apply_theme, COLORS, PALETTE, metric_card_css, render_metric, section_header
+from utils.data_loader import load_painel_deam, serie_nacional_anual
+from utils.charts import apply_theme, COLORS, metric_card_css, render_metric, section_header
 
-st.set_page_config(page_title="Funil da Violência | DDM", page_icon="📊", layout="wide")
-
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-</style>
-""", unsafe_allow_html=True)
+st.set_page_config(page_title="Funil da Violência | DEAM 24h", page_icon="📊", layout="wide")
 st.markdown(metric_card_css(), unsafe_allow_html=True)
 
-st.markdown("# 📊 Funil da Violência")
-st.markdown("*Análise consolidada da cascata: Ameaças e Violência Física (Base 🏥 SINAN) ➔ Feminicídios (Base ⚰️ SIM/DataSUS) — São Paulo, 2015–2019*")
+st.markdown("# 📊 Funil da Violência contra a Mulher")
+st.markdown("*Cascata da violência nos municípios com DEAM — Notificações (🏥 SINAN) ➔ tipos ➔ Feminicídios (⚰️ SIM) · Brasil, 2009–2019*")
 st.markdown("---")
 
-# ─── Carregar dados ──────────────────────────────────────────────────
-funil = load_funil()
+painel = load_painel_deam()
+serie = serie_nacional_anual()
 
-# ─── KPIs ─────────────────────────────────────────────────────────────
-c1, c2, c3, c4 = st.columns(4)
+
+def br(n: float) -> str:
+    return f"{n:,.0f}".replace(",", ".")
+
+
+# ─── KPIs agregados do período ───────────────────────────────────────
+tot_notif = int(painel['notificacoes'].sum())
+tot_fisica = int(painel['viol_fisica'].sum())
+tot_psico = int(painel['viol_psicologica'].sum())
+tot_sexual = int(painel['viol_sexual'].sum())
+tot_parceiro = int(painel['viol_parceiro'].sum())
+tot_fem = int(painel['feminicidios'].sum())
+
+c1, c2, c3, c4, c5 = st.columns(5)
 with c1:
-    total_notif = int(funil['total_notificacoes'].sum())
-    st.markdown(render_metric("Total Notificações", f"{total_notif:,.0f}".replace(",", "."), "2015–2019"), unsafe_allow_html=True)
+    st.markdown(render_metric("Notificações", br(tot_notif), "Total SINAN"), unsafe_allow_html=True)
 with c2:
-    total_lesoes = int(funil['total_lesoes'].sum())
-    st.markdown(render_metric("Violência Física", f"{total_lesoes:,.0f}".replace(",", "."), f"{total_lesoes/total_notif*100:.0f}% do total"), unsafe_allow_html=True)
+    st.markdown(render_metric("Violência Física", br(tot_fisica), f"{tot_fisica/tot_notif*100:.0f}% das notif."), unsafe_allow_html=True)
 with c3:
-    total_ameacas = int(funil['total_ameacas'].sum())
-    st.markdown(render_metric("Ameaças", f"{total_ameacas:,.0f}".replace(",", "."), f"{total_ameacas/total_notif*100:.0f}% do total"), unsafe_allow_html=True)
+    st.markdown(render_metric("Por Parceiro Íntimo", br(tot_parceiro), f"{tot_parceiro/tot_notif*100:.0f}% das notif."), unsafe_allow_html=True)
 with c4:
-    total_fem = int(funil['total_feminicidios'].sum())
-    st.markdown(render_metric("Feminicídios", f"{total_fem}", "SIM/DataSUS", "down"), unsafe_allow_html=True)
+    st.markdown(render_metric("Violência Sexual", br(tot_sexual), f"{tot_sexual/tot_notif*100:.0f}% das notif."), unsafe_allow_html=True)
+with c5:
+    st.markdown(render_metric("Feminicídios", br(tot_fem), "SIM/DataSUS", "down"), unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ─── Gráfico 1: Funil Temporal (Escala Log) ──────────────────────────
+# ─── Funil agregado (cascata) ────────────────────────────────────────
+st.markdown(section_header("🔻 Funil Agregado do Período (2009–2019)"), unsafe_allow_html=True)
+
+col_funil, col_txt = st.columns([3, 2])
+with col_funil:
+    etapas = ["Notificações (todas)", "Violência psicológica", "Violência física",
+              "Por parceiro íntimo", "Violência sexual", "Feminicídios"]
+    valores = [tot_notif, tot_psico, tot_fisica, tot_parceiro, tot_sexual, tot_fem]
+    fig = go.Figure(go.Funnel(
+        y=etapas, x=valores,
+        textposition="inside",
+        textinfo="value+percent initial",
+        marker=dict(color=[COLORS['accent'], COLORS['secondary'], COLORS['warning'],
+                           COLORS['highlight'], COLORS['primary'], COLORS['danger']]),
+        connector=dict(line=dict(color=COLORS['grid'], width=1)),
+    ))
+    fig.update_layout(title="Da notificação ao desfecho fatal")
+    apply_theme(fig, height=460, show_legend=False)
+    st.plotly_chart(fig, use_container_width=True)
+
+with col_txt:
+    st.markdown("""
+    O funil mostra a **estrutura da violência registrada** nos municípios com DEAM.
+    As categorias de notificação **não são mutuamente exclusivas** (uma mesma vítima
+    pode sofrer violência física e psicológica), por isso somam mais que o total em
+    alguns recortes — o objetivo é dimensionar cada tipo, não particioná-los.
+
+    O **feminicídio** (SIM) é o desfecho extremo e raro: para cada óbito há centenas
+    de notificações. É justamente nessa distância que opera a hipótese do estudo —
+    ampliar o acesso (topo do funil) para interromper a escalada antes do óbito (base).
+    """)
+    razao = tot_notif / tot_fem if tot_fem else 0
+    st.markdown(f"""
+    <div class="insight-box">
+        📌 Razão <strong>notificações : feminicídios</strong> ≈
+        <strong>{razao:,.0f} : 1</strong>.
+    </div>
+    """.replace(",", "."), unsafe_allow_html=True)
+
+# ─── Evolução temporal do funil ──────────────────────────────────────
 st.markdown(section_header("📈 Evolução Temporal do Funil"), unsafe_allow_html=True)
 
 col_chart, col_table = st.columns([3, 1])
-
 with col_chart:
-    fig = go.Figure()
-
-    fig.add_trace(go.Scatter(
-        x=funil['ano'], y=funil['total_notificacoes'],
-        name='Notificações SINAN',
-        mode='lines+markers',
-        line=dict(color=COLORS['accent'], width=3),
-        marker=dict(size=10, symbol='circle'),
-        fill='tonexty' if False else None,
-        hovertemplate='<b>%{x}</b><br>Notificações: %{y:,.0f}<extra></extra>',
-    ))
-    fig.add_trace(go.Scatter(
-        x=funil['ano'], y=funil['total_lesoes'],
-        name='Violência Física',
-        mode='lines+markers',
-        line=dict(color=COLORS['warning'], width=3),
-        marker=dict(size=10, symbol='diamond'),
-        hovertemplate='<b>%{x}</b><br>Violência Física: %{y:,.0f}<extra></extra>',
-    ))
-    fig.add_trace(go.Scatter(
-        x=funil['ano'], y=funil['total_ameacas'],
-        name='Ameaças',
-        mode='lines+markers',
-        line=dict(color=COLORS['highlight'], width=3),
-        marker=dict(size=10, symbol='square'),
-        hovertemplate='<b>%{x}</b><br>Ameaças: %{y:,.0f}<extra></extra>',
-    ))
-    fig.add_trace(go.Scatter(
-        x=funil['ano'], y=funil['total_feminicidios'],
-        name='Feminicídios (SIM)',
-        mode='lines+markers',
-        line=dict(color=COLORS['danger'], width=3, dash='dash'),
-        marker=dict(size=12, symbol='x', line=dict(width=2)),
-        hovertemplate='<b>%{x}</b><br>Feminicídios: %{y:,.0f}<extra></extra>',
-    ))
-
-    fig.update_layout(yaxis_type="log")
-    fig.update_layout(
-        title="Evolução do Funil da Violência (escala logarítmica)",
-        xaxis_title="Ano",
-        yaxis_title="Nº de Registros (log)",
-    )
-    apply_theme(fig, height=480)
-    st.plotly_chart(fig, use_container_width=True)
+    fig2 = go.Figure()
+    confs = [
+        ('notificacoes', 'Notificações', COLORS['accent'], 'circle'),
+        ('viol_fisica', 'Violência Física', COLORS['warning'], 'diamond'),
+        ('viol_parceiro', 'Por Parceiro', COLORS['highlight'], 'square'),
+        ('feminicidios', 'Feminicídios', COLORS['danger'], 'x'),
+    ]
+    for col, name, color, sym in confs:
+        fig2.add_trace(go.Scatter(
+            x=serie['ano'], y=serie[col], name=name, mode='lines+markers',
+            line=dict(color=color, width=3, dash='dash' if col == 'feminicidios' else None),
+            marker=dict(size=9, symbol=sym),
+            hovertemplate=f'<b>%{{x}}</b><br>{name}: %{{y:,.0f}}<extra></extra>',
+        ))
+    fig2.update_layout(title="Evolução do funil (escala logarítmica)",
+                       xaxis_title="Ano", yaxis_title="Nº de registros (log)", yaxis_type="log")
+    apply_theme(fig2, height=460)
+    st.plotly_chart(fig2, use_container_width=True)
 
 with col_table:
-    st.markdown("#### Dados")
-    display_df = funil.copy()
-    display_df.columns = ['Ano', 'Ameaças (SINAN)', 'V. Física (SINAN)', 'Notificações (SINAN)', 'Feminicídios (SIM)']
-    display_df['Ano'] = display_df['Ano'].astype(int)
-    for col in ['Ameaças (SINAN)', 'V. Física (SINAN)', 'Notificações (SINAN)']:
-        display_df[col] = display_df[col].astype(int)
-    st.dataframe(display_df, hide_index=True, use_container_width=True)
+    st.markdown("#### Dados anuais")
+    disp = serie[['ano', 'notificacoes', 'viol_fisica', 'feminicidios']].copy()
+    disp.columns = ['Ano', 'Notif.', 'V. Física', 'Femin.']
+    disp['Ano'] = disp['Ano'].astype(int)
+    st.dataframe(disp, hide_index=True, use_container_width=True, height=430)
 
-# ─── Gráfico 2: Variação Percentual YoY ──────────────────────────────
-st.markdown(section_header("📊 Variação Percentual Ano-a-Ano"), unsafe_allow_html=True)
-
-funil_pct = funil.copy()
-for col in ['total_ameacas', 'total_lesoes', 'total_notificacoes', 'total_feminicidios']:
-    funil_pct[f'{col}_pct'] = funil_pct[col].pct_change() * 100
-
-funil_pct = funil_pct.dropna(subset=['total_ameacas_pct'])
-
-fig2 = go.Figure()
-configs = [
-    ('total_notificacoes_pct', 'Notificações', COLORS['accent']),
-    ('total_lesoes_pct', 'Violência Física', COLORS['warning']),
-    ('total_ameacas_pct', 'Ameaças', COLORS['highlight']),
-    ('total_feminicidios_pct', 'Feminicídios', COLORS['danger']),
+# ─── Composição por tipo (área empilhada) ────────────────────────────
+st.markdown(section_header("🧩 Composição das Notificações por Tipo"), unsafe_allow_html=True)
+tipos = [
+    ('viol_fisica', 'Física', COLORS['warning']),
+    ('viol_psicologica', 'Psicológica', COLORS['secondary']),
+    ('viol_sexual', 'Sexual', COLORS['danger']),
+    ('viol_parceiro', 'Por parceiro íntimo', COLORS['highlight']),
 ]
-for col, name, color in configs:
-    fig2.add_trace(go.Bar(
-        x=funil_pct['ano'].astype(int).astype(str),
-        y=funil_pct[col],
-        name=name,
-        marker_color=color,
-        hovertemplate=f'<b>{name}</b><br>Ano: %{{x}}<br>Variação: %{{y:+.1f}}%<extra></extra>',
-        opacity=0.85,
+fig3 = go.Figure()
+for col, name, color in tipos:
+    fig3.add_trace(go.Scatter(
+        x=serie['ano'], y=serie[col], name=name, mode='lines',
+        stackgroup='one', line=dict(width=0.5, color=color),
+        hovertemplate=f'<b>%{{x}}</b><br>{name}: %{{y:,.0f}}<extra></extra>',
     ))
+fig3.update_layout(title="Tipos de violência notificada ao longo do tempo (contagens)",
+                   xaxis_title="Ano", yaxis_title="Nº de notificações")
+apply_theme(fig3, height=420)
+st.plotly_chart(fig3, use_container_width=True)
 
-fig2.update_layout(
-    title="Variação Percentual Anual (%)",
-    xaxis_title="Ano",
-    yaxis_title="Variação (%)",
-    barmode='group',
-)
-fig2.add_hline(y=0, line_dash="dash", line_color=COLORS['text_dim'], line_width=1)
-apply_theme(fig2, height=420)
-st.plotly_chart(fig2, use_container_width=True)
-
-# ─── Insight ──────────────────────────────────────────────────────────
 st.markdown("""
 <div class="insight-box">
-    💡 <strong>Leitura do Funil</strong>: O crescimento contínuo das notificações (+357% de 2015 a 2019)
-    combinado com a queda dos feminicídios (−69%) é consistente com a hipótese de que
+    💡 <strong>Leitura do funil</strong>: o crescimento sustentado das notificações, com o
+    feminicídio mantendo-se em patamar muito inferior, é consistente com a hipótese de que
     o aumento de registros reflete <strong>redução da subnotificação</strong> (cifra oculta),
-    não aumento real da violência. A ampliação do acesso institucional parece estar associada
-    a uma maior proteção efetiva das vítimas.
-    <br><br>
-    ⚠️ <strong>Nota sobre a Variação YoY de 2016</strong>: O pico de variação percentual observado em 2016 
-    (ex. +129% em notificações) decorre principalmente do <strong>acoplamento da geolocalização via CNES</strong> 
-    e de uma expressiva melhora no fluxo de registro das notificações integradas a partir daquele ano. Trata-se, portanto, 
-    de uma variação administrativa de aprimoramento dos cadastros (redução da subnotificação), e não de um aumento epidemiológico real na ocorrência de violências na cidade.
+    não aumento real da violência. As páginas <em>Tratado vs Controle</em> e
+    <em>Modelo Causal</em> testam se a conversão para o plantão 24h acelera esse acesso e
+    protege a vida.
 </div>
 """, unsafe_allow_html=True)
