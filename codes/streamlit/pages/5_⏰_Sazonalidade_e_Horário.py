@@ -105,9 +105,7 @@ with col_bar:
     figc.add_vrect(x0=7.5, x1=17.5, fillcolor=COR_DENTRO, opacity=0.08, line_width=0,
                    annotation_text="Horário comercial", annotation_position="top",
                    annotation_font_color=COLORS['text_dim'])
-    figc.add_vrect(x0=17.5, x1=23.5, fillcolor=COR_FORA, opacity=0.06, line_width=0,
-                   annotation_text="Fora do expediente", annotation_position="top left",
-                   annotation_font_color=COLORS['text_dim'])
+    figc.add_vrect(x0=17.5, x1=23.5, fillcolor=COR_FORA, opacity=0.06, line_width=0)
     figc.update_layout(title="Nº de ocorrências por hora do dia",
                        xaxis=dict(title="Hora do dia", dtick=1, range=[-0.5, 23.5]),
                        yaxis_title="Nº de ocorrências")
