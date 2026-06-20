@@ -70,7 +70,14 @@ OUTCOMES = {
 # (~simétrica) para parear cidades por tamanho sem que megacidades dominem o pscore.
 # log_pib_per_capita: desenvolvimento econômico do município, também em LOG (mesma
 # assimetria). Pareia tratados e controles por nível de renda além do porte.
-COVARIATES: list[str] = ["taxa_homicidios_masc", "log_populacao", "log_pib_per_capita"]
+# delta_homicidios_masc: VARIAÇÃO recente (2 anos) da taxa de homicídios masculinos.
+# Pareia municípios por SURTO recente de violência letal — controla a adoção reativa
+# (tendência pré-tratamento) que as covariáveis de nível não absorviam. É a única
+# covariável que restaurou as tendências paralelas do feminicídio (pré-tend. p 0,05 ->
+# 0,21); ao fazê-lo, revela que o efeito sobre letalidade é frágil/não-significativo
+# (parte do efeito "positivo" era o pico reativo mal atribuído à política).
+COVARIATES: list[str] = ["taxa_homicidios_masc", "log_populacao",
+                         "log_pib_per_capita", "delta_homicidios_masc"]
 EST_METHOD = "dr" if COVARIATES else "reg"
 
 N_BOOTSTRAP = 999

@@ -206,6 +206,19 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
     pib = pd.read_csv(PATH_PIB)[["id_municipio", "ano", "pib_per_capita", "log_pib_per_capita"]]
     painel = painel.merge(pib, on=["id_municipio", "ano"], how="left")
 
+    # Variação móvel (2 anos) da taxa de homicídios masculinos: covariável de SURTO
+    # recente de violência letal (taxa_t - taxa_{t-2}). Captura a adoção REATIVA —
+    # cidades abrem DEAM 24h após um surto de violência —, uma tendência pré-tratamento
+    # que covariáveis de nível não absorvem. Como o CS condiciona no base period g-1,
+    # equivale à variação de t=-3 a t=-1 antes da adoção. Nulo em 2009-2010 (sem
+    # defasagens suficientes); as coortes 2009/2011 têm contribuição condicional
+    # enfraquecida — para fechar a janela, reextrair homicídios de 2007-2008.
+    painel = painel.sort_values(["id_municipio", "ano"])
+    painel["delta_homicidios_masc"] = (
+        painel["taxa_homicidios_masc"]
+        - painel.groupby("id_municipio")["taxa_homicidios_masc"].shift(2)
+    ).round(4)
+
     # Variáveis de tratamento (staggered adoption)
     painel["tratado"] = (painel["grupo"] == "24h").astype(int)
     painel["pos_tratamento"] = (
@@ -224,7 +237,7 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
         "taxa_feminicidios", "taxa_notificacoes",
         "taxa_viol_fisica", "taxa_viol_sexual",
         "taxa_viol_psicologica", "taxa_viol_parceiro",
-        "taxa_homicidios_gerais", "taxa_homicidios_masc",
+        "taxa_homicidios_gerais", "taxa_homicidios_masc", "delta_homicidios_masc",
     ]
     return painel[cols].sort_values(["id_municipio", "ano"]).reset_index(drop=True)
 
