@@ -26,8 +26,9 @@ PATH_24H   = ROOT / "dados/info_delegacias/dados_deams_24h_com_id.xlsx"
 PATH_COM   = ROOT / "dados/info_delegacias/dados_deams_comercial_com_id.xlsx"
 PATH_IBGE  = ROOT / "dados/ibge/municipios_br.csv"
 PATH_POP   = ROOT / "dados/ibge/populacao_municipios.csv"
-PATH_SIM   = ROOT / "dados/sim/sim_feminicidios_br_detalhada.csv"
-PATH_SINAN = ROOT / "dados/sinan/sinan_violencia_br_detalhada.csv"
+PATH_SIM      = ROOT / "dados/sim/sim_feminicidios_br_detalhada.csv"
+PATH_SINAN    = ROOT / "dados/sinan/sinan_violencia_br_detalhada.csv"
+PATH_HOM_GER  = ROOT / "dados/consolidado/homicidios_gerais_anual.csv"
 
 OUT_DIR = ROOT / "dados/consolidado"
 
@@ -150,6 +151,16 @@ def agregar_sinan(ids_deam: set[int]) -> pd.DataFrame:
     return out
 
 
+def carregar_homicidios_gerais() -> pd.DataFrame:
+    """Carrega covariável de homicídios gerais pré-agregada (extract_sim_homicidios_gerais.py)."""
+    if not PATH_HOM_GER.exists():
+        raise FileNotFoundError(
+            f"{PATH_HOM_GER} não encontrado. "
+            "Execute codes/extracao_filtragem/sim_sinan/extract_sim_homicidios_gerais.py primeiro."
+        )
+    return pd.read_csv(PATH_HOM_GER)
+
+
 def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> pd.DataFrame:
     """
     Painel balanceado: produto cartesiano (município DEAM × ano) com os agregados
@@ -161,15 +172,27 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
     painel = painel.merge(sim, on=["id_municipio", "ano"], how="left")
     painel = painel.merge(sinan, on=["id_municipio", "ano"], how="left")
 
+    hom = carregar_homicidios_gerais()[
+        ["id_municipio", "ano", "homicidios_gerais", "taxa_homicidios_gerais",
+         "homicidios_masc", "taxa_homicidios_masc"]
+    ]
+    painel = painel.merge(hom, on=["id_municipio", "ano"], how="left")
+
     metricas = ["feminicidios", "notificacoes", "viol_fisica",
-                "viol_sexual", "viol_psicologica", "viol_parceiro"]
+                "viol_sexual", "viol_psicologica", "viol_parceiro",
+                "homicidios_gerais", "homicidios_masc"]
     painel[metricas] = painel[metricas].fillna(0).astype(int)
 
     # População municipal anual (estimativas IBGE/SIDRA) e taxas por 100 mil habitantes
     pop = pd.read_csv(PATH_POP)
     painel = painel.merge(pop, on=["id_municipio", "ano"], how="left")
-    for m in metricas:
+    # taxas de homicídio já vêm calculadas do script de extração; recalcula as demais
+    metricas_taxa = ["feminicidios", "notificacoes", "viol_fisica",
+                     "viol_sexual", "viol_psicologica", "viol_parceiro"]
+    for m in metricas_taxa:
         painel[f"taxa_{m}"] = (painel[m] / painel["populacao"] * 100_000).round(4)
+    painel["taxa_homicidios_gerais"] = painel["taxa_homicidios_gerais"].fillna(0).round(4)
+    painel["taxa_homicidios_masc"] = painel["taxa_homicidios_masc"].fillna(0).round(4)
 
     # Variáveis de tratamento (staggered adoption)
     painel["tratado"] = (painel["grupo"] == "24h").astype(int)
@@ -184,9 +207,11 @@ def montar_painel(ref: pd.DataFrame, sim: pd.DataFrame, sinan: pd.DataFrame) -> 
         "tratado", "pos_tratamento", "tratamento_ativo",
         "feminicidios", "notificacoes",
         "viol_fisica", "viol_sexual", "viol_psicologica", "viol_parceiro",
+        "homicidios_gerais", "homicidios_masc",
         "taxa_feminicidios", "taxa_notificacoes",
         "taxa_viol_fisica", "taxa_viol_sexual",
         "taxa_viol_psicologica", "taxa_viol_parceiro",
+        "taxa_homicidios_gerais", "taxa_homicidios_masc",
     ]
     return painel[cols].sort_values(["id_municipio", "ano"]).reset_index(drop=True)
 

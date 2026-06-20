@@ -54,9 +54,18 @@ OUTCOMES = {
     "feminicidios": {"col": "taxa_feminicidios", "label": "Letalidade (SIM) /100k",  "esperado": "baixa"},
 }
 
-# Covariáveis para identificação condicional (doubly-robust). Vazio enquanto o
-# painel não tiver dados socioeconômicos. Ao preencher, troque EST_METHOD para 'dr'.
-COVARIATES: list[str] = []
+# Covariável de violência basal: taxa de homicídios MASCULINOS /100k.
+# Proxy de violência estrutural ambiente (crime organizado, tráfico, letalidade
+# policial) que motiva a adoção reativa da DEAM 24h, sem ser plausivelmente afetada
+# por ela. Usamos o recorte masculino (não "geral") porque o outcome de letalidade
+# (taxa_feminicidios) é o subconjunto feminino dos mesmos CIDs X85-Y09: condicionar
+# em homicídios gerais controlaria parcialmente pelo próprio outcome (containment).
+#
+# Embora a coluna seja anual (time-varying), o CS da lib `diff_diff` recupera a
+# covariável no BASE PERIOD de cada coorte (g-1), nunca no valor pós-tratamento
+# (staggered.py:730) — funciona como baseline pré-tratamento cohort-specific, sem
+# risco de bad control. A coorte 2009 (sem g-1 no painel) é descartada pelo estimador.
+COVARIATES: list[str] = ["taxa_homicidios_masc"]
 EST_METHOD = "dr" if COVARIATES else "reg"
 
 N_BOOTSTRAP = 999
