@@ -5,6 +5,7 @@ Cascata: Notificações → tipos de violência → Feminicídios, nos municípi
 import os
 import sys
 
+import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
@@ -49,44 +50,55 @@ with c5:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ─── Funil agregado (cascata) ────────────────────────────────────────
-st.markdown(section_header("🔻 Funil Agregado do Período (2009–2019)"), unsafe_allow_html=True)
+# ─── Funil agregado (barras horizontais legíveis) ────────────────────
+st.markdown(section_header("🔻 Estrutura da Violência no Período (2009–2019)"), unsafe_allow_html=True)
 
-col_funil, col_txt = st.columns([3, 2])
-with col_funil:
-    etapas = ["Notificações (todas)", "Violência psicológica", "Violência física",
-              "Por parceiro íntimo", "Violência sexual", "Feminicídios"]
-    valores = [tot_notif, tot_psico, tot_fisica, tot_parceiro, tot_sexual, tot_fem]
-    fig = go.Figure(go.Funnel(
-        y=etapas, x=valores,
-        textposition="inside",
-        textinfo="value+percent initial",
-        marker=dict(color=[COLORS['accent'], COLORS['secondary'], COLORS['warning'],
-                           COLORS['highlight'], COLORS['primary'], COLORS['danger']]),
-        connector=dict(line=dict(color=COLORS['grid'], width=1)),
+etapas = ["Notificações (todas)", "Violência psicológica", "Violência física",
+          "Por parceiro íntimo", "Violência sexual", "Feminicídios"]
+valores = [tot_notif, tot_psico, tot_fisica, tot_parceiro, tot_sexual, tot_fem]
+cores = [COLORS['accent'], COLORS['secondary'], COLORS['warning'],
+         COLORS['highlight'], COLORS['primary'], COLORS['danger']]
+pcts = [v / tot_notif * 100 for v in valores]
+rotulos = [f"  {br(v)} ({p:.1f}%)" for v, p in zip(valores, pcts)]
+razao = tot_notif / tot_fem if tot_fem else 0
+
+col_bar, col_txt = st.columns([3, 2])
+with col_bar:
+    figb = go.Figure(go.Bar(
+        x=valores[::-1], y=etapas[::-1], orientation='h',
+        marker=dict(color=cores[::-1], line=dict(color=COLORS['bg_dark'], width=1)),
+        text=rotulos[::-1], textposition='outside',
+        textfont=dict(size=13, color=COLORS['text']),
+        cliponaxis=False,
+        hovertemplate='<b>%{y}</b><br>%{x:,.0f} registros<extra></extra>',
     ))
-    fig.update_layout(title="Da notificação ao desfecho fatal")
-    apply_theme(fig, height=460, show_legend=False)
-    st.plotly_chart(fig, use_container_width=True)
+    figb.update_layout(title="Da notificação ao desfecho fatal (contagem 2009–2019)",
+                       xaxis_title="Nº de registros", yaxis_title="")
+    figb.update_xaxes(range=[0, tot_notif * 1.20])
+    apply_theme(figb, height=460, show_legend=False)
+    st.plotly_chart(figb, use_container_width=True)
 
 with col_txt:
-    st.markdown("""
-    O funil mostra a **estrutura da violência registrada** nos municípios com DEAM.
-    As categorias de notificação **não são mutuamente exclusivas** (uma mesma vítima
-    pode sofrer violência física e psicológica), por isso somam mais que o total em
-    alguns recortes — o objetivo é dimensionar cada tipo, não particioná-los.
+    st.markdown("##### 🧾 Resumo do Funil")
+    resumo_df = pd.DataFrame({
+        "Etapa": etapas,
+        "Registros": [br(v) for v in valores],
+        "% das notif.": [f"{p:.1f}%" for p in pcts],
+    })
+    st.dataframe(resumo_df, hide_index=True, use_container_width=True)
 
-    O **feminicídio** (SIM) é o desfecho extremo e raro: para cada óbito há centenas
-    de notificações. É justamente nessa distância que opera a hipótese do estudo —
-    ampliar o acesso (topo do funil) para interromper a escalada antes do óbito (base).
-    """)
-    razao = tot_notif / tot_fem if tot_fem else 0
     st.markdown(f"""
     <div class="insight-box">
-        📌 Razão <strong>notificações : feminicídios</strong> ≈
-        <strong>{razao:,.0f} : 1</strong>.
+        📌 <strong>Interpretação imediata</strong>: para cada
+        <strong>feminicídio</strong> há cerca de <strong>{razao:,.0f} notificações</strong>
+        de violência registradas. Essa enorme distância entre o topo (acesso) e a base
+        (letalidade) é o espaço em que a política atua: ampliar o registro tempestivo para
+        interromper a escalada antes do óbito.
     </div>
     """.replace(",", "."), unsafe_allow_html=True)
+
+    st.caption("As categorias de notificação não são mutuamente exclusivas (uma vítima pode "
+               "sofrer mais de um tipo), por isso o objetivo é dimensionar cada tipo, não particioná-los.")
 
 # ─── Evolução temporal do funil ──────────────────────────────────────
 st.markdown(section_header("📈 Evolução Temporal do Funil"), unsafe_allow_html=True)
