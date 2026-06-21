@@ -286,7 +286,7 @@ O projeto conta com um painel analítico desenvolvido no Streamlit com identidad
 |---|--------|----------|
 | 1 | 📊 Funil da Violência | Evolução nacional de ameaças, lesões e feminicídios |
 | 2 | 📈 Séries Temporais | Tendências anuais por UF e grupo de tratamento |
-| 3 | 🗺️ Panorama Territorial | Mapa coroplético de incidência por município |
+| 3 | 🗺️ Panorama Territorial | Mapa de incidência por município |
 | 4 | 🏛️ Adoção das DEAMs 24h | Adoção escalonada e coortes de tratamento |
 | 5 | ⏰ Sazonalidade e Horário | Distribuição horária e semanal das notificações (SINAN) |
 | 6 | ⚖️ Tratado vs Controle | Comparativo de tendências pré/pós tratamento |
