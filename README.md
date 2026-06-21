@@ -209,9 +209,6 @@ deam-br/
         ├── feminicidios_event_study.csv
         └── feminicidios_efeitos_coorte.csv
 ```
-
-> **Nota:** Dados da SSP (Secretaria de Segurança Pública de SP), CNES bruto e SINAN bruto filtrado por SP foram removidos/ignorados por incompatibilidade com o escopo nacional. Microdados pesados do SIM e SINAN (`*_detalhada.csv`) estão listados no `.gitignore` e não são versionados.
-
 ---
 
 ## 📊 Dados
