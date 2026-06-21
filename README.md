@@ -5,7 +5,7 @@
 **Violência contra Mulheres no Brasil:**
 *Diagnóstico Espaço-Temporal e Avaliação de Impacto das DEAMs em Escala Nacional*
 
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)]()
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)]()
 [![Basedosdados](https://img.shields.io/badge/Base_dos_Dados-BigQuery-150458?style=for-the-badge)]()
 
@@ -93,14 +93,13 @@ flowchart LR
 - **Sazonalidade:** Gráficos temporais cruzando horários e dias da semana.
 
 ### Etapa 2 — Avaliação de Impacto Causal
-- **Método:** Modelo empírico em duas camadas:
-  1. **Efeito Global:** Diferenças-em-Diferenças em painel comparando municípios com presença de DEAM vs. municípios sem DEAM, usando **Propensity Score Matching (PSM)** para parear controles socioeconômicos.
-  2. **Efeito 24h:** Estimador de **Callaway & Sant'Anna (2021) / CS DiD** para corrigir o viés de Goodman-Bacon em tratamentos escalonados no tempo, comparando os municípios cujas DEAMs foram convertidas para 24h com municípios-controle "limpos".
-- **Heterogeneidade:** O modelo integra a **Dummy Racial Global** para mensurar impactos assimétricos sobre populações de mulheres negras (Preta+Parda).
+- **Método:** Estimador de **Callaway & Sant'Anna (2021) / CS DiD** para corrigir o viés de Goodman-Bacon em tratamentos escalonados no tempo, com estimação **duplamente robusta** (DR — regressão de resultado + escore de propensão).
+- **Covariáveis:** taxa de homicídios masculinos /100k, log da população, log do PIB per capita e variação recente de homicídios masculinos (`delta`) — esta última corrige a **adoção reativa** (municípios que convertem a DEAM após pico de violência), restaurando as tendências paralelas do feminicídio.
+- **Achado principal:** após corrigir as tendências paralelas, o efeito sobre a **letalidade não é estatisticamente significativo** (ATT = +0,48/100k, IC inclui zero). O efeito "positivo" anterior era causalidade reversa, não efeito da política.
 
 ### Produto Final
-- 📊 Relatório técnico para tomada de decisão (Word).
-- 🖥️ Dashboard interativo (Streamlit) com mapa do Brasil e simulador de impactos.
+- 📄 Relatório técnico completo em **LaTeX/PDF** (`relatorios/relatorios_finais/deam24h_relatorio.pdf`).
+- 🖥️ **Dashboard interativo** (Streamlit) — 7 páginas analíticas com dados nacionais 2009–2019.
 
 ---
 
@@ -147,9 +146,10 @@ deam-br/
 │   │       └── 7_🔬_Modelo_Causal.py
 │   │
 │   └── 📂 inferencia_causal/       # Estimação do modelo econométrico DiD
-│       ├── causal_model.py                 # DiD global e pareamento PSM
-│       ├── modelo_causal_brasil.py         # Estimador Callaway & Sant'Anna (CS DiD)
-│       ├── diagnostico_callaway_santanna.py # Diagnósticos: pré-tendências e forest plot
+│       ├── modelo_causal_brasil.py         # Estimador CS DiD (runner terminal — DR + covariáveis)
+│       ├── export_causal_results_json.py   # Exporta causal_results.json p/ o Streamlit (especificação DR final)
+│       ├── diagnostico_callaway_santanna.py # Suite de diagnósticos: event study, heatmap, forest, pré-tendências
+│       ├── _regen_event_studies.py         # Regenera PNGs do event study com fonte ampliada (relatório)
 │       ├── generate_notebook_brasil.py     # Geração do notebook de replicação
 │       └── modelo_causal_brasil.ipynb      # Notebook com a execução completa do modelo
 │
@@ -167,10 +167,19 @@ deam-br/
 │   │   └── dados_deams_comercial.xlsx # DEAMs com horário comercial
 │   │
 │   ├── 📂 sim/                     # Dados provenientes do SIM (Sistema de Mortalidade)
-│   │   └── sim_feminicidios_br_detalhada.csv  # Microdados detalhados de óbitos (Brasil) — ignorado pelo git
+│   │   └── sim_feminicidios_br_detalhada.csv  # Microdados detalhados de óbitos — ignorado pelo git
 │   │
-│   └── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
-│       └── sinan_violencia_br_detalhada.csv   # Microdados detalhados de violência (Brasil) — ignorado pelo git
+│   ├── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
+│   │   └── sinan_violencia_br_detalhada.csv   # Microdados detalhados de violência — ignorado pelo git
+│   │
+│   └── 📂 consolidado/             # Painel mestre e todos os outputs derivados (rastreados pelo git)
+│       ├── painel_deam_anual.csv          # Painel balanceado 285 municípios × 11 anos (32 colunas)
+│       ├── causal_results.json            # Resultados CS DiD consumidos pelo Streamlit
+│       ├── causal_panel.csv               # Painel com first_treat (usado na aba Tendências)
+│       ├── homicidios_gerais_anual.csv    # Homicídios gerais e masculinos (covariável DR)
+│       ├── feminicidios_anual.csv         # Série anual de feminicídios por município
+│       ├── notificacoes_anual.csv         # Série anual de notificações por município
+│       └── saz_{hora,mes,dow,resumo}.csv  # Séries horárias pré-agregadas (sazonalidade)
 │
 └── 📂 relatorios/                  # Relatórios, apresentações e saídas do modelo
     ├── 📂 pre_relatorio/           # Documentos textuais do projeto de pesquisa
@@ -244,24 +253,29 @@ Os scripts em Python dentro da pasta `codes/extracao_filtragem/` já possuem as 
    BILLING_ID = "seu-projeto-id-aqui"
    ```
    > **Atenção:** este arquivo está no `.gitignore` e não é enviado ao GitHub.
-3. Execute no terminal a partir da raiz do repositório:
+3. Execute no terminal a partir da raiz do repositório na ordem abaixo:
    ```bash
-   # Extração dos microdados nacionais
+   # 1. Extração dos microdados nacionais (BigQuery — requer auth GCP)
    python codes/extracao_filtragem/sim_sinan/extract_sim_bd_detalhada.py
    python codes/extracao_filtragem/sim_sinan/extract_sinan_bd_detalhada.py
+   python codes/extracao_filtragem/sim_sinan/extract_sim_homicidios_gerais.py  # covariável DR
 
-   # Processamento da base de DEAMs
+   # 2. Processamento da base de DEAMs
    python codes/extracao_filtragem/deams/limpar_dados_deams.py
    python codes/extracao_filtragem/deams/separar_deams.py
-
-   # Download e pareamento de dados IBGE (covariáveis para PSM)
-   python codes/extracao_filtragem/ibge/download_ibge.py
-   python codes/extracao_filtragem/ibge/fetch_populacao.py
    python codes/extracao_filtragem/ibge/parear_municipios_ibge.py
 
-   # Agregação do painel anual e séries de sazonalidade
+   # 3. Download de covariáveis do IBGE (sem auth GCP)
+   python codes/extracao_filtragem/ibge/fetch_populacao.py
+   python codes/extracao_filtragem/ibge/fetch_pib_percapita.py               # covariável DR
+
+   # 4. Construção do painel mestre e séries temporais
    python codes/analise_dados/agregar_painel_anual.py
    python codes/analise_dados/agregar_sazonalidade.py
+
+   # 5. Estimação causal (CS DiD duplamente robusto) e exportação de resultados
+   python codes/inferencia_causal/diagnostico_callaway_santanna.py   # figuras + relatório
+   python codes/inferencia_causal/export_causal_results_json.py      # JSON para o Streamlit
    ```
 4. Os arquivos processados e consolidados aparecerão automaticamente organizados nas respectivas subpastas da pasta `dados/`.
 
@@ -297,20 +311,19 @@ O projeto conta com um painel analítico desenvolvido no Streamlit com identidad
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Resultados
 
-- [x] Reestruturação do escopo do projeto (Foco nacional — Brasil inteiro com 339 DEAMs)
-- [x] Criação das *queries* otimizadas para extração SIM/SINAN via Base dos Dados (escopo nacional)
-- [x] Extração dos microdados SIM e SINAN detalhados (cobertura 2009–2019, Brasil)
-- [x] Raspagem e enriquecimento da base de DEAMs — 339 delegacias filtradas (município, UF, regime, ano 24h)
-- [x] Separação das DEAMs em grupos de tratamento (24h) e controle (comercial)
-- [x] Download e pareamento de covariáveis socioeconômicas do IBGE (PSM)
-- [x] Construção do Funil da Violência e EDA Espaço-Temporal
-- [x] Agregação do painel anual município-ano e séries de sazonalidade horárias/semanais
-- [x] Padronização do período de análise para 2009–2019 (SINAN + SIM)
-- [x] Estimação do modelo econométrico causal DiD em duas camadas (Global e Callaway & Sant'Anna) com moderação racial
-- [x] Diagnósticos do CS DiD: estudos de evento, heatmaps coorte-tempo e forest plot ATT
-- [x] Exportação de figuras e tabelas dos resultados causais (`figuras_causal/`, `csv_causal/`)
-- [x] Reestruturação do Dashboard Streamlit para 7 páginas focadas (Panorama Territorial, Adoção 24h, Tratado vs Controle)
-- [x] Relatório técnico completo em LaTeX/PDF (`relatorios/relatorios_finais/`)
+- [x] Reestruturação do escopo do projeto (foco nacional — 285 municípios com DEAM, 2009–2019)
+- [x] Extração dos microdados SIM e SINAN via Base dos Dados / BigQuery (cobertura nacional)
+- [x] Raspagem e enriquecimento da base de DEAMs — 38 tratados (24h) e 247 controles (comercial)
+- [x] Download de covariáveis IBGE: população municipal (SIDRA 6579) e PIB per capita (SIDRA 5938)
+- [x] Extração de homicídios masculinos (SIM, recorte masculino para evitar containment com feminicídios)
+- [x] Construção do painel balanceado município-ano com 32 variáveis (incluindo covariáveis DR)
+- [x] Agregação de séries horárias/semanais/mensais para análise de sazonalidade (mecanismo)
+- [x] Estimação CS DiD **duplamente robusta** com 4 covariáveis — especificação final validada
+- [x] Correção da adoção reativa via `delta_homicidios_masc` (restaurou tendências paralelas do feminicídio)
+- [x] Diagnósticos completos: event study, heatmap ATT(g,t), forest plot, teste de pré-tendências
+- [x] **Achado principal:** efeito sobre feminicídios não-significativo após correção (ATT +0,48, IC inclui zero); efeito "positivo" anterior era causalidade reversa
+- [x] Dashboard Streamlit com 7 páginas — resultados DR atualizados, títulos em todos os gráficos
+- [x] Relatório técnico completo em LaTeX/PDF (`relatorios/relatorios_finais/deam24h_relatorio.pdf`)
 - [x] Apresentação em LaTeX Beamer exportada para PDF e PPTX (`relatorios/apresentacao/`)
