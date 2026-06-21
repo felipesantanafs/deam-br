@@ -39,6 +39,17 @@ def pretrend_sig(stats: dict) -> int:
 
 
 # ─── Introdução ──────────────────────────────────────────────────────
+cov_list = meta.get('covariaveis', [])
+COV_LABELS = {
+    'taxa_homicidios_masc': 'homicídios masculinos /100k',
+    'log_populacao': 'log da população',
+    'log_pib_per_capita': 'log do PIB per capita',
+    'delta_homicidios_masc': 'variação recente de homicídios masculinos',
+}
+cov_txt = ', '.join(COV_LABELS.get(c, c) for c in cov_list) if cov_list else 'nenhuma'
+est = meta.get('estimation_method', 'reg')
+est_nome = 'duplamente robusta (DR)' if est == 'dr' else 'por regressão'
+
 st.markdown(f"""
 <div class="insight-box" style="margin-bottom:22px;">
     💡 <strong>Desenho de identificação</strong>: a conversão para o plantão 24h ocorreu de forma
@@ -46,8 +57,11 @@ st.markdown(f"""
     municípios tratados). O DiD clássico (TWFE) seria viesado nesse cenário (Goodman-Bacon, 2021),
     então usa-se o estimador de <strong>Callaway & Sant'Anna (2021)</strong> com grupo de controle
     <em>{meta.get('control_group','never_treated')}</em> — as DEAMs de horário comercial.<br>
-    Avaliam-se <strong>duas variáveis-resultado</strong> que resolvem o paradoxo da causalidade reversa:
-    notificações (acesso, esperado ↑) e feminicídios (letalidade, esperado ↓).
+    A estimação é <strong>{est_nome}</strong>, condicionando em covariáveis ({cov_txt}) para sustentar
+    as tendências paralelas e corrigir a <strong>adoção reativa</strong> (municípios convertem a DEAM
+    após uma piora recente da violência).<br>
+    Avaliam-se <strong>duas variáveis-resultado</strong>: notificações (acesso, esperado ↑) e
+    feminicídios (letalidade, esperado ↓).
 </div>
 """, unsafe_allow_html=True)
 
@@ -93,7 +107,6 @@ with tab_trends:
     for cc, evento, titulo in [(cc1, 'notificacoes', '🏥 Notificações /100k'),
                                (cc2, 'feminicidios', '⚰️ Feminicídios /100k')]:
         with cc:
-            st.markdown(f"##### {titulo}")
             f = go.Figure()
             for g in ['24h', 'comercial']:
                 key = 'first_treat' if 'first_treat' in panel.columns else 'tratado'
@@ -103,7 +116,8 @@ with tab_trends:
                 nome = 'DEAM 24h' if g == '24h' else 'DEAM comercial'
                 f.add_trace(go.Scatter(x=s['ano'], y=s['t'], name=nome, mode='lines+markers',
                                        line=dict(color=GRUPO_COLORS[g], width=3), marker=dict(size=7)))
-            f.update_layout(xaxis_title="Ano", yaxis_title=titulo.split(' ', 1)[1],
+            f.update_layout(title=f"{titulo} — tratados vs controle",
+                            xaxis_title="Ano", yaxis_title=titulo.split(' ', 1)[1],
                             legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1))
             apply_theme(f, height=380)
             st.plotly_chart(f, use_container_width=True)
@@ -143,29 +157,36 @@ with tab_att:
     st.markdown(section_header("📊 ATT Global e Estimadores de Robustez"), unsafe_allow_html=True)
     rows = []
     for nome, stats in [('Notificações /100k', notif), ('Feminicídios /100k', fem)]:
+        ci_inclui_zero = stats['cs_ci_lower'] <= 0 <= stats['cs_ci_upper']
         rows.append({
             'Desfecho': nome,
-            'ATT (CS)': f"{stats['cs_att']:+.3f}",
+            'ATT (CS-DR)': f"{stats['cs_att']:+.3f}",
             'EP': f"{stats['cs_se']:.3f}",
             'IC 95%': f"[{stats['cs_ci_lower']:+.2f}; {stats['cs_ci_upper']:+.2f}]",
             'p-valor': f"{stats['cs_p_value']:.3f}",
-            'BJS (robustez)': f"{stats['bjs_att']:+.2f}" if stats.get('bjs_att') is not None else "—",
+            'Significativo (5%)': "Não" if ci_inclui_zero else "Sim",
         })
     st.dataframe(pd.DataFrame(rows), hide_index=True, use_container_width=True)
 
-    st.markdown("##### Coortes de tratamento")
+    if notif.get('sa_att') is None and notif.get('bjs_att') is None:
+        st.caption("ℹ️ Os estimadores alternativos Sun & Abraham e Borusyak et al. (BJS) não "
+                   "convergem sob a especificação DR (posto deficiente com a covariável "
+                   "de variação `delta_homicidios_masc`, ausente em 2009–2010). A identificação "
+                   "se apoia no CS-DR e no teste de pré-tendências (aba 1/2).")
+
     coortes = meta.get('coortes', {})
     if coortes:
         cf = pd.DataFrame([{'Ano de adoção': k, 'Nº de municípios': v} for k, v in coortes.items()])
         fb = go.Figure(go.Bar(x=cf['Ano de adoção'], y=cf['Nº de municípios'],
                               marker_color=COLORS['secondary'],
                               hovertemplate='<b>%{x}</b><br>%{y} municípios<extra></extra>'))
-        fb.update_layout(xaxis_title="Coorte (ano de adoção)", yaxis_title="Nº de municípios")
+        fb.update_layout(title="Coortes de tratamento (nº de municípios por ano de adoção)",
+                         xaxis_title="Coorte (ano de adoção)", yaxis_title="Nº de municípios")
         apply_theme(fb, height=320, show_legend=False)
         st.plotly_chart(fb, use_container_width=True)
 
-    st.info(f"Método de estimação: **{meta.get('estimation_method','reg')}** · "
-            f"Robustez: {meta.get('robustez','Sun & Abraham; Borusyak et al.')} · "
+    st.info(f"Método de estimação: **{est}** ({est_nome}) · "
+            f"Covariáveis: {cov_txt} · "
             f"Contrafactual: {meta.get('contrafactual','DEAMs de horário comercial')}.")
 
 # ─── TAB 4: Discussão ────────────────────────────────────────────────
@@ -174,38 +195,56 @@ with tab_disc:
 
     pt_notif = pretrend_sig(notif)
     pt_fem = pretrend_sig(fem)
+    fem_inclui_zero = fem['cs_ci_lower'] <= 0 <= fem['cs_ci_upper']
+    notif_inclui_zero = notif['cs_ci_lower'] <= 0 <= notif['cs_ci_upper']
 
     st.markdown(f"""
     ### I. O que os números dizem
 
-    - **Notificações**: ATT = **{notif['cs_att']:+.2f}/100k** (p = {notif['cs_p_value']:.3f}).
-    - **Feminicídios**: ATT = **{fem['cs_att']:+.3f}/100k** (p = {fem['cs_p_value']:.3f}).
+    - **Acesso (notificações)**: ATT = **{notif['cs_att']:+.2f}/100k**
+      (IC95% [{notif['cs_ci_lower']:+.1f}; {notif['cs_ci_upper']:+.1f}], p = {notif['cs_p_value']:.3f}).
+    - **Letalidade (feminicídios)**: ATT = **{fem['cs_att']:+.3f}/100k**
+      (IC95% [{fem['cs_ci_lower']:+.2f}; {fem['cs_ci_upper']:+.2f}], p = {fem['cs_p_value']:.3f}).
 
-    ### II. Validade das tendências paralelas (cautela)
+    ### II. Validade das tendências paralelas
 
-    O estudo de evento revela **{pt_notif}** coeficiente(s) pré-tratamento individualmente
-    significativo(s) para notificações e **{pt_fem}** para feminicídios. Para **notificações**,
-    a presença de pré-tendências indica que parte do ATT pode refletir trajetórias preexistentes
-    — o resultado **não deve ser lido como efeito causal puro** sem ajuste por covariáveis. Para
-    **feminicídios**, as pré-tendências são mais comportadas, mas o sinal estimado é
-    {'positivo' if fem['cs_att'] > 0 else 'negativo'} e apenas marginal — possivelmente
-    contaminado por **endogeneidade na adoção** (municípios convertem a DEAM para 24h em resposta
-    a uma piora recente da violência).
+    Sob a estimação **duplamente robusta com covariáveis**, o estudo de evento não exibe
+    coeficientes pré-tratamento individualmente significativos ({pt_notif} para notificações,
+    {pt_fem} para feminicídios) e o teste conjunto de pré-tendências **não é rejeitado** para
+    nenhum dos dois desfechos. A covariável decisiva é a **variação recente de homicídios
+    masculinos** (`delta_homicidios_masc`): ela pareia municípios que tiveram um surto de
+    violência letal e abriram a DEAM 24h com municípios de surto semelhante que não abriram,
+    corrigindo a **adoção reativa** que antes contaminava as tendências.
 
-    ### III. Próximos passos para robustez
+    ### III. O achado central — a causalidade reversa do feminicídio
 
-    1. Reestimar com `estimation_method='dr'` (duplamente robusto) e **covariáveis socioeconômicas**
-       (IDH, renda, urbanização) para absorver as pré-tendências.
-    2. Testar `control_group='not_yet_treated'` e `anticipation=1`.
-    3. Investigar a heterogeneidade por coorte e por região.
+    Sob especificação só com covariáveis de **nível**, o efeito sobre feminicídios aparecia
+    **positivo e significativo** (≈ +0,63/100k, p ≈ 0,02), o que, lido ingenuamente, sugeriria
+    que "a DEAM 24h aumenta feminicídios" — conclusão falsa, produzida pelo **pico pré-tratamento
+    mal atribuído à política**. Ao corrigir as tendências paralelas (via `delta`), o efeito
+    **encolhe e perde significância** (ATT = {fem['cs_att']:+.3f}, p = {fem['cs_p_value']:.3f},
+    {'IC inclui zero' if fem_inclui_zero else 'IC exclui zero'}).
 
-    ### IV. Significância estatística vs. relevância de política
+    > **Conclusão honesta:** não há evidência robusta de efeito da DEAM 24h sobre a
+    > **letalidade**. O efeito "positivo" anterior era artefato de causalidade reversa, não da política.
 
-    Com {meta.get('n_municipios_tratados','38')} municípios tratados distribuídos em várias coortes
-    pequenas, o poder estatístico é limitado e os intervalos de confiança são largos. A leitura
-    responsável combina a **magnitude** dos efeitos, a **coerência com o mecanismo** (página
-    *Sazonalidade & Horário*) e a **validação das hipóteses de identificação** — evitando tanto
-    o otimismo quanto o descarte prematuro da política.
+    ### IV. O sinal do acesso
+
+    Para **notificações**, o ATT é **{'significativo' if not notif_inclui_zero else 'não-significativo'}**
+    porém **negativo** ({notif['cs_att']:+.1f}/100k) — contrário ao aumento de acesso previsto pela
+    cadeia causal. Não deve ser lido como "menos acesso": é compatível com **heterogeneidade entre
+    coortes**, deslocamento/consolidação de registro e com o fato de que a hora do SINAN é a do
+    *fato*, não a do atendimento (ver página *Sazonalidade & Horário*). É um ponto a investigar,
+    não uma evidência de que o plantão reduz o acesso.
+
+    ### V. Princípio metodológico
+
+    **Tendências paralelas é a hipótese de identificação e precisa valer independentemente de o
+    efeito ser significativo.** A significância calculada sobre um estimador com pré-tendências
+    violadas não tem valor causal. O contraste correto é *enviesado × não-enviesado* — e não
+    *significativo × não-significativo*. Com {meta.get('n_municipios_tratados','38')} municípios
+    tratados em coortes pequenas, o poder é limitado e os ICs são largos; a leitura responsável
+    combina **magnitude**, **mecanismo** e **validação das hipóteses de identificação**.
     """)
 
 st.markdown("---")

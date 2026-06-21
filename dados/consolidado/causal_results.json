@@ -4,8 +4,13 @@
         "periodo": "2009-2019",
         "hipotese": "Impacto causal da conversão de DEAMs para o regime 24h",
         "metodo_principal": "Callaway & Sant'Anna (2021) via diff-diff",
-        "estimation_method": "reg",
-        "covariaveis": [],
+        "estimation_method": "dr",
+        "covariaveis": [
+            "taxa_homicidios_masc",
+            "log_populacao",
+            "log_pib_per_capita",
+            "delta_homicidios_masc"
+        ],
         "contrafactual": "DEAMs de horário comercial (nunca convertidas para 24h)",
         "control_group": "never_treated",
         "coortes": {
@@ -23,19 +28,19 @@
         "n_municipios_tratados": 38,
         "n_municipios_controle": 247,
         "robustez": "Sun & Abraham (2021), Borusyak et al. (2024)",
-        "nota_psm": "PSM separado dispensável: CS DiD faz ajuste por escore de propensão internamente (dr/ipw). Habilitar ao anexar covariáveis."
+        "nota_covariaveis": "Estimação duplamente robusta (DR): regressão de resultado + escore de propensão sobre as covariáveis. A covariável delta_homicidios_masc corrige a adoção reativa que violava as tendências paralelas do feminicídio sob especificação só de nível."
     },
     "cs_did_24h": {
         "notificacoes": {
-            "cs_att": -20.5133,
-            "cs_se": 7.4183,
-            "cs_p_value": 0.001,
-            "cs_ci_lower": -35.3121,
-            "cs_ci_upper": -6.5781,
+            "cs_att": -18.0436,
+            "cs_se": 7.1067,
+            "cs_p_value": 0.008,
+            "cs_ci_lower": -31.7791,
+            "cs_ci_upper": -4.683,
             "sa_att": null,
             "sa_se": null,
-            "bjs_att": -26.3055,
-            "bjs_se": 8.5048,
+            "bjs_att": null,
+            "bjs_se": null,
             "event_study": {
                 "-9": {
                     "effect": -5.1002,
@@ -46,84 +51,121 @@
                     "se": 4.5039
                 },
                 "-7": {
-                    "effect": -16.9012,
-                    "se": 5.4535
+                    "effect": -10.5014,
+                    "se": 11.3397
                 },
                 "-6": {
-                    "effect": -11.5411,
-                    "se": 5.4464
+                    "effect": -9.7693,
+                    "se": 7.7901
                 },
                 "-5": {
-                    "effect": -2.1814,
-                    "se": 6.92
+                    "effect": -2.8569,
+                    "se": 8.182
                 },
                 "-4": {
-                    "effect": 5.1555,
-                    "se": 7.7846
+                    "effect": 4.1413,
+                    "se": 7.8429
                 },
                 "-3": {
-                    "effect": -14.2004,
-                    "se": 8.848
+                    "effect": -23.2784,
+                    "se": 12.4517
                 },
                 "-2": {
-                    "effect": 0.8885,
-                    "se": 6.6059
+                    "effect": 1.8187,
+                    "se": 7.2723
                 },
                 "-1": {
-                    "effect": -3.8949,
-                    "se": 6.7127
+                    "effect": -0.792,
+                    "se": 6.6909
                 },
                 "0": {
-                    "effect": -11.0649,
-                    "se": 6.359
+                    "effect": -9.0665,
+                    "se": 6.5058
                 },
                 "1": {
-                    "effect": -5.1468,
-                    "se": 7.9502
+                    "effect": -5.7866,
+                    "se": 8.3728
                 },
                 "2": {
-                    "effect": -18.744,
-                    "se": 7.1525
+                    "effect": -16.8368,
+                    "se": 7.2544
                 },
                 "3": {
-                    "effect": -32.1978,
-                    "se": 9.5973
+                    "effect": -29.0632,
+                    "se": 9.7438
                 },
                 "4": {
-                    "effect": -34.0532,
-                    "se": 11.6113
+                    "effect": -26.7596,
+                    "se": 10.118
                 },
                 "5": {
-                    "effect": -32.0547,
-                    "se": 13.568
+                    "effect": -24.1364,
+                    "se": 12.8001
                 },
                 "6": {
-                    "effect": -23.732,
-                    "se": 15.991
+                    "effect": -32.1917,
+                    "se": 20.022
                 },
                 "7": {
-                    "effect": -17.5658,
-                    "se": 25.2468
+                    "effect": -17.119,
+                    "se": 22.4892
                 },
                 "8": {
                     "effect": -38.8917,
                     "se": 13.9023
                 }
             },
-            "group_effects": {},
+            "group_effects": {
+                "2011": {
+                    "effect": -2.1485,
+                    "se": 25.4634
+                },
+                "2012": {
+                    "effect": -17.1593,
+                    "se": 12.5186
+                },
+                "2013": {
+                    "effect": -34.8074,
+                    "se": 31.1717
+                },
+                "2014": {
+                    "effect": -20.6624,
+                    "se": 10.0436
+                },
+                "2015": {
+                    "effect": -13.0154,
+                    "se": 20.9378
+                },
+                "2016": {
+                    "effect": -25.764,
+                    "se": 15.2364
+                },
+                "2017": {
+                    "effect": -12.1219,
+                    "se": 19.7172
+                },
+                "2018": {
+                    "effect": -13.0086,
+                    "se": 23.2938
+                },
+                "2019": {
+                    "effect": -7.9936,
+                    "se": 11.6702
+                }
+            },
             "n_treated_units": 38,
             "n_control_units": 247
         },
         "feminicidios": {
-            "cs_att": 0.4377,
-            "cs_se": 0.2547,
-            "cs_p_value": 0.0821,
-            "cs_ci_lower": -0.0544,
-            "cs_ci_upper": 0.9131,
+            "cs_att": 0.4819,
+            "cs_se": 0.2711,
+            "cs_p_value": 0.0641,
+            "cs_ci_lower": -0.0273,
+            "cs_ci_upper": 0.986,
             "sa_att": null,
             "sa_se": null,
-            "bjs_att": 0.327,
-            "bjs_se": 0.1345,
+            "bjs_att": null,
+            "bjs_se": null,
             "event_study": {
                 "-9": {
                     "effect": 0.2255,
@@ -134,81 +176,110 @@
                     "se": 0.6299
                 },
                 "-7": {
-                    "effect": -1.643,
-                    "se": 1.066
+                    "effect": -1.9005,
+                    "se": 1.0965
                 },
                 "-6": {
-                    "effect": 0.4235,
-                    "se": 0.2139
+                    "effect": 0.6796,
+                    "se": 0.4331
                 },
                 "-5": {
-                    "effect": 0.8089,
-                    "se": 0.5168
+                    "effect": 0.8254,
+                    "se": 0.5625
                 },
                 "-4": {
-                    "effect": -0.2146,
-                    "se": 0.5126
+                    "effect": -0.1636,
+                    "se": 0.5263
                 },
                 "-3": {
-                    "effect": -0.1352,
-                    "se": 0.4056
+                    "effect": 0.0328,
+                    "se": 0.4298
                 },
                 "-2": {
-                    "effect": 0.4942,
-                    "se": 0.3105
+                    "effect": 0.6374,
+                    "se": 0.3488
                 },
                 "-1": {
-                    "effect": -0.228,
-                    "se": 0.3332
+                    "effect": -0.1436,
+                    "se": 0.3855
                 },
                 "0": {
-                    "effect": 0.5911,
-                    "se": 0.3864
+                    "effect": 0.5593,
+                    "se": 0.4129
                 },
                 "1": {
-                    "effect": 0.0239,
-                    "se": 0.3954
+                    "effect": 0.0017,
+                    "se": 0.4334
                 },
                 "2": {
-                    "effect": 0.4135,
-                    "se": 0.3422
+                    "effect": 0.5108,
+                    "se": 0.3475
                 },
                 "3": {
-                    "effect": 0.2515,
-                    "se": 0.4097
+                    "effect": 0.343,
+                    "se": 0.4164
                 },
                 "4": {
-                    "effect": 0.7305,
-                    "se": 0.2848
+                    "effect": 0.7365,
+                    "se": 0.3136
                 },
                 "5": {
-                    "effect": 0.8593,
-                    "se": 0.3761
+                    "effect": 0.9394,
+                    "se": 0.3818
                 },
                 "6": {
-                    "effect": -0.0335,
-                    "se": 0.6504
+                    "effect": 0.3108,
+                    "se": 0.5621
                 },
                 "7": {
-                    "effect": 0.7588,
-                    "se": 0.6272
+                    "effect": 0.8167,
+                    "se": 0.5251
                 },
                 "8": {
                     "effect": 0.3156,
                     "se": 0.1726
                 }
             },
-            "group_effects": {},
+            "group_effects": {
+                "2011": {
+                    "effect": 0.2436,
+                    "se": 0.1685
+                },
+                "2012": {
+                    "effect": 1.3526,
+                    "se": 0.6573
+                },
+                "2013": {
+                    "effect": 1.5216,
+                    "se": 0.4531
+                },
+                "2014": {
+                    "effect": 0.7352,
+                    "se": 0.3232
+                },
+                "2015": {
+                    "effect": 0.2418,
+                    "se": 0.5384
+                },
+                "2016": {
+                    "effect": -2.5306,
+                    "se": 1.1218
+                },
+                "2017": {
+                    "effect": -1.5256,
+                    "se": 0.2851
+                },
+                "2018": {
+                    "effect": 0.4355,
+                    "se": 0.4977
+                },
+                "2019": {
+                    "effect": -0.3562,
+                    "se": 0.4616
+                }
+            },
             "n_treated_units": 38,
             "n_control_units": 247
         }
-    },
-    "psm_matching": {
-        "descricao": "Não aplicado (sem covariáveis socioeconômicas).",
-        "pares": {}
-    },
-    "balanco_socioeconomico": {
-        "descricao": "Pendente de covariáveis.",
-        "covariates": {}
     }
 }

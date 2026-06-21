@@ -177,7 +177,12 @@ with col_left:
     - **↓ Feminicídios (SIM)** = sucesso na proteção da vida
 
     A identificação usa **Diferenças-em-Diferenças com adoção escalonada**
-    (Callaway & Sant'Anna, 2021), tendo como contrafactual as DEAMs de horário comercial.
+    (Callaway & Sant'Anna, 2021) em estimação **duplamente robusta** com covariáveis,
+    tendo como contrafactual as DEAMs de horário comercial.
+
+    > ⚖️ **Achado principal:** após corrigir as tendências paralelas, **não há evidência robusta**
+    > de efeito da DEAM 24h sobre a letalidade — o efeito "positivo" aparente era **causalidade
+    > reversa** (adoção reativa). Detalhes na página *Modelo Causal*.
     """)
 
 with col_right:

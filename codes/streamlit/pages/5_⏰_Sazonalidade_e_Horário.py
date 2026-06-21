@@ -175,7 +175,6 @@ st.plotly_chart(figh, use_container_width=True)
 # ─── Relógio polar + dia da semana ───────────────────────────────────
 col_clock, col_dow = st.columns(2)
 with col_clock:
-    st.markdown("##### 🕛 Relógio de 24h")
     figp = go.Figure()
     for per in ORDEM:
         sub = hora[hora['periodo'] == per].sort_values('hora')
@@ -199,14 +198,15 @@ with col_clock:
                              gridcolor=COLORS['grid']),
         ),
         paper_bgcolor="rgba(0,0,0,0)", font=dict(color=COLORS['text'], size=11),
-        height=440, margin=dict(l=40, r=40, t=30, b=30),
+        height=440, margin=dict(l=40, r=40, t=50, b=30),
+        title=dict(text="🕛 Relógio de 24h — % das ocorrências por hora",
+                   font=dict(size=15, color=COLORS['text']), x=0.0, xanchor='left'),
         legend=dict(orientation='h', yanchor='bottom', y=-0.15, xanchor='center', x=0.5,
                     font=dict(size=9)),
     )
     st.plotly_chart(figp, use_container_width=True)
 
 with col_dow:
-    st.markdown("##### 📆 Dia da Semana")
     dow_tot = dow.groupby('periodo')['n'].transform('sum')
     dow = dow.assign(pct=dow['n'] / dow_tot * 100)
     figd = go.Figure()
@@ -217,7 +217,8 @@ with col_dow:
         figd.add_trace(go.Bar(x=[DIAS_SEMANA[d] for d in sub['dow']], y=sub['pct'],
                               name=ROTULO[per], marker_color=PERIODO_COLORS[per],
                               hovertemplate=f'<b>%{{x}}</b><br>{per}: %{{y:.1f}}%<extra></extra>'))
-    figd.update_layout(title="", xaxis_title="", yaxis_title="% das notificações",
+    figd.update_layout(title="📆 Dia da semana — % das notificações",
+                       xaxis_title="", yaxis_title="% das notificações",
                        barmode='group',
                        legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1,
                                    font=dict(size=9)))

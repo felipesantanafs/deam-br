@@ -89,7 +89,9 @@ if geo is not None:
     )
     figm.update_geos(fitbounds="locations", visible=False)
     figm.update_layout(
-        height=560, margin=dict(l=0, r=0, t=10, b=0),
+        title=dict(text=f"{labels[metrica]} por UF", font=dict(size=16, color=COLORS['text']),
+                   x=0.0, xanchor='left'),
+        height=560, margin=dict(l=0, r=0, t=44, b=0),
         paper_bgcolor="rgba(0,0,0,0)",
         geo=dict(bgcolor="rgba(0,0,0,0)"),
         coloraxis_colorbar=dict(title=labels[metrica].split(' /')[0]),
@@ -110,7 +112,9 @@ with col_tree:
     )
     figt.update_traces(root_color="rgba(17,34,64,0.6)",
                        hovertemplate='<b>%{label}</b><br>Notificações: %{value:,.0f}<extra></extra>')
-    figt.update_layout(height=440, margin=dict(l=0, r=0, t=10, b=0),
+    figt.update_layout(title=dict(text="Notificações por região e UF",
+                                  font=dict(size=16, color=COLORS['text']), x=0.0, xanchor='left'),
+                       height=440, margin=dict(l=0, r=0, t=44, b=0),
                        paper_bgcolor="rgba(0,0,0,0)", font=dict(color=COLORS['text']))
     st.plotly_chart(figt, use_container_width=True)
 

@@ -196,7 +196,7 @@
       \textbf{Estimador:}          & Callaway \& Sant'Anna (2021) \\
       \textbf{Especificação:}      & Duplamente robusta (DR-DiD) \\
       \textbf{Covariáveis:}        & 4 (violência, porte, renda) \\
-      \textbf{Inferência:}         & Cluster por município \\
+      \textbf{Inferência:}         & Bootstrap (cluster por município) \\
       \textbf{Desfechos:}          & Taxas /100k hab. \\
     \end{tabular}
 
@@ -432,6 +432,39 @@ conservadora dos resultados.
 
 \subsection{Construção do Painel}
 
+\subsubsection{Unidade de Análise: Municípios com DEAM Única}
+\label{sec:unidade}
+A unidade de análise do estudo é o \textbf{município}, e não a delegacia
+individual. Essa escolha não é trivial: o estimador de Callaway \& Sant'Anna,
+como todo desenho de adoção escalonada, exige que cada unidade possua uma
+\textbf{data de tratamento única e bem definida} (a coorte), que particiona o
+tempo em um período pré e um período pós de forma inequívoca. Esse pressuposto
+é direto em municípios atendidos por uma \textit{única} DEAM, nos quais a data
+de conversão da delegacia para o regime 24h \textit{é} a data de tratamento do
+município.
+
+O pressuposto, porém, se quebra nas \textbf{grandes metrópoles}. Municípios como
+São Paulo, Rio de Janeiro e Belo Horizonte são atendidos por \textbf{múltiplas
+DEAMs}, e cada uma pode ter migrado para o plantão ininterrupto em um ano
+diferente (ou nem ter migrado). Nesses casos não existe uma coorte única: o
+município passa a ocupar um estado de tratamento \textit{parcial e heterogêneo}
+(parte da rede em regime 24h, parte em horário comercial), que evolui de forma
+escalonada \textit{dentro} da própria unidade. Agregar essas delegacias a um
+único código municipal exigiria definir arbitrariamente o ano de tratamento (a
+primeira conversão? a maioria? a última?) e converteria o tratamento binário e
+nítido (\textit{sharp}) em uma medida de \textbf{intensidade} de cobertura,
+violando a definição de tratamento sobre a qual o estimador é construído.
+
+Por essa razão, e por simplicidade analítica, a amostra foi \textbf{restrita a
+municípios com uma única DEAM} ao longo de todo o período (2009--2019), nos
+quais a transição para o 24h é um evento único e datável. As metrópoles com
+redes de múltiplas delegacias foram \textbf{removidas} do painel. A consequência
+substantiva é uma \textbf{condição de escopo}: os efeitos aqui estimados
+referem-se a municípios de pequeno e médio porte com uma delegacia
+especializada, e não às maiores capitais, onde a dinâmica de cobertura é mais
+complexa. Essa restrição é retomada na discussão (Seção~\ref{sec:disc}) e nas
+limitações (Seção~\ref{sec:limit}).
+
 \begin{table}[H]
 \centering
 \caption{Estatísticas Descritivas por Grupo (Média, 2009--2019)}
@@ -661,9 +694,33 @@ uma média ponderada pelo tamanho de cada grupo-tempo:
 \end{equation}
 
 \noindent com pesos $w_{g,t} \propto \Pr(G = g) \cdot \mathbf{1}[t \geq g]$.
-A inferência usa erros-padrão agrupados por município
-(\texttt{cluster='id\_municipio'}), com semente fixada em 42 para
-reprodutibilidade.
+
+\subsubsection{Inferência por Bootstrap Agrupado}
+\label{sec:bootstrap}
+Os erros-padrão e intervalos de confiança não são obtidos por fórmula analítica,
+mas por \textbf{bootstrap agrupado} (\textit{clustered bootstrap}), o
+procedimento de inferência padrão do estimador de Callaway \& Sant'Anna. A ideia
+do bootstrap é aproximar a distribuição amostral do estimador por
+\textbf{reamostragem}: em vez de supor uma forma fechada para a variância,
+reconstrói-se empiricamente quanto o $\overline{ATT}$ oscilaria caso a amostra
+fosse sorteada repetidas vezes da mesma população. O procedimento, repetido por
+$B = 999$ réplicas, opera assim:
+\begin{enumerate}
+  \item \textbf{Reamostragem por município.} Em cada réplica, sorteiam-se
+        \textit{municípios} (não observações isoladas) com reposição, mantendo
+        intacta a série temporal completa de cada um. É esse sorteio na unidade
+        do \textit{cluster} (\texttt{cluster='id\_municipio'}) que torna o
+        bootstrap \textbf{agrupado}: ele preserva a correlação serial das
+        observações de um mesmo município ao longo dos anos, que um bootstrap
+        sobre linhas individuais destruiria, subestimando os erros-padrão.
+  \item \textbf{Reestimação.} Para cada amostra reamostrada, recalcula-se todo o
+        $\overline{ATT}$, gerando uma distribuição de $B$ estimativas.
+  \item \textbf{Síntese.} O \textbf{erro-padrão} é o desvio-padrão dessa
+        distribuição, e o \textbf{IC~95\%} corresponde aos seus percentis; o
+        \textit{p}-valor mede quão frequentemente o efeito reamostrado cruza zero.
+\end{enumerate}
+A semente aleatória é fixada em 42, garantindo que a reamostragem (e portanto os
+erros-padrão reportados) seja exatamente reprodutível.
 
 \subsection{Estimação Duplamente Robusta (DR-DiD)}
 \label{sec:dr}
@@ -722,6 +779,7 @@ com os seguintes parâmetros na especificação principal:
   \item \texttt{estimation\_method = 'dr'} (duplamente robusta)
   \item \texttt{covariates}: as 4 covariáveis da Seção~\ref{sec:dr}
   \item \texttt{cluster = 'id\_municipio'}
+  \item \texttt{n\_bootstrap = 999} (bootstrap agrupado, Seção~\ref{sec:bootstrap})
   \item \texttt{aggregate}: \texttt{'simple'} (ATT global), \texttt{'event\_study'}
         (efeitos dinâmicos) e \texttt{'group'} (por coorte)
 \end{itemize}
@@ -972,6 +1030,22 @@ ausente nos dois primeiros anos do painel (faltam defasagens). A robustez fica,
 portanto, ancorada no próprio contraste base \textit{vs.}\ DR e na estabilidade
 das pré-tendências.
 
+\textbf{Escopo dos efeitos: municípios com DEAM única.} Por fim, é preciso
+delimitar a que população os efeitos se aplicam. Como detalhado na
+Seção~\ref{sec:unidade}, a amostra restringe-se a municípios atendidos por uma
+\textit{única} DEAM, condição que torna a data de conversão um evento único e
+datável, requisito do desenho escalonado. As grandes metrópoles (São Paulo, Rio
+de Janeiro, Belo Horizonte), com redes de várias delegacias convertidas em anos
+distintos, foram deliberadamente excluídas para preservar a definição nítida de
+tratamento. Os ATTs estimados, tanto o efeito de acesso ($-18{,}04$) quanto o de
+letalidade ($+0{,}48$), devem ser lidos, portanto, como o impacto da conversão
+em municípios de pequeno e médio porte com uma delegacia especializada. Não é
+imediato extrapolá-los para as capitais com redes densas, onde a cobertura 24h é
+gradual e parcial, e onde efeitos de transbordamento entre delegacias e de
+intensidade de cobertura poderiam operar de modo qualitativamente distinto. A
+generalização para esse universo metropolitano fica como agenda, condicionada a
+um tratamento explícito da heterogeneidade intramunicipal de cobertura.
+
 % ============================================================
 \section{Conclusão}
 % ============================================================
@@ -1118,16 +1192,24 @@ respeitar uma janela de maturação institucional, evitando avaliações precoce
 captem apenas a fase de implantação dos protocolos noturnos.
 
 \subsection{Limitações}
+\label{sec:limit}
 
-Além das fontes de viés já discutidas, três limitações merecem registro.
+Além das fontes de viés já discutidas, quatro limitações merecem registro.
 Primeiro, a covariável de variação (\texttt{delta\_homicidios\_masc}) é nula em
 2009--2010 por falta de defasagens, enfraquecendo a contribuição das coortes mais
 antigas e impedindo o cálculo dos estimadores de robustez (Sun \& Abraham e
 Imputation retornam posto deficiente). Segundo, o teste de pré-tendências usa a
 aproximação diagonal de Wald, cujos \textit{p}-valores devem ser lidos como
-aproximados. Por fim, o número reduzido de municípios em algumas coortes (por
+aproximados. Terceiro, o número reduzido de municípios em algumas coortes (por
 exemplo, uma única unidade na coorte de 2009, descartada na especificação DR)
 amplia a incerteza dos efeitos por coorte, refletida nos erros-padrão elevados.
+Por fim, a amostra limita-se a municípios com uma \textbf{única DEAM}
+(Seção~\ref{sec:unidade}): as metrópoles com múltiplas delegacias e anos de
+conversão divergentes foram excluídas para manter a definição nítida de
+tratamento exigida pelo desenho escalonado. Isso restringe a validade externa
+dos achados ao universo de municípios de pequeno e médio porte com uma delegacia
+especializada, deixando em aberto o efeito da política nas grandes capitais, onde
+a cobertura 24h é parcial e implantada de forma gradual entre unidades.
 
 % ============================================================
 % REFERÊNCIAS (não numerada)
@@ -1204,10 +1286,10 @@ Disponível em: \href{https://azmina.com.br}{azmina.com.br}. Acesso em: jun. 202
 \smallskip
 \textbf{Recursos do Projeto}
 
-Silva, F. \textit{Repositório do Projeto DEAM-BR}. GitHub, 2026.
+Santana, F. \textit{Repositório do Projeto DEAM-BR}. GitHub, 2026.
 \href{https://github.com/felipesantanafs/deam-br}{https://github.com/felipesantanafs/deam-br}.
 
-Silva, F. \textit{Dashboard Interativo — Avaliação de Impacto das DEAMs 24h}.
+Santana, F. \textit{Dashboard Interativo — Avaliação de Impacto das DEAMs 24h}.
 Streamlit, 2026.
 \href{https://deam-br.streamlit.app}{https://deam-br.streamlit.app}.
 

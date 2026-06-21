@@ -75,7 +75,6 @@ st.markdown(section_header("📊 Taxas por 100 mil — DEAM 24h vs Comercial"), 
 col_n, col_f = st.columns(2)
 
 with col_n:
-    st.markdown("##### 🏥 Notificações /100k")
     fign = go.Figure()
     for g in grupos_sel:
         s = taxa_anual(df[df['grupo'] == g], 'notificacoes')
@@ -83,12 +82,12 @@ with col_n:
         fign.add_trace(go.Scatter(x=s['ano'], y=s['taxa'], name=nome, mode='lines+markers',
                                   line=dict(color=GRUPO_COLORS[g], width=3), marker=dict(size=8),
                                   hovertemplate=f'<b>%{{x}}</b><br>{nome}: %{{y:.1f}}/100k<extra></extra>'))
-    fign.update_layout(xaxis_title="Ano", yaxis_title="Notificações /100k")
+    fign.update_layout(title="🏥 Notificações /100k — 24h vs comercial",
+                       xaxis_title="Ano", yaxis_title="Notificações /100k")
     apply_theme(fign, height=400)
     st.plotly_chart(fign, use_container_width=True)
 
 with col_f:
-    st.markdown("##### ⚰️ Feminicídios /100k")
     figf = go.Figure()
     for g in grupos_sel:
         s = taxa_anual(df[df['grupo'] == g], 'feminicidios')
@@ -96,7 +95,8 @@ with col_f:
         figf.add_trace(go.Scatter(x=s['ano'], y=s['taxa'], name=nome, mode='lines+markers',
                                   line=dict(color=GRUPO_COLORS[g], width=3), marker=dict(size=8),
                                   hovertemplate=f'<b>%{{x}}</b><br>{nome}: %{{y:.2f}}/100k<extra></extra>'))
-    figf.update_layout(xaxis_title="Ano", yaxis_title="Feminicídios /100k")
+    figf.update_layout(title="⚰️ Feminicídios /100k — 24h vs comercial",
+                       xaxis_title="Ano", yaxis_title="Feminicídios /100k")
     apply_theme(figf, height=400)
     st.plotly_chart(figf, use_container_width=True)
 
