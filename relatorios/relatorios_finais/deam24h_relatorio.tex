@@ -365,23 +365,29 @@ preenchida em aproximadamente 53\% dos registros.
 A população municipal foi obtida via API do SIDRA (tabela 6579, variável 9324)
 em lotes de 50 municípios. Para o ano censitário de 2010, ausente na série SIDRA
 de estimativas, aplicou-se interpolação linear entre os valores de 2009 e 2011,
-resultando em zero valores faltantes nas 3.135 linhas do painel.
+resultando em nenhum valor faltante nas 3.135 linhas do painel.
 
 \subsubsection{Homicídios Masculinos (SIM) — Covariável de Violência}
 \label{sec:cov_homic}
 A covariável de violência estrutural foi extraída dos mesmos microdados do SIM
 (causas X85--Y09), restringindo-se ao \textbf{sexo masculino} (\texttt{sexo == 1})
-e agregando-se por município-ano em taxa por 100 mil habitantes. A opção pelo
-recorte masculino (e não pelos homicídios gerais) é metodologicamente
-deliberada: o desfecho de letalidade (\texttt{taxa\_feminicidios}) é precisamente
-o subconjunto \textit{feminino} dos mesmos códigos CID. Condicionar em homicídios
-gerais controlaria, portanto, parcialmente pelo próprio desfecho, produzindo
-atenuação mecânica (\textit{containment}) do ATT, e não ajuste causal. Os dados
-confirmam a quase-disjunção: dos homicídios totais do período, 92\% são
-masculinos, e o contingente feminino coincide quase exatamente com a contagem de
-feminicídios. A partir dessa série derivou-se ainda a \textbf{variação bienal}
-da taxa ($\Delta = \text{taxa}_{t} - \text{taxa}_{t-2}$), que captura surtos
-recentes de violência letal (ver Seção~\ref{sec:dr}).
+e agregando-se por município-ano em taxa por 100 mil habitantes.
+
+Usamos apenas os homicídios de homens, e não o total de homicídios, por um
+motivo simples. O que queremos medir é o feminicídio, que nada mais é do que o
+homicídio de mulheres dentro desses mesmos códigos CID. Ou seja: o total de
+homicídios já inclui, dentro de si, o próprio resultado que estamos tentando
+explicar. Se usássemos esse total como covariável, estaríamos em parte
+``controlando'' o feminicídio por ele mesmo, o que encolheria artificialmente o
+efeito estimado (efeito conhecido como \textit{containment}) em vez de corrigir
+um viés real. E esse risco não é pequeno: 91\% dos homicídios do período são de
+homens, e a fatia feminina praticamente coincide com a contagem de feminicídios.
+Restringir aos homens preserva a leitura da violência letal do município sem
+deixar o desfecho ``vazar'' para dentro da covariável.
+
+A partir dessa série derivou-se ainda a \textbf{variação bienal} da taxa
+($\Delta = \text{taxa}_{t} - \text{taxa}_{t-2}$), que captura surtos recentes de
+violência letal (ver Seção~\ref{sec:dr}).
 
 \subsubsection{PIB per capita Municipal (SIDRA 5938)}
 O Produto Interno Bruto municipal foi obtido da Tabela 5938 do SIDRA/IBGE
@@ -407,6 +413,7 @@ digitação, UF incorreta, nomes truncados ou municípios renomeados.\footnote{E
 (\textit{``Ariquemes'', TO}) $\to$ (\textit{``Ariquemes'', RO}).}
 
 \subsubsection{O Ano de Transição e o Erro de Medida}
+\label{sec:transicao}
 A definição da coorte de tratamento em um desenho de adoção escalonada depende
 crucialmente da \textit{data exata} em que cada delegacia migrou para o regime
 24h. Diferentemente do status atual (relativamente bem documentado), o
@@ -1122,12 +1129,37 @@ o momento do registro na delegacia. Portanto, essa análise constitui
 \textbf{evidência de mecanismo}, demonstrando que há substantiva violência
 fora do horário comercial, e não demonstração direta de impacto no acesso.
 
+Medir diretamente o horário em que as vítimas \textit{buscam} a delegacia
+exigiria a hora de registro da ocorrência, informação que não consta do SINAN
+e existe apenas nos boletins de ocorrência. Esses registros ficam sob guarda
+das Polícias Civis de cada estado, sem base nacional consolidada, de modo que
+obtê-los demandaria pedidos formais de acesso em quase todas as unidades da
+federação e articulação com órgãos policiais distintos, cada um com seu próprio
+sistema e protocolo. Diante desse custo operacional, a extração da hora de
+registro foi considerada inviável no escopo deste estudo e descartada,
+restando a hora do fato como melhor aproximação disponível do perfil temporal
+da demanda.
+
 \subsection{Próximos Passos da Pesquisa}
 
 Com base nos resultados e nas limitações identificadas, os seguintes
 desenvolvimentos metodológicos são prioritários:
 
 \begin{enumerate}
+  \item \textbf{Validação primária do ano de transição:} O principal vetor de
+        erro de medida do estudo está na data de conversão de cada delegacia
+        para o regime 24h, hoje levantada por recortes de notícias e diários
+        oficiais (Seção~\ref{sec:transicao}). Para reduzir essa imprecisão, é
+        possível confirmar a data diretamente na fonte, contatando cada DEAM
+        pelos telefones e e-mails do cadastro nacional mantido pela Ouvidoria
+        Nacional da Mulher do CNJ (sob supervisão da Conselheira Maria Cristiana
+        Ziouva), ou consultando os portais das Polícias Civis estaduais, que
+        também divulgam o endereço e os canais de contato de cada delegacia.
+        A verificação na fonte permitiria distinguir a data do \textit{anúncio}
+        político da data de \textit{efetiva} entrada em operação, corrigindo
+        coortes mal datadas e atenuando o viés de atenuação que hoje torna as
+        estimativas conservadoras.
+
   \item \textbf{Fechar a janela do \texttt{delta}:} A covariável de variação é
         nula em 2009--2010 (faltam defasagens, pois a extração de homicídios
         inicia em 2009), enfraquecendo a contribuição das coortes mais antigas
