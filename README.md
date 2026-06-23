@@ -100,6 +100,7 @@ flowchart LR
 ### Produto Final
 - 📄 Relatório técnico completo em **LaTeX/PDF** (`relatorios/relatorios_finais/deam24h_relatorio.pdf`).
 - 🖥️ **Dashboard interativo** (Streamlit) — 7 páginas analíticas com dados nacionais 2009–2019.
+- 📊 **Apresentação executiva** (`relatorios/apresentacao/deam24h.pptx`) — deck de 8 slides em padrão visual próprio (marinho + dourado, Times New Roman); guia de estilo reaplicável em `relatorios/pre_relatorio/guia_slides.md`.
 
 ---
 
@@ -109,22 +110,26 @@ flowchart LR
 deam-br/
 │
 ├── 📄 README.md                    # Este arquivo
-├── 📄 requirements.txt            # Dependências do projeto
+├── 📄 requirements.txt             # Dependências do projeto
+├── 📄 .gitignore
+├── 📂 .streamlit/                  # Tema do dashboard (config.toml)
 │
 ├── 📂 codes/                       # Scripts organizados por fases de desenvolvimento
 │   ├── 📂 extracao_filtragem/      # Extração (APIs/BigQuery) e higienização inicial
 │   │   ├── bd_config.py            # ⚠️ LOCAL APENAS — credenciais GCP (Não versionado)
 │   │   ├── 📂 sim_sinan/           # Extração dos microdados nacionais
-│   │   │   ├── extract_sim_bd_detalhada.py   # Query detalhada de feminicídios no SIM/DataSUS
-│   │   │   └── extract_sinan_bd_detalhada.py # Query detalhada de notificações no SINAN/DataSUS
+│   │   │   ├── extract_sim_bd_detalhada.py      # Feminicídios no SIM/DataSUS
+│   │   │   ├── extract_sim_homicidios_gerais.py # Homicídios masc. (covariável DR)
+│   │   │   └── extract_sinan_bd_detalhada.py    # Notificações no SINAN/DataSUS
 │   │   ├── 📂 deams/               # Processamento da base de DEAMs
 │   │   │   ├── limpar_dados_deams.py  # Limpeza e filtragem da base de DEAMs
 │   │   │   └── separar_deams.py       # Separação em grupos 24h e Comercial
 │   │   └── 📂 ibge/                # Download e pareamento de dados do IBGE
-│   │       ├── download_ibge.py       # Download de dados socioeconômicos
-│   │       ├── fetch_populacao.py     # Série histórica de população por município
-│   │       ├── inspect_data.py        # Inspeção rápida de consistência
-│   │       └── parear_municipios_ibge.py # Pareamento de municípios IBGE × DEAMs
+│   │       ├── download_ibge.py            # Dados socioeconômicos
+│   │       ├── fetch_populacao.py          # População (SIDRA 6579)
+│   │       ├── fetch_pib_percapita.py      # PIB per capita (SIDRA 5938, covariável DR)
+│   │       ├── inspect_data.py             # Inspeção de consistência
+│   │       └── parear_municipios_ibge.py   # Pareamento municípios IBGE × DEAMs
 │   │
 │   ├── 📂 analise_dados/           # Agregações e preparação dos painéis
 │   │   ├── agregar_painel_anual.py    # Consolida painel município-ano para o modelo DiD
@@ -146,28 +151,32 @@ deam-br/
 │   │       └── 7_🔬_Modelo_Causal.py
 │   │
 │   └── 📂 inferencia_causal/       # Estimação do modelo econométrico DiD
-│       ├── modelo_causal_brasil.py         # Estimador CS DiD (runner terminal — DR + covariáveis)
-│       ├── export_causal_results_json.py   # Exporta causal_results.json p/ o Streamlit (especificação DR final)
-│       ├── diagnostico_callaway_santanna.py # Suite de diagnósticos: event study, heatmap, forest, pré-tendências
-│       ├── _regen_event_studies.py         # Regenera PNGs do event study com fonte ampliada (relatório)
-│       ├── generate_notebook_brasil.py     # Geração do notebook de replicação
-│       └── modelo_causal_brasil.ipynb      # Notebook com a execução completa do modelo
+│       ├── modelo_causal_brasil.py          # Runner CS DiD (DR + covariáveis)
+│       ├── causal_model.py                  # Núcleo do estimador
+│       ├── export_causal_results_json.py    # Exporta causal_results.json p/ o Streamlit
+│       ├── diagnostico_callaway_santanna.py # Event study, heatmap, forest, pré-tendências
+│       ├── _regen_event_studies.py          # Regenera PNGs do event study (relatório)
+│       ├── generate_notebook.py             # Geração do notebook de replicação
+│       ├── generate_notebook_brasil.py      # Variante nacional do notebook
+│       └── modelo_causal_brasil.ipynb       # Notebook com a execução completa
 │
 ├── 📂 dados/                       # Armazenamento estruturado de fontes e consolidações
-│   ├── 📂 ibge/                    # Dados e arquivos auxiliares do IBGE
-│   │   ├── municipios_br.csv       # Municípios brasileiros e códigos de identificação
-│   │   └── 📂 scraping/            # Arquivos da raspagem e processamento das DEAMs
-│   │       ├── deam_delegacias_mulher_brasil.csv                      # Base bruta de raspagem
-│   │       └── deam_delegacias_mulher_brasil_706_enriquecido.csv      # Base enriquecida (pré-filtragem)
+│   ├── 📂 ibge/                    # Covariáveis socioeconômicas
+│   │   ├── municipios_br.csv             # Municípios e códigos IBGE
+│   │   ├── populacao_municipios.csv      # População por município (SIDRA 6579)
+│   │   └── pib_percapita_municipios.csv  # PIB per capita (SIDRA 5938)
 │   │
-│   ├── 📂 info_delegacias/         # Dados processados das DEAMs
-│   │   ├── dados_deams.xlsx        # Base original de DEAMs
-│   │   ├── dados_deams_filtrados.xlsx # Base filtrada (apenas Delegacias da Mulher)
-│   │   ├── dados_deams_24h.xlsx    # DEAMs com regime 24h (2009–2019)
-│   │   └── dados_deams_comercial.xlsx # DEAMs com horário comercial
+│   ├── 📂 info_delegacias/         # Bases processadas das DEAMs
+│   │   ├── dados_deams.xlsx                  # Base original
+│   │   ├── dados_deams_filtrados.xlsx        # Apenas Delegacias da Mulher
+│   │   ├── dados_deams_24h.xlsx              # Tratados (regime 24h)
+│   │   ├── dados_deams_24h_com_id.xlsx       # Tratados com id_municipio
+│   │   ├── dados_deams_comercial.xlsx        # Controle (comercial)
+│   │   └── dados_deams_comercial_com_id.xlsx # Controle com id_municipio
 │   │
-│   ├── 📂 sim/                     # Dados provenientes do SIM (Sistema de Mortalidade)
-│   │   └── sim_feminicidios_br_detalhada.csv  # Microdados detalhados de óbitos — ignorado pelo git
+│   ├── 📂 sim/                     # Microdados do SIM (ignorados pelo git)
+│   │   ├── sim_feminicidios_br_detalhada.csv       # Óbitos femininos por agressão
+│   │   └── sim_homicidios_gerais_br_detalhada.csv  # Homicídios (covariável DR)
 │   │
 │   ├── 📂 sinan/                   # Dados provenientes do SINAN (Notificações)
 │   │   └── sinan_violencia_br_detalhada.csv   # Microdados detalhados de violência — ignorado pelo git
@@ -182,26 +191,28 @@ deam-br/
 │       └── saz_{hora,mes,dow,resumo}.csv  # Séries horárias pré-agregadas (sazonalidade)
 │
 └── 📂 relatorios/                  # Relatórios, apresentações e saídas do modelo
-    ├── 📂 pre_relatorio/           # Documentos textuais do projeto de pesquisa
+    ├── estatisticas_causal.md      # Resumo das estatísticas do modelo causal
+    ├── 📂 pre_relatorio/           # Documentos textuais e guias do projeto
     │   ├── PROJETO DE PESQUISA-VIOLENCIA BR.txt
     │   ├── estatisticas_causal.md
-    │   └── resumo_sessao.md
+    │   ├── resumo_sessao.md
+    │   ├── resumo_sessao_covariaveis.md
+    │   ├── resumo_sessao_slides.md      # Log da sessão de montagem dos slides
+    │   └── guia_slides.md               # Guia de estilo reaplicável dos slides (specs + python-pptx)
     ├── 📂 relatorios_finais/       # Relatório técnico completo em LaTeX/PDF
     │   ├── deam24h_relatorio.tex
-    │   └── deam24h_relatorio.pdf
-    ├── 📂 apresentacao/            # Slides da pesquisa (LaTeX Beamer + PPTX)
-    │   ├── deam24h_slides.tex
-    │   ├── deam24h_slides.pdf
-    │   ├── deam24h_slides.pptx
-    │   ├── build_pptx.py           # Geração programática do PPTX
-    │   └── 📂 render/              # Renderizações PNG dos slides
+    │   ├── deam24h_relatorio.pdf
+    │   └── GUIA_RELATORIO_LATEX.md      # Guia de edição do relatório LaTeX
+    ├── 📂 apresentacao/            # Apresentação executiva (deck final)
+    │   ├── deam24h.pptx                 # Deck de 8 slides (padrão visual próprio)
+    │   └── deam24h.pdf                  # Exportação em PDF do deck
     ├── 📂 figuras_causal/          # Gráficos gerados pelo modelo causal
-    │   ├── 00_adocao_escalonada.png
+    │   ├── 00_adocao_escalonada.png · 00b_coortes.png
     │   ├── *_raw_trends.png        # Tendências brutas pré/pós tratamento
-    │   ├── *_event_study.png       # Estudos de evento (pré-tendências + ATT)
-    │   ├── *_heatmap_gt.png        # Heatmaps dos efeitos por coorte-tempo
+    │   ├── *_event_study.png       # Event studies (pré-tendências + ATT)
+    │   ├── *_heatmap_gt.png        # Heatmaps ATT(g,t) por coorte-tempo
     │   ├── *_efeitos_coorte.png    # ATT por coorte de adoção
-    │   └── 05_forest_att.png       # Forest plot comparativo (notificações vs feminicídios)
+    │   └── 05_forest_att.png       # Forest plot (notificações vs feminicídios)
     └── 📂 csv_causal/              # Tabelas de resultados do modelo causal
         ├── descritivas.csv
         ├── notificacoes_event_study.csv
@@ -323,4 +334,5 @@ O projeto conta com um painel analítico desenvolvido no Streamlit com identidad
 - [x] **Achado principal:** efeito sobre feminicídios não-significativo após correção (ATT +0,48, IC inclui zero); efeito "positivo" anterior era causalidade reversa
 - [x] Dashboard Streamlit com 7 páginas — resultados DR atualizados, títulos em todos os gráficos
 - [x] Relatório técnico completo em LaTeX/PDF (`relatorios/relatorios_finais/deam24h_relatorio.pdf`)
-- [x] Apresentação em LaTeX Beamer exportada para PDF e PPTX (`relatorios/apresentacao/`)
+- [x] Apresentação executiva (PPTX + PDF) em `relatorios/apresentacao/deam24h.pptx` — deck de 8 slides em padrão visual próprio (capa · pergunta · dados · estatísticas tratado×controle · metodologia com fórmula CS + barras de progresso por coorte · resultados ATT/pré-tendências · event studies · conclusões & limitações)
+- [x] Guia de estilo de slides reaplicável documentado para decks futuros (`relatorios/pre_relatorio/guia_slides.md`)
